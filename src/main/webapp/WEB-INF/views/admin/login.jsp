@@ -37,7 +37,7 @@
 	<!-- BEGIN LOGIN -->
 	<div class="content">
 		<!-- BEGIN LOGIN FORM -->
-		<form class="form-vertical login-form" action="index.html">
+		<form class="form-vertical login-form" action="login" method="post">
 			<h3 class="form-title">登录</h3>
 			<div class="alert alert-error hide">
 				<button class="close" data-dismiss="alert"></button>
@@ -72,79 +72,44 @@
 			</div>
 		</form>
 
+	</div>
 		<!-- END LOGIN FORM -->        
 	<!-- BEGIN COPYRIGHT -->
-
 	<div class="copyright">
-
-		2013 &copy; lexiangyouguo 2014.
-
+		 &copy; lexiangyouguo 2014.
 	</div>
-
 	<!-- END COPYRIGHT -->
-
 	<!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
-
-	<!-- BEGIN CORE PLUGINS -->
-
+	<!-- BEGIN CORE PLUGINS --
 	<script src="/shop/resources/admin/js/jquery-1.10.1.min.js" type="text/javascript"></script>
-
 	<script src="/shop/resources/admin/js/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
-
 	<!-- IMPORTANT! Load jquery-ui-1.10.1.custom.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
-
 	<script src="/shop/resources/admin/js/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>      
-
 	<script src="/shop/resources/admin/js/bootstrap.min.js" type="text/javascript"></script>
-
 	<!--[if lt IE 9]>
-
 	<script src="/shop/resources/admin/js/excanvas.min.js"></script>
-
 	<script src="/shop/resources/admin/js/respond.min.js"></script>  
-
 	<![endif]-->   
-
 	<script src="/shop/resources/admin/js/jquery.slimscroll.min.js" type="text/javascript"></script>
-
 	<script src="/shop/resources/admin/js/jquery.blockui.min.js" type="text/javascript"></script>  
-
 	<script src="/shop/resources/admin/js/jquery.cookie.min.js" type="text/javascript"></script>
-
 	<script src="/shop/resources/admin/js/jquery.uniform.min.js" type="text/javascript" ></script>
-
 	<!-- END CORE PLUGINS -->
-
 	<!-- BEGIN PAGE LEVEL PLUGINS -->
-
 	<script src="/shop/resources/admin/js/jquery.validate.min.js" type="text/javascript"></script>
-
 	<!-- END PAGE LEVEL PLUGINS -->
-
 	<!-- BEGIN PAGE LEVEL SCRIPTS -->
-
 	<script src="/shop/resources/admin/js/app.js" type="text/javascript"></script>
-
 	<script src="/shop/resources/admin/js/login.js" type="text/javascript"></script>      
-
 	<!-- END PAGE LEVEL SCRIPTS --> 
-
 	<script>
-
 		jQuery(document).ready(function() {     
-
 		  App.init();
-
 		  Login.init();
-
 		});
-
 	</script>
-
 	<!-- END JAVASCRIPTS -->
-
-<script type="text/javascript">  var _gaq = _gaq || [];  _gaq.push(['_setAccount', 'UA-37564768-1']);  _gaq.push(['_setDomainName', 'keenthemes.com']);  _gaq.push(['_setAllowLinker', true]);  _gaq.push(['_trackPageview']);  (function() {    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);  })();</script></body>
-
+	<script type="text/javascript">  var _gaq = _gaq || [];  _gaq.push(['_setAccount', 'UA-37564768-1']);  _gaq.push(['_setDomainName', 'keenthemes.com']);  _gaq.push(['_setAllowLinker', true]);  _gaq.push(['_trackPageview']);  (function() {    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);  })();</script>
+	</body>
 <!-- END BODY -->
-
 </html>
