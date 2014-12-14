@@ -1,0 +1,1 @@
+!function(e,n){n&&e(function(){var r="http://s7.mogujie.cn/pic/140630/kuw9n_kq2de2cmkrbf6rkugfjeg5sckzsew_14x29.gif",t=new Image,i=0;e(t).load(function(){i=n.helper.getNewTime()-n.initTime,n.entrySend(["ClientInfo","PageError"],{"extra_param=pageload":i},!1)}).attr("src",r)})}(jQuery,MOGU.LogApp);
