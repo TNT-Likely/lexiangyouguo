@@ -31,4 +31,10 @@ public class  registerController {
 		model.addAttribute("name", "sunxiaoIndex" );
 		return "register";
 	}
+	
+	@RequestMapping(value = "/register", method = RequestMethod.POST)
+	public String login(Model model,user User) {
+		model.addAttribute("name", "sunxiaoIndex" );
+		return "login";
+	}
 }

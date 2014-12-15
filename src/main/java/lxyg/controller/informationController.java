@@ -12,13 +12,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
-public class basicinformationController {
+public class informationController {
  
 	
 	/**
 	 * Simply selects the home view to render by returning its name.
 	 */
-	@RequestMapping(value = "/basicinformation", method = RequestMethod.GET)
+	@RequestMapping(value = "/information", method = RequestMethod.GET)
 	public String index(Locale locale, Model model) {
 	 
 		
@@ -29,7 +29,29 @@ public class basicinformationController {
 		
 		model.addAttribute("serverTime", formattedDate );
 		model.addAttribute("name", "sunxiaoIndex" );
-		return "basicinformation";
+		return "information";
+	}
+	@RequestMapping(value = "/information", method = RequestMethod.POST)
+	public String login(Model model,user User) {
+		model.addAttribute("name", "sunxiaoIndex" );
+		return "information";
+	}
+
+}
+class user{
+	private String username;
+	private String password;
+	public String getUsername() {
+		return username;
+	}
+	public void setUsername(String username) {
+		this.username = username;
+	}
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
 	}
 }
 
