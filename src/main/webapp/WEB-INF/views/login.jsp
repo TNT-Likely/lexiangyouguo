@@ -69,66 +69,6 @@
 								</div>
 								<div class="lg_login clearfix">
 									<input type="submit" value="" class="sub">
-<<<<<<< HEAD
-									<a class="ml15" href=" ">忘记密码？</a>
-									<a class="ml5" href="zhuce2.html">新用户注册</a>
-								</div>
-								<input name="refer" value="" type="hidden" />
-								<input name="mgj_secret" value="" id='mgj_secret' type="hidden" />
-								<input type="hidden" value="" id="imgcheckvalue">
-								<input type="hidden" value="" id="noCheck" name="noCheck">
-								<input type="hidden" id="jsalgo" name="mgj_algo" value="Sr373ojxmKk=" />
-							</form>
-							<div class="ot_login">
-								<span>你也可以用以下方式登录：</span>
-								<div class="ot_btn clearfix">
-									<a href=" ">
-										<img src="/shop/resources/img/a-34.png">
-									</a>
-									<a href=" ">
-										<img src="/shop/resources/img/a-31.png">
-									</a>
-									<a href=" ">
-										<img src=" ">
-									</a>
-									<a href="/oauth/login/renren/mogujie">
-										<img src="/shop/resources/img/a-33.png">
-									</a>
-									<a href="/oauth/login/weixin/mogujie">
-										<img src="/shop/resources/img/a-32.png">
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<input type="hidden" value="" id="isban" />
-				</div>
-			</div>
-			<div class="login_foot">
-				<div class="login_foot_con">
-					<div class="qr_code_box fr">
-						<h3>蘑菇街移动客户端</h3>
-						<a class="qr_code" href=" " target="_blank"></a>
-					</div>
-					<ul class="link_list clearfix">
-						<li>
-							<h3>新手帮助</h3>
-							<a href=" " target="_blank">如何购买</a>
-							<a href=" " target="_blank">支付教程</a>
-							<a href=" " target="_blank">优惠券使用</a>
-							<a href=" " target="_blank">常见问题</a>
-						</li>
-						<li>
-							<h3>权益保障</h3>
-							<p>全国包邮</p>
-							<p>7天无理由退货</p>
-							<p>退货运费补贴</p>
-							<p>72小时发货</p>
-						</li>
-						<li>
-							<h3>商家服务</h3>
-							<a href=" " target="_blank">帮助中心</a>
-							<a href=" " target="_blank">商家平台</a>
 									<a class="ml15" href="register">忘记密码？</a>
 									<a class="ml5" href="register">新用户注册</a>
 								</div>

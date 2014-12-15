@@ -1,16 +1,23 @@
 package lxyg.dao;
 
+import java.io.Serializable;
 import java.util.List;
+import java.util.Map;
 
-public interface IBaseDAO<T> {
-	List<T> listAll();
+public interface IBaseDAO<Entity, ID extends Serializable> {
 
-	Object findById(Class<T> c, int id);
+	Entity getByID(ID id);
 
-	boolean save(Object object);
+	List getList();
 
-	boolean update(Object object);
+	List search(Map<String, Object> parameterMap);
 
-	boolean delete(Object object);
+	ID insert(Entity entity);
+
+	void update(Entity entity);
+
+	void delete(Entity entity);
+
+	void deleteById(ID id);
 
 }
