@@ -24,13 +24,13 @@
 <body>
 <div class="faq_header">
 			<div class="faq_header_wrap fm960 clearfix">
-				<a class="logo" href=" ">蘑菇街客户服务</a>
+				<a class="logo" href="customerservice">蘑菇街客户服务</a>
 				<ul class="nav_wrap clearfix">
-					<li><a href=" " class="cur">自助服务</a>
+					<li><a href="customerservice" class="cur">自助服务</a>
 					</li>
-					<li><a href="kefu.html">帮助中心</a>
+					<li><a href="customerservice">帮助中心</a>
 					</li>
-					<li><a href="kefu.html">联系客服</a>
+					<li><a href="customerservice">联系客服</a>
 					</li>
 				</ul>
 				<form class="search_box" method="GET" action=" ">
@@ -46,17 +46,17 @@
 						<h1>常见问题</h1>
 						<div class="content">
 							<ol>
-								<li><span class="num">1、</span><a href=" " target="_blank">退款完成了为什么卡里没收到钱？</a>
+								<li><span class="num">1、</span><a href="customerservice" target="_blank">退款完成了为什么卡里没收到钱？</a>
 								</li>
-								<li><span class="num">2、</span><a href=" " target="_blank">怎么付款/付款遇到问题</a>
+								<li><span class="num">2、</span><a href="customerservice" target="_blank">怎么付款/付款遇到问题</a>
 								</li>
-								<li><span class="num">3、</span><a href=" " target="_blank">快捷支付密码忘记了怎么办？</a>
+								<li><span class="num">3、</span><a href="customerservice" target="_blank">快捷支付密码忘记了怎么办？</a>
 								</li>
-								<li><span class="num">4、</span><a href=" " target="_blank">钻石会员规则介绍（修改版）</a>
+								<li><span class="num">4、</span><a href="customerservice" target="_blank">钻石会员规则介绍（修改版）</a>
 								</li>
-								<li><span class="num">5、</span><a href=" " target="_blank">微信下单的，想退货退款怎么操作呢？</a>
+								<li><span class="num">5、</span><a href="customerservice" target="_blank">微信下单的，想退货退款怎么操作呢？</a>
 								</li>
-								<li><span class="num">6、</span><a href=" " target="_blank">蘑豆使用须知</a>
+								<li><span class="num">6、</span><a href="customerservice" target="_blank">蘑豆使用须知</a>
 								</li>
 							</ol>
 						</div>
@@ -65,17 +65,17 @@
 						<h1>活动公告</h1>
 						<div class="content">
 							<ol>
-								<li><span class="num">1、</span><a href=" " target="_blank">开通快捷支付，摘苹果赢iPhone6~</a>
+								<li><span class="num">1、</span><a href="index" target="_blank">开通快捷支付，摘苹果赢iPhone6~</a>
 								</li>
-								<li><span class="num">2、</span><a href=" " target="_blank">快捷支付返利季活动</a>
+								<li><span class="num">2、</span><a href="index" target="_blank">快捷支付返利季活动</a>
 								</li>
-								<li><span class="num">3、</span><a href=" " target="_blank">我的买手街——买手频道上线</a>
+								<li><span class="num">3、</span><a href="index" target="_blank">我的买手街——买手频道上线</a>
 								</li>
-								<li><span class="num">4、</span><a href=" " target="_blank">美妆特卖上线咯~</a>
+								<li><span class="num">4、</span><a href="index" target="_blank">美妆特卖上线咯~</a>
 								</li>
-								<li><span class="num">5、</span><a href=" " target="_blank">秋天已到，酷热尚存</a>
+								<li><span class="num">5、</span><a href="index" target="_blank">秋天已到，酷热尚存</a>
 								</li>
-								<li><span class="num">6、</span><a href=" " target="_blank">搏出位，靠搭配</a>
+								<li><span class="num">6、</span><a href="index" target="_blank">搏出位，靠搭配</a>
 								</li>
 							</ol>
 						</div>
@@ -84,67 +84,67 @@
 					<div class="content-left">
 						<ul class="clearfix icon-list">
 							<li>
-								<a target="_blank" href=" " class="clearfix">
+								<a target="_blank" href="order" class="clearfix">
 									<i class="order"></i>
 									<p class="title">订单查询</p>
 								</a>
 							</li>
 							<li>
-								<a target="_blank" href=" " class="clearfix">
+								<a target="_blank" href="order" class="clearfix">
 									<i class="refund"></i>
 									<p class="title">退款查询</p>
 								</a>
 							</li>
 							<li>
-								<a target="_blank" href=" " class="clearfix">
+								<a target="_blank" href="order" class="clearfix">
 									<i class="repayment"></i>
 									<p class="title">订单还款</p>
 								</a>
 							</li>
 							<li>
-								<a target="_blank" href=" " class="clearfix">
+								<a target="_blank" href="memberlevel" class="clearfix">
 									<i class="member"></i>
 									<p class="title">钻石会员</p>
 								</a>
 							</li>
 							<li>
-								<a target="_blank" href=" " class="clearfix">
+								<a target="_blank" href="customerservice" class="clearfix">
 									<i class="ushop"></i>
 									<p class="title">入驻优店</p>
 								</a>
 							</li>
 							<li>
-								<a target="_blank" href=" " class="clearfix">
+								<a target="_blank" href="customerservice" class="clearfix">
 									<i class="manage"></i>
 									<p class="title">维权管理</p>
 								</a>
 							</li>
 							<li>
-								<a target="_blank" href=" " class="clearfix">
+								<a target="_blank" href="personalhomepage" class="clearfix">
 									<i class="magic"></i>
 									<p class="title">蘑豆查询</p>
 								</a>
 							</li>
 							<li>
-								<a target="_blank" href=" " class="clearfix">
+								<a target="_blank" href="personalhomepage" class="clearfix">
 									<i class="prefer"></i>
 									<p class="title">我的现金券</p>
 								</a>
 							</li>
 							<li>
-								<a target="_blank" href=" " class="clearfix">
+								<a target="_blank" href="personalhomepage" class="clearfix">
 									<i class="email"></i>
 									<p class="title">邮箱认证</p>
 								</a>
 							</li>
 							<li>
-								<a target="_blank" href=" " class="clearfix">
+								<a target="_blank" href="binding" class="clearfix">
 									<i class="mobile"></i>
 									<p class="title">手机绑定</p>
 								</a>
 							</li>
 							<li>
-								<a target="_blank" href=" " class="clearfix">
+								<a target="_blank" href="personalhomepage" class="clearfix">
 									<i class="psw"></i>
 									<p class="title">修改密码</p>
 								</a>
@@ -159,23 +159,23 @@
 								<li class="tt">普通交易</li>
 								<li class="item active">
 									<i class="left"></i>
-									<a href=" ">挑选商品</a>
+									<a href="index">挑选商品</a>
 									<i class="next"></i>
 								</li>
 								<li class="item">
-									<a href=" ">提交订单</a>
+									<a href="order">提交订单</a>
 									<i class="next"></i>
 								</li>
 								<li class="item">
-									<a href=" ">确认付款</a>
+									<a href="confirm">确认付款</a>
 									<i class="next"></i>
 								</li>
 								<li class="item">
-									<a href=" ">收货</a>
+									<a href="personalhomepage">收货</a>
 									<i class="next"></i>
 								</li>
 								<li class="item last">
-									<a href=" " class="last">评价</a>
+									<a href="personalhomepage" class="last">评价</a>
 									<i class="right"></i>
 								</li>
 							</ul>
@@ -184,7 +184,7 @@
 								<div class="content">
 									<p>菇凉可以通过网站搜索或者商品分类，找到心仪的商品，</p>
 									<p>把商品加入购物车可以防止遗漏哦~快去
-										<a target="_blank" href=" ">选购商品</a> 喽~
+										<a target="_blank" href="index">选购商品</a> 喽~
 									</p>
 								</div>
 							</div>
@@ -224,23 +224,23 @@
 								<li class="tt">先穿后付</li>
 								<li class="item active">
 									<i class="left"></i>
-									<a href=" ">挑选商品</a>
+									<a href="index">挑选商品</a>
 									<i class="next"></i>
 								</li>
 								<li class="item">
-									<a href="" >提交订单</a>
+									<a href="order" >提交订单</a>
 									<i class="next"></i>
 								</li>
 								<li class="item">
-									<a href="">收货</a>
+									<a href="personalhomepage">收货</a>
 									<i class="next"></i>
 								</li>
 								<li class="item">
-									<a href=" ">还款</a>
+									<a href="personalhomepage">还款</a>
 									<i class="next"></i>
 								</li>
 								<li class="item last">
-									<a href=" " class="last">评价</a>
+									<a href="personalhomepage" class="last">评价</a>
 									<i class="right"></i>
 								</li>
 							</ul>
@@ -249,7 +249,7 @@
 								<div class="content">
 									<p>菇凉可以通过网站搜索或者商品分类，找到心仪的商品，</p>
 									<p>把商品加入购物车可以防止遗漏哦~快去
-										<a target="_blank" href=" ">选购商品</a> 喽~
+										<a target="_blank" href="index">选购商品</a> 喽~
 									</p>
 								</div>
 							</div>
@@ -291,7 +291,7 @@
 		<div class="foot J_footertimer" data-svrtime="1412248331">
 			<div class="wrap foot_wrap clearfix">
 				<div class="foot_info">
-					<a class="info_logo" href="../index.html"></a>
+					<a class="info_logo" href="index"></a>
 					<div class="info_text">
 						<p>营业执照注册号：<a href=" " target="_blank">330106000129004</a>
 						</p>
@@ -304,37 +304,37 @@
 				<div class="foot_link">
 					<dl class="link_company">
 						<dt>公司</dt>
-						<dd><a href=" " target="_blank">关于我们</a>
+						<dd><a href="about" target="_blank">关于我们</a>
 						</dd>
-						<dd><a href=" " target="_blank">招聘信息</a>
+						<dd><a href="customerservice" target="_blank">招聘信息</a>
 						</dd>
-						<dd><a href=" " target="_blank">联系我们</a>
+						<dd><a href="customerservice" target="_blank">联系我们</a>
 						</dd>
 					</dl>
 					<dl class="link_consumer">
 						<dt>消费者</dt>
-						<dd><a href=" " target="_blank">帮助中心</a>
+						<dd><a href="customerservice" target="_blank">帮助中心</a>
 						</dd>
-						<dd><a href="index.html" target="_blank">意见反馈</a>
+						<dd><a href="customerservice" target="_blank">意见反馈</a>
 						</dd>
-						<dd><a href=" " target="_blank">手机版下载</a>
+						<dd><a href="customerservice" target="_blank">手机版下载</a>
 						</dd>
 					</dl>
 					<dl class="link_business">
 						<dt>商家</dt>
-						<dd><a href=" " target="_blank">帮助中心</a>
+						<dd><a href="customerservice" target="_blank">帮助中心</a>
 						</dd>
-						<dd><a href=" " target="_blank">商家培训</a>
+						<dd><a href="customerservice" target="_blank">商家培训</a>
 						</dd>
-						<dd><a href=" " target="_blank">入驻开放平台</a>
+						<dd><a href="customerservice" target="_blank">入驻开放平台</a>
 						</dd>
 					</dl>
 					<dl class="link_safe">
 						<dt>权威认证</dt>
 						<dd>
-							<a class="pc" href=" " target="_blank"></a>
-							<a class="pa" href=" " target="_blank"></a>
-							<a class="kx" href=" " target="_blank"></a>
+							<a class="pc" href="customerservice" target="_blank"></a>
+							<a class="pa" href="customerservice" target="_blank"></a>
+							<a class="kx" href="customerservice" target="_blank"></a>
 						</dd>
 					</dl>
 				</div>

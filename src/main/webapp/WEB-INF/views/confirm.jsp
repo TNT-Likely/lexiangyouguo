@@ -25,52 +25,52 @@
 <body class="media_screen_1200">
 		<div id="header" class="header_2014">
 			<div class="uinfo_wrap clearfix wrap">
-				<a href=" " class="back_to_mogujie fl">蘑菇街首页</a>
+				<a href="index" class="back_to_mogujie fl">蘑菇街首页</a>
 				<ul class="header_top">
 					<li class="s1 has_icon user_meta">
-						<a href=" ">
+						<a href="personalhomepage">
                                 紫色天堂1995                            </a>
 						<i class="icon_delta"></i>
 						<ol class="ext_mode">
-							<li class="s2"><a href=" " class="site_publish_img">分享照片</a>
+							<li class="s2"><a href="personalhomepage" class="site_publish_img">分享照片</a>
 							</li>
-							<li class="s2"><a href=" ">个人设置</a>
+							<li class="s2"><a href="personalhomepage">个人设置</a>
 							</li>
-							<li class="s2"><a href=" ">账号绑定</a>
+							<li class="s2"><a href="binding">账号绑定</a>
 							</li>
-							<li class="s2"><a href=" ">退出</a>
+							<li class="s2"><a href="login">退出</a>
 							</li>
 						</ol>
 					</li>
-					<li class="s1 has_line"><a href=" ">关注</a>
+					<li class="s1 has_line"><a href="index">关注</a>
 					</li>
-					<li class="s1"><a href=" ">喜欢</a>
+					<li class="s1"><a href="index">喜欢</a>
 					</li>
 					<li class="s1 has_icon message_center">
 						<a href=" ">消息<span class="m_num">(1)</span></a>
 						<i class="icon_delta"></i>
 						<ul class="ext_mode login_ext message_oper">
-							<li class="s2"> <a href=" ">对话</a>
+							<li class="s2"> <a href="personalhomepage">对话</a>
 							</li>
-							<li class="s2"> <a href=" ">喜欢我的</a>
+							<li class="s2"> <a href="personalhomepage">喜欢我的</a>
 							</li>
-							<li class="s2"> <a href=" ">我的私信</a>
+							<li class="s2"> <a href="personalhomepage">我的私信</a>
 							</li>
-							<li class="s2"> <a href=" ">系统通知<span>(1)</span></a>
+							<li class="s2"> <a href="personalhomepage">系统通知<span>(1)</span></a>
 							</li>
-							<li class="s2"> <a href=" ">我的粉丝</a>
+							<li class="s2"> <a href="personalhomepage">我的粉丝</a>
 							</li>
-							<li class="s2 clear_notice"><a href=" ">我知道了</a>
+							<li class="s2 clear_notice"><a href="personalhomepage">我知道了</a>
 							</li>
 						</ul>
 					</li>
 					<li class="s1 has_line">
-						<a href=" " target="_blank" class="text display_u">我的订单</a>
+						<a href="order" target="_blank" class="text display_u">我的订单</a>
 					</li>
 					<li class="s1 has_line has_icon custom_item">
-						<a href=" " target="_blank">帮助中心</a>
+						<a href="customerservice" target="_blank">帮助中心</a>
 						<ol class="ext_mode">
-							<li class="s2"><a href=" ">联系合作</a>
+							<li class="s2"><a href="customerservice">联系合作</a>
 							</li>
 						</ol>
 					</li>
@@ -165,10 +165,10 @@
 									</tr>
 									<tr class="tr_checked item4shop14nji" data-stockid="16oftnq">
 										<td class="cart_table_goods_wrap">
-											<a href=" " target="_blank" class="cart_goods_img">
-												<img class="cartImgTip" src=" " width="78" height="78" alt="衬衫公主裙两件套">
+											<a href="product" target="_blank" class="cart_goods_img">
+												<img class="cartImgTip" src="/shop/resources/img/b-35.jpg" width="78" height="78" alt="衬衫公主裙两件套">
 											</a>
-											<a href=" " target="_blank" class="cart_goods_t cart_hoverline" title="衬衫公主裙两件套">
+											<a href="product" target="_blank" class="cart_goods_t cart_hoverline" title="衬衫公主裙两件套">
 
                     衬衫公主裙两件套
 					                </a>
@@ -255,8 +255,8 @@
 		</div>
 		<div class="g-footer">
 			<p title="qihe3075">
-				<a href=" " target="_blank">蘑菇街</a> |
-				<a href=" " target="_blank">加入开放平台</a> © 2014 Mogujie.com,All Rights Reserved.
+				<a href="index" target="_blank">蘑菇街</a> |
+				<a href="index" target="_blank">加入开放平台</a> © 2014 Mogujie.com,All Rights Reserved.
 			</p>
 			<div class="icons">
 				<a class="vs" href=" "></a>

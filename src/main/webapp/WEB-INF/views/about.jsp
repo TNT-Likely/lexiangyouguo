@@ -16,59 +16,21 @@
 		<link rel="stylesheet" type="text/css" href="/shop/resources/css/mg_index.css" media="all">
 		<script type="text/javascript" async="" src="/shop/resources/js/ga.js"></script>
 		<script type="text/javascript" src="/shop/resources/js/lib-txua.js"></script>
-		<style>
-			.vip_level0 {
-				background: url(/shop/resources/img/a-50.png) 2px 127px
-			}
-			.vip_level1 {
-				background: url(/shop/resources/img/a-50.png) 2px 104px
-			}
-			.vip_level2 {
-				background: url(/shop/resources/img/a-50.png) 2px 81px
-			}
-			.vip_level3 {
-				background: url(/shop/resources/img/a-50.png) 2px 59px
-			}
-			.vip_level4 {
-				background: url(/shop/resources/img/a-50.png) 2px 36px
-			}
-			.vip_level5 {
-				background: url(/shop/resources/img/a-50.png) 2px 14px
-			}
-			.vip_black_level0 {
-				background: url(/shop/resources/img/a-50.png) -98px 127px
-			}
-			.vip_black_level1 {
-				background: url(/shop/resources/img/a-50.png) -98px 104px
-			}
-			.vip_black_level2 {
-				background: url(/shop/resources/img/a-50.png) -98px 81px
-			}
-			.vip_black_level3 {
-				background: url(/shop/resources/img/a-50.png) -98px 59px
-			}
-			.vip_black_level4 {
-				background: url(/shop/resources/img/a-50.png) -98px 36px
-			}
-			.vip_black_level5 {
-				background: url(/shop/resources/img/a-50.png) -98px 14px
-			}
-		</style>
 </head>
 <body>
 		<div class="header_2014">
 			<div class="fm960 clearfix">
 				<ul class="header_top">
-					<li class="s1"><a href="zhuce2.html">注册</a></li>
-					<li class="s1"><a href="login.html">登录</a></li>
-					<li class="s1 has_line"><a href="">微博登录</a></li>
-					<li class="s1"><a href="">QQ登录</a></li>
+					<li class="s1"><a href="register">注册</a></li>
+					<li class="s1"><a href="login">登录</a></li>
+					<li class="s1 has_line"><a href="login">微博登录</a></li>
+					<li class="s1"><a href="login">QQ登录</a></li>
 					<li class="s1 has_icon more_login">
 					<a href=" ">更多</a>
 						<ol class="ext_mode login_ext">
-							<li class="s2"><a href=" ">腾讯微博登录</a></li>
-							<li class="s2"><a href=" ">人人网登录</a></li>
-							<li class="s2"><a href=" ">微信登录</a></li>
+							<li class="s2"><a href="login">腾讯微博登录</a></li>
+							<li class="s2"><a href="login">人人网登录</a></li>
+							<li class="s2"><a href="login">微信登录</a></li>
 						</ol>
 					</li>
 					<li class="s1 has_line has_icon top_app">
@@ -80,18 +42,18 @@
 						</ol>
 					</li>
 					<li class="s1 has_line custom_item">
-						<a href="kefu.html" target="_blank">帮助中心</a>
+						<a href="customerservice" target="_blank">帮助中心</a>
 					</li>
 				</ul>
 				<div class="header_mid clearfix">
-					<a href="../index.html" class="logo" title="蘑菇街首页">蘑菇街|www.mogujie.com</a>
+					<a href="index.html" class="logo" title="蘑菇街首页">蘑菇街|www.mogujie.com</a>
 					<div class="top_nav_search" id="nav_search_form">
 						<div class="selectbox" data-v="1">
 							<span class="selected">搜商品</span>
 							<ol>
-								<li class="current" data-index="bao"><a href="">商品</a>
+								<li class="current" data-index="bao"><a href="index">商品</a>
 								</li>
-								<li data-index="shop"><a href="">店铺</a>
+								<li data-index="shop"><a href="index">店铺</a>
 								</li>
 				 							</ol>
 						</div>
@@ -103,9 +65,9 @@
 						<div class="top_search_hint"></div>
 					</div>
 					<div class="mid_fr">
-						<a class="nav_my_order" href="dingdan.html" target="_blank">我的订单</a>
+						<a class="nav_my_order" href="order" target="_blank">我的订单</a>
 						<div class="shopping_cart_v2">
-							<a class="cart_info_wrap" target="_blank" href="shopping.html">
+							<a class="cart_info_wrap" target="_blank" href="shopping">
 								<span class="cart_info">购物车<b>0</b>件</span>
 								<b class="icon_delta"></b>
 							</a>
@@ -119,14 +81,14 @@
 			<div class="fm960">
 				<div class="nav_list_wrap clearfix">
 					<ul class="nav_list">
-						<li><a href="index.html">首页</a></li>
-						<li><a href=" ">服饰</a></li>
-						<li><a href=" ">搭配</a></li>
-						<li class="daren"><a href=" ">达人</a></li>
-						<li class="buyer"><a href=" ">买手</a></li>
-						<li><a href=" ">美妆</a></li>
-						<li><a href=" ">团购</a></li>
-						<li><a class="no_bold " href=" ">社区</a></li>
+						<li><a href="index">首页</a></li>
+						<li><a href="buyersrecommend">服饰</a></li>
+						<li><a href="buyersrecommend">搭配</a></li>
+						<li class="daren"><a href="buyersrecommend">达人</a></li>
+						<li class="buyer"><a href="buyersrecommend">买手</a></li>
+						<li><a href="buyersrecommend.jsp">美妆</a></li>
+						<li><a href="buyersrecommend.jsp">团购</a></li>
+						<li><a class="no_bold " href="buyersrecommend">社区</a></li>
 					</ul>
 				</div>
 			</div>
@@ -226,11 +188,11 @@
 						</div>
 						<div class="about_r fr">
 							<ul class="about_nav">
-								<li><a href=" kefu.html">新手指南</a>
+								<li><a href="customerservice">新手指南</a>
 								</li>
-								<li><a href="kefu.html">帮助中心</a>
+								<li><a href="customerservice">帮助中心</a>
 								</li>
-								<li><a href="kefu.html">招聘信息</a>
+								<li><a href="customerservice">招聘信息</a>
 								</li>
 							</ul>
 						</div>
@@ -258,37 +220,37 @@
 				<div class="foot_link">
 					<dl class="link_company">
 						<dt>公司</dt>
-						<dd><a href=" " target="_blank">关于我们</a>
+						<dd><a href="about" target="_blank">关于我们</a>
 						</dd>
-						<dd><a href=" " target="_blank">招聘信息</a>
+						<dd><a href="customerservice" target="_blank">招聘信息</a>
 						</dd>
-						<dd><a href="index.html" target="_blank">联系我们</a>
+						<dd><a href="customerservice" target="_blank">联系我们</a>
 						</dd>
 					</dl>
 					<dl class="link_consumer">
 						<dt>消费者</dt>
-						<dd><a href="" target="_blank">帮助中心</a>
+						<dd><a href="customerservice" target="_blank">帮助中心</a>
 						</dd>
-						<dd><a href="" target="_blank">意见反馈</a>
+						<dd><a href="customerservice" target="_blank">意见反馈</a>
 						</dd>
-						<dd><a href="" target="_blank">手机版下载</a>
+						<dd><a href="customerservice" target="_blank">手机版下载</a>
 						</dd>
 					</dl>
 					<dl class="link_business">
 						<dt>商家</dt>
-						<dd><a href=" " target="_blank">帮助中心</a>
+						<dd><a href="customerservice" target="_blank">帮助中心</a>
 						</dd>
-						<dd><a href=" " target="_blank">商家培训</a>
+						<dd><a href="customerservice" target="_blank">商家培训</a>
 						</dd>
-						<dd><a href=" " target="_blank">入驻开放平台</a>
+						<dd><a href="customerservice" target="_blank">入驻开放平台</a>
 						</dd>
 					</dl>
 					<dl class="link_safe">
 						<dt>权威认证</dt>
 						<dd>
-							<a class="pc" href=" " target="_blank"></a>
-							<a class="pa" href=" " target="_blank"></a>
-							<a class="kx" href=" " target="_blank"></a>
+							<a class="pc" href="customerservice" target="_blank"></a>
+							<a class="pa" href="customerservice" target="_blank"></a>
+							<a class="kx" href="customerservice" target="_blank"></a>
 						</dd>
 					</dl>
 				</div>

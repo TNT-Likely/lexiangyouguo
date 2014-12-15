@@ -20,35 +20,35 @@
 			<script type="text/javascript" src="/shop/resources/js/ga.js"></script>
 </head>
 <body>
-<div class="header_2014">
-			<div class="fm960 clearfix">
+ 	<div class="header_2014">
+			<div class="wrap clearfix">
 				<ul class="header_top">
 					<li class="s1 has_icon user_meta">
-						<a href=" ">
+						<a href="personalhomepage">
 							紫色天堂1995</a>
 						<i class="icon_delta"></i>
 						<ol class="ext_mode">
-							<li class="s2"><a href=" " class="site_publish_img">分享照片</a>
+							<li class="s2"><a href="personalhomepage" class="site_publish_img">分享照片</a>
 							</li>
-							<li class="s2"><a href="gerenzhuye.html">个人设置</a>
+							<li class="s2"><a href="personalhomepage">个人设置</a>
 							</li>
-							<li class="s2"><a href="bangding.html">账号绑定</a>
+							<li class="s2"><a href="binding">账号绑定</a>
 							</li>
-							<li class="s2"><a href="login.html">退出</a>
+							<li class="s2"><a href="login">退出</a>
 							</li>
 						</ol>
 					</li>
 					<li class="s1 has_icon has_line user_fav">
-						<a href=" ">喜欢</a>
+						<a href="index">喜欢</a>
 						<ul class="ext_mode">
-							<li class="s2"><a href=" ">关注的店铺</a>
+							<li class="s2"><a href="index">关注的店铺</a>
 							</li>
-							<li class="s2"><a href=" ">浏览记录</a>
+							<li class="s2"><a href="index">浏览记录</a>
 							</li>
 						</ul>
 					</li>
 					<li class="s1 has_icon message_center has_line">
-						<a href=" ">消息<span class="m_num"></span></a>
+						<a href="index">消息<span class="m_num"></span></a>
 						<i class="icon_delta"></i>
 					</li>
 					<li class="s1 has_line has_icon top_app">
@@ -60,32 +60,32 @@
 						</ol>
 					</li>
 					<li class="s1 has_line custom_item">
-						<a href="kefu.html" target="_blank">帮助中心</a>
+						<a href="customerservice" target="_blank">帮助中心</a>
 					</li>
 				</ul>
 				<div class="header_mid clearfix">
-					<a href="index.html" class="logo" title="蘑菇街首页">蘑菇街|www.mogujie.com</a>
+					<a href="index" class="logo" title="蘑菇街首页">蘑菇街|www.mogujie.com</a>
 					<div class="top_nav_search" id="nav_search_form">
 						<div class="selectbox" data-v="1">
 							<span class="selected">搜商品</span>
 							<ol>
-								<li class="current" data-index="bao"><a href="">商品</a>
+								<li class="current" data-index="bao"><a href="index">商品</a>
 								</li>
-								<li data-index="shop"><a href="">店铺</a>
+								<li data-index="shop"><a href="index">店铺</a>
 								</li>
 							</ol>
 						</div>
 						<form target="_blank" action="/search/" method="get" id="top_nav_form">
-							<input type="text" data-tel="search_book" name="q" class="ts_txt fl" data-def="大衣" value="秋冬“大衣”集中营" autocomplete="off" def-v="秋冬“大衣”集中营" />
+							<input type="text" data-tel="search_book" name="q" class="ts_txt fl" data-def="兔毛" value="软妹最爱温暖“兔毛”毛衫" autocomplete="off" def-v="软妹最爱温暖“兔毛”毛衫" />
 							<input type="submit" value="搜  索" class="ts_btn" />
 							<input type="hidden" name="t" value="bao" id="select_type" />
 						</form>
 						<div class="top_search_hint"></div>
 					</div>
 					<div class="mid_fr">
-						<a class="nav_my_order" href="dingdan.html" target="_blank">我的订单</a>
+						<a class="nav_my_order" href="order" target="_blank">我的订单</a>
 						<div class="shopping_cart_v2">
-							<a class="cart_info_wrap" target="_blank" href="shopping.html">
+							<a class="cart_info_wrap" target="_blank" href="shopping">
 								<span class="cart_info">购物车<b>0</b>件</span>
 								<b class="icon_delta"></b>
 							</a>
@@ -95,27 +95,26 @@
 				</div>
 			</div>
 		</div>
-
 		<div class="header_nav">
-			<div class="fm960">
+			<div class="wrap">
 				<div class="nav_list_wrap clearfix">
 					<ul class="nav_list">
-						<li><a href="index.html">首页</a>
+						<li><a href="index">首页</a>
 						</li>
-						<li><a href=" ">服饰</a>
+						<li><a href="buyersrecommend">服饰</a>
 						</li>
-						<li><a href=" ">搭配</a>
+						<li><a href="buyersrecommend">搭配</a>
 						</li>
 						<li class="daren">
-							<a href=" ">达人</a>
+							<a href="buyersrecommend">达人</a>
 						</li>
-						<li class="buyer"><a href=" ">买手</a>
+						<li class="buyer"><a class="on" href="buyersrecommend">买手</a>
 						</li>
-						<li><a href=" ">美妆</a>
+						<li><a href="buyersrecommend">美妆</a>
 						</li>
-						<li><a href=" ">团购</a>
+						<li><a href="buyersrecommend">团购</a>
 						</li>
-						<li><a class="no_bold " href=" ">社区</a>
+						<li><a class="no_bold " href="buyersrecommend">社区</a>
 						</li>
 					</ul>
 				</div>
@@ -132,13 +131,13 @@
 									<img alt="紫色天堂1995" src="/shop/resources/img/a-49.jpg" class="r5 u_i">
 									<ul class="record">
 										<li class="fans">
-											<a title="关注" href=" ">
+											<a title="关注" href="personalhomepage">
 												<span class="ft18">1</span>
 												<span>关注</span>
 											</a>
 										</li>
 										<li class="popular">
-											<a title="粉丝" href=" ">
+											<a title="粉丝" href="personalhomepage">
 												<span class="ft18">0</span>
 												<span>粉丝</span>
 											</a>
@@ -153,7 +152,7 @@
 								</div>
 								<div class="home_top_user">
 									<div class="name_fav">
-										<h1 class="fl"><a href="/me" title="紫色天堂1995">紫色天堂1995</a>
+										<h1 class="fl"><a href="personalhomepage" title="紫色天堂1995">紫色天堂1995</a>
                     </h1>
 										<div type="all" class="followdiv fl">
 											<a href=" "><span id="vip_level"  style="width: 45px; display: inline-block; height: 20px; margin-top: 5px;"></span></a>
@@ -161,7 +160,7 @@
 										<div type="all" uid="12so8x4" class="followdiv fl"></div>
 									</div>
 									<p class="home_top_p">
-										<a href=" " target="_blank">查看更多<span>&gt;&gt;</span></a>
+										<a href="personalhomepage" target="_blank">查看更多<span>&gt;&gt;</span></a>
 									</p>
 									<p class="home_top_x">
 									</p>
@@ -174,19 +173,19 @@
 						<div class="home_top_nav rb5">
 							<ul class="home_nav">
 								<li class="c">
-									<a href=" " title="封面">封面</a>
+									<a href="personalhomepage" title="封面">封面</a>
 								</li>
 								<li>
-									<a href=" " title="关注动态">关注动态</a>
+									<a href="personalhomepage" title="关注动态">关注动态</a>
 								</li>
 								<li>
-									<a href=" " title="专辑">专辑</a>
+									<a href="personalhomepage" title="专辑">专辑</a>
 								</li>
 								<li>
-									<a href=" " title="小组">小组</a>
+									<a href="buyersrecommend" title="小组">小组</a>
 								</li>
 								<li>
-									<a href=" " title="美妆">美妆</a>
+									<a href="buyersrecommend" title="美妆">美妆</a>
 								</li>
 							</ul>
 						</div>
@@ -197,7 +196,7 @@
 						<div class="home_empty clearfix">
 							<img src="/shop/resources/img/a-12.jpg" class="fl" />
 							<span class="des fl" style="font-size: 18px; color: #A2A1A1; margin-top: 10px;">
-                                你的封面还无内容，去<a target="_blank" href="/daren" title="蘑菇达人" >蘑菇达人</a>看看她们如何装饰自己的空间吧！ 
+                                你的封面还无内容，去<a target="_blank" href="buyersrecommend" title="蘑菇达人" >蘑菇达人</a>看看她们如何装饰自己的空间吧！ 
                                 </span>
 						</div>
 						<div id="col0" class="col">
@@ -215,7 +214,7 @@
 								<h2>我的蘑豆</h2>
 								<p>
 									<img src="/shop/resources/img/a-12.jpg">
-									<a href=" " target="_blank"><span>1 粒</span></a>
+									<a href="integral" target="_blank"><span>1 粒</span></a>
 								</p>
 							</div>
 							<div class="medals">
@@ -275,37 +274,37 @@
 				<div class="foot_link">
 					<dl class="link_company">
 						<dt>公司</dt>
-						<dd><a href=" " target="_blank">关于我们</a>
+						<dd><a href="about" target="_blank">关于我们</a>
 						</dd>
-						<dd><a href=" " target="_blank">招聘信息</a>
+						<dd><a href="customerservice" target="_blank">招聘信息</a>
 						</dd>
-						<dd><a href=" " target="_blank">联系我们</a>
+						<dd><a href="customerservice" target="_blank">联系我们</a>
 						</dd>
 					</dl>
 					<dl class="link_consumer">
 						<dt>消费者</dt>
-						<dd><a href=" " target="_blank">帮助中心</a>
+						<dd><a href="customerservice" target="_blank">帮助中心</a>
 						</dd>
-						<dd><a href=" " target="_blank">意见反馈</a>
+						<dd><a href="customerservice" target="_blank">意见反馈</a>
 						</dd>
-						<dd><a href=" " target="_blank">手机版下载</a>
+						<dd><a href="customerservice" target="_blank">手机版下载</a>
 						</dd>
 					</dl>
 					<dl class="link_business">
 						<dt>商家</dt>
-						<dd><a href=" " target="_blank">帮助中心</a>
+						<dd><a href="customerservice" target="_blank">帮助中心</a>
 						</dd>
-						<dd><a href=" " target="_blank">商家培训</a>
+						<dd><a href="customerservice" target="_blank">商家培训</a>
 						</dd>
-						<dd><a href=" " target="_blank">入驻开放平台</a>
+						<dd><a href="customerservice" target="_blank">入驻开放平台</a>
 						</dd>
 					</dl>
 					<dl class="link_safe">
 						<dt>权威认证</dt>
 						<dd>
-							<a class="pc" href=" " target="_blank"></a>
-							<a class="pa" href=" " target="_blank"></a>
-							<a class="kx" href=" " target="_blank"></a>
+							<a class="pc" href="customerservice" target="_blank"></a>
+							<a class="pa" href="customerservice" target="_blank"></a>
+							<a class="kx" href="customerservice" target="_blank"></a>
 						</dd>
 					</dl>
 				</div>

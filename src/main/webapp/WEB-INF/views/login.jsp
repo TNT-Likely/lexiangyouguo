@@ -69,8 +69,8 @@
 								</div>
 								<div class="lg_login clearfix">
 									<input type="submit" value="" class="sub">
-									<a class="ml15" href=" ">忘记密码？</a>
-									<a class="ml5" href="zhuce2.html">新用户注册</a>
+									<a class="ml15" href="register">忘记密码？</a>
+									<a class="ml5" href="register">新用户注册</a>
 								</div>
 								<input name="refer" value="" type="hidden" />
 								<input name="mgj_secret" value="" id='mgj_secret' type="hidden" />
@@ -81,19 +81,16 @@
 							<div class="ot_login">
 								<span>你也可以用以下方式登录：</span>
 								<div class="ot_btn clearfix">
-									<a href=" ">
+									<a href="login">
 										<img src="/shop/resources/img/a-34.png">
 									</a>
-									<a href=" ">
+									<a href="login">
 										<img src="/shop/resources/img/a-31.png">
 									</a>
-									<a href=" ">
-										<img src=" ">
-									</a>
-									<a href="/oauth/login/renren/mogujie">
+									<a href="login">
 										<img src="/shop/resources/img/a-33.png">
 									</a>
-									<a href="/oauth/login/weixin/mogujie">
+									<a href="login">
 										<img src="/shop/resources/img/a-32.png">
 									</a>
 								</div>
@@ -107,15 +104,15 @@
 				<div class="login_foot_con">
 					<div class="qr_code_box fr">
 						<h3>蘑菇街移动客户端</h3>
-						<a class="qr_code" href=" " target="_blank"></a>
+						<a class="qr_code" href="customerservice" target="_blank"></a>
 					</div>
 					<ul class="link_list clearfix">
 						<li>
 							<h3>新手帮助</h3>
-							<a href=" " target="_blank">如何购买</a>
-							<a href=" " target="_blank">支付教程</a>
-							<a href=" " target="_blank">优惠券使用</a>
-							<a href=" " target="_blank">常见问题</a>
+							<a href="customerservice" target="_blank">如何购买</a>
+							<a href="customerservice" target="_blank">支付教程</a>
+							<a href="customerservice" target="_blank">优惠券使用</a>
+							<a href="customerservice" target="_blank">常见问题</a>
 						</li>
 						<li>
 							<h3>权益保障</h3>
@@ -126,8 +123,8 @@
 						</li>
 						<li>
 							<h3>商家服务</h3>
-							<a href=" " target="_blank">帮助中心</a>
-							<a href=" " target="_blank">商家平台</a>
+							<a href="customerservice" target="_blank">帮助中心</a>
+							<a href="customerservice" target="_blank">商家平台</a>
 						</li>
 					</ul>
 					<p title="SERVER: qihe2055" class="copyright">©Copyright 2010-2014 蘑菇街 Mogujie.com (增值电信业务经营许可证：浙B2-20110349)</p>

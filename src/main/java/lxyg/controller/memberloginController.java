@@ -20,15 +20,18 @@ public class memberloginController {
 	 */
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
 	public String index(Locale locale, Model model) {
-	 
-		
 		Date date = new Date();
 		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
-		
 		String formattedDate = dateFormat.format(date);
 		
 		model.addAttribute("serverTime", formattedDate );
 		model.addAttribute("name", "sunxiaoIndex" );
 		return "login";
 	}
+	@RequestMapping(value = "/login", method = RequestMethod.POST)
+	public String login(Model model,user User) {
+		model.addAttribute("name", "sunxiaoIndex" );
+		return "index";
+	}
 }
+ 

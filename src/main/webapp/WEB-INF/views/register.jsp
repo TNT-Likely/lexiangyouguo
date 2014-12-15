@@ -23,8 +23,8 @@
 			<div id="body" class="container">
 				<div class="registerbox">
 					<div class="reg_hd">
-						<span class="fr">已经有账号了？<a href="login.html">去登录</a></span>
-						<a href=" " title="蘑菇街首页" class="logo_img"></a>
+						<span class="fr">已经有账号了？<a href="login">去登录</a></span>
+						<a href="index" title="蘑菇街首页" class="logo_img"></a>
 					</div>
 					<div class="reg_bd formbox">
 						<form class="formelem" data-action="/registermg/postform" method="post">
@@ -78,7 +78,8 @@
 								<li class="phonecheck_box hidden">
 									<label class="label_title" for="">手机验证码：</label>
 									<div class="inputbox">
-										<input type="text" name="code" data-type="codenum" data-errormsg="请输入验证码" class="normalText display_u js_text_input"><a href=" " data-ajaxurl="/registermg/sendcode" class="btn_phone js_getcheck">获取验证码</a>
+										<input type="text" name="code" data-type="codenum" data-errormsg="请输入验证码" class="normalText display_u js_text_input">
+										<a href=" " data-ajaxurl="/registermg/sendcode" class="btn_phone js_getcheck">获取验证码</a>
 									</div>
 								</li>
 								<li class="checkbox">
@@ -87,7 +88,8 @@
 									</label>
 								</li>
 							</ul>
-							<div class="subbox"><span class="btn_register js_postcurrentform"></span>
+							<div class="subbox">
+							<span class="btn_register js_postcurrentform"></span>
 							</div>
 						</form>
 					</div>

@@ -27,35 +27,35 @@
 				<a href=" " class="back_to_mogujie fl">蘑菇街首页</a>
 				<ul class="header_top">
 					<li class="s1 has_icon user_meta">
-						<a href=" ">
+						<a href="personalhomepage">
                                 紫色天堂1995                            </a>
 						<i class="icon_delta"></i>
 						<ol class="ext_mode">
-							<li class="s2"><a href=" " class="site_publish_img">分享照片</a>
+							<li class="s2"><a href="personalhomepage" class="site_publish_img">分享照片</a>
 							</li>
-							<li class="s2"><a href=" ">个人设置</a>
+							<li class="s2"><a href="personalhomepage">个人设置</a>
 							</li>
-							<li class="s2"><a href=" ">账号绑定</a>
+							<li class="s2"><a href="binding">账号绑定</a>
 							</li>
-							<li class="s2"><a href=" ">退出</a>
+							<li class="s2"><a href="login">退出</a>
 							</li>
 						</ol>
 					</li>
-					<li class="s1 has_line"><a href=" ">关注</a>
+					<li class="s1 has_line"><a href="personalhomepage">关注</a>
 					</li>
-					<li class="s1"><a href=" ">喜欢</a>
+					<li class="s1"><a href="personalhomepage">喜欢</a>
 					</li>
 					<li class="s1 has_icon message_center">
-						<a href=" ">消息<span class="m_num"></span></a>
+						<a href="personalhomepage">消息<span class="m_num"></span></a>
 						<i class="icon_delta"></i>
 					</li>
 					<li class="s1 has_line">
-						<a href=" " target="_blank" class="text display_u">我的订单</a>
+						<a href="order" target="_blank" class="text display_u">我的订单</a>
 					</li>
 					<li class="s1 has_line has_icon custom_item">
-						<a href=" " target="_blank">帮助中心</a>
+						<a href="customerservice" target="_blank">帮助中心</a>
 						<ol class="ext_mode">
-							<li class="s2"><a href=" ">联系合作</a>
+							<li class="s2"><a href="customerservice">联系合作</a>
 							</li>
 						</ol>
 					</li>
@@ -226,28 +226,6 @@
 													</label>
 												</li>
 											</ul>
-											<script type="text/template" id="tpl_banklist">
-												<ul class="m-banklist {{=it.bankListClass || 'J_banklist'}} clearfix"></ul>
-											</script>
-											<script type="text/template" id="tpl_banklist_item">
-												<li class="b {{=it.selected ? 'b_cur' : '' }}">
-													<input type="radio" name="{{=it.formname || 'outPayType'}}" {{=it.credit_value ? 'data-cvalue="' + it.credit_value + '"' : '' }} id="{{=it.k}}" value="{{=it.value}}" {{=it.selected ? 'checked="checked"' : '' }}>
-													<label for="{{=it.k}}" class="posr">
-														<img src="{{=it.icon}}" alt=""> {{ if (it.showtype) { }}
-														<span class="ctype">
-                {{=it.showtype}}
-            </span> {{ } }}
-													</label>
-													{{ if (it.recom) { }}
-													<b class="l{{=it.recom}}"></b> {{ } }}
-												</li>
-											</script>
-											<script type="text/template" id="tpl_bankPop">
-												<div class="m-bankpop">
-													{{=it.banklist}}
-													<a href=" " class="J_ok okbtn">确 定</a>
-												</div>
-											</script>
 										</div>
 										<div class="m-pay">
 											<div class="title">
@@ -298,63 +276,20 @@
 					</div>
 				</form>
 			</div>
-			<script type="text/template" id="tpl_bankcardno">
-				<div class="m-pop-bankcardno">
-					<input class="txt J_cardNoInput" type="text" maxlength="24" autocomplete="off">
-					<p class="not clearfix">
-						<span class="bankinfo" style="background:url({{=it.bankImgPath || 'about:blank'}}) center center no-repeat;"></span>
-						<span class="notice J_notice"></span>
-					</p>
-					<p class="sp_ge">
-						<a class="link J_otherBank" href="javascript:;">
-                选择其它付款方式
-                <span class="more_tips"></span>
-            </a>
-					</p>
-					<p>
-						<a class="btn J_next" href=" ">下一步</a>
-					</p>
-				</div>
-			</script>
 			<a href=" " class="mogutalk_btn m-float-mgimservice" data-bid="14ejg#101" data-from="quickpay"></a>
-			<script type="text/tpl" id="validatorDialogTpl">
-				<div class="validator-dialog">
-					<table>
-						<tr>
-							<th>手机号码:</th>
-							<td class="grey">无</td>
-						</tr>
-						<tr>
-							<th>手机验证码:</th>
-							<td>
-								<div class="text">
-									<input type="text" class="text J-validator-code" value="" maxlength="6" placeholder="验证码" />
-									<input type="button" class="btn J-get-validator-code" value="发送验证码" />
-									<span class="tips J-validator-tips">验证码填写错误，请重新填写！</span>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td colspan="2" class="control">
-								<input type="submit" class="smt J-send-validator-code" value="确认支付" />
-							</td>
-						</tr>
-					</table>
-				</div>
-			</script>
 		</div>
 		<div class="g-footer">
 			<p title="qihe6119">
-				<a href=" " target="_blank">蘑菇街</a> |
-				<a href=" " target="_blank">加入开放平台</a> &copy; 2014 Mogujie.com,All Rights Reserved.
+				<a href="index" target="_blank">蘑菇街</a> |
+				<a href="customerservice" target="_blank">加入开放平台</a> &copy; 2014 Mogujie.com,All Rights Reserved.
 			</p>
 			<div class="icons">
-				<a class="vs" href=" "></a>
-				<a class="mc" href=" "></a>
-				<a class="up" href=" "></a>
-				<a class="pa" href=" " target="_blank"></a>
-				<a class="kx" href=" " target="_blank"></a>
-				<a class="pc" href=" " target="_blank"></a>
+				<a class="vs" href="customerservice"></a>
+				<a class="mc" href="customerservice"></a>
+				<a class="up" href="customerservice"></a>
+				<a class="pa" href="customerservice" target="_blank"></a>
+				<a class="kx" href="customerservice" target="_blank"></a>
+				<a class="pc" href="customerservice" target="_blank"></a>
 			</div>
 		</div>
 		<script type="text/javascript" src="/shop/resources/js/page-1015walletcge.js"></script>

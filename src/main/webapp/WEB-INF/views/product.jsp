@@ -13,85 +13,71 @@
 	<meta http-equiv="mobile-agent" content=" ">
 	<link rel="search" type="application/opensearchdescription+xml" href=" ">
 	<link rel="icon" href=" " type="image/x-icon">
-	<link rel="stylesheet" type="text/css" href="/shop/resources/css/1.css" media="all">
+	<link rel="stylesheet" type="text/css" href="/shop/resources/css/pkg-navigation(2).css" media="all">
 	<link rel="stylesheet" type="text/css" href="/shop/resources/css/module-shop-header.css" media="all">
 	<link rel="stylesheet" type="text/css" href="/shop/resources/css/page-shop-detail-v2.css" media="all">
 	<script type="text/javascript" async="" src="/shop/resources/js/ga.js"></script>
-	<script type="text/javascript" src="/shop/resources/js/lib-txua.js"></script>
-	<style>
-		.vip_level0{background:url(  /shop/resources/img/a-50.png) 2px 127px
-        .vip_level1{background:url( /shop/resources/img/a-50.png) 2px 104px}
-        .vip_level2{background:url( /shop/resources/img/a-50.png) 2px 81px}
-        .vip_level3{background:url( /shop/resources/img/a-50.png) 2px 59px}
-        .vip_level4{background:url( /shop/resources/img/a-50.png) 2px 36px}
-        .vip_level5{background:url( /shop/resources/img/a-50.png) 2px 14px}
-        .vip_black_level0{background:url( /shop/resources/img/a-50.png) -98px 127px}
-        .vip_black_level1{background:url( /shop/resources/img/a-50.png) -98px 104px}
-        .vip_black_level2{background:url( /shop/resources/img/a-50.png) -98px 81px}
-        .vip_black_level3{background:url( /shop/resources/img/a-50.png) -98px 59px}
-        .vip_black_level4{background:url( /shop/resources/img/a-50.png) -98px 36px}
-        .vip_black_level5{background:url( /shop/resources/img/a-50.png) -98px 14px}
-	</style>
+	<script type="text/javascript" src="/shop/resources/js/lib-txua.js"></script>	 
 </head>
 <body>
 	<div id="header">
 		<div class="uinfo_wrap clearfix">
 			<div class="info_show clearfix">
-				<a href=" " class="back_to_mogujie fl">蘑菇街首页</a>
+				<a href="index" class="back_to_mogujie fl">蘑菇街首页</a>
 				<ul class="my_btn t_toolbox fr">
 					<li class="shoppingcard dropdown-menu">
-						<a href=" " target="_blank" class="text fl">购物车<span class="num ffred">0</span>件</a>
+						<a href="shopping" target="_blank" class="text fl">购物车<span class="num ffred">0</span>件</a>
 						<b></b>
 						<div id="shopcardfortop"></div>
 					</li>
 					<li class="fl s_line"></li>
 					<li class="custom_help fl clearfix">
-						<a target="_blank" class="libg myfavs fl" href=" ">客户服务</a>
+						<a target="_blank" class="libg myfavs fl" href="customerservice">客户服务</a>
 						<b></b>
 					</li>
 				</ul>
 				<li class="fr s_line"></li>
 				<ul class="login_methods fr" id="show_login">
 					<li class="fl login_mod_wrap">
-						<a href="zhuce2.html" class="regist fl">注册</a>
-						<a href="login.html" class="login  fl">登录</a>
+						<a href="register" class="regist fl">注册</a>
+						<a href="login" class="login  fl">登录</a>
 					</li>
 					<li class="fl s_line"></li>
 					<li class="fl login_mod_wrap">
-						<a href=" " class="weibo_login">微博登录</a>
-						<a href=" " class="qq_login">QQ登录</a>
+						<a href="login" class="weibo_login">微博登录</a>
+						<a href="login" class="qq_login">QQ登录</a>
 					</li>
 					<li class="fl login_more_wrap">
-						<a href=" " class="more_login">更多<b></b></a>
+						<a href="login" class="more_login">更多<b></b></a>
 					</li>
 				</ul>
 			</div>
 			<ul id="setting_menu" class="s_m">
-				<li class="hs_posr"><a href=" ">个人动态</a>
+				<li class="hs_posr"><a href="personalhomepage">个人动态</a>
 				</li>
-				<li class="hs_posr"><a href="gerenzhuye.html">个人设置</a>
+				<li class="hs_posr"><a href="personalhomepage">个人设置</a>
 				</li>
-				<li class="hs_posr"><a href="bangding.html">账号绑定</a>
+				<li class="hs_posr"><a href="binding">账号绑定</a>
 				</li>
-				<li><a href="login.html">退出</a>
+				<li><a href="login">退出</a>
 				</li>
 			</ul>
 			<ul id="help_down_list" class="s_m">
-				<li><a target="_blank" href=" ">联系合作</a>
+				<li><a target="_blank" href="customerservice">联系合作</a>
 				</li>
-				<li><a target="_blank" href="kefu.html">帮助</a>
+				<li><a target="_blank" href="customerservice">帮助</a>
 				</li>
 			</ul>
 
 			<ul id="show_more_login" class="login_methods s_m" style="display: none;">
 				<li>
-					<a href=" " class="tencent_login"> 腾讯微博登录</a>
+					<a href=" " class="login"> 腾讯微博登录</a>
 				</li>
 				<li>
-					<a href=" " class="rr_login">人人网登录</a>
+					<a href=" " class="login">人人网登录</a>
 				</li>
 				<li>
-					<a href=" " class="weixin_login">微信登录</a>
+					<a href=" " class="login">微信登录</a>
 				</li>
 			</ul>
 		</div>
@@ -204,62 +190,62 @@
 				<div class="mod_cont topNav">
 					<ol class="clearfix">
 						<li>
-							<a href=" ">首页</a>
+							<a href="index">首页</a>
 						</li>
 						<li class="all">
-							<a href=" ">全部商品</a>
+							<a href="index">全部商品</a>
 						</li>
 
 						<li>
-							<a href=" ">10月新品</a>
+							<a href="index">10月新品</a>
 						</li>
 						<li>
-							<a href=" ">9月新品</a>
+							<a href="index">9月新品</a>
 						</li>
 						<li>
-							<a href=" ">卫衣/棒球衫</a>
+							<a href="index">卫衣/棒球衫</a>
 						</li>
 						<li>
-							<a href=" ">毛衣/针织衫</a>
+							<a href="index">毛衣/针织衫</a>
 						</li>
 						<li>
-							<a href=" ">买家须知</a>
+							<a href="index">买家须知</a>
 						</li>
 						<li>
-							<a href=" ">快捷支付教程</a>
+							<a href="index">快捷支付教程</a>
 						</li>
 					</ol>
 					<div class="category_list slideer" style="display: none;">
 						<dl>
 							<dd>
-								<a href=" ">10月新品</a>
+								<a href="index">10月新品</a>
 							</dd>
 							<dd>
-								<a href=" ">9月新品</a>
+								<a href="index">9月新品</a>
 							</dd>
 							<dd>
-								<a href=" ">8.15新品</a>
+								<a href="index">8.15新品</a>
 							</dd>
 							<dd>
-								<a href=" ">8月新品</a>
+								<a href="index">8月新品</a>
 							</dd>
 							<dd>
-								<a href=" ">连衣裙</a>
+								<a href="index">连衣裙</a>
 							</dd>
 							<dd>
-								<a href=" ">衬衫</a>
+								<a href="index">衬衫</a>
 							</dd>
 							<dd>
-								<a href=" ">外套</a>
+								<a href="index">外套</a>
 							</dd>
 							<dd>
-								<a href=" ">卫衣/棒球衫</a>
+								<a href="index">卫衣/棒球衫</a>
 							</dd>
 							<dd>
-								<a href=" ">毛衣/针织衫</a>
+								<a href="index">毛衣/针织衫</a>
 							</dd>
 							<dd>
-								<a href=" ">裤子/打底裤</a>
+								<a href="index">裤子/打底裤</a>
 							</dd>
 						</dl>
 					</div>
@@ -349,56 +335,66 @@
 									<dt>客服：</dt>
 									<dd>
 										<div class="mogutalk_widget_btn kefu" data-bid="14epe#23" data-style="default" data-from="goodsdetail_skumtalk">
-											<iframe src="1.html" width="85" height="24" frameborder="0" scrolling="no" marginheight="0" allowtransparency="true"></iframe>
+											<iframe src="/shop/resources/img/a-126.gif" width="85" height="24" frameborder="0" scrolling="no" marginheight="0" allowtransparency="true"></iframe>
 										</div>
 									</dd>
 								</dl>
 							</div>
-							<script type="text/template" id="free_list_template">
-								<div class="free_list_tip">
-									<ul>
-										<li><span class="dd">▪</span>全店铺满200元减20元</li>
-										<li><span class="dd">▪</span>全店铺满150元减10元</li>
-										<li><span class="dd">▪</span>全店铺满100元减5元</li>
-									</ul>
-								</div>
-							</script>
+							<div class="goods-sku goods-pro" id="J_GoodsSku">
+	<div class="content">
+		<div class="pannel-title">
+			<b class="J_PannelClose pannel-close">x</b>
+		</div>
+		<div class="box">
+						<dl class="style clearfix" style="display: block;">
+				<dt>颜色：</dt>
+				<dd>
+					<ol class="J_StyleList style-list clearfix">
+					<li class="img" data-id="1" data-src="/shop/resources/img/b-40.jpg" title="【独家加厚夹棉款】">
+					<img src="/shop/resources/img/b-41.jpg">
+					<b>
+					</b>
+					</li>
+					<li class="img disable" data-id="2" data-src="/shop/resources/img/b-40.jpg" title="【常规款】">
+					<img src="/shop/resources/img/b-41.jpg">
+					<b>
+					</b>
+					</li>
+					</ol>
+				</dd>
+			</dl>
+									<dl class="size clearfix" style="display: block;">
+				<dt>尺码：</dt>
+				<dd>
+					<ol class="J_SizeList size-list clearfix"><li class="" data-id="100" title="S">S</li><li class="" data-id="101" title="M">M</li><li class="" data-id="102" title="L">L</li><li class="" data-id="103" title="XL">XL</li></ol>
+				</dd>
+			</dl>
+						<dl class="clearfix">
+				<dt>数量：</dt>
+				<dd class="num clearfix">
+					<div id="J_GoodsNum" class="goods-num fl" data-stock="584">
+						<span class="num-reduce num-disable"></span>
+						<input class="num-input" type="text" value="1">
+						<span class="num-add"></span>
+					</div>
+                    <!-- 库存数量 -->
+					<div class="J_GoodsStock goods-stock fl">库存584件</div>
+                    <input type="hidden" value="=0=0">
+                    <!-- 限购状态 -->
+                    
+                    <!-- 库存提醒 -->
+                    <div class="J_GoodsStockTip goods-stock-tip fl">您所填写的商品数量超过库存！</div>
+				</dd>
+			</dl>
+		</div>
+	</div>
+  
+</div>
+						 
 							<div class="goods-sku goods-pro" id="J_GoodsSku">
 								<div class="content">
 									<div class="pannel-title">
 										<b class="J_PannelClose pannel-close">x</b>
-									</div>
-									<div class="box">
-										<dl class="style clearfix">
-											<dt>颜色：</dt>
-											<dd>
-												<ol class="J_StyleList style-list clearfix">
-													<li class="img c" data-id="1" data-src="/shop/resources/img/b-17.jpg" title="灰色【素描米奇】">
-														<img src="/shop/resources/img/b-17.jpg"><b></b>
-													</li>
-												</ol>
-											</dd>
-										</dl>
-										<dl class="size clearfix">
-											<dt>尺码：</dt>
-											<dd>
-												<ol class="J_SizeList size-list clearfix">
-													<li class=" c" data-id="100" title="均码【新品特价】">均码【新品特价】</li>
-												</ol>
-											</dd>
-										</dl>
-										<dl class="clearfix">
-											<dt>数量：</dt>
-											<dd class="num clearfix">
-												<div id="J_GoodsNum" class="goods-num fl">
-													<span class="num-reduce num-disable"></span>
-													<input class="num-input" type="text" value="1">
-													<span class="num-add"></span>
-												</div>
-												<div class="J_GoodsStock goods-stock fl">库存89件</div>
-												<div class="J_GoodsStockTip goods-stock-tip fl">您所填写的商品数量超过库存！</div>
-											</dd>
-										</dl>
 									</div>
 									<div class="pannel-action">
 										<span class="pannel-tip">请选择你要的商品信息</span>
@@ -406,10 +402,10 @@
 									</div>
 								</div>
 								<div class="goods-buy clearfix">
-									<a href="javascript:;" id="J_BuyNow" class="fl mr20 buy-now buy-btn">立刻购买</a>
-									<a href="javascript:;" id="J_BuyCart" class="fl mr20 buy-cart  buy-btn">加入购物车</a>
+									<a href="shopping" id="J_BuyNow" class="fl mr20 buy-now buy-btn">立刻购买</a>
+									<a href="shopping" id="J_BuyCart" class="fl mr20 buy-cart  buy-btn">加入购物车</a>
 									<b class="fl buy-or buy-btn"></b>
-									<a href="javascript:;" id="J_BuyXCHF" class="fl buy-xchf buy-btn" data-id="">先穿后付</a>
+									<a href="shopping" id="J_BuyXCHF" class="fl buy-xchf buy-btn" data-id="">先穿后付</a>
 								</div>
 							</div>
 							<div class="goods-social clearfix">
@@ -418,11 +414,11 @@
 								<div class="share item">
 									<b></b>分享
 									<div class="share-w clearfix">
-										<a target="_blank" href=" "
+										<a target="_blank" href="login"
 										class="forqzone" title="关注QQ空间"></a>
-										<a target="_blank" href=" "
+										<a target="_blank" href="login"
 										class="forrenren" title="关注人人"></a>
-										<a target="_blank" href=" "
+										<a target="_blank" href="login"
 										class="forsina" title="关注sina"></a>
 										<a target="_blank" href=" " class="forweixin" title="关注微信"></a>
 									</div>
@@ -431,22 +427,6 @@
 								</div>
 							</div>
 							<div style="background: url(/shop/resources/img/a-20.png);height: 19px;background-repeat: no-repeat;margin-top: 20px;"></div>
-							<div class="goods-service">
-								<ul class="service-list clearfix">
-									<li>
-										<a href=" " class="baoyou" target="_blank" title="全国包邮"></a>
-									</li>
-									<li>
-										<a href=" " class="yunfei" target="_blank" title="退货运费补贴"></a>
-									</li>
-									<li>
-										<a href=" " class="tuihuo" target="_blank" title="7天无理由退货"></a>
-									</li>
-									<li>
-										<a href=" " class="fahuo" target="_blank" title="72小时发货"></a>
-									</li>
-								</ul>
-							</div>
 						</div>
 					</div>
 					<div class="goods-img fl" id="J_GoodsImg">
@@ -464,11 +444,11 @@
 				<div class="main-nav" id="J_GoodsNav">
 					<ul class="list clearfix ">
 						<li data-id="J_ModuleDetail" class="c">
-							<a href="javascript:;">商品详情</a>
+							<a href="product">商品详情</a>
 						</li>
-						<li data-id="J_ModuleComment"><a href=" ">买家评价(0)</a>
+						<li data-id="J_ModuleComment"><a href="product">买家评价(0)</a>
 						</li>
-						<li data-id="J_ModuleOrder"><a href=" ">90天销量(<span class="J_SaleNum">0</span>)</a>
+						<li data-id="J_ModuleOrder"><a href="product">90天销量(<span class="J_SaleNum">0</span>)</a>
 						</li>
 					</ul>
 					<div class="tags">
@@ -493,7 +473,7 @@
 				<div class="img-box">
 					<div class="item">
 						<div class="img">
-							<a href=" " target="_blank">
+							<a href="product" target="_blank">
 								<img class="img-pre-lazyload" src="/shop/resources/img/a-17.jpg" d-src="" width="1200" height="512">
 							</a>
 						</div>
@@ -630,7 +610,7 @@
 				<div class="img-box">
 					<div class="item">
 						<div class="img">
-							<a href="http://shop.mogujie.com/14epe" target="_blank">
+							<a href="product" target="_blank">
 								<img class="img-pre-lazyload" src="/shop/resources/img/b-30.jpg" d-src width="880" height="426" />
 							</a>
 						</div>
@@ -669,37 +649,37 @@
 			<div class="foot_link">
 				<dl class="link_company">
 					<dt>公司</dt>
-					<dd><a href=" " target="_blank">关于我们</a>
+					<dd><a href="about" target="_blank">关于我们</a>
 					</dd>
-					<dd><a href=" " target="_blank">招聘信息</a>
+					<dd><a href="customerservice" target="_blank">招聘信息</a>
 					</dd>
-					<dd><a href=" " target="_blank">联系我们</a>
+					<dd><a href="customerservice" target="_blank">联系我们</a>
 					</dd>
 				</dl>
 				<dl class="link_consumer">
 					<dt>消费者</dt>
-					<dd><a href=" " target="_blank">帮助中心</a>
+					<dd><a href="customerservice" target="_blank">帮助中心</a>
 					</dd>
-					<dd><a href=" " target="_blank">意见反馈</a>
+					<dd><a href="customerservice" target="_blank">意见反馈</a>
 					</dd>
-					<dd><a href=" " target="_blank">手机版下载</a>
+					<dd><a href="customerservice" target="_blank">手机版下载</a>
 					</dd>
 				</dl>
 				<dl class="link_business">
 					<dt>商家</dt>
-					<dd><a href=" " target="_blank">帮助中心</a>
+					<dd><a href="customerservice" target="_blank">帮助中心</a>
 					</dd>
-					<dd><a href=" " target="_blank">商家培训</a>
+					<dd><a href="customerservice" target="_blank">商家培训</a>
 					</dd>
-					<dd><a href=" " target="_blank">入驻开放平台</a>
+					<dd><a href="customerservice" target="_blank">入驻开放平台</a>
 					</dd>
 				</dl>
 				<dl class="link_safe">
 					<dt>权威认证</dt>
 					<dd>
-						<a class="pc" href=" " target="_blank"></a>
-						<a class="pa" href=" " target="_blank"></a>
-						<a class="kx" href=" " target="_blank"></a>
+						<a class="pc" href="customerservice" target="_blank"></a>
+						<a class="pa" href="customerservice" target="_blank"></a>
+						<a class="kx" href="customerservice" target="_blank"></a>
 					</dd>
 				</dl>
 			</div>
@@ -708,8 +688,8 @@
 	<div class="back2top_wrap">
 		<a href=" " class="ext_module shop_cart" target="_blank"><span class="num">0</span></a>
 		<a href=" " class="ext_module mogutalk_btn mogutalk_shop_btn J_msg open_msg micon __trace__" data-from="shopwidget_message" data-trace="global,shopwidget_message,click"><span class="num">0</span></a>
-		<a target="_blank" href=" " class="ext_module fb_entry">反馈入口</a>
-		<a class="ext_module go_top" href="javascript:;">回到顶部</a>
+		<a target="_blank" href="feedback" class="ext_module fb_entry">反馈入口</a>
+		<a class="ext_module go_top" href="product">回到顶部</a>
 	</div>
 	<script type="text/javascript" src="/shop/resources/js/module-addfav.js"></script>
 	<script type="text/javascript" src="/shop/resources/js/module-shop-header.js"></script>

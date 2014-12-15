@@ -13,6 +13,7 @@
 		<meta http-equiv="mobile-agent" content=" " />
 		<link rel="search" type="application/opensearchdescription+xml" href=" " />
 		<link rel="icon" href=" " type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="/shop/resources/css/pkg-navigation(2).css" media="all" />
 		<link rel="stylesheet" type="text/css" href="/shop/resources/css/pkg-base.css" media="all" />
 		<link rel="stylesheet" type="text/css" href="/shop/resources/css/pkg-module.css" media="all" />
 		<link rel="stylesheet" type="text/css" href="/shop/resources/css/pkg-shopnav.css" media="all" />
@@ -27,35 +28,35 @@
 				<a href=" " class="back_to_mogujie fl">蘑菇街首页</a>
 				<ul class="header_top">
 					<li class="s1 has_icon user_meta">
-						<a href=" ">
+						<a href="personalhomepage">
                                 紫色天堂1995                            </a>
 						<i class="icon_delta"></i>
 						<ol class="ext_mode">
-							<li class="s2"><a href=" " class="site_publish_img">分享照片</a>
+							<li class="s2"><a href="personalhomepage" class="site_publish_img">分享照片</a>
 							</li>
-							<li class="s2"><a href=" ">个人设置</a>
+							<li class="s2"><a href="personalhomepage">个人设置</a>
 							</li>
-							<li class="s2"><a href=" ">账号绑定</a>
+							<li class="s2"><a href="binding">账号绑定</a>
 							</li>
-							<li class="s2"><a href=" ">退出</a>
+							<li class="s2"><a href="login">退出</a>
 							</li>
 						</ol>
 					</li>
-					<li class="s1 has_line"><a href=" ">关注</a>
+					<li class="s1 has_line"><a href="index">关注</a>
 					</li>
-					<li class="s1"><a href=" ">喜欢</a>
+					<li class="s1"><a href="index">喜欢</a>
 					</li>
 					<li class="s1 has_icon message_center">
 						<a href=" ">消息<span class="m_num"></span></a>
 						<i class="icon_delta"></i>
 					</li>
 					<li class="s1 has_line">
-						<a href=" " target="_blank" class="text display_u">我的订单</a>
+						<a href="order" target="_blank" class="text display_u">我的订单</a>
 					</li>
 					<li class="s1 has_line has_icon custom_item">
-						<a href=" " target="_blank">帮助中心</a>
+						<a href="customerservice" target="_blank">帮助中心</a>
 						<ol class="ext_mode">
-							<li class="s2"><a href=" ">联系合作</a>
+							<li class="s2"><a href="customerservice">联系合作</a>
 							</li>
 						</ol>
 					</li>
@@ -94,19 +95,19 @@
 				</a>
 				<ul class="clearfix cart_slide pb20" id="cartSlide">
 					<li>
-						<a href=" " class="mr10 cart_slide_item cartSlideItemAll cart_slide_item_cur">
+						<a href="index" class="mr10 cart_slide_item cartSlideItemAll cart_slide_item_cur">
                     全部商品 (<span class="num">1</span>)
                 </a>
 					</li>
 					<li class="cartslide-line">|</li>
 					<li>
-						<a href=" " class="mr10 cart_slide_item cartSlideItemCut ">
+						<a href="index" class="mr10 cart_slide_item cartSlideItemCut ">
                     优惠 (<span class="num">1</span>)
                 </a>
 					</li>
 					<li class="cartslide-line">|</li>
 					<li>
-						<a href=" " class="mr10 cart_slide_item cartSlideItemLess cart_disablepointer">
+						<a href="index" class="mr10 cart_slide_item cartSlideItemLess cart_disablepointer">
                     库存紧张 (<span class="num">0</span>)
                 </a>
 					</li>
@@ -135,8 +136,8 @@
 									<td colspan="7" class="cart_group_head">
 										<input type="checkbox" class="s_shopall tr_checkmr" data-bid="14nji" name="s_shopall" />
 										<label for="" class="cart_lightgray">店铺：</label>
-										<a href=" " target="_blank" class="cart_hoverline">oNAirs</a>
-										<a href=" " class="cart_im_btn mr5 mogutalk_btn" data-bid=14nji#23>联系客服</a>
+										<a href="customerservice" target="_blank" class="cart_hoverline">oNAirs</a>
+										<a href="customerservice" class="cart_im_btn mr5 mogutalk_btn" data-bid=14nji#23>联系客服</a>
 										<span class="cart_tip_red">全店铺满2件减5元</span>
 									</td>
 								</tr>
@@ -221,16 +222,16 @@
 		</div>
 		<div class="g-footer">
 			<p title="qihe3086">
-				<a href=" " target="_blank">蘑菇街</a> |
-				<a href=" " target="_blank">加入开放平台</a> &copy; 2014 Mogujie.com,All Rights Reserved.
+				<a href="index" target="_blank">蘑菇街</a> |
+				<a href="customerservice" target="_blank">加入开放平台</a> &copy; 2014 Mogujie.com,All Rights Reserved.
 			</p>
 			<div class="icons">
-				<a class="vs" href=" "></a>
-				<a class="mc" href=" "></a>
-				<a class="up" href=" "></a>
-				<a class="pa" href=" " target="_blank"></a>
-				<a class="kx" href=" " target="_blank"></a>
-				<a class="pc" href=" " target="_blank"></a>
+				<a class="vs" href="customerservice"></a>
+				<a class="mc" href="customerservice"></a>
+				<a class="up" href="customerservice"></a>
+				<a class="pa" href="customerservice" target="_blank"></a>
+				<a class="kx" href="customerservice" target="_blank"></a>
+				<a class="pc" href="customerservice" target="_blank"></a>
 			</div>
 		</div>
 		<script type="text/javascript" src="/shop/resources/js/page-1015walletcge.js"></script>
