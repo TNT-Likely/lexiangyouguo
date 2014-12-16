@@ -9,7 +9,9 @@
 	<!-- DispatcherServlet Context: defines this servlet's request-processing 
 		infrastructure -->
 
-	
+	<!-- 注解扫描包 -->  
+    <context:component-scan base-package="lxyg" />  
+    
 	<!-- Enables the Spring MVC @Controller programming model -->
 	<annotation-driven />
 
