@@ -1,40 +1,42 @@
-package lxyg.dao.imp;
+package lxyg.service.imp;
 
 import java.util.List;
 
 import lxyg.dao.IBaseDAO;
+import lxyg.dao.imp.BaseDAO;
+import lxyg.service.IBaseService;
 
+public class BaseService<T> implements IBaseService<T> {
 
-public class BaseDAO<T> implements IBaseDAO<T>{
-
+	private IBaseDAO baseDAO=new BaseDAO();
 	@Override
 	public List<T> listAll() {
 		// TODO Auto-generated method stub
-		return null;
+		return baseDAO.listAll();
 	}
 
 	@Override
 	public Object findById(Class<T> c, int id) {
 		// TODO Auto-generated method stub
-		return null;
+		return baseDAO.findById(c, id);
 	}
 
 	@Override
 	public boolean save(Object object) {
 		// TODO Auto-generated method stub
-		return false;
+		return baseDAO.save(object);
 	}
 
 	@Override
 	public boolean update(Object object) {
 		// TODO Auto-generated method stub
-		return false;
+		return baseDAO.update(object);
 	}
 
 	@Override
 	public boolean delete(Object object) {
 		// TODO Auto-generated method stub
-		return false;
+		return baseDAO.delete(object);
 	}
 
 }
