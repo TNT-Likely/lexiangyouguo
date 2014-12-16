@@ -1,4 +1,4 @@
-package lxyg.domain;
+package lxyg.dao.imp;
 
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
