@@ -1,42 +1,48 @@
 package lxyg.service.imp;
 
-import java.util.List;
+import java.io.Serializable;  
+import java.util.List;  
+import javax.annotation.Resource;  
+import javax.transaction.Transactional;
 
-import lxyg.dao.IBaseDAO;
 import lxyg.dao.imp.BaseDAO;
 import lxyg.service.IBaseService;
-
-public class BaseService<T> implements IBaseService<T> {
-
-	private IBaseDAO baseDAO=new BaseDAO();
-	@Override
-	public List<T> listAll() {
-		// TODO Auto-generated method stub
-		return baseDAO.listAll();
-	}
-
-	@Override
-	public Object findById(Class<T> c, int id) {
-		// TODO Auto-generated method stub
-		return baseDAO.findById(c, id);
-	}
-
-	@Override
-	public boolean save(Object object) {
-		// TODO Auto-generated method stub
-		return baseDAO.save(object);
-	}
-
-	@Override
-	public boolean update(Object object) {
-		// TODO Auto-generated method stub
-		return baseDAO.update(object);
-	}
-
-	@Override
-	public boolean delete(Object object) {
-		// TODO Auto-generated method stub
-		return baseDAO.delete(object);
-	}
-
-}
+  
+  
+/** 
+ * BaseServiceImpl 定义Service的通用操作的实现 
+ *  
+ * @author Monday 
+ */  
+@Transactional  
+public class BaseService<T> implements IBaseService<T> {  
+      
+    /** 
+     * 注入BaseDao 
+     */  
+    private BaseDAO<T> dao;  
+    @Resource  
+    public void setDao(BaseDAO<T> dao) {  
+        this.dao = dao;  
+    }  
+  
+    public void save(T entity) {  
+        dao.save(entity);  
+    }  
+  
+    public void update(T entity) {  
+        dao.update(entity);  
+    }  
+  
+    public void delete(Serializable id) {  
+        dao.delete(id);  
+    }  
+  
+    public T getById(Serializable id) {  
+        return dao.findById(id);  
+    }  
+  
+    public List<T> getByHQL(String hql, Object... params) {  
+        return dao.findByHQL(hql, params);  
+    }  
+}  

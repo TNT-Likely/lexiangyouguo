@@ -1,17 +1,18 @@
 package lxyg.dao;
 
+import java.io.Serializable;
 import java.util.List;
 
 public interface IBaseDAO<T> {
 
-	List<T> listAll();
-
-	Object findById(Class<T> c, int id);
-
-	boolean save(Object object);
-
-	boolean update(Object object);
-
-	boolean delete(Object object);
+	public void save(T entity);  
+	  
+    public void update(T entity);  
+  
+    public void delete(Serializable id);  
+  
+    public T findById(Serializable id);  
+  
+    public List<T> findByHQL(String hql, Object... params);  
 
 }
