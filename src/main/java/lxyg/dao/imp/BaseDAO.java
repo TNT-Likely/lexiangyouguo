@@ -15,7 +15,6 @@ public class BaseDAO<T> implements IBaseDAO<T>{
 
 	@Override
 	public Object findById(Class<T> c, int id) {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
