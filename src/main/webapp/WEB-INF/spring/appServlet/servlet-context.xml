@@ -8,10 +8,6 @@
 
 	<!-- DispatcherServlet Context: defines this servlet's request-processing 
 		infrastructure -->
-
-	<!-- 注解扫描包 -->  
-    <context:component-scan base-package="lxyg" />  
-    
 	<!-- Enables the Spring MVC @Controller programming model -->
 	<annotation-driven />
 
@@ -27,5 +23,7 @@
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
 
-	<context:component-scan base-package="lxyg.controller" />
+	
+	<!-- 注解扫描包 -->  
+    <context:component-scan base-package="lxyg" />  
 </beans:beans>

@@ -6,7 +6,4 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans 
 	http://www.springframework.org/schema/beans/spring-beans.xsd">
 	
-	<bean id="dao" class="lxyg.imp.BaseDAO">
-		<property name="sessionFactory" ref="sessionFactory"></property>
-	</bean>
 </beans>
