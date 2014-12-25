@@ -1,23 +1,8 @@
 package lxyg.dao.imp;
 
 import java.io.Serializable;  
-import java.lang.reflect.ParameterizedType;  
 import java.util.List;  
-  
-
-
-
-
-
-
-import javax.annotation.Resource;  
-  
-
-
-
-
-
-
+ 
 import lxyg.dao.IBaseDAO;
 
 import org.hibernate.Query;  
