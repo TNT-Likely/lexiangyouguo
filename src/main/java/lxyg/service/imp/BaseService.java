@@ -2,8 +2,12 @@ package lxyg.service.imp;
 
 import java.io.Serializable;  
 import java.util.List;  
+
 import javax.annotation.Resource;  
-import javax.transaction.Transactional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import lxyg.dao.imp.BaseDAO;
 import lxyg.service.IBaseService;
@@ -14,35 +18,29 @@ import lxyg.service.IBaseService;
  *  
  * @author Monday 
  */  
-@Transactional  
+@Service
 public class BaseService<T> implements IBaseService<T> {  
       
-    /** 
-     * ×¢ÈëBaseDao 
-     */  
-    private BaseDAO<T> dao;  
-    @Resource  
-    public void setDao(BaseDAO<T> dao) {  
-        this.dao = dao;  
-    }  
+	@Autowired
+    private BaseDAO<T> baseDAO;  
   
     public void save(T entity) {  
-        dao.save(entity);  
+    	baseDAO.save(entity);  
     }  
   
     public void update(T entity) {  
-        dao.update(entity);  
+    	baseDAO.update(entity);  
     }  
-  
+
     public void delete(Serializable id) {  
-        dao.delete(id);  
+    	baseDAO.delete(id);  
     }  
   
     public T getById(Serializable id) {  
-        return dao.findById(id);  
+        return baseDAO.findById(id);  
     }  
   
     public List<T> getByHQL(String hql, Object... params) {  
-        return dao.findByHQL(hql, params);  
+        return baseDAO.findByHQL(hql, params);  
     }  
 }  
