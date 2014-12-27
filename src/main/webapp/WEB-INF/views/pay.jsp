@@ -24,7 +24,7 @@
 <body>
 <div id="header" class="header_2014">
 			<div class="uinfo_wrap clearfix wrap">
-				<a href=" " class="back_to_mogujie fl">蘑菇街首页</a>
+				<a href=" " class="back_to_mogujie fl">乐享优果首页</a>
 				<ul class="header_top">
 					<li class="s1 has_icon user_meta">
 						<a href="personalhomepage">
@@ -109,7 +109,7 @@
 								<div class="use_modou_box clearfix">
 									<div class="check_box fl">
 										<input type="checkbox" class="use_modou_check" id="use_modou_check" value="">
-										<label for="use_modou_check" id="J_modouable">蘑豆抵现<span>（可用0颗）</span>
+										<label for="use_modou_check" id="J_modouable">积分抵现<span>（可用0颗）</span>
 										</label>
 									</div>
 									<div class="modou_inputbox fl" style="display: none;">
@@ -150,7 +150,7 @@
 											<h5 class="paytitle">
                         <span>快捷支付</span>
                         安全可靠，便利快捷
-                                                    <i class="act-2yuan-tip">使用快捷支付首单返利2元（200蘑豆）</i>
+                                                    <i class="act-2yuan-tip">使用快捷支付首单返利2元（200积分）</i>
                                             </h5>
 											<ul class="m-banklist J_banklist clearfix  J_BanklistFlist">
 												<li class="b b_cur ">
@@ -280,7 +280,7 @@
 		</div>
 		<div class="g-footer">
 			<p title="qihe6119">
-				<a href="index" target="_blank">蘑菇街</a> |
+				<a href="index" target="_blank">乐享优果</a> |
 				<a href="customerservice" target="_blank">加入开放平台</a> &copy; 2014 Mogujie.com,All Rights Reserved.
 			</p>
 			<div class="icons">

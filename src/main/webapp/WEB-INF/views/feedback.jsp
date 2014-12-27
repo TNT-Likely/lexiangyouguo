@@ -54,7 +54,7 @@
 						<i class="icon_delta"></i>
 					</li>
 					<li class="s1 has_line has_icon top_app">
-						<a>手机蘑菇街</a>
+						<a>手机乐享优果</a>
 						<ol class="ext_mode">
 							<li class="s2">
 								<img src="/shop/resources/img/a-43.png" alt="扫描下载客户端">
@@ -66,7 +66,7 @@
 					</li>
 				</ul>
 				<div class="header_mid clearfix">
-					<a href="index" class="logo" title="蘑菇街首页">蘑菇街|www.mogujie.com</a>
+					<a href="index" class="logo" title="乐享优果首页">乐享优果|www.lexiangyouguo.com</a>
 					<div class="top_nav_search" id="nav_search_form">
 						<div class="selectbox" data-v="1">
 							<span class="selected">搜商品</span>
@@ -104,16 +104,16 @@
 					<ul class="nav_list">
 						<li><a href="index">首页</a>
 						</li>
-						<li><a href="buyersrecommend">服饰</a>
+						<li><a href="buyersrecommend">产地直销</a>
 						</li>
-						<li><a href="buyersrecommend">搭配</a>
+						<li><a href="buyersrecommend">每日鲜果</a>
 						</li>
 						<li class="daren">
-							<a href="buyersrecommend">达人</a>
+							<a href="buyersrecommend">果V一刻</a>
 						</li>
-						<li class="buyer"><a href="buyersrecommend">买手</a>
+						<li class="buyer"><a href="buyersrecommend">每日特价</a>
 						</li>
-						<li><a href="buyersrecommend">美妆</a>
+						<li><a href="buyersrecommend">礼品特区</a>
 						</li>
 						<li><a href="buyersrecommend">团购</a>
 						</li>
@@ -161,8 +161,8 @@
 						</p>
 						<p>增值电信业务经营许可证：<a href=" " target="_blank">浙B2-20110349</a>
 						</p>
-						<p>ICP备案号：浙ICP备10044327号-3</p>
-						<p class="mgjhostname" title="qihe6116">©2014 Mogujie.com 杭州卷瓜网络有限公司</p>
+						<p>ICP备案号：皖ICP备10044327号-3</p>
+						<p class="mgjhostname" title="qihe6116">©2014 Mogujie.com 安徽乐享优果网络有限公司</p>
 					</div>
 				</div>
 				<div class="foot_link">

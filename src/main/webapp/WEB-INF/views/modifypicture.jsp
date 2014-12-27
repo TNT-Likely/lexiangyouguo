@@ -51,7 +51,7 @@
 						<i class="icon_delta"></i>
 					</li>
 					<li class="s1 has_line has_icon top_app">
-						<a>手机蘑菇街</a>
+						<a>手机乐享优果</a>
 						<ol class="ext_mode">
 							<li class="s2">
 								<img src=" " alt="扫描下载客户端">
@@ -63,7 +63,7 @@
 					</li>
 				</ul>
 				<div class="header_mid clearfix">
-					<a href="index" class="logo" title="蘑菇街首页">蘑菇街|www.mogujie.com</a>
+					<a href="index" class="logo" title="乐享优果首页">乐享优果|www.lexiangyouguo.com</a>
 					<div class="top_nav_search" id="nav_search_form">
 						<div class="selectbox" data-v="1">
 							<span class="selected">搜商品</span>
@@ -100,16 +100,16 @@
 					<ul class="nav_list">
 						<li><a href="index">首页</a>
 						</li>
-						<li><a href="buyersrecommend">服饰</a>
+						<li><a href="buyersrecommend">产地直销</a>
 						</li>
-						<li><a href="buyersrecommend">搭配</a>
+						<li><a href="buyersrecommend">每日鲜果</a>
 						</li>
 						<li class="daren">
-							<a href="buyersrecommend">达人</a>
+							<a href="buyersrecommend">果V一刻</a>
 						</li>
-						<li class="buyer"><a class="on" href="buyersrecommend">买手</a>
+						<li class="buyer"><a class="on" href="buyersrecommend">每日特价</a>
 						</li>
-						<li><a href="buyersrecommend">美妆</a>
+						<li><a href="buyersrecommend">礼品特区</a>
 						</li>
 						<li><a href="buyersrecommend">团购</a>
 						</li>
@@ -152,8 +152,8 @@
 <dl class="mu_nav">
     <dt>优惠特权</dt>
     <dd> <a href="memberlevel" target="_blank">钻石会员</a> </dd>
-    <dd> <a href="memberlevel" target="_blank">先穿后付</a> </dd>
-    <dd> <a href="memberlevel" >我的蘑豆</a> </dd>
+    <dd> <a href="memberlevel" target="_blank">先尝后付</a> </dd>
+    <dd> <a href="memberlevel" >我的积分</a> </dd>
     <dd> <a href="memberlevel">现金券 </a> </dd>
     <dd> <a href="memberlevel">店铺优惠券 </a> </dd>
 </dl>

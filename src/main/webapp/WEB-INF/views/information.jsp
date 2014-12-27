@@ -45,7 +45,7 @@
                 <i class="icon_delta"></i>
             </li>
        <li class="s1 has_line has_icon top_app">
-                <a>手机蘑菇街</a>
+                <a>手机乐享优果</a>
                 <ol class="ext_mode">
                     <li class="s2"><img src="/shop/resources/img/a-80.png" alt="扫描下载客户端"></li>
                 </ol>
@@ -55,7 +55,7 @@
             </li>
         </ul>
         <div class="header_mid clearfix">
-            <a href="index" class="logo" title="蘑菇街首页">蘑菇街|www.mogujie.com</a>
+            <a href="index" class="logo" title="乐享优果首页">乐享优果|www.lexiangyouguo.com</a>
             <div class="top_nav_search" id="nav_search_form">  
     <div class="selectbox" data-v="1">
         <span class="selected">搜商品</span>
@@ -89,13 +89,13 @@
         <div class="nav_list_wrap clearfix">
                         <ul class="nav_list">
                 <li><a href="index">首页</a></li>
-                <li><a href="buyersrecommend">服饰</a></li>
-                <li><a href="buyersrecommend" >搭配</a></li>
+                <li><a href="buyersrecommend">产地直销</a></li>
+                <li><a href="buyersrecommend" >每日鲜果</a></li>
                 <li class="daren">
-                    <a  href="buyersrecommend">达人</a>
+                    <a  href="buyersrecommend">果V一刻</a>
                 </li>
-                <li class="buyer"><a  href="buyersrecommend" >买手</a></li>
-                <li><a  href="buyersrecommend">美妆</a></li>
+                <li class="buyer"><a  href="buyersrecommend" >每日特价</a></li>
+                <li><a  href="buyersrecommend">礼品特区</a></li>
                 <li><a  href="buyersrecommend"  >团购</a></li>
                 <li><a class="no_bold " href="buyersrecommend">社区</a></li>
             </ul>
@@ -135,8 +135,8 @@
 <dl class="mu_nav">
     <dt>优惠特权</dt>
     <dd> <a href="memberlevel" target="_blank">钻石会员</a> </dd>
-    <dd> <a href="memberlevel" target="_blank">先穿后付</a> </dd>
-    <dd> <a href="memberlevel" >我的蘑豆</a> </dd>
+    <dd> <a href="memberlevel" target="_blank">先尝后付</a> </dd>
+    <dd> <a href="memberlevel" >我的积分</a> </dd>
     <dd> <a href="memberlevel">现金券 </a> </dd>
     <dd> <a href="memberlevel">店铺优惠券 </a> </dd>
 </dl>
@@ -385,7 +385,7 @@
 									</dl>
 									<div class="settings_title mt30">
 										<span>身材信息</span>
-										<span style="font-weight:normal;font-size:12px;padding-left:10px;">^_^ 用心填写这几项信息，会帮助蘑菇街给你推荐合适的衣服和鞋子哦~</span>
+										<span style="font-weight:normal;font-size:12px;padding-left:10px;">^_^ 用心填写这几项信息，会帮助乐享优果给你推荐合适的衣服和鞋子哦~</span>
 										<select name="isSeeFigure" id="" class="is_show_sel r3">
 											<option value="1" selected>我关注的人可见</option>
 											<option value="2">所有人可见</option>
@@ -427,21 +427,21 @@
                 <option>中性发质</option>
             </select>
         </dt>
-										<dd>衣服尺寸：</dd>
+										<dd>喜欢的水果类型：</dd>
 										<dt class="posr">
             <select name="dress">
                                     <option selected>请选择</option>
-                                <option>S</option>
-                <option>M</option>
-                <option>L</option>
-                <option>XL</option>
+                                <option>热带水果</option>
+                <option>温润型</option>
+                <option>高能量</option>
+                <option>重口味</option>
             </select>
         </dt>
-										<dd>裤子尺寸：</dd>
+										<dd>经常食用的水果：</dd>
 										<dt class="posr">
             <select name="trousers">
                                     <option selected>请选择</option>
-                                <option>21</option><option>22</option><option>23</option><option>24</option><option>25</option><option>26</option><option>27</option><option>28</option><option>29</option><option>30</option><option>31</option><option>32</option><option>33</option><option>34</option><option>35</option><option>36</option>            </select>
+                                <option>苹果</option><option>香蕉</option><option>梨</option><option>西瓜</option><option>西柚</option><option>柠檬</option><option>奇异果</option><option>其他</option><option>29</option><option>30</option><option>31</option><option>32</option><option>33</option><option>34</option><option>35</option><option>36</option>            </select>
         </dt>
 										<dd>鞋码尺寸：</dd>
 										<dt class="posr">
@@ -454,7 +454,7 @@
 										<span>购买信息设置</span>
 									</div>
 									<div class="chose_info_wrap">
-										<p style="font-weight:normal;font-size:14px;padding-left:20px;">把自己的购物信息展示给商家，能帮你更好的买到适合的衣服哦。</p>
+										<p style="font-weight:normal;font-size:14px;padding-left:20px;">把自己的购物信息展示给商家，能帮你更好的买到适合的水果哦。</p>
 										<span class="setting_title" style="padding-left: 20px;">设置：</span>
 										<select name="isSeeFigureForShop" id="" class="is_show_sel r3" style="float: none; margin: 10px 20px 10px 0; vertical-align: middle;">
 											<option value="0" selected>展示给商家</option>
@@ -515,8 +515,8 @@
 						</p>
 						<p>增值电信业务经营许可证：<a href=" " target="_blank">浙B2-20110349</a>
 						</p>
-						<p>ICP备案号：浙ICP备10044327号-3</p>
-						<p class="mgjhostname" title="qihe3083">©2014 Mogujie.com 杭州卷瓜网络有限公司</p>
+						<p>ICP备案号：皖ICP备10044327号-3</p>
+						<p class="mgjhostname" title="qihe3083">©2014 Mogujie.com 安徽乐享优果网络有限公司</p>
 					</div>
 				</div>
 				<div class="foot_link">

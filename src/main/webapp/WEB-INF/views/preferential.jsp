@@ -37,7 +37,7 @@
 						</ol>
 					</li>
 					<li class="s1 has_line has_icon top_app">
-						<a>手机蘑菇街</a>
+						<a>手机乐享优果</a>
 						<ol class="ext_mode">
 							<li class="s2">
 								<img src="" alt="扫描下载客户端">
@@ -49,7 +49,7 @@
 					</li>
 				</ul>
 				<div class="header_mid clearfix">
-					<a href="index.html" class="logo" title="蘑菇街首页">蘑菇街|www.mogujie.com</a>
+					<a href="index.html" class="logo" title="乐享优果首页">乐享优果|www.lexiangyouguo.com</a>
 					<div class="top_nav_search" id="nav_search_form">
 						<div class="selectbox" data-v="1">
 							<span class="selected">搜商品</span>
@@ -85,11 +85,11 @@
 				<div class="nav_list_wrap clearfix">
 					<ul class="nav_list">
 						<li><a href="index">首页</a></li>
-						<li><a href="buyersrecommend">服饰</a></li>
-						<li><a href="buyersrecommend">搭配</a></li>
-						<li class="daren"><a href="buyersrecommend">达人</a></li>
-						<li class="buyer"><a href="buyersrecommend">买手</a></li>
-						<li><a href="buyersrecommend.jsp">美妆</a></li>
+						<li><a href="buyersrecommend">产地直销</a></li>
+						<li><a href="buyersrecommend">每日鲜果</a></li>
+						<li class="daren"><a href="buyersrecommend">果V一刻</a></li>
+						<li class="buyer"><a href="buyersrecommend">每日特价</a></li>
+						<li><a href="buyersrecommend.jsp">礼品特区</a></li>
 						<li><a href="buyersrecommend.jsp">团购</a></li>
 						<li><a class="no_bold " href="buyersrecommend">社区</a></li>
 					</ul>
@@ -859,7 +859,7 @@
 												<a href="product" class="pic" target="_blank">
 													<img src="/shop/resources/img/b-2.jpg">
 												</a>
-												<div class="title">菲诗小铺大米保湿爽肤水</div>
+												<div class="title">印度小巧菠萝</div>
 												<div class="price">
 													<span class="p-1">￥45.00</span>
 												</div>
@@ -872,7 +872,7 @@
 												<a href="product" class="pic" target="_blank">
 													<img src="/shop/resources/img/b-2.jpg">
 												</a>
-												<div class="title">菲诗小铺大米保湿乳液</div>
+												<div class="title">印度小巧菠萝</div>
 												<div class="price">
 													<span class="p-1">￥45.00</span>
 												</div>
@@ -885,7 +885,7 @@
 												<a href="product" class="pic" target="_blank">
 													<img src="/shop/resources/img/b-2.jpg">
 												</a>
-												<div class="title">菲诗小铺草本樱桃泡沫洁面膏170g</div>
+												<div class="title">印度小巧菠萝</div>
 												<div class="price">
 													<span class="p-1">￥35.00</span>
 												</div>
@@ -914,7 +914,7 @@
 												<a href="product" class="pic" target="_blank">
 													<img src="/shop/resources/img/b-2.jpg">
 												</a>
-												<div class="title">百雀羚水嫩倍现盈透精华水100ml</div>
+												<div class="title">印度小巧菠萝</div>
 												<div class="price">
 													<span class="p-1">￥48.75</span>
 												</div>
@@ -927,7 +927,7 @@
 												<a href="product" class="pic" target="_blank">
 													<img src="/shop/resources/img/b-2.jpg">
 												</a>
-												<div class="title">百雀羚水嫩倍现保湿精华乳液</div>
+												<div class="title">印度小巧菠萝</div>
 												<div class="price">
 													<span class="p-1">￥55.44</span>
 												</div>
@@ -940,7 +940,7 @@
 												<a href="product" class="pic" target="_blank">
 													<img src="/shop/resources/img/b-2.jpg">
 												</a>
-												<div class="title">百雀羚秋韵化妆镜</div>
+												<div class="title">印度小巧菠萝</div>
 												<div class="price">
 													<span class="p-1">￥19.50</span>
 												</div>
@@ -969,7 +969,7 @@
 												<a href="product" class="pic" target="_blank">
 													<img src="/shop/resources/img/b-2.jpg">
 												</a>
-												<div class="title">雅芳小黑裙香体沐浴两件套</div>
+												<div class="title">印度小巧菠萝</div>
 												<div class="price">
 													<span class="p-1">￥58.14</span>
 												</div>
@@ -982,7 +982,7 @@
 												<a href="product" class="pic" target="_blank">
 													<img src="/shop/resources/img/b-2.jpg">
 												</a>
-												<div class="title">雅芳植物系列柔嫩玫瑰润唇膏4克</div>
+												<div class="title">印度小巧菠萝</div>
 												<div class="price">
 													<span class="p-1">￥20.01</span>
 												</div>
@@ -995,7 +995,7 @@
 												<a href="product" class="pic" target="_blank">
 													<img src="/shop/resources/img/b-2.jpg">
 												</a>
-												<div class="title">雅芳小黑裙香水9ml</div>
+												<div class="title">印度小巧菠萝</div>
 												<div class="price">
 													<span class="p-1">￥27.00</span>
 												</div>
@@ -1037,7 +1037,7 @@
 												<a href="product" class="pic" target="_blank">
 													<img src="/shop/resources/img/b-2.jpg">
 												</a>
-												<div class="title">赛倪亚马逊矿物泥净致毛孔面膜</div>
+												<div class="title">印度小巧菠萝</div>
 												<div class="price">
 													<span class="p-1">￥59.40</span>
 												</div>
@@ -1050,7 +1050,7 @@
 												<a href="product" class="pic" target="_blank">
 													<img src="/shop/resources/img/b-2.jpg">
 												</a>
-												<div class="title">Angellooka水嫩手脚膜1套</div>
+												<div class="title">印度小巧菠萝</div>
 												<div class="price">
 													<span class="p-1">￥29.50</span>
 												</div>
@@ -1092,7 +1092,7 @@
 												<a href="product" class="pic" target="_blank">
 													<img src="/shop/resources/img/b-2.jpg">
 												</a>
-												<div class="title">COW牛乳石碱祛痘洗面奶</div>
+												<div class="title">印度小巧菠萝</div>
 												<div class="price">
 													<span class="p-1">￥48.40</span>
 												</div>
@@ -1134,7 +1134,7 @@
 												<a href="product" class="pic" target="_blank">
 													<img src="/shop/resources/img/b-2.jpg">
 												</a>
-												<div class="title">韩国dodo素描眉笔</div>
+												<div class="title">印度小巧菠萝</div>
 												<div class="price">
 													<span class="p-1">￥68.00</span>
 												</div>
@@ -1222,7 +1222,7 @@
 												<a href="product" class="pic" target="_blank">
 													<img src="/shop/resources/img/b-2.jpg">
 												</a>
-												<div class="title">鸡蛋摩丝慕斯泡沫洗面奶150ML</div>
+												<div class="title">印度小巧菠萝</div>
 												<div class="price">
 													<span class="p-1">￥78.32</span>
 													<span class="p-2">原价:￥178.00</span>
@@ -1235,7 +1235,7 @@
 												<a href="product" class="pic" target="_blank">
 													<img src="/shop/resources/img/b-2.jpg">
 												</a>
-												<div class="title">芙丽芳丝净润洗面奶100G </div>
+												<div class="title">印度小巧菠萝 </div>
 												<div class="price">
 													<span class="p-1">￥78.00</span>
 													<span class="p-2">原价:￥150.00</span>
@@ -1248,7 +1248,7 @@
 												<a href="product" class="pic" target="_blank">
 													<img src="/shop/resources/img/b-2.jpg">
 												</a>
-												<div class="title">金沙弹力紧致泡沫洁面乳150g</div>
+												<div class="title">印度小巧菠萝</div>
 												<div class="price">
 													<span class="p-1">￥96.00</span>
 												</div>
@@ -1272,7 +1272,7 @@
 												<a href="product" class="pic" target="_blank">
 													<img src="/shop/resources/img/b-2.jpg">
 												</a>
-												<div class="title">SKIN79三重功效红桶/金桶BB霜</div>
+												<div class="title">印度小巧菠萝</div>
 												<div class="price">
 													<span class="p-1">￥68.00</span>
 													<span class="p-2">原价:￥85.00</span>
@@ -1285,7 +1285,7 @@
 												<a href="product" class="pic" target="_blank">
 													<img src="/shop/resources/img/b-2.jpg">
 												</a>
-												<div class="title">井田棉花糖美颜控油蜜粉饼</div>
+												<div class="title">印度小巧菠萝</div>
 												<div class="price">
 													<span class="p-1">￥85.00</span>
 													<span class="p-2">原价:￥106.25</span>
@@ -1298,7 +1298,7 @@
 												<a href="product" class="pic" target="_blank">
 													<img src="/shop/resources/img/b-2.jpg">
 												</a>
-												<div class="title">VDL 贝壳提亮液妆前乳30ml</div>
+												<div class="title">印度小巧菠萝</div>
 												<div class="price">
 													<span class="p-1">￥93.33</span>
 													<span class="p-2">原价:￥153.00</span>
@@ -1311,7 +1311,7 @@
 												<a href="product" class="pic" target="_blank">
 													<img src="/shop/resources/img/b-2.jpg">
 												</a>
-												<div class="title">DR.MJ珍白清透气垫BB霜粉饼10g</div>
+												<div class="title">印度小巧菠萝</div>
 												<div class="price">
 													<span class="p-1">￥88.06</span>
 													<span class="p-2">原价:￥238.00</span>
@@ -1324,7 +1324,7 @@
 												<a href="product" class="pic" target="_blank">
 													<img src="/shop/resources/img/b-2.jpg">
 												</a>
-												<div class="title">膜法世家丝颜水凝粉底液30g</div>
+												<div class="title">印度小巧菠萝</div>
 												<div class="price">
 													<span class="p-1">￥49.14</span>
 													<span class="p-2">原价:￥126.00</span>
@@ -1359,7 +1359,7 @@
 												<a href="product" class="pic" target="_blank">
 													<img src="/shop/resources/img/b-2.jpg">
 												</a>
-												<div class="title">韩国爱丽小屋气垫腮红</div>
+												<div class="title">印度小巧菠萝</div>
 												<div class="price">
 													<span class="p-1">￥55.00</span>
 													<span class="p-2">原价:￥68.75</span>
@@ -1398,7 +1398,7 @@
 												<a href="product" class="pic" target="_blank">
 													<img src="/shop/resources/img/b-2.jpg">
 												</a>
-												<div class="title">资生堂 MOILIP药用润唇膏</div>
+												<div class="title">印度小巧菠萝</div>
 												<div class="price">
 													<span class="p-1">￥55.76</span>
 													<span class="p-2">原价:￥68.00</span>
@@ -1474,7 +1474,7 @@
 												<a href="product" class="pic" target="_blank">
 													<img src="/shop/resources/img/b-2.jpg">
 												</a>
-												<div class="title">爱丽小屋玫瑰气垫染色唇彩唇蜜</div>
+												<div class="title">印度小巧菠萝</div>
 												<div class="price">
 													<span class="p-1">￥72.50</span>
 												</div>
@@ -1498,7 +1498,7 @@
 												<a href="product" class="pic" target="_blank">
 													<img src="/shop/resources/img/b-2.jpg">
 												</a>
-												<div class="title">绿豆小黄瓜清润蜜汁200ml</div>
+												<div class="title">印度小巧菠萝</div>
 												<div class="price">
 													<span class="p-1">￥58.80</span>
 													<span class="p-2">原价:￥98.00</span>
@@ -1563,7 +1563,7 @@
 												<a href="product" class="pic" target="_blank">
 													<img src="/shop/resources/img/b-2.jpg">
 												</a>
-												<div class="title">Cyclax 绿茶面颈霜300ml</div>
+												<div class="title">印度小巧菠萝</div>
 												<div class="price">
 													<span class="p-1">￥38.64</span>
 													<span class="p-2">原价:￥69.00</span>
@@ -1576,7 +1576,7 @@
 												<a href="product" class="pic" target="_blank">
 													<img src="/shop/resources/img/b-2.jpg">
 												</a>
-												<div class="title">Dr.mj精粹蜗牛霜50ml</div>
+												<div class="title">印度小巧菠萝</div>
 												<div class="price">
 													<span class="p-1">￥88.48</span>
 													<span class="p-2">原价:￥158.00</span>
@@ -1589,7 +1589,7 @@
 												<a href="product" class="pic" target="_blank">
 													<img src="/shop/resources/img/b-2.jpg">
 												</a>
-												<div class="title">韩束火棘焕白七件套</div>
+												<div class="title">印度小巧菠萝</div>
 												<div class="price">
 													<span class="p-1">￥139.30</span>
 													<span class="p-2">原价:￥199.00</span>
@@ -1615,7 +1615,7 @@
 												<a href="product" class="pic" target="_blank">
 													<img src="/shop/resources/img/b-2.jpg">
 												</a>
-												<div class="title">Doctorcos氨基酸核糖补水面膜</div>
+												<div class="title">印度小巧菠萝</div>
 												<div class="price">
 													<span class="p-1">￥89.68</span>
 													<span class="p-2">原价:￥118.00</span>
@@ -1641,7 +1641,7 @@
 												<a href="product" class="pic" target="_blank">
 													<img src="/shop/resources/img/b-2.jpg">
 												</a>
-												<div class="title">璐怡诗冰川水珠睡眠面膜50ML</div>
+												<div class="title">印度小巧菠萝</div>
 												<div class="price">
 													<span class="p-1">￥39.60</span>
 													<span class="p-2">原价:￥99.00</span>
@@ -1654,7 +1654,7 @@
 												<a href="product" class="pic" target="_blank">
 													<img src="/shop/resources/img/b-2.jpg">
 												</a>
-												<div class="title">丽得姿胶原提拉蚕丝面膜5片装</div>
+												<div class="title">印度小巧菠萝</div>
 												<div class="price">
 													<span class="p-1">￥49.50</span>
 													<span class="p-2">原价:￥99.00</span>
@@ -1667,7 +1667,7 @@
 												<a href="product" class="pic" target="_blank">
 													<img src="/shop/resources/img/b-2.jpg">
 												</a>
-												<div class="title">SCINIC紧肤全棉面膜贴*5片装25ml</div>
+												<div class="title">印度小巧菠萝</div>
 												<div class="price">
 													<span class="p-1">￥29.50</span>
 													<span class="p-2">原价:￥59.00</span>
@@ -1680,7 +1680,7 @@
 												<a href="product" class="pic" target="_blank">
 													<img src="/shop/resources/img/b-2.jpg">
 												</a>
-												<div class="title">赛倪提拉抗皱黑面膜组合2片装</div>
+												<div class="title">印度小巧菠萝</div>
 												<div class="price">
 													<span class="p-1">￥29.50</span>
 													<span class="p-2">原价:￥59.00</span>
@@ -1719,7 +1719,7 @@
 												<a href="product" class="pic" target="_blank">
 													<img src="/shop/resources/img/b-2.jpg">
 												</a>
-												<div class="title">小青猪皮胶原蛋白睡眠面膜 100g</div>
+												<div class="title">印度小巧菠萝</div>
 												<div class="price">
 													<span class="p-1">￥48.64</span>
 													<span class="p-2">原价:￥128.00</span>
@@ -1732,7 +1732,7 @@
 												<a href="product" class="pic" target="_blank">
 													<img src="/shop/resources/img/b-2.jpg">
 												</a>
-												<div class="title">韩国自然乐园芦荟胶300ML</div>
+												<div class="title">印度小巧菠萝</div>
 												<div class="price">
 													<span class="p-1">￥32.00</span>
 												</div>
@@ -1743,7 +1743,7 @@
 												<a href="product" class="pic" target="_blank">
 													<img src="/shop/resources/img/b-2.jpg">
 												</a>
-												<div class="title">思妍丽 复合素面膜粉60g</div>
+												<div class="title">印度小巧菠萝</div>
 												<div class="price">
 													<span class="p-1">￥35.00</span>
 												</div>
@@ -1754,7 +1754,7 @@
 												<a href="product" class="pic" target="_blank">
 													<img src="/shop/resources/img/b-2.jpg">
 												</a>
-												<div class="title">彼得罗夫 PTR青瓜啫喱面膜</div>
+												<div class="title">印度小巧菠萝</div>
 												<div class="price">
 													<span class="p-1">￥189.00</span>
 												</div>
@@ -1765,7 +1765,7 @@
 												<a href="product" class="pic" target="_blank">
 													<img src="/shop/resources/img/b-2.jpg">
 												</a>
-												<div class="title">我的心机面膜大赏22片礼盒</div>
+												<div class="title">印度小巧菠萝</div>
 												<div class="price">
 													<span class="p-1">￥111.25</span>
 												</div>
@@ -1776,7 +1776,7 @@
 												<a href="product" class="pic" target="_blank">
 													<img src="/shop/resources/img/b-2.jpg">
 												</a>
-												<div class="title">京润珍珠珍珠粉10袋套装</div>
+												<div class="title">印度小巧菠萝</div>
 												<div class="price">
 													<span class="p-1">￥73.75</span>
 												</div>
@@ -1800,7 +1800,7 @@
 												<a href="product" class="pic" target="_blank">
 													<img src="/shop/resources/img/b-2.jpg">
 												</a>
-												<div class="title">日本花王蒸汽spa眼罩14/片 无香</div>
+												<div class="title">印度小巧菠萝</div>
 												<div class="price">
 													<span class="p-1">￥69.42</span>
 													<span class="p-2">原价:￥89.00</span>
@@ -1813,7 +1813,7 @@
 												<a href="product" class="pic" target="_blank">
 													<img src="/shop/resources/img/b-2.jpg">
 												</a>
-												<div class="title">日本Lucky Trendy死皮软化美甲笔</div>
+												<div class="title">印度小巧菠萝</div>
 												<div class="price">
 													<span class="p-1">￥43.20</span>
 													<span class="p-2">原价:￥45.00</span>
@@ -1826,7 +1826,7 @@
 												<a href="product" class="pic" target="_blank">
 													<img src="/shop/resources/img/b-2.jpg">
 												</a>
-												<div class="title">韩国河马贴 瘦身贴 强效消脂</div>
+												<div class="title">印度小巧菠萝</div>
 												<div class="price">
 													<span class="p-1">￥23.36</span>
 													<span class="p-2">原价:￥32.00</span>
@@ -1839,7 +1839,7 @@
 												<a href="product" class="pic" target="_blank">
 													<img src="/shop/resources/img/b-2.jpg">
 												</a>
-												<div class="title">丽丽贝尔化妆棉优质卸妆棉</div>
+												<div class="title">印度小巧菠萝</div>
 												<div class="price">
 													<span class="p-1">￥18.02</span>
 													<span class="p-2">原价:￥19.80</span>
@@ -1852,7 +1852,7 @@
 												<a href="product" class="pic" target="_blank">
 													<img src="/shop/resources/img/b-2.jpg">
 												</a>
-												<div class="title">美丽工匠台式可放大双面化妆镜子</div>
+												<div class="title">印度小巧菠萝</div>
 												<div class="price">
 													<span class="p-1">￥39.00</span>
 													<span class="p-2">原价:￥48.75</span>
@@ -1865,7 +1865,7 @@
 												<a href="product" class="pic" target="_blank">
 													<img src="/shop/resources/img/b-2.jpg">
 												</a>
-												<div class="title">mymi 大肚贴腹部贴 瘦身燃烧脂肪</div>
+												<div class="title">印度小巧菠萝</div>
 												<div class="price">
 													<span class="p-1">￥79.20</span>
 													<span class="p-2">原价:￥120.00</span>
@@ -1878,7 +1878,7 @@
 												<a href="product" class="pic" target="_blank">
 													<img src="/shop/resources/img/b-2.jpg">
 												</a>
-												<div class="title">日本EyecurlII 超卷翘电烫睫毛器</div>
+												<div class="title">印度小巧菠萝</div>
 												<div class="price">
 													<span class="p-1">￥60.00</span>
 												</div>
@@ -1889,7 +1889,7 @@
 												<a href="product" class="pic" target="_blank">
 													<img src="/shop/resources/img/b-2.jpg">
 												</a>
-												<div class="title">花王暖宫贴 热敷痛经贴宫寒贴1片</div>
+												<div class="title">印度小巧菠萝</div>
 												<div class="price">
 													<span class="p-1">￥20.00</span>
 												</div>
@@ -1913,7 +1913,7 @@
 												<a href="product" class="pic" target="_blank">
 													<img src="/shop/resources/img/b-2.jpg">
 												</a>
-												<div class="title">美国箭牌 经典控油洗发水 355ml</div>
+												<div class="title">印度小巧菠萝</div>
 												<div class="price">
 													<span class="p-1">￥46.40</span>
 													<span class="p-2">原价:￥58.00</span>
@@ -1926,7 +1926,7 @@
 												<a href="product" class="pic" target="_blank">
 													<img src="/shop/resources/img/b-2.jpg">
 												</a>
-												<div class="title">COW牛乳石碱浓密泡沫保湿沐浴露</div>
+												<div class="title">印度小巧菠萝</div>
 												<div class="price">
 													<span class="p-1">￥54.60</span>
 													<span class="p-2">原价:￥60.00</span>
@@ -1939,7 +1939,7 @@
 												<a href="product" class="pic" target="_blank">
 													<img src="/shop/resources/img/b-2.jpg">
 												</a>
-												<div class="title">迪奥真我女士香水Q版 EDP</div>
+												<div class="title">印度小巧菠萝</div>
 												<div class="price">
 													<span class="p-1">￥65.88</span>
 													<span class="p-2">原价:￥122.00</span>
@@ -1952,7 +1952,7 @@
 												<a href="product" class="pic" target="_blank">
 													<img src="/shop/resources/img/b-2.jpg">
 												</a>
-												<div class="title">宝格丽花舞轻盈女士香水Q版</div>
+												<div class="title">印度小巧菠萝</div>
 												<div class="price">
 													<span class="p-1">￥55.04</span>
 													<span class="p-2">原价:￥128.00</span>
@@ -1965,7 +1965,7 @@
 												<a href="product" class="pic" target="_blank">
 													<img src="/shop/resources/img/b-2.jpg">
 												</a>
-												<div class="title">雅芳小黑裙香体乳150ml</div>
+												<div class="title">印度小巧菠萝</div>
 												<div class="price">
 													<span class="p-1">￥29.02</span>
 													<span class="p-2">原价:￥46.80</span>
@@ -1978,7 +1978,7 @@
 												<a href="product" class="pic" target="_blank">
 													<img src="/shop/resources/img/b-2.jpg">
 												</a>
-												<div class="title">德国贺本清小甘菊护手霜75ml</div>
+												<div class="title">印度小巧菠萝</div>
 												<div class="price">
 													<span class="p-1">￥39.50</span>
 													<span class="p-2">原价:￥79.00</span>
@@ -1991,7 +1991,7 @@
 												<a href="product" class="pic" target="_blank">
 													<img src="/shop/resources/img/b-2.jpg">
 												</a>
-												<div class="title">所望牛奶身体乳500ml润肤乳</div>
+												<div class="title">印度小巧菠萝</div>
 												<div class="price">
 													<span class="p-1">￥49.00</span>
 													<span class="p-2">原价:￥70.00</span>
@@ -2004,7 +2004,7 @@
 												<a href="product" class="pic" target="_blank">
 													<img src="/shop/resources/img/b-2.jpg">
 												</a>
-												<div class="title">雅芳小黑裙香体沐浴两件套</div>
+												<div class="title">印度小巧菠萝</div>
 												<div class="price">
 													<span class="p-1">￥58.14</span>
 													<span class="p-2">原价:￥73.59</span>
@@ -2030,7 +2030,7 @@
 												<a href="product" class="pic" target="_blank">
 													<img src="/shop/resources/img/b-2.jpg">
 												</a>
-												<div class="title">卡姿兰大眼睛持久液体眼线笔</div>
+												<div class="title">印度小巧菠萝</div>
 												<div class="price">
 													<span class="p-1">￥36.58</span>
 													<span class="p-2">原价:￥59.00</span>
@@ -2043,7 +2043,7 @@
 												<a href="product" class="pic" target="_blank">
 													<img src="/shop/resources/img/b-2.jpg">
 												</a>
-												<div class="title">素野凝胶眼线笔 初学必备 多色</div>
+												<div class="title">印度小巧菠萝</div>
 												<div class="price">
 													<span class="p-1">￥19.80</span>
 													<span class="p-2">原价:￥45.00</span>
@@ -2056,7 +2056,7 @@
 												<a href="product" class="pic" target="_blank">
 													<img src="/shop/resources/img/b-2.jpg">
 												</a>
-												<div class="title">雅芳AVON眼线笔 纯黑</div>
+												<div class="title">印度小巧菠萝</div>
 												<div class="price">
 													<span class="p-1">￥44.25</span>
 													<span class="p-2">原价:￥59.00</span>
@@ -2069,7 +2069,7 @@
 												<a href="product" class="pic" target="_blank">
 													<img src="/shop/resources/img/b-2.jpg">
 												</a>
-												<div class="title">solone防油防水眼线胶笔/眼线液</div>
+												<div class="title">印度小巧菠萝</div>
 												<div class="price">
 													<span class="p-1">￥38.00</span>
 													<span class="p-2">原价:￥47.50</span>
@@ -2108,7 +2108,7 @@
 												<a href="product" class="pic" target="_blank">
 													<img src="/shop/resources/img/b-2.jpg">
 												</a>
-												<div class="title">DHC/蝶翠诗 睫毛增长液 6.5ml</div>
+												<div class="title">印度小巧菠萝</div>
 												<div class="price">
 													<span class="p-1">￥61.50</span>
 													<span class="p-2">原价:￥82.00</span>
@@ -2121,7 +2121,7 @@
 												<a href="product" class="pic" target="_blank">
 													<img src="/shop/resources/img/b-2.jpg">
 												</a>
-												<div class="title">Forencos 炫金防水眼线笔</div>
+												<div class="title">印度小巧菠萝</div>
 												<div class="price">
 													<span class="p-1">￥67.86</span>
 													<span class="p-2">原价:￥78.00</span>

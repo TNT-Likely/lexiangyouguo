@@ -23,7 +23,7 @@
 	<div id="header">
 		<div class="uinfo_wrap clearfix">
 			<div class="info_show clearfix">
-				<a href="index" class="back_to_mogujie fl">蘑菇街首页</a>
+				<a href="index" class="back_to_mogujie fl">乐享优果首页</a>
 				<ul class="my_btn t_toolbox fr">
 					<li class="shoppingcard dropdown-menu">
 						<a href="shopping" target="_blank" class="text fl">购物车<span class="num ffred">0</span>件</a>
@@ -84,10 +84,10 @@
 	</div>
 	<div class="shop-header">
 		<div class="header clearfix">
-			<a class="shop-logo fl" href=" " target="_blank"><b class="logo header-icons">蘑菇街 SHOP</b></a>
+			<a class="shop-logo fl" href=" " target="_blank"><b class="logo header-icons">乐享优果SHOP</b></a>
 			<div class="shop-name fl">
 				<span class="name-wrap clearfix">
-                <a href=" " class="name" title="西朵朵">西朵朵</a>
+                <a href=" " class="name" title="小尝鲜">小尝鲜</a>
                  <div class="mogutalk_widget_btn kefu" data-bid="14qz4#23" data-style="widget3" data-from="shop-header"><iframe src=" " width="18" height="22" frameborder="0" scrolling="no" marginheight="0" allowtransparency="true"></iframe></div>
                             </span>
 				<p>
@@ -99,7 +99,7 @@
 					<span class="shop-sale">总销量 <b>10774</b></span>
 				</p>
 				<p>
-					<span class="s-cat">款式<b>4.8</b></span>
+					<span class="s-cat">卖相<b>4.8</b></span>
 					<span class="s-cat">质量<b>4.7</b></span>
 					<span class="s-cat">价格<b>4.7</b></span>
 					<span class="s-cat">服务<b>4.8</b></span>
@@ -109,7 +109,7 @@
 						<div class="verify">
 							<a href=" " target="_blank" class="clearfix">
 								<b class="auth header-icons fl"></b>
-								<p class="fl">蘑菇街商家认证</p>
+								<p class="fl">乐享优果商家认证</p>
 							</a>
 						</div>
 						<ol class="li li3">
@@ -197,16 +197,16 @@
 						</li>
 
 						<li>
-							<a href="index">10月新品</a>
+							<a href="index">12月新品</a>
 						</li>
 						<li>
-							<a href="index">9月新品</a>
+							<a href="index">11月新品</a>
 						</li>
 						<li>
-							<a href="index">卫衣/棒球衫</a>
+							<a href="index">鲜果</a>
 						</li>
 						<li>
-							<a href="index">毛衣/针织衫</a>
+							<a href="index">礼盒</a>
 						</li>
 						<li>
 							<a href="index">买家须知</a>
@@ -218,34 +218,34 @@
 					<div class="category_list slideer" style="display: none;">
 						<dl>
 							<dd>
+								<a href="index">12月新品</a>
+							</dd>
+							<dd>
+								<a href="index">11月新品</a>
+							</dd>
+							<dd>
+								<a href="index">11.15新品</a>
+							</dd>
+							<dd>
 								<a href="index">10月新品</a>
 							</dd>
 							<dd>
-								<a href="index">9月新品</a>
+								<a href="index">鲜果</a>
 							</dd>
 							<dd>
-								<a href="index">8.15新品</a>
+								<a href="index">礼盒</a>
 							</dd>
 							<dd>
-								<a href="index">8月新品</a>
+								<a href="index">进口水果</a>
 							</dd>
 							<dd>
-								<a href="index">连衣裙</a>
+								<a href="index">产地直销</a>
 							</dd>
 							<dd>
-								<a href="index">衬衫</a>
+								<a href="index">礼品包装</a>
 							</dd>
 							<dd>
-								<a href="index">外套</a>
-							</dd>
-							<dd>
-								<a href="index">卫衣/棒球衫</a>
-							</dd>
-							<dd>
-								<a href="index">毛衣/针织衫</a>
-							</dd>
-							<dd>
-								<a href="index">裤子/打底裤</a>
+								<a href="index">特价促销</a>
 							</dd>
 						</dl>
 					</div>
@@ -266,7 +266,7 @@
 				<div class="goods-box clearfix">
 					<div class="goods-info fl" id="J_GoodsInfo">
 						<div class="goods-info-box">
-							<h1 class="goods-title">韩国秋冬新款米奇连帽加绒卫衣</h1>
+							<h1 class="goods-title">进口智利蓝莓</h1>
 							<div class="goods-price goods-pro">
 								<dl class="clearfix">
 									<dt>原价：</dt>
@@ -526,11 +526,11 @@
 				</div>
 			</div>
 			<div class="main-show module-item" id="anc_model_img">
-				<h1 class="title">穿着效果 show</h1>
+				<h1 class="title">水果show</h1>
 				<div class="content">
 					<div class="desc">
 						<p class="start"></p>
-						<p class="text">比较抽象的素描米老鼠印花哦，宽松大版造型，适合更多体型的MM们穿着，微微的抓绒，加厚的面料，国庆后的降温直接就可以穿啦！冬天还可以作为内搭！搭配本期的裙裤，甜美可爱！</p>
+						<p class="text">一种小浆果，呈蓝色悦目，色泽美丽，蓝色并被一层白色果粉包裹果肉细腻，营养丰富</p>
 						<p class="end"></p>
 					</div>
 					<div class="img-box">

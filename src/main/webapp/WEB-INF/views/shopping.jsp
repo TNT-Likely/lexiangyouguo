@@ -25,7 +25,7 @@
 <body>
 <div id="header" class="header_2014">
 			<div class="uinfo_wrap clearfix wrap">
-				<a href=" " class="back_to_mogujie fl">蘑菇街首页</a>
+				<a href=" " class="back_to_mogujie fl">乐享优果首页</a>
 				<ul class="header_top">
 					<li class="s1 has_icon user_meta">
 						<a href="personalhomepage">
@@ -138,7 +138,7 @@
 										<label for="" class="cart_lightgray">店铺：</label>
 										<a href="customerservice" target="_blank" class="cart_hoverline">oNAirs</a>
 										<a href="customerservice" class="cart_im_btn mr5 mogutalk_btn" data-bid=14nji#23>联系客服</a>
-										<span class="cart_tip_red">全店铺满2件减5元</span>
+										<span class="cart_tip_red">全店铺满200元送25元</span>
 									</td>
 								</tr>
 								<tr class="cart_mitem " data-cut="true" data-stock="false" data-bid="14nji" data-stockid="11335735" data-timestamp="1414138607">
@@ -222,7 +222,7 @@
 		</div>
 		<div class="g-footer">
 			<p title="qihe3086">
-				<a href="index" target="_blank">蘑菇街</a> |
+				<a href="index" target="_blank">乐享优果</a> |
 				<a href="customerservice" target="_blank">加入开放平台</a> &copy; 2014 Mogujie.com,All Rights Reserved.
 			</p>
 			<div class="icons">

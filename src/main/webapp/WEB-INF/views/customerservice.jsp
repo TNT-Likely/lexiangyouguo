@@ -24,7 +24,7 @@
 <body>
 <div class="faq_header">
 			<div class="faq_header_wrap fm960 clearfix">
-				<a class="logo" href="customerservice">蘑菇街客户服务</a>
+				<a class="logo" href="customerservice">乐享优果客户服务</a>
 				<ul class="nav_wrap clearfix">
 					<li><a href="customerservice" class="cur">自助服务</a>
 					</li>
@@ -56,7 +56,7 @@
 								</li>
 								<li><span class="num">5、</span><a href="customerservice" target="_blank">微信下单的，想退货退款怎么操作呢？</a>
 								</li>
-								<li><span class="num">6、</span><a href="customerservice" target="_blank">蘑豆使用须知</a>
+								<li><span class="num">6、</span><a href="customerservice" target="_blank">积分使用须知</a>
 								</li>
 							</ol>
 						</div>
@@ -71,11 +71,11 @@
 								</li>
 								<li><span class="num">3、</span><a href="index" target="_blank">我的买手街——买手频道上线</a>
 								</li>
-								<li><span class="num">4、</span><a href="index" target="_blank">美妆特卖上线咯~</a>
+								<li><span class="num">4、</span><a href="index" target="_blank">鲜果特卖上线咯~</a>
 								</li>
-								<li><span class="num">5、</span><a href="index" target="_blank">秋天已到，酷热尚存</a>
+								<li><span class="num">5、</span><a href="index" target="_blank">快乐鲜果，乐享生活</a>
 								</li>
-								<li><span class="num">6、</span><a href="index" target="_blank">搏出位，靠搭配</a>
+								<li><span class="num">6、</span><a href="index" target="_blank">养生之道</a>
 								</li>
 							</ol>
 						</div>
@@ -122,7 +122,7 @@
 							<li>
 								<a target="_blank" href="personalhomepage" class="clearfix">
 									<i class="magic"></i>
-									<p class="title">蘑豆查询</p>
+									<p class="title">积分查询</p>
 								</a>
 							</li>
 							<li>
@@ -152,7 +152,7 @@
 							<li></li>
 						</ul>
 					</div>
-					<h2>蘑菇街购物流程</h2>
+					<h2>乐享优果购物流程</h2>
 					<div class="content-left">
 						<div class="buy-list">
 							<ul class="clearfix">
@@ -182,7 +182,7 @@
 							<div class="describe">
 								<i class="icon1"></i>
 								<div class="content">
-									<p>菇凉可以通过网站搜索或者商品分类，找到心仪的商品，</p>
+									<p>果宝可以通过网站搜索或者商品分类，找到心仪的商品，</p>
 									<p>把商品加入购物车可以防止遗漏哦~快去
 										<a target="_blank" href="index">选购商品</a> 喽~
 									</p>
@@ -191,7 +191,7 @@
 							<div class="describe dn">
 								<i class="icon2"></i>
 								<div class="content">
-									<p>菇凉将心仪的商品加入购物车、或者立即购买，即可确认结算。</p>
+									<p>果宝将心仪的商品加入购物车、或者立即购买，即可确认结算。</p>
 									<p>
 										记得确认好收货信息哟~&nbsp;
 									</p>
@@ -200,13 +200,13 @@
 							<div class="describe dn">
 								<i class="icon3"></i>
 								<div class="content">
-									<p>目前支持的支付类型：蘑菇街快捷支付、网银快捷支付、微信支付、银联支付、财付通支付。</p>
+									<p>目前支持的支付类型：乐享优果快捷支付、网银快捷支付、微信支付、银联支付、财付通支付。</p>
 								</div>
 							</div>
 							<div class="describe dn">
 								<i class="icon4"></i>
 								<div class="content">
-									<p>收到商品后亲爱的菇凉们一定要先自己查收哟~如果还满意的话，</p>
+									<p>收到商品后亲爱的果宝们一定要先自己查收哟~如果还满意的话，</p>
 									<p>可以在订单页面点击“确认收货”哦~ <span>（发货后10天未操作，系统自动确认收货）</span>
 									</p>
 								</div>
@@ -214,14 +214,14 @@
 							<div class="describe dn">
 								<i class="icon5"></i>
 								<div class="content">
-									<p>确认收货之后认真评价，将会获得蘑豆奖励哟~</p>
+									<p>确认收货之后认真评价，将会获积分奖励哟~</p>
 									<p>纯文字评价获商品金额半数的蘑豆，配图评价获与商品金额数值相同的蘑豆~</p>
 								</div>
 							</div>
 						</div>
 						<div class="wear-list">
 							<ul class="clearfix buy-list wear-list">
-								<li class="tt">先穿后付</li>
+								<li class="tt">先尝后付</li>
 								<li class="item active">
 									<i class="left"></i>
 									<a href="index">挑选商品</a>
@@ -247,7 +247,7 @@
 							<div class="describe">
 								<i class="icon1"></i>
 								<div class="content">
-									<p>菇凉可以通过网站搜索或者商品分类，找到心仪的商品，</p>
+									<p>果宝可以通过网站搜索或者商品分类，找到心仪的商品，</p>
 									<p>把商品加入购物车可以防止遗漏哦~快去
 										<a target="_blank" href="index">选购商品</a> 喽~
 									</p>
@@ -256,7 +256,7 @@
 							<div class="describe dn">
 								<i class="icon2"></i>
 								<div class="content">
-									<p>有先穿后付权限的菇凉，进入商品页面选择“先穿后付”，即可确认结算。</p>
+									<p>有先尝后付权限的果宝，进入商品页面选择“先尝后付”，即可确认结算。</p>
 									<p>
 										记得确认好收货信息哟~&nbsp;
 									</p>
@@ -265,21 +265,21 @@
 							<div class="describe dn">
 								<i class="icon4"></i>
 								<div class="content">
-									<p>提交订单之后商家及时发货，菇凉收货之后先检查或试穿，</p>
+									<p>提交订单之后商家及时发货，果宝收货之后先检查或试穿，</p>
 									<p>如对商品有所不满，可在此阶段进行退货操作。</p>
 								</div>
 							</div>
 							<div class="describe dn">
 								<i class="icon3"></i>
 								<div class="content">
-									<p>菇凉对收到的商品还满意，需要在确认收货后10天内进行还款哦~</p>
+									<p>果宝对收到的商品还满意，需要在确认收货后10天内进行还款哦~</p>
 									<p>还款方式：支付宝、微信支付、财付通支付、网银支付、信用卡快捷支付。</p>
 								</div>
 							</div>
 							<div class="describe dn">
 								<i class="icon5"></i>
 								<div class="content">
-									<p>确认收货之后认真评价，将会获得蘑豆奖励哟~</p>
+									<p>确认收货之后认真评价，将会获得积分奖励哟~</p>
 									<p>纯文字评价获商品金额半数的蘑豆，配图评价获与商品金额数值相同的蘑豆~</p>
 								</div>
 							</div>

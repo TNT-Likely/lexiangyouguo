@@ -56,7 +56,7 @@
 						<i class="icon_delta"></i>
 					</li>
 					<li class="s1 has_line has_icon top_app">
-						<a>手机蘑菇街</a>
+						<a>手机乐享优果</a>
 						<ol class="ext_mode">
 							<li class="s2">
 								<img src=" " alt="扫描下载客户端">
@@ -68,7 +68,7 @@
 					</li>
 				</ul>
 				<div class="header_mid clearfix">
-					<a href="index" class="logo" title="蘑菇街首页">蘑菇街|www.mogujie.com</a>
+					<a href="index" class="logo" title="乐享优果首页">乐享优果|www.lexiangyouguo.com</a>
 					<div class="top_nav_search" id="nav_search_form">
 						<div class="selectbox" data-v="1">
 							<span class="selected">搜商品</span>
@@ -105,16 +105,16 @@
 					<ul class="nav_list">
 						<li><a href="index">首页</a>
 						</li>
-						<li><a href="buyersrecommend">服饰</a>
+						<li><a href="buyersrecommend">产地直销</a>
 						</li>
-						<li><a href="buyersrecommend">搭配</a>
+						<li><a href="buyersrecommend">每日鲜果</a>
 						</li>
 						<li class="daren">
-							<a href="buyersrecommend">达人</a>
+							<a href="buyersrecommend">果V一刻</a>
 						</li>
-						<li class="buyer"><a class="on" href="buyersrecommend">买手</a>
+						<li class="buyer"><a class="on" href="buyersrecommend">每日特价</a>
 						</li>
-						<li><a href="buyersrecommend">美妆</a>
+						<li><a href="buyersrecommend">礼品特区</a>
 						</li>
 						<li><a href="buyersrecommend">团购</a>
 						</li>
@@ -139,7 +139,7 @@
 							<div class="info_detail">
 								<p class="uname">紫色天堂1995</p>
 								<ul class="clearfix">
-									<li><span class="utext">我的蘑豆 </span><span class="modou_total_num">1粒</span>
+									<li><span class="utext">我的积分</span><span class="modou_total_num">1粒</span>
 									</li>
 									<li><span class="utext modou_total_money">下单可抵现0.01元</span>
 									</li>
@@ -147,17 +147,17 @@
 							</div>
 						</div>
 						<div class="base_info_get fl">
-							<p class="get_text text_h">今日已领取<span class="get_num">1</span>粒，明天可领更多哦</p>
-							<p class="modou_remind">去手机端领蘑豆，直接翻倍~</p>
+							<p class="get_text text_h">今日已领取<span class="get_num">1</span>分，明天可领更多哦</p>
+							<p class="modou_remind">去手机端领积分，直接翻倍~</p>
 							<div class='clearfix'><a class="utext_link fr" href="integral" target="_blank">领取记录></a>
 							</div>
-							<div class='clearfix'><a class="utext_link fr" href="integral" target="_blank">蘑豆攻略></a>
+							<div class='clearfix'><a class="utext_link fr" href="integral" target="_blank">积分攻略></a>
 							</div>
 						</div>
 					</div>
 					<div class="active_module">
 						<div class="module_title clearfix">
-							<p class="title fl">蘑豆秒杀</p>
+							<p class="title fl">积分秒杀</p>
 							<p class="sub_title fl">每周三上午10:00开抢</p>
 						</div>
 						<ul class="modou_ms clearfix" style="margin-bottom: 25px;">
@@ -175,7 +175,7 @@
 								<div class="item_btn_wrap fr">
 									<span class="item_btn item_t_add"></span>
 								</div>
-								<p class="item_title"><a href="product" target="_blank">小香风菱格链条单肩包</a>
+								<p class="item_title"><a href="product" target="_blank">美国无籽红提</a>
 								</p>
 								<div class="clearfix" style='height:40px;'>
 									<p class="item_need fl">
@@ -200,11 +200,11 @@
 								<div class="item_btn_wrap fr">
 									<span class="item_btn item_t_add"></span>
 								</div>
-								<p class="item_title"><a href="product" target="_blank">韩版平底系带雪地靴</a>
+								<p class="item_title"><a href="product" target="_blank">关怀备至礼盒</a>
 								</p>
 								<div class="clearfix" style='height:40px;'>
 									<p class="item_need fl">
-										秒杀价:<span class="item_modou"> 59 </span><span></span>粒
+										秒杀价:<span class="item_modou"> 200 </span><span></span>盒
 									</p>
 									<p class="item_amount">
 										剩 <span>5</span> 件
@@ -220,16 +220,16 @@
 									<div class="buy_item_info_triangle_right"></div>
 								</div>
 								<a class="item_pic" href="product" target="_blank">
-									<img src="/shop/resources/img/b-34.jpg" alt="">
+									<img src="/shop/resources/img/b-34(1).jpg" alt="">
 								</a>
 								<div class="item_btn_wrap fr">
 									<span class="item_btn item_t_add"></span>
 								</div>
-								<p class="item_title"><a href="product" target="_blank">姜惠妍同款宝蓝小格纹BF衬衫</a>
+								<p class="item_title"><a href="product" target="_blank">果香四溢礼盒</a>
 								</p>
 								<div class="clearfix" style='height:40px;'>
 									<p class="item_need fl">
-										秒杀价:<span class="item_modou"> 59 </span><span></span>粒
+										秒杀价:<span class="item_modou"> 250 </span><span></span>盒
 									</p>
 									<p class="item_amount">
 										剩 <span>5</span> 件
@@ -245,16 +245,16 @@
 									<div class="buy_item_info_triangle_right"></div>
 								</div>
 								<a class="item_pic" href="product" target="_blank">
-									<img src="/shop/resources/img/b-34.jpg" alt="">
+									<img src="/shop/resources/img/b-34(2).jpg" alt="">
 								</a>
 								<div class="item_btn_wrap fr">
 									<span class="item_btn item_t_add"></span>
 								</div>
-								<p class="item_title"><a href="product" target="_blank">继承者们同款如愿骨项链</a>
+								<p class="item_title"><a href="product" target="_blank">诚心诚意礼盒</a>
 								</p>
 								<div class="clearfix" style='height:40px;'>
 									<p class="item_need fl">
-										秒杀价:<span class="item_modou"> 9 </span><span></span>粒
+										秒杀价:<span class="item_modou"> 300 </span><span></span>盒 
 									</p>
 									<p class="item_amount">
 										剩 <span>10</span> 件
@@ -266,7 +266,7 @@
 									<img src="/shop/resources/img/b-32.jpg" alt="">
 								</a>
 								<div class='buy_item_ad'>
-									<div class="item_ad_title">蘑豆攻略升级啦</div>
+									<div class="item_ad_title">积分攻略升级啦</div>
 									<div class="item_ad_sub_title">超多玩法！</div>
 								</div>
 							</li>
@@ -290,7 +290,7 @@
 									</div>
 								</a>
 								<div class="shop_info fl">
-									<a href="product" class="shop_name" target="_blank"><span>阿甘的新鞋</span></a>
+									<a href="product" class="shop_name" target="_blank"><span>尚食新品</span></a>
 									<p class="stext">有效期：</p>
 									<p class="stext"><span class="start_date">2014-09-15</span>至<span class="end_date">2014-10-31</span>
 									</p>
@@ -313,7 +313,7 @@
 									<p class="stext">有效期：</p>
 									<p class="stext"><span class="start_date">2014-09-15</span>至<span class="end_date">2014-10-31</span>
 									</p>
-									<a class="change_btn change_start" href="product" data-idstr="197ks"><span class="modou_num">10</span>蘑豆兑换</a>
+									<a class="change_btn change_start" href="product" data-idstr="197ks"><span class="modou_num">10</span>积分兑换</a>
 								</div>
 							</li>
 							<li class="voucher_box fl">
@@ -332,7 +332,7 @@
 									<p class="stext">有效期：</p>
 									<p class="stext"><span class="start_date">2014-07-25</span>至<span class="end_date">2015-11-30</span>
 									</p>
-									<a class="change_btn change_start" href="product" data-idstr="17hvg"><span class="modou_num">20</span>蘑豆兑换</a>
+									<a class="change_btn change_start" href="product" data-idstr="17hvg"><span class="modou_num">20</span>积分兑换</a>
 								</div>
 							</li>
 							<li class="voucher_box fl">
@@ -351,7 +351,7 @@
 									<p class="stext">有效期：</p>
 									<p class="stext"><span class="start_date">2014-09-15</span>至<span class="end_date">2014-10-31</span>
 									</p>
-									<a class="change_btn change_start" href="product" data-idstr="197e4"><span class="modou_num">10</span>蘑豆兑换</a>
+									<a class="change_btn change_start" href="product" data-idstr="197e4"><span class="modou_num">10</span>积分兑换</a>
 								</div>
 							</li>
 							<li class="voucher_box fl">

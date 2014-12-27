@@ -25,7 +25,7 @@
 <body class="media_screen_1200">
 		<div id="header" class="header_2014">
 			<div class="uinfo_wrap clearfix wrap">
-				<a href="index" class="back_to_mogujie fl">蘑菇街首页</a>
+				<a href="index" class="back_to_mogujie fl">乐享优果首页</a>
 				<ul class="header_top">
 					<li class="s1 has_icon user_meta">
 						<a href="personalhomepage">
@@ -255,7 +255,7 @@
 		</div>
 		<div class="g-footer">
 			<p title="qihe3075">
-				<a href="index" target="_blank">蘑菇街</a> |
+				<a href="index" target="_blank">乐享优果</a> |
 				<a href="index" target="_blank">加入开放平台</a> © 2014 Mogujie.com,All Rights Reserved.
 			</p>
 			<div class="icons">

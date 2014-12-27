@@ -52,7 +52,7 @@
 						<i class="icon_delta"></i>
 					</li>
 					<li class="s1 has_line has_icon top_app">
-						<a>手机蘑菇街</a>
+						<a>手机乐享优果</a>
 						<ol class="ext_mode">
 							<li class="s2">
 								<img src=" " alt="扫描下载客户端">
@@ -64,7 +64,7 @@
 					</li>
 				</ul>
 				<div class="header_mid clearfix">
-					<a href="index" class="logo" title="蘑菇街首页">蘑菇街|www.mogujie.com</a>
+					<a href="index" class="logo" title="乐享优果首页">乐享优果|www.lexiangyouguo.com</a>
 					<div class="top_nav_search" id="nav_search_form">
 						<div class="selectbox" data-v="1">
 							<span class="selected">搜商品</span>
@@ -101,16 +101,16 @@
 					<ul class="nav_list">
 						<li><a href="index">首页</a>
 						</li>
-						<li><a href="buyersrecommend">服饰</a>
+						<li><a href="buyersrecommend">产地直销</a>
 						</li>
-						<li><a href="buyersrecommend">搭配</a>
+						<li><a href="buyersrecommend">每日鲜果</a>
 						</li>
 						<li class="daren">
-							<a href="buyersrecommend">达人</a>
+							<a href="buyersrecommend">果V一刻</a>
 						</li>
-						<li class="buyer"><a class="on" href="buyersrecommend">买手</a>
+						<li class="buyer"><a class="on" href="buyersrecommend">每日特价</a>
 						</li>
-						<li><a href="buyersrecommend">美妆</a>
+						<li><a href="buyersrecommend">礼品特区</a>
 						</li>
 						<li><a href="buyersrecommend">团购</a>
 						</li>
@@ -185,7 +185,7 @@
 									<a href="buyersrecommend" title="小组">小组</a>
 								</li>
 								<li>
-									<a href="buyersrecommend" title="美妆">美妆</a>
+									<a href="buyersrecommend" title="鲜果">鲜果</a>
 								</li>
 							</ul>
 						</div>
@@ -196,7 +196,7 @@
 						<div class="home_empty clearfix">
 							<img src="/shop/resources/img/a-12.jpg" class="fl" />
 							<span class="des fl" style="font-size: 18px; color: #A2A1A1; margin-top: 10px;">
-                                你的封面还无内容，去<a target="_blank" href="buyersrecommend" title="蘑菇达人" >蘑菇达人</a>看看她们如何装饰自己的空间吧！ 
+                                你的封面还无内容，去<a target="_blank" href="buyersrecommend" title="乐享达人" >乐享达人</a>看看她们如何装饰自己的空间吧！ 
                                 </span>
 						</div>
 						<div id="col0" class="col">

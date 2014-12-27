@@ -57,7 +57,7 @@
 						<i class="icon_delta"></i>
 					</li>
 					<li class="s1 has_line has_icon top_app">
-						<a>手机蘑菇街</a>
+						<a>手机乐享优果</a>
 						<ol class="ext_mode">
 							<li class="s2">
 								<img src=" " alt="扫描下载客户端">
@@ -69,7 +69,7 @@
 					</li>
 				</ul>
 				<div class="header_mid clearfix">
-					<a href="index" class="logo" title="蘑菇街首页">蘑菇街|www.mogujie.com</a>
+					<a href="index" class="logo" title="乐享优果首页">乐享优果|www.lexiangyouguo.com</a>
 					<div class="top_nav_search" id="nav_search_form">
 						<div class="selectbox" data-v="1">
 							<span class="selected">搜商品</span>
@@ -106,16 +106,16 @@
 					<ul class="nav_list">
 						<li><a href="index">首页</a>
 						</li>
-						<li><a href="buyersrecommend">服饰</a>
+						<li><a href="buyersrecommend">产地直销</a>
 						</li>
-						<li><a href="buyersrecommend">搭配</a>
+						<li><a href="buyersrecommend">每日鲜果</a>
 						</li>
 						<li class="daren">
-							<a href="buyersrecommend">达人</a>
+							<a href="buyersrecommend">果V一刻</a>
 						</li>
-						<li class="buyer"><a class="on" href="buyersrecommend">买手</a>
+						<li class="buyer"><a class="on" href="buyersrecommend">每日特价</a>
 						</li>
-						<li><a href="buyersrecommend">美妆</a>
+						<li><a href="buyersrecommend">礼品特区</a>
 						</li>
 						<li><a href="buyersrecommend">团购</a>
 						</li>
@@ -134,17 +134,14 @@
 						<ul class="primary_nav_list" id="j_primary_nav_list">
 							<li class="primary_nav_li primary_nav_li_first">
 								<dl class="nav_warp">
-									<dt>
-							<a target="_blank" href="product">衣服</a>
+									<dt>鲜果</a>
 						</dt>
 									<dd>
-										<a target="_blank" href="product">秋季新品</a>
-										<a target="_blank" href="product">外套</a>
-										<a target="_blank" href="product">本月新裙</a>
-										<a target="_blank" href="product">毛衣</a>
-										<a target="_blank" href="product">小脚裤</a>
-										<a target="_blank" href="product">针织衫</a>
-										<a target="_blank" href="product">风衣</a>
+										<a target="_blank" href="product">当季生产</a>
+										<a target="_blank" href="product">反季特供</a>
+										<a target="_blank" href="product">国产水果</a>
+										<a target="_blank" href="product">原产地水果</a>
+										<a target="_blank" href="product">进口水果</a>
 									</dd>
 								</dl>
 							    <i class="nav_arrow"></i>
@@ -152,57 +149,26 @@
 								<i class="nav_line_right"></i>
 								<div class="nav_more">
 									<dl class="nav_more_warp">
-										<dt><a target="_blank" href="product">新品发布</a></dt>
+										<dt><a target="_blank" href="product">新品上市</a></dt>
 										<dd>
-											<a target="_blank" href="product">风衣</a>
-											<a target="_blank" href="product">毛线裙</a>
-											<a target="_blank" href="product">毛衣</a>
-											<a target="_blank" href="product">连衣裙</a>
-											<a target="_blank" href="product">卫衣</a>
-											<a target="_blank" href="product">韩版西装</a>
-											<a target="_blank" href="product">长款外套</a>
-											<a target="_blank" href="product">针织衫</a>
-											<a target="_blank" href="product">小脚裤</a>
-											<a target="_blank" href="product">裙子套装</a>
-											<a target="_blank" href="product">棒球服</a>
-											<a target="_blank" href="product">A字裙</a>
-											<a target="_blank" href="product">打底裤</a>
+											<a target="_blank" href="product">冬季温补</a>
+											<a target="_blank" href="product">冬季暖胃</a>
+											<a target="_blank" href="product">冬季除火</a>
 										</dd>
 									</dl>
 									<dl class="nav_more_warp">
 										<dt><a target="_blank" href="product">本季热卖</a></dt>
 										<dd>
-											<a target="_blank" href="product">T恤</a>
-											<a target="_blank" href="product">韩范美裙</a>
-											<a target="_blank" href="product">衬衫</a>
-											<a target="_blank" href="product">哈伦裤</a>
-											<a target="_blank" href="product">开衫</a>
-											<a target="_blank" href="product">长袖连衣裙</a>
-											<a target="_blank" href="product">打底衫</a>
-											<a target="_blank" href="product">针织裙</a>
-											<a target="_blank" href="product">牛仔外套</a>
-											<a target="_blank" href="product">牛仔裤</a>
-											<a target="_blank" href="product">半身裙</a>
-											<a target="_blank" href="product">套装</a>
-											<a target="_blank" href="product">外套</a>
-											<a target="_blank" href="product">睡衣</a>
+											<a target="_blank" href="product">进口鲜果</a>
+											<a target="_blank" href="product">产地直销</a>
+										
 										</dd>
 									</dl>
 									<dl class="nav_more_warp">
 										<dt><a target="_blank" href="product">热门推荐</a></dt>
 										<dd>
-											<a target="_blank" href="product">热搜美衣</a>
-											<a target="_blank" href="product">秋季裙装</a>
-											<a target="_blank" href="product">显瘦裤装</a>
-											<a target="_blank" href="product">轻文艺</a>
-											<a target="_blank" href="product">韩国同款</a>
-											<a target="_blank" href="product">千鸟格</a>
-											<a target="_blank" href="product">英伦复古潮</a>
-											<a target="_blank" href="product">闺蜜装</a>
-											<a target="_blank" href="product">太空棉</a>
-											<a target="_blank" href="product">秋冬打底</a>
-											<a target="_blank" href="product">甜美系</a>
-											<a target="_blank" href="product">情侣装</a>
+											<a target="_blank" href="product">进口原产</a>
+											<a target="_blank" href="product">新鲜自产</a>									
 										</dd>
 									</dl>
 								</div>
@@ -210,17 +176,11 @@
 							<li class="primary_nav_li">
 								<dl class="nav_warp">
 									<dt>
-							<a target="_blank" href="product">鞋子</a>
+							<a target="_blank" href="product">礼品</a>
 						</dt>
 									<dd>
-										<a target="_blank" href="product">秋季热卖</a>
-										<a target="_blank" href="product">运动</a>
-										<a target="_blank" href="product">短靴</a>
-										<a target="_blank" href="product">单鞋</a>
-										<a target="_blank" href="product">高跟</a>
-										<a target="_blank" href="product">马丁靴</a>
-										<a target="_blank" href="product">平底</a>
-										<a target="_blank" href="product">厚底</a>
+										<a target="_blank" href="product">果篮</a>
+										<a target="_blank" href="product">礼盒</a>								
 									</dd>
 								</dl>
 								<i class="nav_arrow"></i>
@@ -230,49 +190,28 @@
 									<dl class="nav_more_warp">
 										<dt><a target="_blank" href="product">热门推荐</a></dt>
 										<dd>
-											<a target="_blank" href="product">运动风</a>
-											<a target="_blank" href="product">显瘦</a>
-											<a target="_blank" href="product">韩系美鞋</a>
-											<a target="_blank" href="product">短靴</a>
-											<a target="_blank" href="product">明星同款</a>
-											<a target="_blank" href="product">牛津鞋</a>
-											<a target="_blank" href="product">平底单鞋</a>
-											<a target="_blank" href="product">欧美范</a>
-											<a target="_blank" href="product">马丁靴</a>
-											<a target="_blank" href="product">粗跟</a>
-											<a target="_blank" href="product">懒人鞋</a>
-											<a target="_blank" href="product">长靴</a>
+											<a target="_blank" href="product">庆祝果篮</a>
+											<a target="_blank" href="product">喜悦果篮</a>
+											<a target="_blank" href="product">节日果篮</a>
+											<a target="_blank" href="product">祝贺果篮</a>
+											<a target="_blank" href="product">庆祝礼盒</a>
+											<a target="_blank" href="product">喜悦礼盒</a>
+											<a target="_blank" href="product">节日礼盒</a>
+											<a target="_blank" href="product">祝贺果篮</a>
 										</dd>
 									</dl>
 									<dl class="nav_more_warp">
-										<dt><a target="_blank" href="product">潮流单鞋</a></dt>
+										<dt><a target="_blank" href="product">实惠优选</a></dt>
 										<dd>
-											<a target="_blank" href="product">新品速递</a>
-											<a target="_blank" href="product">厚底鞋</a>
-											<a target="_blank" href="product">中跟单鞋</a>
-											<a target="_blank" href="product">平底鞋</a>
-											<a target="_blank" href="product">坡跟鞋</a>
-											<a target="_blank" href="product">水钻Bling</a>
-											<a target="_blank" href="product">圆头鞋</a>
-											<a target="_blank" href="product">高跟鞋</a>
-											<a target="_blank" href="product">尖头鞋</a>
-											<a target="_blank" href="product">复古牛津鞋</a>
+											<a target="_blank" href="product">特惠满蓝</a>
+											<a target="_blank" href="product">共享礼盒</a>
 										</dd>
 									</dl>
 									<dl class="nav_more_warp">
-										<dt><a target="_blank" href="product">运动休闲</a></dt>
+										<dt><a target="_blank" href="product">精品专区</a></dt>
 										<dd>
-											<a target="_blank" href="product">运动鞋</a>
-											<a target="_blank" href="product">豆豆鞋</a>
-											<a target="_blank" href="product">厚底鞋</a>
-											<a target="_blank" href="product">N字鞋</a>
-											<a target="_blank" href="product">内增高</a>
-											<a target="_blank" href="product">情侣款</a>
-											<a target="_blank" href="product">松糕鞋</a>
-											<a target="_blank" href="product">街头风板鞋</a>
-											<a target="_blank" href="product">舒适平底</a>
-											<a target="_blank" href="product">潮范高帮鞋</a>
-											<a target="_blank" href="product">帆布鞋</a>
+											<a target="_blank" href="product">金装果篮</a>
+											<a target="_blank" href="product">金装礼盒</a>
 										</dd>
 									</dl>
 								</div>
@@ -280,18 +219,13 @@
 							<li class="primary_nav_li">
 								<dl class="nav_warp">
 									<dt>
-							<a target="_blank" href="product">包包</a>
+							<a target="_blank" href="product">干果</a>
 
 						</dt>
 									<dd>
-										<a target="_blank" href="product">秋季热卖</a>
-										<a target="_blank" href="product">双肩</a>
-										<a target="_blank" href="product">单肩</a>
-										<a target="_blank" href="product">斜挎</a>
-										<a target="_blank" href="product">手提</a>
-										<a target="_blank" href="product">钱包</a>
-										<a target="_blank" href="product">真皮包</a>
-										<a target="_blank" href="product">大包</a>
+										<a target="_blank" href="product">产地直销</a>
+										<a target="_blank" href="product">手工精品</a>
+										<a target="_blank" href="product">进口优选</a>
 									</dd>
 								</dl>								
 								<i class="nav_arrow"></i>
@@ -299,49 +233,23 @@
 								<i class="nav_line_right"></i>
 								<div class="nav_more">
 									<dl class="nav_more_warp">
-										<dt><a target="_blank" href="product">款型</a></dt>
+										<dt><a target="_blank" href="product">优质原产</a></dt>
 										<dd>
-											<a target="_blank" href="product">小包</a>
-											<a target="_blank" href="product">双肩包</a>
-											<a target="_blank" href="product">斜挎包</a>
-											<a target="_blank" href="product">单肩包</a>
-											<a target="_blank" href="product">手提包</a>
-											<a target="_blank" href="product">帆布包</a>
-											<a target="_blank" href="product">机车包</a>
-											<a target="_blank" href="product">钱包</a>
-											<a target="_blank" href="product">水桶包</a>
-											<a target="_blank" href="product">手拿包</a>
-											<a target="_blank" href="product">邮差包</a>
-											<a target="_blank" href="product">复古包</a>
-											<a target="_blank" href="product">化妆包</a>
+											<a target="_blank" href="product">手工特制</a>
+										
 										</dd>
 									</dl>
 									<dl class="nav_more_warp">
-										<dt><a target="_blank" href="product">热款</a></dt>
+										<dt><a target="_blank" href="product">进口特供</a></dt>
 										<dd>
-											<a target="_blank" href="product">韩版双肩包</a>
-											<a target="_blank" href="product">真皮包</a>
-											<a target="_blank" href="product">学院风</a>
-											<a target="_blank" href="product">链条包</a>
-											<a target="_blank" href="product">铆钉包</a>
-											<a target="_blank" href="product">菱格</a>
-											<a target="_blank" href="product">流苏包</a>
-											<a target="_blank" href="product">羊皮</a>
-											<a target="_blank" href="product">动物纹</a>
-											<a target="_blank" href="product">牛皮包</a>
-											<a target="_blank" href="product">零钱包</a>
-											<a target="_blank" href="product">韩范</a>
-											<a target="_blank" href="product">明星同款</a>
+											<a target="_blank" href="product">异国佳品</a>	
 										</dd>
 									</dl>
 									<dl class="nav_more_warp">
-										<dt><a target="_blank" href="product">场合</a></dt>
+										<dt><a target="_blank" href="product">干果实惠装</a></dt>
 										<dd>
-											<a target="_blank" href="product">通勤</a>
-											<a target="_blank" href="product">约会</a>
-											<a target="_blank" href="product">出游</a>
-											<a target="_blank" href="product">聚会</a>
-											<a target="_blank" href="product">运动</a>
+											<a target="_blank" href="product">闲食装</a>
+											<a target="_blank" href="product">节日装</a>
 										</dd>
 									</dl>
 								</div>
@@ -349,14 +257,13 @@
 							<li class="primary_nav_li">
 								<dl class="nav_warp nav_warp_low">
 									<dt>
-							<a target="_blank" href="product">配饰</a>
+							<a target="_blank" href="product">优果优汁</a>
 
 						</dt>
 									<dd>
-										<a target="_blank" href="product">手表</a>
-										<a target="_blank" href="product">发带</a>
-										<a target="_blank" href="product">围巾</a>
-										<a target="_blank" href="product">手机壳</a>
+										<a target="_blank" href="product">新鲜鲜榨</a>
+										<a target="_blank" href="product">保质精装</a>
+									
 									</dd>
 								</dl>
 								<i class="nav_arrow nav_arrow_low"></i>
@@ -366,134 +273,47 @@
 									<dl class="nav_more_warp">
 										<dt><a target="_blank" href="product">应季新品</a></dt>
 										<dd>
-											<a target="_blank" href="product">手套</a>
-											<a target="_blank" href="product">围巾</a>
-											<a target="_blank" href="product">毛衣链</a>
-											<a target="_blank" href="product">手表</a>
-											<a target="_blank" href="product">堆堆袜</a>
-											<a target="_blank" href="product">iPhone壳</a>
-											<a target="_blank" href="product">韩版帽</a>
-											<a target="_blank" href="product">框架眼镜</a>
+											<a target="_blank" href="product">清热润肺</a>
+											<a target="_blank" href="product">能量补充</a>
 										</dd>
 									</dl>
 									<dl class="nav_more_warp">
-										<dt><a target="_blank" href="product">点睛发饰</a></dt>
+										<dt><a target="_blank" href="product">运动必备</a></dt>
 										<dd>
-											<a target="_blank" href="product">发箍</a>
-											<a target="_blank" href="product">发带</a>
-											<a target="_blank" href="product">头绳</a>
-											<a target="_blank" href="product">发夹</a>
-											<a target="_blank" href="product">刘海夹</a>
+											<a target="_blank" href="product">供能健体</a>
+											<a target="_blank" href="product">维生素动力</a>
 										</dd>
 									</dl>
 									<dl class="nav_more_warp">
-										<dt><a target="_blank" href="product">加分配件</a></dt>
+										<dt><a target="_blank" href="product">养生优选</a></dt>
 										<dd>
-											<a target="_blank" href="product">手机壳</a>
-											<a target="_blank" href="product">短袜</a>
-											<a target="_blank" href="product">连裤袜</a>
-											<a target="_blank" href="product">腰带</a>
-											<a target="_blank" href="product">晴雨伞</a>
-											<a target="_blank" href="product">丝袜</a>
-											<a target="_blank" href="product">墨镜</a>
-											<a target="_blank" href="product">遮阳伞</a>
+											<a target="_blank" href="product">养胃健体</a>
+											<a target="_blank" href="product">促进气血循环</a>
 										</dd>
-									</dl>
-									<dl class="nav_more_warp">
-										<dt><a target="_blank" href="product">爱美首饰</a></dt>
-										<dd>
-											<a target="_blank" href="product">锁骨链</a>
-											<a target="_blank" href="product">耳钉</a>
-											<a target="_blank" href="product">手链</a>
-											<a target="_blank" href="product">戒指</a>
-											<a target="_blank" href="product">项链</a>
-											<a target="_blank" href="product">手链表</a>
-											<a target="_blank" href="product">手镯</a>
-											<a target="_blank" href="product">耳环</a>
-										</dd>
-									</dl>
-									<dl class="nav_more_warp">
-										<dt><a target="_blank" href="product">出街帽子</a></dt>
-										<dd>
-											<a target="_blank" href="product">毛线帽</a>
-											<a target="_blank" href="product">画家帽</a>
-											<a target="_blank" href="product">棒球帽</a>
-											<a target="_blank" href="product">鸭舌帽</a>
-											<a target="_blank" href="product">礼帽</a>
-										</dd>
-									</dl>
+									</dl>								
 								</div>
 							</li>
 							<li class="primary_nav_li">
 								<dl class="nav_warp nav_warp_low">
 									<dt>
-							<a target="_blank" href="product">护肤</a></dt>
-									<dd>
-										<a target="_blank" href="product">洁面</a>
-										<a target="_blank" href="product">控油</a>
-										<a target="_blank" href="product">发型</a>
-										<a target="_blank" href="product">瘦身</a>
-									</dd>
+							<a target="_blank" href="product">孕妇健康</a></dt>
+								
 								</dl>
 								<i class="nav_arrow nav_arrow_low"></i>
 								<i class="nav_line_bottom"></i>
 								<i class="nav_line_right"></i>
 								<div class="nav_more">
 									<dl class="nav_more_warp">
-										<dt><a target="_blank" href="product">面部</a></dt>
-										<dd>
-											<a target="_blank" href="product">卸妆</a>
-											<a target="_blank" href="product">洁面</a>
-											<a target="_blank" href="product">面部磨砂</a>
-											<a target="_blank" href="product">爽肤水</a>
-											<a target="_blank" href="product">黑头导出液</a>
-											<a target="_blank" href="product">面膜</a>
-											<a target="_blank" href="product">眼膜</a>
-											<a target="_blank" href="product">精华液</a>
-											<a target="_blank" href="product">眼部精华</a>
-											<a target="_blank" href="product">乳液</a>
-											<a target="_blank" href="product">面霜</a>
-											<a target="_blank" href="product">眼霜</a>
-											<a target="_blank" href="product">精油</a>
-										</dd>
+										<dt><a target="_blank" href="product">孕前佳品</a></dt>
+									
 									</dl>
 									<dl class="nav_more_warp">
-										<dt><a target="_blank" href="product">身体</a></dt>
-										<dd>
-											<a target="_blank" href="product">沐浴乳</a>
-											<a target="_blank" href="product">身体乳</a>
-											<a target="_blank" href="product">脱毛膏</a>
-											<a target="_blank" href="product">浴盐</a>
-											<a target="_blank" href="product">身体磨砂膏</a>
-											<a target="_blank" href="product">纤体瘦身</a>
-											<a target="_blank" href="product">颈部护理</a>
-											<a target="_blank" href="product">胸部护理</a>
-											<a target="_blank" href="product">手部护理</a>
-											<a target="_blank" href="product">足部护理</a>
-											<a target="_blank" href="product">香体止汗</a>
-											<a target="_blank" href="product">面霜</a>
-											<a target="_blank" href="product">眼霜</a>
-											<a target="_blank" href="product">精油</a>
-										</dd>
+										<dt><a target="_blank" href="product">孕期优选</a></dt>
+										
 									</dl>
 									<dl class="nav_more_warp">
-										<dt><a target="_blank" href="product">美发</a></dt>
-										<dd>
-											<a target="_blank" href="product">洗发水</a>
-											<a target="_blank" href="product">护发素</a>
-											<a target="_blank" href="product">发膜</a>
-											<a target="_blank" href="product">弹力素</a>
-											<a target="_blank" href="product">蓬松产品</a>
-											<a target="_blank" href="product">发蜡</a>
-											<a target="_blank" href="product">定型喷雾</a>
-											<a target="_blank" href="product">染发膏</a>
-											<a target="_blank" href="product">焗油膏</a>
-											<a target="_blank" href="product">眼部精华</a>
-											<a target="_blank" href="product">乳液</a>
-											<a target="_blank" href="product">面霜</a>
-											<a target="_blank" href="product">眼霜</a>
-											<a target="_blank" href="product">精油</a>
-										</dd>
+										<dt><a target="_blank" href="product">产后调养</a></dt>
+								
 									</dl>
 								</div>
 							</li>
@@ -626,7 +446,7 @@
 								<img src="/shop/resources/img/b-11.jpg" alt="">
 								<span class="sale_discount">8.0</span>
 										</span>
-										<span class="sale_title">爱丽小屋染眉膏</span>
+										<span class="sale_title">精选</span>
 									</a>
 								</li>
 								<li class="sale_li">
@@ -635,7 +455,7 @@
 								<img src="/shop/resources/img/b-11.jpg" alt="">
 								<span class="sale_discount">5.1</span>
 										</span>
-										<span class="sale_title">VDL三色渐变唇膏</span>
+										<span class="sale_title">狂甩</span>
 									</a>
 								</li>
 								<li class="sale_li">
@@ -644,7 +464,7 @@
 								<img src="/shop/resources/img/b-11.jpg" alt="">
 								<span class="sale_discount">6.7</span>
 										</span>
-										<span class="sale_title">3CE漆式唇彩</span>
+										<span class="sale_title">特供</span>
 									</a>
 								</li>
 							</ul>
@@ -682,10 +502,10 @@
 				<div class="mgj_topbar">
 					<h3 class="topbar_daren"></h3>
 					<div class="topbar_link">
-						<a target="_blank" href="product">甜美</a>
-						<a target="_blank" href="product">小个子</a>
-						<a target="_blank" href="product">轻熟</a>
-						<a target="_blank" href="product">逆天大长腿</a>
+						<a target="_blank" href="product">热带水果</a>
+						<a target="_blank" href="product">清热润肺</a>
+						<a target="_blank" href="product">营养食补</a>
+						<a target="_blank" href="product">健康排毒</a>
 						<a target="_blank" href="product">更多</a>
 					</div>
 				</div>
@@ -715,15 +535,15 @@
 								</div>
 							</div>
 							<div class="daren_ft">
-								<p class="daren_dapei">255搭配</p>
+								<p class="daren_dapei">精选鲜果</p>
 								<a target="_blank" class="daren_avatar" href="product" data-img=" /shop/resources/img/b-5.jpg">
 									<i class="avatar_round"></i>
 								</a>
 								<p class="daren_name">
-									<a target="_blank" href="product">NOPINK柯柯</a>
+									<a target="_blank" href="product">有机堂</a>
 								</p>
 								<p class="daren_tag daren_tag_2">
-									<i class="tag_icon"></i>时装模特</p>
+									<i class="tag_icon"></i>限时特供</p>
 							</div>
 						</li>
 						<li class="daren_li ">
@@ -750,15 +570,15 @@
 								</div>
 							</div>
 							<div class="daren_ft">
-								<p class="daren_dapei">871搭配</p>
+								<p class="daren_dapei">精选鲜果</p>
 								<a target="_blank" class="daren_avatar" href="product" data-img=" /shop/resources/img/b-5.jpg">
 									<i class="avatar_round"></i>
 								</a>
 								<p class="daren_name">
-									<a target="_blank" href="product">大龙猫大猫大本事</a>
+									<a target="_blank" href="product">有机堂</a>
 								</p>
 								<p class="daren_tag daren_tag_2">
-									<i class="tag_icon"></i>时装模特</p>
+									<i class="tag_icon"></i>限时特供</p>
 							</div>
 						</li>
 						<li class="daren_li daren_li_current">
@@ -788,15 +608,15 @@
 								</div>
 							</div>
 							<div class="daren_ft">
-								<p class="daren_dapei">38搭配</p>
+								<p class="daren_dapei">精选鲜果</p>
 								<a target="_blank" class="daren_avatar" href="product" data-img=" /shop/resources/img/b-5.jpg">
 									<i class="avatar_round"></i>
 								</a>
 								<p class="daren_name">
-									<a target="_blank" href="product">野人珊LISSUN</a>
+									<a target="_blank" href="product">有机堂</a>
 								</p>
 								<p class="daren_tag daren_tag_2">
-									<i class="tag_icon"></i>时装模特</p>
+									<i class="tag_icon"></i>限时特供</p>
 							</div>
 						</li>
 						<li class="daren_li ">
@@ -823,15 +643,15 @@
 								</div>
 							</div>
 							<div class="daren_ft">
-								<p class="daren_dapei">102搭配</p>
+								<p class="daren_dapei">精选鲜果</p>
 								<a target="_blank" class="daren_avatar" href="product" data-img=" /shop/resources/img/b-5.jpg">
 									<i class="avatar_round"></i>
 								</a>
 								<p class="daren_name">
-									<a target="_blank" href="product">许小IN小姐</a>
+									<a target="_blank" href="product">有机堂</a>
 								</p>
 								<p class="daren_tag daren_tag_2">
-									<i class="tag_icon"></i>时装模特</p>
+									<i class="tag_icon"></i>限时特供</p>
 							</div>
 						</li>
 						<li class="daren_li ">
@@ -858,15 +678,15 @@
 								</div>
 							</div>
 							<div class="daren_ft">
-								<p class="daren_dapei">114搭配</p>
+								<p class="daren_dapei">有机堂</p>
 								<a target="_blank" class="daren_avatar" href="product" data-img=" /shop/resources/img/b-5.jpg">
 									<i class="avatar_round"></i>
 								</a>
 								<p class="daren_name">
-									<a target="_blank" href="product">安妮婷婷</a>
+									<a target="_blank" href="product"></a>
 								</p>
 								<p class="daren_tag daren_tag_2">
-									<i class="tag_icon"></i>时装模特</p>
+									<i class="tag_icon"></i>限时特供</p>
 							</div>
 						</li>
 					</ul>
@@ -875,13 +695,13 @@
 			<div class="wrap mgj_section mgj_dapei" id="j_mgj_dapei">
 				<div class="mgj_topbar">
 					<h3 class="topbar_dapei"></h3>
-					<div class="topbar_link"><a target="_blank" href="product">欧美</a> 
-						<a target="_blank" href="product">约会</a>  
-						<a target="_blank" href="product">通勤OL</a> 
-						<a target="_blank" href="product">度假</a> 
-						<a target="_blank" href="product">简约</a>  
-						<a target="_blank" href="product">逛街</a>  
-						<a target="_blank" href="product">清新</a> 
+					<div class="topbar_link"><a target="_blank" href="product">走亲访友</a> 
+						<a target="_blank" href="product">庆祝</a>  
+						<a target="_blank" href="product">节日</a> 
+						<a target="_blank" href="product">祝贺</a> 
+						<a target="_blank" href="product">拜年</a>  
+						<a target="_blank" href="product">闲食</a>  
+						<a target="_blank" href="product">野餐</a> 
 					</div>
 				</div>
 				<div class="section_cont dapei_cont">
@@ -890,119 +710,119 @@
 							<a target="_blank" class="dapei_pic" href="product">
 								<img src="/shop/resources/img/b-10.jpg" alt="">
 							</a>
-							<p class="dapei_name"><a target="_blank" href="product">高挑型人晨岩</a>
+							<p class="dapei_name"><a target="_blank" href="product">平装礼盒</a>
 							</p>
-							<p class="dapei_desc">秋日长裤时髦搭</p>
+							<p class="dapei_desc">双果汇</p>
 						</li>
 						<li class="dapei_li ">
 							<a target="_blank" class="dapei_pic" href="product">
 								<img src="/shop/resources/img/b-14.jpg" alt="">
 							</a>
-							<p class="dapei_name"><a target="_blank" href="product">最美学生党莉莲</a>
+							<p class="dapei_name"><a target="_blank" href="product">硕果累累水果礼篮</a>
 							</p>
-							<p class="dapei_desc">学院mix叛逆</p>
+							<p class="dapei_desc">果篮</p>
 						</li>
 						<li class="dapei_li ">
 							<a target="_blank" class="dapei_pic" href="product">
-								<img src="/shop/resources/img/b-14.jpg" alt="">
+								<img src="/shop/resources/img/b-14(1).jpg" alt="">
 							</a>
-							<p class="dapei_name"><a target="_blank" href="product">BF风二凉</a>
+							<p class="dapei_name"><a target="_blank" href="product">喜悦礼篮</a>
 							</p>
-							<p class="dapei_desc">给基本款加点庞克风</p>
+							<p class="dapei_desc">果篮</p>
 						</li>
 						<li class="dapei_li ">
 							<a target="_blank" class="dapei_pic" href="product">
-								<img src="/shop/resources/img/b-14.jpg" alt="">
+								<img src="/shop/resources/img/b-14(2).jpg" alt="">
 							</a>
-							<p class="dapei_name"><a target="_blank" href="product">文艺风林殊</a>
+							<p class="dapei_name"><a target="_blank" href="product">情深意切水果礼篮</a>
 							</p>
-							<p class="dapei_desc">做一个安静的森女</p>
+							<p class="dapei_desc">果篮</p>
 						</li>
 						<li class="dapei_li hide_li">
 							<a target="_blank" class="dapei_pic" href="product">
-								<img src="/shop/resources/img/b-14.jpg" alt="">
+								<img src="/shop/resources/img/b-14(3).jpg" alt="">
 							</a>
-							<p class="dapei_name"><a target="_blank" href="product">欧美高街范南夕</a>
+							<p class="dapei_name"><a target="_blank" href="product">真心祝福水果礼篮</a>
 							</p>
-							<p class="dapei_desc">美式休闲范儿</p>
+							<p class="dapei_desc">果篮</p>
 						</li>
 						<li class="dapei_li ">
 							<a target="_blank" class="dapei_pic" href="product">
 								<img src="/shop/resources/img/b-14.jpg" alt="">
 							</a>
-							<p class="dapei_name"><a target="_blank" href="product">轻熟优雅范酋一</a>
+							<p class="dapei_name"><a target="_blank" href="product">真心祝福水果礼篮</a>
 							</p>
-							<p class="dapei_desc">韩式轻性感</p>
+							<p class="dapei_desc">果篮</p>
 						</li>
 						<li class="dapei_li ">
 							<a target="_blank" class="dapei_pic" href="product">
 								<img src="/shop/resources/img/b-12.jpg" alt="">
 							</a>
-							<p class="dapei_name"><a target="_blank" href="product">复古MIX猫力</a>
+							<p class="dapei_name"><a target="_blank" href="product">情深意切水果礼篮</a>
 							</p>
-							<p class="dapei_desc">赫本の回归</p>
+							<p class="dapei_desc">果篮</p>
 						</li>
 						<li class="dapei_li ">
 							<a target="_blank" class="dapei_pic" href="product">
 								<img src="/shop/resources/img/b-12.jpg" alt="">
 							</a>
-							<p class="dapei_name"><a target="_blank" href="product">最美学生党莉莲</a>
+							<p class="dapei_name"><a target="_blank" href="product">喜悦礼篮</a>
 							</p>
-							<p class="dapei_desc">做个优雅系女孩吧</p>
+							<p class="dapei_desc">果篮</p>
 						</li>
 						<li class="dapei_li ">
 							<a target="_blank" class="dapei_pic" href="">
 								<img src="/shop/resources/img/b-12.jpg" alt="">
 							</a>
-							<p class="dapei_name"><a target="_blank" href="product">轻熟优雅范酋一</a>
+							<p class="dapei_name"><a target="_blank" href="product">喜悦礼篮</a>
 							</p>
-							<p class="dapei_desc">利落感通勤装</p>
+							<p class="dapei_desc">果篮</p>
 						</li>
 						<li class="dapei_li hide_li">
 							<a target="_blank" class="dapei_pic" href="product">
 								<img src="/shop/resources/img/b-12.jpg" alt="">
 							</a>
-							<p class="dapei_name"><a target="_blank" href="product">BF风二凉</a>
+							<p class="dapei_name"><a target="_blank" href="product">情深意切水果礼篮</a>
 							</p>
-							<p class="dapei_desc">甜辣男友风</p>
+							<p class="dapei_desc">果篮</p>
 						</li>
 						<li class="dapei_li ">
 							<a target="_blank" class="dapei_pic" href="product">
 								<img src="/shop/resources/img/b-12.jpg" alt="">
 							</a>
-							<p class="dapei_name"><a target="_blank" href="product">韩系穿搭允恩</a>
+							<p class="dapei_name"><a target="_blank" href="product">情深意切水果礼篮</a>
 							</p>
-							<p class="dapei_desc">粉红女郎</p>
+							<p class="dapei_desc">果篮</p>
 						</li>
 						<li class="dapei_li ">
 							<a target="_blank" class="dapei_pic" href="product">
 								<img src="/shop/resources/img/b-12.jpg" alt="">
 							</a>
-							<p class="dapei_name"><a target="_blank" href="product">高挑型人晨岩</a>
+							<p class="dapei_name"><a target="_blank" href="product">情深意切水果礼篮</a>
 							</p>
-							<p class="dapei_desc">长款针织衫搭</p>
+							<p class="dapei_desc">果篮</p>
 						</li>
 						<li class="dapei_li ">
 							<a target="_blank" class="dapei_pic" href="product">
 								<img src="/shop/resources/img/b-12.jpg" alt="">
 							</a>
-							<p class="dapei_name"><a target="_blank" href="product">BF风二凉</a>
+							<p class="dapei_name"><a target="_blank" href="product">情深意切水果礼篮</a>
 							</p>
-							<p class="dapei_desc">背带长裤</p>
+							<p class="dapei_desc">果篮</p>
 						</li>
 						<li class="dapei_li ">
 							<a target="_blank" class="dapei_pic" href="product">
 								<img src="/shop/resources/img/b-12.jpg" alt="">
 							</a>
-							<p class="dapei_name"><a target="_blank" href="product">最美学生党莉莲</a>
+							<p class="dapei_name"><a target="_blank" href="product">情深意切水果礼篮</a>
 							</p>
-							<p class="dapei_desc">外婆家的粗针织</p>
+							<p class="dapei_desc">果篮</p>
 						</li>
 						<li class="dapei_li ">
 							<a target="_blank" class="dapei_pic" href="product">
 								<img src="/shop/resources/img/b-12.jpg" alt="">
 							</a>
-							<p class="dapei_name"><a target="_blank" href="product">欧美高街范南夕</a>
+							<p class="dapei_name"><a target="_blank" href="product">情深意切水果礼篮</a>
 							</p>
 							<p class="dapei_desc">法式运动风情</p>
 						</li>
@@ -1010,192 +830,192 @@
 							<a target="_blank" class="dapei_pic" href="product">
 								<img src="/shop/resources/img/b-12.jpg" alt="">
 							</a>
-							<p class="dapei_name"><a target="_blank" href="product">混搭疯子木羽</a>
+							<p class="dapei_name"><a target="_blank" href="product">情深意切水果礼篮</a>
 							</p>
-							<p class="dapei_desc">波普风单品</p>
+							<p class="dapei_desc">果篮</p>
 						</li>
 						<li class="dapei_li ">
 							<a target="_blank" class="dapei_pic" href="product">
 								<img src="/shop/resources/img/b-12.jpg" alt="">
 							</a>
-							<p class="dapei_name"><a target="_blank" href="product">欧美高街范南夕</a>
+							<p class="dapei_name"><a target="_blank" href="product">喜悦礼篮</a>
 							</p>
-							<p class="dapei_desc">秋冬花朵绽放</p>
+							<p class="dapei_desc">限时特供</p>
 						</li>
 						<li class="dapei_li ">
 							<a target="_blank" class="dapei_pic" href="product">
 								<img src="/shop/resources/img/b-12.jpg" alt="">
 							</a>
-							<p class="dapei_name"><a target="_blank" href="product">最美学生党莉莲</a>
+							<p class="dapei_name"><a target="_blank" href="product">喜悦礼篮</a>
 							</p>
-							<p class="dapei_desc">穿成乖乖女</p>
+							<p class="dapei_desc">限时特供</p>
 						</li>
 						<li class="dapei_li ">
 							<a target="_blank" class="dapei_pic" href="product">
 								<img src="/shop/resources/img/b-12.jpg" alt="">
 							</a>
-							<p class="dapei_name"><a target="_blank" href="product">欧美高街范南夕</a>
+							<p class="dapei_name"><a target="_blank" href="product">喜悦礼篮</a>
 							</p>
-							<p class="dapei_desc">你应该穿什么去约会</p>
+							<p class="dapei_desc">限时特供</p>
 						</li>
 						<li class="dapei_li ">
 							<a target="_blank" class="dapei_pic" href="product">
 								<img src="/shop/resources/img/b-12.jpg" alt="">
 							</a>
-							<p class="dapei_name"><a target="_blank" href="product">高挑型人晨岩</a>
+							<p class="dapei_name"><a target="_blank" href="product">情深意切水果礼篮</a>
 							</p>
-							<p class="dapei_desc">棒球衣</p>
+							<p class="dapei_desc">果篮</p>
 						</li>
 						<li class="dapei_li ">
 							<a target="_blank" class="dapei_pic" href="product">
 								<img src="/shop/resources/img/b-12.jpg" alt="">
 							</a>
-							<p class="dapei_name"><a target="_blank" href="product">日系风莎莫</a>
+							<p class="dapei_name"><a target="_blank" href="product">情深意切水果礼篮</a>
 							</p>
-							<p class="dapei_desc">怀旧菠萝纹</p>
+							<p class="dapei_desc">果篮</p>
 						</li>
 						<li class="dapei_li ">
 							<a target="_blank" class="dapei_pic" href="product">
 								<img src="/shop/resources/img/b-12.jpg" alt="">
 							</a>
-							<p class="dapei_name"><a target="_blank" href="product">复古MIX猫力</a>
+							<p class="dapei_name"><a target="_blank" href="product">情深意切水果礼篮</a>
 							</p>
-							<p class="dapei_desc">复古集市new look</p>						</li>
+							<p class="dapei_desc">限时特供</p>						</li>
 						<li class="dapei_li ">
 							<a target="_blank" class="dapei_pic" href="product">
 								<img src="/shop/resources/img/b-12.jpg" alt="">
 							</a>
-							<p class="dapei_name"><a target="_blank" href="product">韩系穿搭允恩</a>
+							<p class="dapei_name"><a target="_blank" href="product">情深意切水果礼篮</a>
 							</p>
-							<p class="dapei_desc">超超超长上衣</p>
+							<p class="dapei_desc">限时特供</p>
 						</li>
 						<li class="dapei_li ">
 							<a target="_blank" class="dapei_pic" href="product">
 								<img src="/shop/resources/img/b-12.jpg" alt="">
 							</a>
-							<p class="dapei_name"><a target="_blank" href="product">韩系穿搭允恩</a>
+							<p class="dapei_name"><a target="_blank" href="product">喜悦礼篮</a>
 							</p>
-							<p class="dapei_desc">遮住小肚子</p>
+							<p class="dapei_desc">限时特供</p>
 						</li>
 						<li class="dapei_li ">
 							<a target="_blank" class="dapei_pic" href="product">
 								<img src="/shop/resources/img/b-12.jpg" alt="">
 							</a>
-							<p class="dapei_name"><a target="_blank" href="product">最美学生党莉莲</a>
+							<p class="dapei_name"><a target="_blank" href="product">情深意切水果礼篮</a>
 							</p>
-							<p class="dapei_desc">又居家又甜美</p>
+							<p class="dapei_desc">果篮</p>
 						</li>
 						<li class="dapei_li ">
 							<a target="_blank" class="dapei_pic" href="product">
 								<img src="/shop/resources/img/b-12.jpg" alt="">
 							</a>
-							<p class="dapei_name"><a target="_blank" href="product">都会女郎素熙</a>
+							<p class="dapei_name"><a target="_blank" href="product">情深意切水果礼篮</a>
 							</p>
-							<p class="dapei_desc">职场新鲜人怎么穿</p>
+							<p class="dapei_desc">限时特供</p>
 						</li>
 						<li class="dapei_li ">
 							<a target="_blank" class="dapei_pic" href="product">
 								<img src="/shop/resources/img/b-12.jpg" alt="">
 							</a>
-							<p class="dapei_name"><a target="_blank" href="product">BF风二凉</a>
+							<p class="dapei_name"><a target="_blank" href="product">情深意切水果礼篮</a>
 							</p>
-							<p class="dapei_desc">休闲男友外套</p>
+							<p class="dapei_desc">限时特供</p>
 						</li>
 						<li class="dapei_li ">
 							<a target="_blank" class="dapei_pic" href="product">
 								<img src="/shop/resources/img/b-12.jpg" alt="">
 							</a>
-							<p class="dapei_name"><a target="_blank" href="product">显瘦专家Ann</a>
+							<p class="dapei_name"><a target="_blank" href="product">情深意切水果礼篮</a>
 							</p>
-							<p class="dapei_desc">卡通女孩</p>
+							<p class="dapei_desc">果篮</p>
 						</li>
 						<li class="dapei_li ">
 							<a target="_blank" class="dapei_pic" href="product">
 								<img src="/shop/resources/img/b-12.jpg" alt="">
 							</a>
-							<p class="dapei_name"><a target="_blank" href="product">BF风二凉</a>
+							<p class="dapei_name"><a target="_blank" href="product">情深意切水果礼篮</a>
 							</p>
-							<p class="dapei_desc">毛背心的时髦范</p>
+							<p class="dapei_desc">果篮</p>
 						</li>
 						<li class="dapei_li ">
 							<a target="_blank" class="dapei_pic" href="product">
 								<img src="/shop/resources/img/b-12.jpg" alt="">
 							</a>
-							<p class="dapei_name"><a target="_blank" href="product">韩系穿搭允恩</a>
+							<p class="dapei_name"><a target="_blank" href="product">情深意切水果礼篮</a>
 							</p>
-							<p class="dapei_desc">长假来袭，穿成度假stlye吧</p>
+							<p class="dapei_desc">果篮</p>
 						</li>
 						<li class="dapei_li ">
 							<a target="_blank" class="dapei_pic" href="product">
 								<img src="/shop/resources/img/b-12.jpg" alt="">
 							</a>
-							<p class="dapei_name"><a target="_blank" href="product">复古MIX猫力</a>
+							<p class="dapei_name"><a target="_blank" href="product">情深意切水果礼篮</a>
 							</p>
-							<p class="dapei_desc">复古大方格纹</p>
+							<p class="dapei_desc">果篮</p>
 						</li>
 						<li class="dapei_li ">
 							<a target="_blank" class="dapei_pic" href="product">
 								<img src="/shop/resources/img/b-12.jpg" alt="">
 							</a>
-							<p class="dapei_name"><a target="_blank" href="product">色彩控上官</a>
+							<p class="dapei_name"><a target="_blank" href="product">喜悦礼篮</a>
 							</p>
-							<p class="dapei_desc">秋天落叶感色彩</p>
+							<p class="dapei_desc">果篮</p>
 						</li>
 						<li class="dapei_li ">
 							<a target="_blank" class="dapei_pic" href="product">
 								<img src="/shop/resources/img/b-12.jpg" alt="">
 							</a>
-							<p class="dapei_name"><a target="_blank" href="product">轻熟优雅范酋一</a>
+							<p class="dapei_name"><a target="_blank" href="product">喜悦礼篮</a>
 							</p>
-							<p class="dapei_desc">套装也要搭配</p>
+							<p class="dapei_desc">果篮</p>
 						</li>
 						<li class="dapei_li ">
 							<a target="_blank" class="dapei_pic" href="product">
 								<img src="/shop/resources/img/b-12.jpg" alt="">
 							</a>
-							<p class="dapei_name"><a target="_blank" href="product">日系风莎莫</a>
+							<p class="dapei_name"><a target="_blank" href="product">喜悦礼篮</a>
 							</p>
-							<p class="dapei_desc">几何元素</p>
+							<p class="dapei_desc">果篮</p>
 						</li>
 						<li class="dapei_li ">
 							<a target="_blank" class="dapei_pic" href="product">
 								<img src="/shop/resources/img/b-12.jpg" alt="">
 							</a>
-							<p class="dapei_name"><a target="_blank" href="product">轻熟优雅范酋一</a>
+							<p class="dapei_name"><a target="_blank" href="product">喜悦礼篮</a>
 							</p>
-							<p class="dapei_desc">格子间气场装备</p>
+							<p class="dapei_desc">果篮</p>
 						</li>
 						<li class="dapei_li ">
 							<a target="_blank" class="dapei_pic" href="product">
 								<img src="/shop/resources/img/b-12.jpg" alt="">
 							</a>
-							<p class="dapei_name"><a target="_blank" href="product">复古MIX猫力</a>
+							<p class="dapei_name"><a target="_blank" href="product">喜悦礼篮</a>
 							</p>
-							<p class="dapei_desc">遮腿粗</p>
+							<p class="dapei_desc">果篮</p>
 						</li>
 						<li class="dapei_li ">
 							<a target="_blank" class="dapei_pic" href="product">
 								<img src="/shop/resources/img/b-12.jpg" alt="">
 							</a>
-							<p class="dapei_name"><a target="_blank" href="product">简约控黛丁</a>
+							<p class="dapei_name"><a target="_blank" href="product">喜悦礼篮</a>
 							</p>
-							<p class="dapei_desc">基本款新思路</p>
+							<p class="dapei_desc">果篮</p>
 						</li>
 						<li class="dapei_li ">
 							<a target="_blank" class="dapei_pic" href="product">
 								<img src="/shop/resources/img/b-12.jpg" alt="">
 							</a>
-							<p class="dapei_name"><a target="_blank" href="product">轻熟优雅范酋一</a>
+							<p class="dapei_name"><a target="_blank" href="product">情深意切水果礼篮</a>
 							</p>
-							<p class="dapei_desc">三分钟搞定OL行头</p>
+							<p class="dapei_desc">果篮</p>
 						</li>
 						<li class="dapei_li ">
 							<a target="_blank" class="dapei_pic" href="product">
 								<img src="/shop/resources/img/b-12.jpg" alt="">
 							</a>
-							<p class="dapei_name"><a target="_blank" href="product">简约控黛丁</a>
+							<p class="dapei_name"><a target="_blank" href="product">喜悦礼篮</a>
 							</p>
-							<p class="dapei_desc">上宽下窄</p>
+							<p class="dapei_desc">果篮</p>
 						</li>
 					</ul>
 				</div>
@@ -1203,13 +1023,11 @@
 			<div class="wrap mgj_section mgj_category" id="j_mgj_cloth">
 				<div class="mgj_topbar">
 					<h3 class="topbar_cloth"></h3>
-					<div class="topbar_link"><a target="_blank" href="product">初冬新品</a>  
-						<a target="_blank" href="product">加绒卫衣</a>  
-						<a target="_blank" href="product">新款呢大衣</a> 
-						<a target="_blank" href="product">秋冬毛衣</a> 
-						<a target="_blank" href="product">长款外套</a>  
-						<a target="_blank" href="product">新款羽绒服</a>  
-						<a target="_blank" href="product">更多</a> 
+					<div class="topbar_link"><a target="_blank" href="product">冬日特供</a>  
+						<a target="_blank" href="product">鲜果</a>  
+						<a target="_blank" href="product">进口包装</a> 
+						<a target="_blank" href="product">产地直销</a> 
+						<a target="_blank" href="product">礼盒</a>  
 					</div>
 				</div>
 				<div class="section_cont category_cont">
@@ -1218,7 +1036,7 @@
 							<a target="_blank" class="category_pic" href="product">
 								<img src="/shop/resources/img/b-14.jpg" alt="">
 							</a>
-							<p class="category_title"><a target="_blank" href="product">皮草外套</a>
+							<p class="category_title"><a target="_blank" href="product">喜悦礼篮</a>
 							</p>
 							<p class="category_info"><span class="txt_nowprice info_nowprice"><i>¥</i>208.6</span>
 								<span class="icon_like txt_like info_like">590</span>
@@ -1228,7 +1046,7 @@
 							<a target="_blank" class="category_pic" href="product">
 								<img src="/shop/resources/img/b-14.jpg" alt="">
 							</a>
-							<p class="category_title"><a target="_blank" href="product">鹿皮双面风衣</a>
+							<p class="category_title"><a target="_blank" href="product">喜悦礼篮</a>
 							</p>
 							<p class="category_info"><span class="txt_nowprice info_nowprice"><i>¥</i>297</span>
 								<span class="icon_like txt_like info_like">70</span>
@@ -1238,7 +1056,7 @@
 							<a target="_blank" class="category_pic" href="product">
 								<img src="/shop/resources/img/b-14.jpg" alt="">
 							</a>
-							<p class="category_title"><a target="_blank" href="product">复古双排扣毛呢大衣</a>
+							<p class="category_title"><a target="_blank" href="product">喜悦礼篮</a>
 							</p>
 							<p class="category_info"><span class="txt_nowprice info_nowprice"><i>¥</i>77</span><span class="icon_like txt_like info_like">2989</span>
 							</p>
@@ -1247,7 +1065,7 @@
 							<a target="_blank" class="category_pic" href="product">
 								<img src="/shop/resources/img/b-14.jpg" alt="">
 							</a>
-							<p class="category_title"><a target="_blank" href="product">森女系韩版复古刺绣花朵长袖卫衣</a>
+							<p class="category_title"><a target="_blank" href="product">喜悦礼篮</a>
 							</p>
 							<p class="category_info"><span class="txt_nowprice info_nowprice"><i>¥</i>75.6</span><span class="icon_like txt_like info_like">4092</span>
 							</p>
@@ -1255,17 +1073,17 @@
 						<li class="category_li category_banner_li">
 							<div class="banner_bd">
 								<ul data-banner="list">
-									<li class="" data-type="买手推荐" data-title="简约套装 轻松穿搭" data-link=" " style="z-index: 0; opacity: 0; display: list-item;">
+									<li class="" data-type="买手推荐" data-title="喜悦礼篮" data-link=" " style="z-index: 0; opacity: 0; display: list-item;">
 										<a target="_blank" class="banner_pic" href="product">
 											<img src="/shop/resources/img/b-14.jpg" alt="">
 										</a>
 									</li>
-									<li class="banner_show" data-type="买手推荐" data-title="千鸟格茧型大衣" data-link=" " style="z-index: 1; opacity: 1; display: list-item;">
+									<li class="banner_show" data-type="买手推荐" data-title="进口牛油果" data-link=" " style="z-index: 1; opacity: 1; display: list-item;">
 										<a target="_blank" class="banner_pic" href="product">
 											<img src="/shop/resources/img/b-13.jpg" alt="">
 										</a>
 									</li>
-									<li class="" data-type="买手推荐" data-title="韩系毛衣 穿出女人味" data-link=" " style="z-index: 2; opacity: 0.421782767479884; display: list-item;">
+									<li class="" data-type="买手推荐" data-title="进口牛油果" data-link=" " style="z-index: 2; opacity: 0.421782767479884; display: list-item;">
 										<a target="_blank" class="banner_pic" href="product">
 											<img src="/shop/resources/img/b-13.jpg" alt="">
 										</a>
@@ -1274,7 +1092,7 @@
 							</div>
 							<div class="banner_ft">
 								<h3 class="banner_type" data-banner="type">买手推荐</h3>
-								<p class="banner_title" data-banner="title"><a target="_blank" href="product">韩系毛衣 穿出女人味</a>
+								<p class="banner_title" data-banner="title"><a target="_blank" href="product">健康有机佳品</a>
 								</p>
 								<ul class="banner_nav" data-banner="nav">
 									<li class=""><a href="product">01</a>
@@ -1290,7 +1108,7 @@
 							<a target="_blank" class="category_pic" href="product">
 								<img src="/shop/resources/img/b-12.jpg" alt="">
 							</a>
-							<p class="category_title"><a target="_blank" href="product">白针织纹理质感外套</a>
+							<p class="category_title"><a target="_blank" href="product">喜悦礼篮</a>
 							</p>
 							<p class="category_info"><span class="txt_nowprice info_nowprice"><i>¥</i>194.6</span><span class="icon_like txt_like info_like">3012</span>
 							</p>
@@ -1299,7 +1117,7 @@
 							<a target="_blank" class="category_pic" href="product">
 								<img src="/shop/resources/img/b-13.jpg" alt="">
 							</a>
-							<p class="category_title"><a target="_blank" href="product">双排扣呢大衣</a>
+							<p class="category_title"><a target="_blank" href="product">进口牛油果</a>
 							</p>
 							<p class="category_info"><span class="txt_nowprice info_nowprice"><i>¥</i>167.3</span><span class="icon_like txt_like info_like">1025</span>
 							</p>
@@ -1308,7 +1126,7 @@
 							<a target="_blank" class="category_pic" href="product">
 								<img src="/shop/resources/img/b-13.jpg" alt="">
 							</a>
-							<p class="category_title"><a target="_blank" href="product">韩版时尚情侣装毛衣</a>
+							<p class="category_title"><a target="_blank" href="product">进口牛油果</a>
 							</p>
 							<p class="category_info"><span class="txt_nowprice info_nowprice"><i>¥</i>98</span><span class="icon_like txt_like info_like">480</span>
 							</p>
@@ -1317,7 +1135,7 @@
 							<a target="_blank" class="category_pic" href="product">
 								<img src="/shop/resources/img/b-12.jpg" alt="">
 							</a>
-							<p class="category_title"><a target="_blank" href="product">韩版极简宽松呢大衣</a>
+							<p class="category_title"><a target="_blank" href="product">进口牛油果</a>
 							</p>
 							<p class="category_info"><span class="txt_nowprice info_nowprice"><i>¥</i>168</span><span class="icon_like txt_like info_like">1954</span>
 							</p>
@@ -1326,7 +1144,7 @@
 							<a target="_blank" class="category_pic" href="product">
 								<img src="/shop/resources/img/b-12.jpg" alt="">
 							</a>
-							<p class="category_title"><a target="_blank" href="product">羊羔毛风衣</a>
+							<p class="category_title"><a target="_blank" href="product">进口牛油果</a>
 							</p>
 							<p class="category_info"><span class="txt_nowprice info_nowprice"><i>¥</i>116.9</span><span class="icon_like txt_like info_like">5099</span>
 							</p>
@@ -1337,13 +1155,8 @@
 			<div class="wrap mgj_section mgj_category" id="j_mgj_skirt">
 				<div class="mgj_topbar">
 					<h3 class="topbar_skirt"></h3>
-					<div class="topbar_link"><a target="_blank" href="product">秋冬美裙</a>  
-						<a target="_blank" href="product">针织裙</a> 
-						<a target="_blank" href="product">毛呢裙</a> 
-						<a target="_blank" href="product">俏皮A字裙</a>
-						<a target="_blank" href="product">裙子套装</a>  
-						<a target="_blank" href="product">毛线裙</a>  
-						<a target="_blank" href="product">PU皮裙</a> 
+					<div class="topbar_link"><a target="_blank" href="product">进口先尝</a>  
+						<a target="_blank" href="product">礼篮百搭</a> 					
 							<a target="_blank" href="product">更多</a>
 					</div>
 				</div>
@@ -1353,7 +1166,7 @@
 							<a target="_blank" class="category_pic" href="product">
 								<img src="/shop/resources/img/b-13.jpg" alt="">
 							</a>
-							<p class="category_title"><a target="_blank" href="product">百搭牛仔高腰短裙</a>
+							<p class="category_title"><a target="_blank" href="product">进口牛油果</a>
 							</p>
 							<p class="category_info"><span class="txt_nowprice info_nowprice"><i>¥</i>135</span><span class="icon_like txt_like info_like">10</span>
 							</p>
@@ -1362,7 +1175,7 @@
 							<a target="_blank" class="category_pic" href="product">
 								<img src="/shop/resources/img/b-13.jpg" alt="">
 							</a>
-							<p class="category_title"><a target="_blank" href="product">法式风情大摆裙</a>
+							<p class="category_title"><a target="_blank" href="product">进口牛油果</a>
 							</p>
 							<p class="category_info"><span class="txt_nowprice info_nowprice"><i>¥</i>135.8</span><span class="icon_like txt_like info_like">18</span>
 							</p>
@@ -1371,7 +1184,7 @@
 							<a target="_blank" class="category_pic" href="product">
 								<img src="/shop/resources/img/b-12.jpg" alt="">
 							</a>
-							<p class="category_title"><a target="_blank" href="product">恐龙印花连衣裙</a>
+							<p class="category_title"><a target="_blank" href="product">恭祝礼盒</a>
 							</p>
 							<p class="category_info"><span class="txt_nowprice info_nowprice"><i>¥</i>258</span><span class="icon_like txt_like info_like">30</span>
 							</p>
@@ -1380,7 +1193,7 @@
 							<a target="_blank" class="category_pic" href="product">
 								<img src="/shop/resources/img/b-13.jpg" alt="">
 							</a>
-							<p class="category_title"><a target="_blank" href="product">A字伞裙</a>
+							<p class="category_title"><a target="_blank" href="product">进口牛油果</a>
 							</p>
 							<p class="category_info"><span class="txt_nowprice info_nowprice"><i>¥</i>150</span><span class="icon_like txt_like info_like">16</span>
 							</p>
@@ -1388,17 +1201,17 @@
 						<li class="category_li category_banner_li">
 							<div class="banner_bd">
 								<ul data-banner="list">
-									<li class="banner_show" data-type="买手推荐" data-title="百搭温情毛线裙" data-link=" " style="z-index: 1; opacity: 1; display: list-item;">
+									<li class="banner_show" data-type="买手推荐" data-title="喜悦礼篮" data-link=" " style="z-index: 1; opacity: 1; display: list-item;">
 										<a target="_blank" class="banner_pic" href="product">
 											<img src="/shop/resources/img/b-14.jpg" alt="">
 										</a>
 									</li>
-									<li class="" data-type="买手推荐" data-title="初冬温暖毛呢裙" data-link=" " style="z-index: 0; opacity: 0; display: list-item;">
+									<li class="" data-type="买手推荐" data-title="喜悦礼篮" data-link=" " style="z-index: 0; opacity: 0; display: list-item;">
 										<a target="_blank" class="banner_pic" href="product">
 											<img src="/shop/resources/img/b-14.jpg" alt="">
 										</a>
 									</li>
-									<li class="" data-type="买手推荐" data-title="甜美针织半裙" data-link=" " style="z-index: 0; opacity: 0; display: list-item;">
+									<li class="" data-type="买手推荐" data-title="喜悦礼篮" data-link=" " style="z-index: 0; opacity: 0; display: list-item;">
 										<a target="_blank" class="banner_pic" href="product">
 											<img src="/shop/resources/img/b-14.jpg" alt="">
 										</a>
@@ -1406,9 +1219,9 @@
 								</ul>
 							</div>
 							<div class="banner_ft">
-								<h3 class="banner_type" data-banner="type">买手推荐</h3>
+								<h3 class="banner_type" data-banner="type">买家推荐</h3>
 								<p class="banner_title" data-banner="title">
-									<a target="_blank" href="product">百搭温情毛线裙</a>
+									<a target="_blank" href="product">泰国龙眼</a>
 								</p>
 								<ul class="banner_nav" data-banner="nav">
 									<li class="selected"><a href="product">01</a>
@@ -1424,7 +1237,7 @@
 							<a target="_blank" class="category_pic" href="product">
 								<img src="/shop/resources/img/b-14.jpg" alt="">
 							</a>
-							<p class="category_title"><a target="_blank" href="product">秋冬连衣裙</a>
+							<p class="category_title"><a target="_blank" href="product">喜悦礼篮</a>
 							</p>
 							<p class="category_info"><span class="txt_nowprice info_nowprice"><i>¥</i>256</span><span class="icon_like txt_like info_like">9</span>
 							</p>
@@ -1433,7 +1246,7 @@
 							<a target="_blank" class="category_pic" href="product">
 								<img src="/shop/resources/img/b-14.jpg" alt="">
 							</a>
-							<p class="category_title"><a target="_blank" href="product">独家设计甜美风长裙</a>
+							<p class="category_title"><a target="_blank" href="product">喜悦礼篮</a>
 							</p>
 							<p class="category_info"><span class="txt_nowprice info_nowprice"><i>¥</i>76.3</span><span class="icon_like txt_like info_like">669</span>
 							</p>
@@ -1442,7 +1255,7 @@
 							<a target="_blank" class="category_pic" href="product">
 								<img src="/shop/resources/img/b-14.jpg" alt="">
 							</a>
-							<p class="category_title"><a target="_blank" href="product">灯芯绒A字裙</a>
+							<p class="category_title"><a target="_blank" href="product">喜悦礼篮</a>
 							</p>
 							<p class="category_info"><span class="txt_nowprice info_nowprice"><i>¥</i>114.8</span><span class="icon_like txt_like info_like">4351</span>
 							</p>
@@ -1451,7 +1264,7 @@
 							<a target="_blank" class="category_pic" href="product">
 								<img src="/shop/resources/img/b-14.jpg" alt="">
 							</a>
-							<p class="category_title"><a target="_blank" href="product">甜美高腰连衣裙</a>
+							<p class="category_title"><a target="_blank" href="product">喜悦礼篮</a>
 							</p>
 							<p class="category_info"><span class="txt_nowprice info_nowprice"><i>¥</i>238.7</span><span class="icon_like txt_like info_like">36</span>
 							</p>
@@ -1460,7 +1273,7 @@
 							<a target="_blank" class="category_pic" href="product">
 								<img src="/shop/resources/img/b-14.jpg" alt="">
 							</a>
-							<p class="category_title"><a target="_blank" href="product">糖果色连衣裙</a>
+							<p class="category_title"><a target="_blank" href="product">喜悦礼篮</a>
 							</p>
 							<p class="category_info"><span class="txt_nowprice info_nowprice"><i>¥</i>83.3</span><span class="icon_like txt_like info_like">439</span>
 							</p>
@@ -1472,13 +1285,7 @@
 				<div class="mgj_topbar">
 					<h3 class="topbar_pants"></h3>
 					<div class="topbar_link">
-						<a target="_blank" href="product">显瘦裤子榜</a>  
-						<a target="_blank" href="product">必备小脚裤</a>  
-						<a target="_blank" href="product">潮范儿哈伦裤</a> 
-						<a target="_blank" href="product">假两件打底裤</a>
-						<a target="_blank" href="product">英伦风格子裤</a>  
-						<a target="_blank" href="product">显瘦阔腿裤</a>  
-						<a target="_blank" href="product">更多</a> 
+						<a target="_blank" href="product">限时促销</a>  
 					</div>
 				</div>
 				<div class="section_cont category_cont">
@@ -1487,7 +1294,7 @@
 							<a target="_blank" class="category_pic" href="product">
 								<img src="/shop/resources/img/b-14.jpg" alt="">
 							</a>
-							<p class="category_title"><a target="_blank" href="product">仿皮紧身打底裤</a>
+							<p class="category_title"><a target="_blank" href="product">喜悦礼篮</a>
 							</p>
 							<p class="category_info"><span class="txt_nowprice info_nowprice"><i>¥</i>38.5</span><span class="icon_like txt_like info_like">1386</span>
 							</p>
@@ -1496,7 +1303,7 @@
 							<a target="_blank" class="category_pic" href="product">
 								<img src="/shop/resources/img/b-14.jpg" alt="">
 							</a>
-							<p class="category_title"><a target="_blank" href="product">韩国定制西装裤</a>
+							<p class="category_title"><a target="_blank" href="product">喜悦礼篮</a>
 							</p>
 							<p class="category_info"><span class="txt_nowprice info_nowprice"><i>¥</i>99</span><span class="icon_like txt_like info_like">243</span>
 							</p>
@@ -1505,7 +1312,7 @@
 							<a target="_blank" class="category_pic" href="product">
 								<img src="/shop/resources/img/b-12.jpg" alt="">
 							</a>
-							<p class="category_title"><a target="_blank" href="product">破洞小脚牛仔裤</a>
+							<p class="category_title"><a target="_blank" href="product">恭祝礼盒</a>
 							</p>
 							<p class="category_info"><span class="txt_nowprice info_nowprice"><i>¥</i>63</span><span class="icon_like txt_like info_like">165</span>
 							</p>
@@ -1522,17 +1329,17 @@
 						<li class="category_li category_banner_li">
 							<div class="banner_bd">
 								<ul data-banner="list">
-									<li class="banner_show" data-type="买手推荐" data-title="秋款好搭短裤" data-link=" " style="z-index: 1; opacity: 1; display: list-item;">
+									<li class="banner_show" data-type="买手推荐" data-title="喜悦礼篮" data-link=" " style="z-index: 1; opacity: 1; display: list-item;">
 										<a target="_blank" class="banner_pic" href="product">
 											<img src="/shop/resources/img/b-14.jpg" alt="">
 										</a>
 									</li>
-									<li class="" data-type="买手推荐" data-title="百搭水洗破洞牛仔裤" data-link=" " style="z-index: 0; opacity: 0; display: list-item;">
+									<li class="" data-type="买手推荐" data-title="喜悦礼篮" data-link=" " style="z-index: 0; opacity: 0; display: list-item;">
 										<a target="_blank" class="banner_pic" href="product">
 											<img src="/shop/resources/img/b-14.jpg" alt="">
 										</a>
 									</li>
-									<li class="" data-type="买手推荐" data-title="利落西装裤" data-link=" " style="z-index: 0; opacity: 0; display: list-item;">
+									<li class="" data-type="买手推荐" data-title="喜悦礼篮" data-link=" " style="z-index: 0; opacity: 0; display: list-item;">
 										<a target="_blank" class="banner_pic" href="product">
 											<img src="/shop/resources/img/b-12.jpg" alt="">
 										</a>
@@ -1541,7 +1348,7 @@
 							</div>
 							<div class="banner_ft">
 								<h3 class="banner_type" data-banner="type">买手推荐</h3>
-								<p class="banner_title" data-banner="title"><a target="_blank" href="product">秋款好搭短裤</a>
+								<p class="banner_title" data-banner="title"><a target="_blank" href="product">喜悦礼篮</a>
 								</p>
 								<ul class="banner_nav" data-banner="nav">
 									<li class="selected"><a href="product">01</a>
@@ -1557,7 +1364,7 @@
 							<a target="_blank" class="category_pic" href="product">
 								<img src="/shop/resources/img/b-13.jpg" alt="">
 							</a>
-							<p class="category_title"><a target="_blank" href="product">运动休闲哈伦裤</a>
+							<p class="category_title"><a target="_blank" href="product">进口牛油果</a>
 							</p>
 							<p class="category_info"><span class="txt_nowprice info_nowprice"><i>¥</i>49</span><span class="icon_like txt_like info_like">22496</span>
 							</p>
@@ -1566,7 +1373,7 @@
 							<a target="_blank" class="category_pic" href="product">
 								<img src="/shop/resources/img/b-12.jpg" alt="">
 							</a>
-							<p class="category_title"><a target="_blank" href="product">全棉高弹磨毛打底裤</a>
+							<p class="category_title"><a target="_blank" href="product">恭祝礼盒</a>
 							</p>
 							<p class="category_info"><span class="txt_nowprice info_nowprice"><i>¥</i>28</span><span class="icon_like txt_like info_like">68</span>
 							</p>
@@ -1575,7 +1382,7 @@
 							<a target="_blank" class="category_pic" href="product">
 								<img src="/shop/resources/img/b-13.jpg" alt="">
 							</a>
-							<p class="category_title"><a target="_blank" href="product">街头风酷感休闲裤</a>
+							<p class="category_title"><a target="_blank" href="product">进口牛油果</a>
 							</p>
 							<p class="category_info"><span class="txt_nowprice info_nowprice"><i>¥</i>99.2</span><span class="icon_like txt_like info_like">60</span>
 							</p>
@@ -1584,7 +1391,7 @@
 							<a target="_blank" class="category_pic" href="product">
 								<img src="/shop/resources/img/b-12.jpg" alt="">
 							</a>
-							<p class="category_title"><a target="_blank" href="product">豹纹铅笔裤</a>
+							<p class="category_title"><a target="_blank" href="product">恭祝礼盒</a>
 							</p>
 							<p class="category_info"><span class="txt_nowprice info_nowprice"><i>¥</i>98</span><span class="icon_like txt_like info_like">1968</span>
 							</p>
@@ -1593,7 +1400,7 @@
 							<a target="_blank" class="category_pic" href="product">
 								<img src="/shop/resources/img/b-12.jpg" alt="">
 							</a>
-							<p class="category_title"><a target="_blank" href="product">显瘦牛仔休闲裤</a>
+							<p class="category_title"><a target="_blank" href="product">恭祝礼盒</a>
 							</p>
 							<p class="category_info"><span class="txt_nowprice info_nowprice"><i>¥</i>117.6</span><span class="icon_like txt_like info_like">28</span>
 							</p>
@@ -1604,12 +1411,8 @@
 			<div class="wrap mgj_section mgj_category" id="j_mgj_shoes">
 				<div class="mgj_topbar">
 					<h3 class="topbar_shoes"></h3>
-					<div class="topbar_link"><a target="_blank" href="product">秋季热卖</a>  
-						<a target="_blank" href="product">运动鞋</a>  
-						<a target="_blank" href="product">短靴</a> 
-						<a target="_blank" href="product">高跟鞋</a> 
-						<a target="_blank" href="product">单鞋</a>  
-						<a target="_blank" href="product">热搜美鞋</a> 
+					<div class="topbar_link"><a target="_blank" href="product">进口优品</a>  
+						<a target="_blank" href="product">百搭礼盒</a>  
 						<a target="_blank" href="product">更多</a> 
 					</div>
 				</div>
@@ -1619,7 +1422,7 @@
 							<a target="_blank" class="category_pic" href="product">
 								<img src="/shop/resources/img/b-15.jpg" alt="">
 							</a>
-							<p class="category_title"><a target="_blank" href="product">性感尖头高跟鞋</a>
+							<p class="category_title"><a target="_blank" href="product">原产地龙眼</a>
 							</p>
 							<p class="category_info"><span class="txt_nowprice info_nowprice"><i>¥</i>112</span><span class="icon_like txt_like info_like">376</span>
 							</p>
@@ -1628,7 +1431,7 @@
 							<a target="_blank" class="category_pic" href="product">
 								<img src="/shop/resources/img/b-15.jpg" alt="">
 							</a>
-							<p class="category_title"><a target="_blank" href="product">流苏内增高短靴</a>
+							<p class="category_title"><a target="_blank" href="product">原产地龙眼</a>
 							</p>
 							<p class="category_info"><span class="txt_nowprice info_nowprice"><i>¥</i>208</span><span class="icon_like txt_like info_like">47</span>
 							</p>
@@ -1637,7 +1440,7 @@
 							<a target="_blank" class="category_pic" href="product">
 								<img src="/shop/resources/img/b-13.jpg" alt="">
 							</a>
-							<p class="category_title"><a target="_blank" href="product">甜美舒适平底鞋</a>
+							<p class="category_title"><a target="_blank" href="product">进口牛油果</a>
 							</p>
 							<p class="category_info"><span class="txt_nowprice info_nowprice"><i>¥</i>139</span><span class="icon_like txt_like info_like">129</span>
 							</p>
@@ -1646,7 +1449,7 @@
 							<a target="_blank" class="category_pic" href="product">
 								<img src="/shop/resources/img/b-12.jpg" alt="">
 							</a>
-							<p class="category_title"><a target="_blank" href="product">复古英伦单鞋</a>
+							<p class="category_title"><a target="_blank" href="product">恭祝礼盒</a>
 							</p>
 							<p class="category_info"><span class="txt_nowprice info_nowprice"><i>¥</i>89.6</span><span class="icon_like txt_like info_like">8343</span>
 							</p>
@@ -1654,17 +1457,17 @@
 						<li class="category_li category_banner_li">
 							<div class="banner_bd">
 								<ul data-banner="list">
-									<li class="" data-type="买手推荐" data-title="精致经典真皮马丁靴" data-link=" " style="z-index: 0; opacity: 0; display: list-item;">
+									<li class="" data-type="买手推荐" data-title="进口牛油果" data-link=" " style="z-index: 0; opacity: 0; display: list-item;">
 										<a target="_blank" class="banner_pic" href="product">
 											<img src="/shop/resources/img/b-13.jpg" alt="">
 										</a>
 									</li>
-									<li class="" data-type="买手推荐" data-title="增高显瘦必备" data-link=" " style="z-index: 0; opacity: 0; display: list-item;">
+									<li class="" data-type="买手推荐" data-title="进口牛油果" data-link=" " style="z-index: 0; opacity: 0; display: list-item;">
 										<a target="_blank" class="banner_pic" href="product">
 											<img src="/shop/resources/img/b-13.jpg" alt="">
 										</a>
 									</li>
-									<li class="banner_show" data-type="买手推荐" data-title="帅气中性牛津鞋" data-link=" " style="z-index: 1; opacity: 1; display: list-item;">
+									<li class="banner_show" data-type="买手推荐" data-title="原产地龙眼" data-link=" " style="z-index: 1; opacity: 1; display: list-item;">
 										<a target="_blank" class="banner_pic" href="product">
 											<img src="/shop/resources/img/b-15.jpg" alt="">
 										</a>
@@ -1674,7 +1477,7 @@
 							<div class="banner_ft">
 								<h3 class="banner_type" data-banner="type">买手推荐</h3>
 								<p class="banner_title" data-banner="title">
-									<a target="_blank" href="product">帅气中性牛津鞋</a>
+									<a target="_blank" href="product">进口龙眼</a>
 								</p>
 								<ul class="banner_nav" data-banner="nav">
 									<li class=""><a href="product">01</a>
@@ -1690,7 +1493,7 @@
 							<a target="_blank" class="category_pic" href="product">
 								<img src="/shop/resources/img/b-12.jpg" alt="">
 							</a>
-							<p class="category_title"><a target="_blank" href="product">英伦风圆头短靴</a>
+							<p class="category_title"><a target="_blank" href="product">恭祝礼盒</a>
 							</p>
 							<p class="category_info"><span class="txt_nowprice info_nowprice"><i>¥</i>118.3</span><span class="icon_like txt_like info_like">650</span>
 							</p>
@@ -1699,7 +1502,7 @@
 							<a target="_blank" class="category_pic" href="product">
 								<img src="/shop/resources/img/b-12.jpg" alt="">
 							</a>
-							<p class="category_title"><a target="_blank" href="product">韩版小清新运动鞋</a>
+							<p class="category_title"><a target="_blank" href="product">恭祝礼盒</a>
 							</p>
 							<p class="category_info"><span class="txt_nowprice info_nowprice"><i>¥</i>189.05</span><span class="icon_like txt_like info_like">13688</span>
 							</p>
@@ -1708,7 +1511,7 @@
 							<a target="_blank" class="category_pic" href="product">
 								<img src="/shop/resources/img/b-12.jpg" alt="">
 							</a>
-							<p class="category_title"><a target="_blank" href="product">糖果色马丁靴</a>
+							<p class="category_title"><a target="_blank" href="product">恭祝礼盒</a>
 							</p>
 							<p class="category_info"><span class="txt_nowprice info_nowprice"><i>¥</i>64.97</span><span class="icon_like txt_like info_like">7242</span>
 							</p>
@@ -1717,7 +1520,7 @@
 							<a target="_blank" class="category_pic" href="product">
 								<img src="/shop/resources/img/b-13.jpg" alt="">
 							</a>
-							<p class="category_title"><a target="_blank" href="product">欧美范皮带扣短靴</a>
+							<p class="category_title"><a target="_blank" href="product">进口牛油果</a>
 							</p>
 							<p class="category_info"><span class="txt_nowprice info_nowprice"><i>¥</i>168</span><span class="icon_like txt_like info_like">16</span>
 							</p>
@@ -1726,7 +1529,7 @@
 							<a target="_blank" class="category_pic" href="product">
 								<img src="/shop/resources/img/b-15.jpg" alt="">
 							</a>
-							<p class="category_title"><a target="_blank" href="product">民族风帆布鞋</a>
+							<p class="category_title"><a target="_blank" href="product">原产地龙眼</a>
 							</p>
 							<p class="category_info"><span class="txt_nowprice info_nowprice"><i>¥</i>74.9</span><span class="icon_like txt_like info_like">33</span>
 							</p>
@@ -1737,13 +1540,7 @@
 			<div class="wrap mgj_section mgj_category" id="j_mgj_bag">
 				<div class="mgj_topbar">
 					<h3 class="topbar_bag"></h3>
-					<div class="topbar_link"><a target="_blank" href="product">秋冬新款</a> 
-						<a target="_blank" href="product">双肩包</a>  
-						<a target="_blank" href="product">单肩包</a> 
-						<a target="_blank" href="product">斜挎包</a> 
-						<a target="_blank" href="product">钱包</a>  
-						<a target="_blank" href="product">旅行箱包</a>  
-						<a target="_blank" href="product">更多</a> 
+					<div class="topbar_link"><a target="_blank" href="product">秋冬新品</a> 
 					</div>
 				</div>
 				<div class="section_cont category_cont">
@@ -1752,7 +1549,7 @@
 							<a target="_blank" class="category_pic" href="product">
 								<img src="/shop/resources/img/b-13.jpg" alt="">
 							</a>
-							<p class="category_title"><a target="_blank" href="product">时尚鳄鱼纹子母大包</a>
+							<p class="category_title"><a target="_blank" href="product">进口牛油果</a>
 							</p>
 							<p class="category_info"><span class="txt_nowprice info_nowprice"><i>¥</i>59.5</span><span class="icon_like txt_like info_like">5</span>
 							</p>
@@ -1761,7 +1558,7 @@
 							<a target="_blank" class="category_pic" href="product">
 								<img src="/shop/resources/img/b-15.jpg" alt="">
 							</a>
-							<p class="category_title"><a target="_blank" href="product">新款机车风圆桶包</a>
+							<p class="category_title"><a target="_blank" href="product">原产地龙眼</a>
 							</p>
 							<p class="category_info"><span class="txt_nowprice info_nowprice"><i>¥</i>114</span><span class="icon_like txt_like info_like">42</span>
 							</p>
@@ -1770,7 +1567,7 @@
 							<a target="_blank" class="category_pic" href="product">
 								<img src="/shop/resources/img/b-15.jpg" alt="">
 							</a>
-							<p class="category_title"><a target="_blank" href="product">新款三折女士钱包</a>
+							<p class="category_title"><a target="_blank" href="product">原产地龙眼</a>
 							</p>
 							<p class="category_info"><span class="txt_nowprice info_nowprice"><i>¥</i>35</span><span class="icon_like txt_like info_like">7</span>
 							</p>
@@ -1779,7 +1576,7 @@
 							<a target="_blank" class="category_pic" href="product">
 								<img src="/shop/resources/img/b-15.jpg" alt="">
 							</a>
-							<p class="category_title"><a target="_blank" href="product">韩国铆钉双肩包</a>
+							<p class="category_title"><a target="_blank" href="product">原产地龙眼</a>
 							</p>
 							<p class="category_info"><span class="txt_nowprice info_nowprice"><i>¥</i>59</span><span class="icon_like txt_like info_like">10</span>
 							</p>
@@ -1787,17 +1584,17 @@
 						<li class="category_li category_banner_li">
 							<div class="banner_bd">
 								<ul data-banner="list">
-									<li class="" data-type="买手推荐" data-title="时髦单肩包" data-link=" " style="z-index: 0; opacity: 0; display: list-item;">
+									<li class="" data-type="买手推荐" data-title="喜悦礼篮" data-link=" " style="z-index: 0; opacity: 0; display: list-item;">
 										<a target="_blank" class="banner_pic" href="product">
 											<img src="/shop/resources/img/b-14.jpg" alt="">
 										</a>
 									</li>
-									<li class="" data-type="买手推荐" data-title="韩系双肩包" data-link=" " style="z-index: 0; opacity: 0; display: list-item;">
+									<li class="" data-type="买手推荐" data-title="喜悦礼篮" data-link=" " style="z-index: 0; opacity: 0; display: list-item;">
 										<a target="_blank" class="banner_pic" href="product">
 											<img src="/shop/resources/img/b-14.jpg" alt="">
 										</a>
 									</li>
-									<li class="banner_show" data-type="买手推荐" data-title="甜蜜约会包" data-link=" " style="z-index: 1; opacity: 1; display: list-item;">
+									<li class="banner_show" data-type="买手推荐" data-title="进口牛油果" data-link=" " style="z-index: 1; opacity: 1; display: list-item;">
 										<a target="_blank" class="banner_pic" href="product">
 											<img src="/shop/resources/img/b-13.jpg" alt="">
 										</a>
@@ -1806,7 +1603,7 @@
 							</div>
 							<div class="banner_ft">
 								<h3 class="banner_type" data-banner="type">买手推荐</h3>
-								<p class="banner_title" data-banner="title"><a target="_blank" href="product">甜蜜约会包</a>
+								<p class="banner_title" data-banner="title"><a target="_blank" href="product">进口牛油果</a>
 								</p>
 								<ul class="banner_nav" data-banner="nav">
 									<li class=""><a href="product">01</a>
@@ -1822,7 +1619,7 @@
 							<a target="_blank" class="category_pic" href="product">
 								<img src="/shop/resources/img/b-14.jpg" alt="">
 							</a>
-							<p class="category_title"><a target="_blank" href="product">复古单肩包</a>
+							<p class="category_title"><a target="_blank" href="product">喜悦礼篮</a>
 							</p>
 							<p class="category_info"><span class="txt_nowprice info_nowprice"><i>¥</i>59.5</span><span class="icon_like txt_like info_like">11</span>
 							</p>
@@ -1831,7 +1628,7 @@
 							<a target="_blank" class="category_pic" href="product">
 								<img src="/shop/resources/img/b-13.jpg" alt="">
 							</a>
-							<p class="category_title"><a target="_blank" href="product">森女系复古斜挎包</a>
+							<p class="category_title"><a target="_blank" href="product">进口牛油果</a>
 							</p>
 							<p class="category_info"><span class="txt_nowprice info_nowprice"><i>¥</i>75.6</span><span class="icon_like txt_like info_like">6</span>
 							</p>
@@ -1840,7 +1637,7 @@
 							<a target="_blank" class="category_pic" href="product">
 								<img src="/shop/resources/img/b-13.jpg" alt="">
 							</a>
-							<p class="category_title"><a target="_blank" href="product">新款复古手提包</a>
+							<p class="category_title"><a target="_blank" href="product">进口牛油果</a>
 							</p>
 							<p class="category_info"><span class="txt_nowprice info_nowprice"><i>¥</i>129.5</span><span class="icon_like txt_like info_like">10</span>
 							</p>
@@ -1849,7 +1646,7 @@
 							<a target="_blank" class="category_pic" href="product">
 								<img src="/shop/resources/img/b-13.jpg" alt="">
 							</a>
-							<p class="category_title"><a target="_blank" href="product">小香风链条包</a>
+							<p class="category_title"><a target="_blank" href="product">进口牛油果</a>
 							</p>
 							<p class="category_info"><span class="txt_nowprice info_nowprice"><i>¥</i>169</span><span class="icon_like txt_like info_like">128</span>
 							</p>
@@ -1858,7 +1655,7 @@
 							<a target="_blank" class="category_pic" href="product">
 								<img src="/shop/resources/img/b-13.jpg" alt="">
 							</a>
-							<p class="category_title"><a target="_blank" href="product">新款万向轮拉杆箱</a>
+							<p class="category_title"><a target="_blank" href="product">进口牛油果</a>
 							</p>
 							<p class="category_info"><span class="txt_nowprice info_nowprice"><i>¥</i>144.2</span><span class="icon_like txt_like info_like">1</span>
 							</p>
@@ -1870,12 +1667,8 @@
 				<div class="mgj_topbar">
 					<h3 class="topbar_accessory"></h3>
 					<div class="topbar_link">
-						<a target="_blank" href="product">丝巾</a>  
-						<a target="_blank" href="product">短袜</a>  
-						<a target="_blank" href="product">手表</a> 
-						<a target="_blank" href="product">画家帽</a> 
-						<a target="_blank" href="product">iphone壳</a>  
-						<a target="_blank" href="product">更多</a> 
+						<a target="_blank" href="product">新品推荐</a>  
+
 					</div>
 				</div>
 				<div class="section_cont category_cont">
@@ -1884,7 +1677,7 @@
 							<a target="_blank" class="category_pic" href="product">
 								<img src="/shop/resources/img/b-13.jpg" alt="">
 							</a>
-							<p class="category_title"><a target="_blank" href="product">拼色格纹斗篷式披肩</a>
+							<p class="category_title"><a target="_blank" href="product">进口牛油果</a>
 							</p>
 							<p class="category_info"><span class="txt_nowprice info_nowprice"><i>¥</i>120</span><span class="icon_like txt_like info_like">1399</span>
 							</p>
@@ -1893,7 +1686,7 @@
 							<a target="_blank" class="category_pic" href="product">
 								<img src="/shop/resources/img/b-14.jpg" alt="">
 							</a>
-							<p class="category_title"><a target="_blank" href="product">小胡子头戴式耳麦</a>
+							<p class="category_title"><a target="_blank" href="product">喜悦礼篮</a>
 							</p>
 							<p class="category_info"><span class="txt_nowprice info_nowprice"><i>¥</i>39</span><span class="icon_like txt_like info_like">1168</span>
 							</p>
@@ -1902,7 +1695,7 @@
 							<a target="_blank" class="category_pic" href="product">
 								<img src="/shop/resources/img/b-14.jpg" alt="">
 							</a>
-							<p class="category_title"><a target="_blank" href="product">加厚保暖手套</a>
+							<p class="category_title"><a target="_blank" href="product">喜悦礼篮</a>
 							</p>
 							<p class="category_info"><span class="txt_nowprice info_nowprice"><i>¥</i>79</span><span class="icon_like txt_like info_like">383</span>
 							</p>
@@ -1911,7 +1704,7 @@
 							<a target="_blank" class="category_pic" href="product">
 								<img src="/shop/resources/img/b-14.jpg" alt="">
 							</a>
-							<p class="category_title"><a target="_blank" href="product">撞色波浪纹毛线帽</a>
+							<p class="category_title"><a target="_blank" href="product">喜悦礼篮</a>
 							</p>
 							<p class="category_info"><span class="txt_nowprice info_nowprice"><i>¥</i>29.4</span><span class="icon_like txt_like info_like">308</span>
 							</p>
@@ -1919,12 +1712,12 @@
 						<li class="category_li category_banner_li">
 							<div class="banner_bd">
 								<ul data-banner="list">
-									<li class="" data-type="买手推荐" data-title="拍照必备毛衣链" data-link=" " style="z-index: 0; opacity: 0; display: list-item;">
+									<li class="" data-type="买手推荐" data-title="原产地龙眼" data-link=" " style="z-index: 0; opacity: 0; display: list-item;">
 										<a target="_blank" class="banner_pic" href="product">
 											<img src="/shop/resources/img/b-15.jpg" alt="">
 										</a>
 									</li>
-									<li class="banner_show" data-type="买手推荐" data-title="温暖毛线帽" data-link=" " style="z-index: 1; opacity: 1; display: list-item;">
+									<li class="banner_show" data-type="买手推荐" data-title="进口龙眼" data-link=" " style="z-index: 1; opacity: 1; display: list-item;">
 										<a target="_blank" class="banner_pic" href="product">
 											<img src="/shop/resources/img/b-15.jpg" alt="">
 										</a>
@@ -1938,7 +1731,7 @@
 							</div>
 							<div class="banner_ft">
 								<h3 class="banner_type" data-banner="type">买手推荐</h3>
-								<p class="banner_title" data-banner="title"><a target="_blank" href="product">温暖毛线帽</a>
+								<p class="banner_title" data-banner="title"><a target="_blank" href="product">进口龙眼</a>
 								</p>
 								<ul class="banner_nav" data-banner="nav">
 									<li class=""><a href="product">01</a>
@@ -1954,7 +1747,7 @@
 							<a target="_blank" class="category_pic" href="product">
 								<img src="/shop/resources/img/b-14.jpg" alt="">
 							</a>
-							<p class="category_title"><a target="_blank" href="product">名媛复古手表</a>
+							<p class="category_title"><a target="_blank" href="product">喜悦礼篮</a>
 							</p>
 							<p class="category_info"><span class="txt_nowprice info_nowprice"><i>¥</i>89.6</span><span class="icon_like txt_like info_like">1484</span>
 							</p>
@@ -1963,7 +1756,7 @@
 							<a target="_blank" class="category_pic" href="product">
 								<img src="/shop/resources/img/b-14.jpg" alt="">
 							</a>
-							<p class="category_title"><a target="_blank" href="product">【4双装】羊毛短袜</a>
+							<p class="category_title"><a target="_blank" href="product">喜悦礼篮</a>
 							</p>
 							<p class="category_info"><span class="txt_nowprice info_nowprice"><i>¥</i>25.9</span><span class="icon_like txt_like info_like">4</span>
 							</p>
@@ -1972,7 +1765,7 @@
 							<a target="_blank" class="category_pic" href="product">
 								<img src="/shop/resources/img/b-14.jpg" alt="">
 							</a>
-							<p class="category_title"><a target="_blank" href="product">小熊相机手机壳</a>
+							<p class="category_title"><a target="_blank" href="product">喜悦礼篮</a>
 							</p>
 							<p class="category_info"><span class="txt_nowprice info_nowprice"><i>¥</i>35.72</span><span class="icon_like txt_like info_like">515</span>
 							</p>
@@ -1981,7 +1774,7 @@
 							<a target="_blank" class="category_pic" href="product">
 								<img src="/shop/resources/img/b-15.jpg" alt="">
 							</a>
-							<p class="category_title"><a target="_blank" href="product">纯银双层锁骨链</a>
+							<p class="category_title"><a target="_blank" href="product">原产地龙眼</a>
 							</p>
 							<p class="category_info"><span class="txt_nowprice info_nowprice"><i>¥</i>113.4</span><span class="icon_like txt_like info_like">1392</span>
 							</p>
@@ -1990,7 +1783,7 @@
 							<a target="_blank" class="category_pic" href="product">
 								<img src="/shop/resources/img/b-15.jpg" alt="">
 							</a>
-							<p class="category_title"><a target="_blank" href="product">孔孝真同款戒指</a>
+							<p class="category_title"><a target="_blank" href="product">原产地龙眼</a>
 							</p>
 							<p class="category_info"><span class="txt_nowprice info_nowprice"><i>¥</i>24.5</span><span class="icon_like txt_like info_like">2620</span>
 							</p>
@@ -2001,14 +1794,7 @@
 		<div class="wrap mgj_section mgj_category mgj_category_tuangou" id="j_mgj_tuangou">
 			<div class="mgj_topbar">
 				<h3 class="topbar_tuangou"></h3>
-				<div class="topbar_link"><a target="_blank" href="product">至美裙装</a> 
-					<a target="_blank" href="product">百变衬衫</a> 
-					<a target="_blank" href="product">秋靴</a>
-					<a target="_blank" href="product">舒适休闲鞋</a> 
-					<a target="_blank" href="product">明星同款</a> 
-						<a target="_blank" href="product">欧美街拍</a> 
-						<a target="_blank" href="product">更多</a> 
-				</div>
+				<div class="topbar_link"><a target="_blank" href="product">人气新秀</a> 
 			</div>
 			<div class="section_cont category_cont tuangou_cont">
 				<ul class="ul_inline category_list">
@@ -2016,7 +1802,7 @@
 						<a target="_blank" class="category_pic" href="product">
 							<img src="/shop/resources/img/b-14.jpg" alt="">
 						</a>
-						<p class="category_title"><a target="_blank" href="product">韩版修身显瘦风衣</a>
+						<p class="category_title"><a target="_blank" href="product">喜悦礼篮</a>
 						</p>
 						<p class="category_info"><span class="txt_nowprice info_nowprice"><i>¥</i>89.88</span><span class="icon_oriprice txt_oriprice info_oriprice">168</span>
 						</p>
@@ -2026,7 +1812,7 @@
 						<a target="_blank" class="category_pic" href="product">
 							<img src="/shop/resources/img/b-14.jpg" alt="">
 						</a>
-						<p class="category_title"><a target="_blank" href="product">超闪孔雀亮片短款毛衣</a>
+						<p class="category_title"><a target="_blank" href="product">喜悦礼篮</a>
 						</p>
 						<p class="category_info"><span class="txt_nowprice info_nowprice"><i>¥</i>58.99</span><span class="icon_oriprice txt_oriprice info_oriprice">113</span>
 						</p>
@@ -2036,7 +1822,7 @@
 						<a target="_blank" class="category_pic" href="product">
 							<img src="/shop/resources/img/b-15.jpg" alt="">
 						</a>
-						<p class="category_title"><a target="_blank" href="product">糖果色毛衣</a>
+						<p class="category_title"><a target="_blank" href="product">原产地龙眼</a>
 						</p>
 						<p class="category_info"><span class="txt_nowprice info_nowprice"><i>¥</i>45.6</span><span class="icon_oriprice txt_oriprice info_oriprice">80</span>
 						</p>
@@ -2046,7 +1832,7 @@
 						<a target="_blank" class="category_pic" href="product">
 							<img src="/shop/resources/img/b-16.jpg" alt="">
 						</a>
-						<p class="category_title"><a target="_blank" href="product">韩版拼色运动鞋</a>
+						<p class="category_title"><a target="_blank" href="product">红颊草莓</a>
 						</p>
 						<p class="category_info"><span class="txt_nowprice info_nowprice"><i>¥</i>59.8</span><span class="icon_oriprice txt_oriprice info_oriprice">92</span>
 						</p>
@@ -2056,7 +1842,7 @@
 						<a target="_blank" class="category_pic" href="product">
 							<img src="/shop/resources/img/b-16.jpg" alt="">
 						</a>
-						<p class="category_title"><a target="_blank" href="product">新款酷酷英伦风粗跟短靴</a>
+						<p class="category_title"><a target="_blank" href="product">红颊草莓</a>
 						</p>
 						<p class="category_info"><span class="txt_nowprice info_nowprice"><i>¥</i>78.96</span><span class="icon_oriprice txt_oriprice info_oriprice">140</span>
 						</p>
@@ -2066,7 +1852,7 @@
 						<a target="_blank" class="category_pic" href="product">
 							<img src="/shop/resources/img/b-14.jpg" alt="">
 						</a>
-						<p class="category_title"><a target="_blank" href="product">斗篷蝙蝠袖毛呢外套</a>
+						<p class="category_title"><a target="_blank" href="product">喜悦礼篮</a>
 						</p>
 						<p class="category_info"><span class="txt_nowprice info_nowprice"><i>¥</i>99.12</span><span class="icon_oriprice txt_oriprice info_oriprice">240</span>
 						</p>
@@ -2076,7 +1862,7 @@
 						<a target="_blank" class="category_pic" href="product">
 							<img src="/shop/resources/img/b-14.jpg" alt="">
 						</a>
-						<p class="category_title"><a target="_blank" href="product">韩国官网短款针织衫</a>
+						<p class="category_title"><a target="_blank" href="product">喜悦礼篮</a>
 						</p>
 						<p class="category_info"><span class="txt_nowprice info_nowprice"><i>¥</i>65.05</span><span class="icon_oriprice txt_oriprice info_oriprice">111</span>
 						</p>
@@ -2086,7 +1872,7 @@
 						<a target="_blank" class="category_pic" href="product">
 							<img src="/shop/resources/img/b-14.jpg" alt="">
 						</a>
-						<p class="category_title"><a target="_blank" href="product">韩版学院风高档多用途双肩包</a>
+						<p class="category_title"><a target="_blank" href="product">喜悦礼篮</a>
 						</p>
 						<p class="category_info"><span class="txt_nowprice info_nowprice"><i>¥</i>69.04</span><span class="icon_oriprice txt_oriprice info_oriprice">127.14</span>
 						</p>
@@ -2096,7 +1882,7 @@
 						<a target="_blank" class="category_pic" href="product">
 							<img src="/shop/resources/img/b-14.jpg" alt="">
 						</a>
-						<p class="category_title"><a target="_blank" href="product">韩版帆布印花多用单肩包</a>
+						<p class="category_title"><a target="_blank" href="product">喜悦礼篮</a>
 						</p>
 						<p class="category_info"><span class="txt_nowprice info_nowprice"><i>¥</i>55.02</span><span class="icon_oriprice txt_oriprice info_oriprice">99.85</span>
 						</p>
@@ -2106,7 +1892,7 @@
 						<a target="_blank" class="category_pic" href="product">
 							<img src="/shop/resources/img/b-13.jpg" alt="">
 						</a>
-						<p class="category_title"><a target="_blank" href="product">3双糖果色棉质亲肤堆堆袜</a>
+						<p class="category_title"><a target="_blank" href="product">进口牛油果</a>
 						</p>
 						<p class="category_info"><span class="txt_nowprice info_nowprice"><i>¥</i>19.89</span><span class="icon_oriprice txt_oriprice info_oriprice">39</span>
 						</p>
@@ -2118,13 +1904,7 @@
 		<div class="wrap mgj_section mgj_category mgj_category_magic" id="j_mgj_magic">
 			<div class="mgj_topbar">
 				<h3 class="topbar_magic"></h3>
-				<div class="topbar_link"><a target="_blank" href="product">瘦身</a>  
-					<a target="_blank" href="product">出油</a> 
-					<a target="_blank" href="product">美白</a>
-					<a target="_blank" href="product">清洁</a> 
-					<a target="_blank" href="product">去黑头</a> 
-				    <a target="_blank" href="product">收缩毛孔</a> 
-				    <a target="_blank" href="product">更多</a> 
+				<div class="topbar_link"><a target="_blank" href="product">健康养堂</a>  
 				</div>
 			</div>
 			<div class="section_cont category_cont magic_cont">
@@ -2133,7 +1913,7 @@
 						<a target="_blank" class="category_pic" href="product">
 							<img src="/shop/resources/img/b-14.jpg" alt="">
 						</a>
-						<p class="category_title"><a target="_blank" href="product">碧缇丝 头发干洗喷雾</a>
+						<p class="category_title"><a target="_blank" href="product">喜悦礼篮</a>
 						</p>
 						<p class="category_info"><span class="txt_nowprice info_nowprice"><i>¥</i>42</span><span class="icon_oriprice txt_oriprice info_oriprice">61</span>
 						</p>
@@ -2142,7 +1922,7 @@
 						<a target="_blank" class="category_pic" href="product">
 							<img src="/shop/resources/img/b-14.jpg" alt="">
 						</a>
-						<p class="category_title"><a target="_blank" href="product">Rosebud Salve玫瑰花蕾膏</a>
+						<p class="category_title"><a target="_blank" href="product">喜悦礼篮</a>
 						</p>
 						<p class="category_info"><span class="txt_nowprice info_nowprice"><i>¥</i>28</span><span class="icon_oriprice txt_oriprice info_oriprice">42</span>
 						</p>
@@ -2151,7 +1931,7 @@
 						<a target="_blank" class="category_pic" href="product">
 							<img src="/shop/resources/img/b-14.jpg" alt="">
 						</a>
-						<p class="category_title"><a target="_blank" href="product">御宅女 玻尿酸保湿面膜10片</a>
+						<p class="category_title"><a target="_blank" href="product">喜悦礼篮</a>
 						</p>
 						<p class="category_info"><span class="txt_nowprice info_nowprice"><i>¥</i>39</span><span class="icon_oriprice txt_oriprice info_oriprice">56</span>
 						</p>
@@ -2160,7 +1940,7 @@
 						<a target="_blank" class="category_pic" href="product">
 							<img src="/shop/resources/img/b-15.jpg" alt="">
 						</a>
-						<p class="category_title"><a target="_blank" href="product">爱丽小屋珍珠气垫BB霜粉底霜</a>
+						<p class="category_title"><a target="_blank" href="product">原产龙眼</a>
 						</p>
 						<p class="category_info"><span class="txt_nowprice info_nowprice"><i>¥</i>89</span><span class="icon_oriprice txt_oriprice info_oriprice">111</span>
 						</p>
@@ -2169,7 +1949,7 @@
 						<a target="_blank" class="category_pic" href="product">
 							<img src="/shop/resources/img/b-16.jpg" alt="">
 						</a>
-						<p class="category_title"><a target="_blank" href="product">雅顿绿茶蜂蜜香氛身体乳</a>
+						<p class="category_title"><a target="_blank" href="product">红颊草莓</a>
 						</p>
 						<p class="category_info"><span class="txt_nowprice info_nowprice"><i>¥</i>45</span><span class="icon_oriprice txt_oriprice info_oriprice">63</span>
 						</p>
@@ -2178,7 +1958,7 @@
 						<a target="_blank" class="category_pic" href="product">
 							<img src="/shop/resources/img/b-13.jpg" alt="">
 						</a>
-						<p class="category_title"><a target="_blank" href="product">菲诗小铺金盏花护肤乳液</a>
+						<p class="category_title"><a target="_blank" href="product">进口牛油果</a>
 						</p>
 						<p class="category_info"><span class="txt_nowprice info_nowprice"><i>¥</i>39</span><span class="icon_oriprice txt_oriprice info_oriprice">68</span>
 						</p>
@@ -2187,7 +1967,7 @@
 						<a target="_blank" class="category_pic" href="product">
 							<img src="/shop/resources/img/b-17.jpg" alt="">
 						</a>
-						<p class="category_title"><a target="_blank" href="product">自然堂活泉保湿修护精华水</a>
+						<p class="category_title"><a target="_blank" href="product">智利蓝莓</a>
 						</p>
 						<p class="category_info"><span class="txt_nowprice info_nowprice"><i>¥</i>59</span><span class="icon_oriprice txt_oriprice info_oriprice">110</span>
 						</p>
@@ -2196,7 +1976,7 @@
 						<a target="_blank" class="category_pic" href="product">
 							<img src="/shop/resources/img/b-14.jpg" alt="">
 						</a>
-						<p class="category_title"><a target="_blank" href="product">AFU阿芙薰衣草纯露</a>
+						<p class="category_title"><a target="_blank" href="product">喜悦礼篮</a>
 						</p>
 						<p class="category_info"><span class="txt_nowprice info_nowprice"><i>¥</i>127</span><span class="icon_oriprice txt_oriprice info_oriprice">158</span>
 						</p>
@@ -2205,7 +1985,7 @@
 						<a target="_blank" class="category_pic" href="product">
 							<img src="/shop/resources/img/b-14.jpg" alt="">
 						</a>
-						<p class="category_title"><a target="_blank" href="product">光芮Glo&amp;Ray持久显色唇膏口红</a>
+						<p class="category_title"><a target="_blank" href="product">喜悦礼篮</a>
 						</p>
 						<p class="category_info"><span class="txt_nowprice info_nowprice"><i>¥</i>98</span><span class="icon_oriprice txt_oriprice info_oriprice">122</span>
 						</p>
@@ -2214,7 +1994,7 @@
 						<a target="_blank" class="category_pic" href="product">
 							<img src="/shop/resources/img/b-14.jpg" alt="">
 						</a>
-						<p class="category_title"><a target="_blank" href="product">曼秀雷敦薄荷润唇膏+润唇啫喱</a>
+						<p class="category_title"><a target="_blank" href="product">红颊草莓</a>
 						</p>
 						<p class="category_info"><span class="txt_nowprice info_nowprice"><i>¥</i>28</span><span class="icon_oriprice txt_oriprice info_oriprice">35</span>
 						</p>
@@ -2224,7 +2004,7 @@
 					<li class="category_li category_banner_li">
 						<div class="banner_bd">
 							<ul data-banner="list">
-								<li class="banner_show" data-title="【专题】胖子的心酸史" data-link=" " data-count="瘦身攻略">
+								<li class="banner_show" data-title="滋养学堂" data-link=" " data-count="泰国龙眼">
 									<a target="_blank" class="banner_pic" href="product">
 										<img src="/shop/resources/img/b-15.jpg" alt="">
 									</a>
@@ -2232,9 +2012,9 @@
 							</ul>
 						</div>
 						<div class="banner_ft banner_ft_blue">
-							<p class="banner_title" data-banner="title"><a target="_blank" href="product">【专题】胖子的心酸史</a>
+							<p class="banner_title" data-banner="title"><a target="_blank" href="product">滋养学堂</a>
 							</p>
-							<p class="banner_count" data-banner="count">瘦身攻略</p>
+							<p class="banner_count" data-banner="count">泰国龙眼</p>
 							<ul class="banner_nav" data-banner="nav">
 								<li class="selected"><a href="product">01</a>
 								</li>
@@ -2244,7 +2024,7 @@
 					<li class="category_li category_banner_li">
 						<div class="banner_bd">
 							<ul data-banner="list">
-								<li class="banner_show" data-title="【专题】怪诞少女的百变妆" data-link=" " data-count="变妆秘籍公开" style="z-index: 1; opacity: 1; display: list-item;">
+								<li class="banner_show" data-title="礼尚往来" data-link=" " data-count="恭贺新禧礼篮" style="z-index: 1; opacity: 1; display: list-item;">
 									<a target="_blank" class="banner_pic" href="product">
 										<img src="/shop/resources/img/b-14.jpg" alt="">
 									</a>
@@ -2257,9 +2037,9 @@
 							</ul>
 						</div>
 						<div class="banner_ft banner_ft_pink">
-							<p class="banner_title" data-banner="title"><a target="_blank" href="product">【专题】怪诞少女的百变妆</a>
+							<p class="banner_title" data-banner="title"><a target="_blank" href="product">礼尚往来</a>
 							</p>
-							<p class="banner_count" data-banner="count">变妆秘籍公开</p>
+							<p class="banner_count" data-banner="count">恭贺新禧礼篮</p>
 							<ul class="banner_nav" data-banner="nav">
 								<li class="selected"><a href="product">01</a>
 								</li>

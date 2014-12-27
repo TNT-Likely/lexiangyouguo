@@ -53,7 +53,7 @@
             </li>
         </ul>
         <div class="header_mid clearfix">
-            <a href="index" class="logo" title="蘑菇街首页">蘑菇街|www.mogujie.com</a>
+            <a href="index" class="logo" title="乐享优果首页">乐享优果|www.lexiangyouguo.com</a>
             <div class="top_nav_search" id="nav_search_form">  
     <div class="selectbox" data-v="1">
         <span class="selected">搜商品</span>
@@ -87,13 +87,13 @@
         <div class="nav_list_wrap clearfix">
                         <ul class="nav_list">
                 <li><a href="index">首页</a></li>
-                <li><a href="buyersrecommend">服饰</a></li>
-                <li><a href="buyersrecommend" >搭配</a></li>
+                <li><a href="buyersrecommend">产地直销</a></li>
+                <li><a href="buyersrecommend" >每日鲜果</a></li>
                 <li class="daren">
-                    <a  href="buyersrecommend">达人</a>
+                    <a  href="buyersrecommend">果V一刻</a>
                 </li>
-                <li class="buyer"><a  href="buyersrecommend" >买手</a></li>
-                <li><a  href="buyersrecommend">美妆</a></li>
+                <li class="buyer"><a  href="buyersrecommend" >每日特价</a></li>
+                <li><a  href="buyersrecommend">节日特区</a></li>
                 <li><a  href="buyersrecommend"  >团购</a></li>
                 <li><a class="no_bold " href="buyersrecommend">社区</a></li>
             </ul>
@@ -133,8 +133,8 @@
 <dl class="mu_nav">
     <dt>优惠特权</dt>
     <dd> <a href="memberlevel" target="_blank">钻石会员</a> </dd>
-    <dd> <a href="memberlevel" target="_blank">先穿后付</a> </dd>
-    <dd> <a href="memberlevel" >我的蘑豆</a> </dd>
+    <dd> <a href="memberlevel" target="_blank">先尝后付</a> </dd>
+    <dd> <a href="memberlevel" >我的积分</a> </dd>
     <dd> <a href="memberlevel">现金券 </a> </dd>
     <dd> <a href="memberlevel">店铺优惠券 </a> </dd>
 </dl>
@@ -234,7 +234,7 @@
                 <p>营业执照注册号：<a href=" " target="_blank">330106000129004</a></p>
                 <p>增值电信业务经营许可证：<a href=" " target="_blank">浙B2-20110349</a></p>
                 <p>ICP备案号：浙ICP备10044327号-3</p>
-                <p class="mgjhostname" title="qihe3086">©2014 Mogujie.com 杭州卷瓜网络有限公司</p>
+                <p class="mgjhostname" title="qihe3086">©2014 lexiangyouguo.com 杭州卷瓜网络有限公司</p>
             </div>
         </div>
         <div class="foot_link">

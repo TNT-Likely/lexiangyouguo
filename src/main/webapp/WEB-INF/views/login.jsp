@@ -22,7 +22,7 @@
 <div id="content_body">
 			<div class="login_wrap">
 				<div class="logo">
-					<a title="蘑菇街" href=" " class="logo_img"></a>
+					<a title="乐享优果" href=" " class="logo_img"></a>
 				</div>
 				<div class="content clearfix">
 					<div class="lg_banner">
@@ -103,7 +103,7 @@
 			<div class="login_foot">
 				<div class="login_foot_con">
 					<div class="qr_code_box fr">
-						<h3>蘑菇街移动客户端</h3>
+						<h3>乐享优果移动客户端</h3>
 						<a class="qr_code" href="customerservice" target="_blank"></a>
 					</div>
 					<ul class="link_list clearfix">
@@ -127,7 +127,7 @@
 							<a href="customerservice" target="_blank">商家平台</a>
 						</li>
 					</ul>
-					<p title="SERVER: qihe2055" class="copyright">©Copyright 2010-2014 蘑菇街 Mogujie.com (增值电信业务经营许可证：浙B2-20110349)</p>
+					<p title="SERVER: qihe2055" class="copyright">©Copyright 2010-2014 乐享优果 Lexiangyouguo.com (增值电信业务经营许可证：浙B2-20110349)</p>
 				</div>
 			</div>
 		</div>
