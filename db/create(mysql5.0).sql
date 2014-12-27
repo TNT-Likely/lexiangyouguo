@@ -2,7 +2,7 @@ drop table if exists AccessPurchaseRate;
 
 drop table if exists AdministratorList;
 
-drop table if exists ArticalList;
+drop table if existsa ArticalList;
 
 drop table if exists ArticleClassification;
 
