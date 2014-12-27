@@ -2,15 +2,17 @@ drop table if exists AccessPurchaseRate;
 
 drop table if exists AdministratorList;
 
-drop table if existsa ArticalList;
+drop table if exists ArticalList;
 
 drop table if exists ArticleClassification;
 
 drop table if exists CartTable;
 
-drop table if exists CommentsGoodsList;
+drop table if exists CommodityClassification;
 
-drop table if exists CommodityManagement;
+drop table if exists CommodityCommentsList;
+
+drop table if exists CommodityList;
 
 drop table if exists CustomerStatistics;
 
@@ -24,11 +26,11 @@ drop table if exists GiftTable;
 
 drop table if exists GiftTableContents;
 
-drop table if exists GoodsClassification;
+drop table if exists HarvestAddressTable;
 
 drop table if exists HolidaySpecialArea;
 
-drop table if exists Liink;
+drop table if exists Link;
 
 drop table if exists MemberCollectionTable;
 
@@ -38,13 +40,13 @@ drop table if exists MemberRegistrationItems;
 
 drop table if exists OccasionTable;
 
+drop table if exists OrderContentList;
+
 drop table if exists OrderList;
 
 drop table if exists OrderState;
 
 drop table if exists OrderStatistics;
-
-drop table if exists OrderTableContents;
 
 drop table if exists PreferentialType;
 
@@ -55,8 +57,6 @@ drop table if exists RegionLevelTable;
 drop table if exists RegionList;
 
 drop table if exists RoleManagement;
-
-drop table if exists ShippingAddressTable;
 
 drop table if exists ShopInformation;
 
@@ -72,14 +72,13 @@ drop table if exists parents;
 create table AccessPurchaseRate
 (
    Id                   int not null,
-   TimeAdd              timestamp,
-   TimeUpdate           timestamp,
-   Attribute_130        char(10),
-   Ranking              int not null,
+   TimeAdd               timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   TimeUpdate            timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   APR_Ranking          int not null,
    GoodsId              int not null,
-   SentimentIndex       int,
-   VisitsNumber         int,
-   VisitsPurchaseRate   float,
+   APR_SentimentIndex   int,
+   APR_VisitsNumber     int,
+   APR_VisitsPurchaseRate float,
    primary key (Id)
 );
 
@@ -89,14 +88,14 @@ create table AccessPurchaseRate
 create table AdministratorList
 (
    Id                   int not null,
-   TimeAdd              timestamp,
-   TimeUpdate           timestamp,
-   Attribute_130        char(10),
-   UserName             varchar(1024) not null,
-   Email                varchar(1024),
-   AddTime              timestamp,
-   lastLoginTime        timestamp,
+   TimeAdd               timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   TimeUpdate            timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   AdministratoName     varchar(1024) not null,
    Password             varchar(1024) not null,
+   AdministratoSex      char(2),
+   AdministratoAddress  varchar(1024),
+   AddTime               timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   AdministratoastLoginTime  timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
    primary key (Id)
 );
 
@@ -106,16 +105,14 @@ create table AdministratorList
 create table ArticalList
 (
    Id                   int not null,
-   TimeAdd              timestamp,
-   TimeUpdate           timestamp,
-   Attribute_130        char(10),
+   TimeAdd               timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   TimeUpdate            timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
    Number               int,
-   Title                varchar(1024),
-   Classification       varchar(1024),
+   ArticaTitle          varchar(1024),
+   ArticaClassification varchar(1024),
    ArticalImportant     varchar(1024),
    WhetherShown         bool,
-   AddTime              timestamp,
-   Opreation            varchar(1024),
+   AddTime               timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
    primary key (Id)
 );
 
@@ -125,15 +122,13 @@ create table ArticalList
 create table ArticleClassification
 (
    Id                   int not null,
-   TimeAdd              timestamp,
-   TimeUpdate           timestamp,
-   Attribute_130        char(10),
-   ArticleClassificationName varchar(1024) not null,
-   ArticleClassificationStyle varchar(1024),
-   Descripetion         varchar(1024),
-   Sorting              int,
-   WhetherNavigationBarDisplay varchar(1024),
-   Opreation            varchar(1024),
+   TimeAdd               timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   TimeUpdate            timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   ArticleClass_Name    varchar(1024) not null,
+   ArticleClass_Style   varchar(1024),
+   ArticleClass_Descripetion varchar(1024),
+   ArticleClass_WhetherNavigationBarDisplay varchar(1024),
+   ArticleClass_Sorting char(10),
    primary key (Id)
 );
 
@@ -143,38 +138,50 @@ create table ArticleClassification
 create table CartTable
 (
    Id                   int not null,
-   TimeAdd              timestamp,
-   TimeUpdate           timestamp,
-   Attribute_130        char(10),
+   TimeAdd               timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   TimeUpdate            timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
    MemberId             int,
    GoodsId              int,
    primary key (Id)
 );
 
 /*==============================================================*/
-/* Table: CommentsGoodsList                                     */
+/* Table: CommodityClassification                               */
 /*==============================================================*/
-create table CommentsGoodsList
+create table CommodityClassification
 (
    Id                   int not null,
    Com_Id               int,
-   TimeAdd              timestamp,
-   TimeUpdate           timestamp,
-   Attribute_130        char(10),
-   CommentType          varchar(1024),
-   CommentContent       varchar(1024),
-   MemberId             int,
-   DescriptionConsistent int,
-   deliverySpeed        int,
-   LogisticsSpeed       int,
-   CourierServiceAttitude int,
+   TimeAdd               timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   TimeUpdate            timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   ClassificationName   varchar(1024) not null,
+   ClassificationDiscript varchar(1024),
    primary key (Id)
 );
 
 /*==============================================================*/
-/* Table: CommodityManagement                                   */
+/* Table: CommodityCommentsList                                 */
 /*==============================================================*/
-create table CommodityManagement
+create table CommodityCommentsList
+(
+   Id                   int not null,
+   Com_Id               int,
+   TimeAdd               timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   TimeUpdate            timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   CommodityCom_Type    varchar(1024),
+   CommodityCom_Content varchar(1024),
+   MemberId             int,
+   CommodityCom_DescriptionConsistent int,
+   CommodityCom_deliverySpeed int,
+   CommodityCom_LogisticsSpeed int,
+   CommodityCom_CourierServiceAttitude int,
+   primary key (Id)
+);
+
+/*==============================================================*/
+/* Table: CommodityList                                         */
+/*==============================================================*/
+create table CommodityList
 (
    Id                   int not null,
    Gif_Id               int,
@@ -182,19 +189,18 @@ create table CommodityManagement
    Ord_Id               int,
    Mem_Id               int,
    Acc_Id               int,
-   TimeAdd              timestamp,
-   TimeUpdate           timestamp,
-   Attribute_130        char(10),
-   GoodsNumber          varchar(1024) not null,
-   ShopItemNamber       varchar(1024) not null,
-   ShopShelves          varchar(1024),
-   ShopInventory        int,
-   ShopKindNumber       int,
-   ShopQuantity         int,
-   ShopDisplay          varchar(1024),
-   CollectionNumber     int,
-   GoodsCommentsId      int,
-   GoodsName            varchar(1024),
+   TimeAdd               timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   TimeUpdate            timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   CommodityNumber      varchar(1024) not null,
+   CommodityItemNamber  varchar(1024) not null,
+   CommodityShelves     varchar(1024),
+   CommodityInventory   int,
+   CommodityKindNumber  int,
+   CommodityQuantity    int,
+   CommodityDisplay     varchar(1024),
+   CommodityCollectionNumber int,
+   CommodityCommentsId  int,
+   CommodityName        varchar(1024),
    primary key (Id)
 );
 
@@ -204,12 +210,11 @@ create table CommodityManagement
 create table CustomerStatistics
 (
    Id                   int not null,
-   TimeAdd              timestamp,
-   TimeUpdate           timestamp,
-   Attribute_130        char(10),
-   MembersPurchaseRate  float not null,
-   MembersAverageOrder  double,
-   MembersAveragePurchases double,
+   TimeAdd               timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   TimeUpdate            timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   CS_MembersPurchaseRate float not null,
+   CS_MembersAverageOrder double,
+   CS_MembersAveragePurchases double,
    primary key (Id)
 );
 
@@ -222,10 +227,9 @@ create table DailySpecials
    Pro_Id               int not null,
    GoodsId              int,
    PreferentialTypeId   int,
-   Discount             float,
-   TimeAdd              timestamp,
-   TimeUpdate           timestamp,
-   Attribute_130        char(10),
+   PreferentialDiscount float,
+   TimeAdd               timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   TimeUpdate            timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
    primary key (Id, Pro_Id)
 );
 
@@ -235,12 +239,11 @@ create table DailySpecials
 create table DisplayType
 (
    Id                   int not null,
-   Lii_Id               int,
-   TimeAdd              timestamp,
-   TimeUpdate           timestamp,
-   Attribute_130        char(10),
-   LogoType             varchar(1024),
-   TextType             varchar(1024),
+   Lin_Id               int,
+   TimeAdd               timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   TimeUpdate            timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   Display_LogoType     varchar(1024),
+   Display_TextType     varchar(1024),
    primary key (Id)
 );
 
@@ -250,15 +253,14 @@ create table DisplayType
 create table EmailServer
 (
    Id                   int not null,
-   TimeAdd              timestamp,
-   TimeUpdate           timestamp,
-   Attribute_130        char(10),
-   EmailServer          varchar(1024),
-   SendMailService      varchar(1024),
-   Account              varchar(1024),
+   TimeAdd               timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   TimeUpdate            timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   ES_EmailServer       varchar(1024),
+   ES_SendMailService   varchar(1024),
+   ES_Account           varchar(1024),
    Password             varchar(1024),
-   ReplyEmaiAddressl    varchar(1024),
-   EmailAddress         varchar(1024),
+   ES_ReplyEmaiAddressl varchar(1024),
+   ES_EmailAddress      varchar(1024),
    primary key (Id)
 );
 
@@ -269,9 +271,8 @@ create table GiftTable
 (
    Id                   int not null,
    Gif_Id               int,
-   TimeAdd              timestamp,
-   TimeUpdate           timestamp,
-   Attribute_130        char(10),
+   TimeAdd               timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   TimeUpdate            timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
    GiftName             varchar(1024) not null,
    OccasionId           int,
    TypeId               int,
@@ -284,26 +285,26 @@ create table GiftTable
 create table GiftTableContents
 (
    Id                   int not null,
-   TimeAdd              timestamp,
-   TimeUpdate           timestamp,
-   Attribute_130        char(10),
+   TimeAdd               timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   TimeUpdate            timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
    GoodsId              int,
    GiftId               char(10),
    primary key (Id)
 );
 
 /*==============================================================*/
-/* Table: GoodsClassification                                   */
+/* Table: HarvestAddressTable                                   */
 /*==============================================================*/
-create table GoodsClassification
+create table HarvestAddressTable
 (
    Id                   int not null,
-   Com_Id               int,
-   TimeAdd              timestamp,
-   TimeUpdate           timestamp,
-   Attribute_130        char(10),
-   ClassificationName   varchar(1024) not null,
-   ClassificationDiscript varchar(1024),
+   Ord_Id               int,
+   TimeAdd               timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   TimeUpdate            timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   HA_TheFirstAddress   varchar(1024),
+   HA_TheSecondAddress  varchar(1024),
+   HA_TheThirdAddress   varchar(1024),
+   HA_TheFourthAddress  varchar(1024),
    primary key (Id)
 );
 
@@ -316,26 +317,24 @@ create table HolidaySpecialArea
    Pro_Id               int not null,
    GoodsId              int,
    PreferentialTypeId   int,
-   Discount             float,
-   TimeAdd              timestamp,
-   TimeUpdate           timestamp,
-   Attribute_130        char(10),
-   Meaning              varchar(1024),
+   PreferentialDiscount float,
+   TimeAdd               timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   TimeUpdate            timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   HolidaySpeciaMeaning varchar(1024),
    primary key (Id, Pro_Id)
 );
 
 /*==============================================================*/
-/* Table: Liink                                                 */
+/* Table: Link                                                  */
 /*==============================================================*/
-create table Liink
+create table Link
 (
    Id                   int not null,
-   TimeAdd              timestamp,
-   TimeUpdate           timestamp,
-   Attribute_130        char(10),
+   TimeAdd               timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   TimeUpdate            timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
    LinkName             varchar(1024) not null,
    LinkAddress          varchar(1024),
-   Sorting              int,
+   LinkSorting          int,
    DisplayTypeId        int,
    primary key (Id)
 );
@@ -346,9 +345,8 @@ create table Liink
 create table MemberCollectionTable
 (
    Id                   int not null,
-   TimeAdd              timestamp,
-   TimeUpdate           timestamp,
-   Attribute_130        char(10),
+   TimeAdd               timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   TimeUpdate            timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
    MemberId             int not null,
    GoodsId              int not null,
    primary key (Id)
@@ -363,20 +361,20 @@ create table MemberList
    Car_Id               int,
    Mem_Id               int,
    Ord_Id               int,
-   TimeAdd              timestamp,
-   TimeUpdate           timestamp,
-   Attribute_130        char(10),
+   TimeAdd               timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   TimeUpdate            timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
    Number               int not null,
    Email                varchar(1024),
-   WhetherAuthenticate  bool,
-   RegisteredTime       timestamp,
-   CurrentPicture       varchar(1024),
-   NickName             varchar(1024),
-   RealName             varchar(1024),
-   Sex                  bool,
-   Birthday             timestamp,
-   ResidentialAddress   varchar(1024),
-   HomeTown             varchar(1024),
+   MemberWhetherAuthenticate bool,
+   MemberRegisteredTime  timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   MemberCurrentPicture varchar(1024),
+   MemberName           varchar(1024),
+   Password             varchar(1024),
+   MemberRealName       varchar(1024),
+   MemberSex            bool,
+   MemberBirthday        timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   MemberResidentialAddress varchar(1024),
+   MemberHomeTown       varchar(1024),
    primary key (Id)
 );
 
@@ -386,13 +384,12 @@ create table MemberList
 create table MemberRegistrationItems
 (
    Id                   int not null,
-   TimeAdd              timestamp,
-   TimeUpdate           timestamp,
-   Attribute_130        char(10),
-   MemberRegistrationItemsName varchar(1024),
-   WeightsSorting       varchar(1024),
+   TimeAdd               timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   TimeUpdate            timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   MRI_Name             varchar(1024),
+   MRI_WeightsSorting   varchar(1024),
    WhetherShown         bool,
-   WhetherRequired      bool,
+   MRI_WhetherRequired  bool,
    primary key (Id)
 );
 
@@ -403,15 +400,27 @@ create table OccasionTable
 (
    Id                   int not null,
    Gif_Id               int,
-   TimeAdd              timestamp,
-   TimeUpdate           timestamp,
-   Attribute_130        char(10),
-   VisitRelatives       varchar(1024),
-   VisitFriends         varchar(1024),
-   GiftGiving           varchar(1024),
-   VisitPatient         varchar(1024),
-   CongratulationsToHospital varchar(1024),
-   FamilyOrder          varchar(1024),
+   TimeAdd               timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   TimeUpdate            timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   Occasion_VisitRelatives varchar(1024),
+   Occasion_VisitFriends varchar(1024),
+   Occasion_GiftGiving  varchar(1024),
+   Occasion_VisitPatient varchar(1024),
+   Occasion_CongratulationsToHospital varchar(1024),
+   Occasion_FamilyOrder varchar(1024),
+   primary key (Id)
+);
+
+/*==============================================================*/
+/* Table: OrderContentList                                      */
+/*==============================================================*/
+create table OrderContentList
+(
+   Id                   int not null,
+   TimeAdd               timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   TimeUpdate            timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   OrderId              int not null,
+   GoodsId              int not null,
    primary key (Id)
 );
 
@@ -422,17 +431,15 @@ create table OrderList
 (
    Id                   int not null,
    Ord_Id               int,
-   TimeAdd              timestamp,
-   TimeUpdate           timestamp,
-   Attribute_130        char(10),
+   TimeAdd               timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   TimeUpdate            timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
    OrderNumber          int not null,
    OrderTime            timestamp not null,
-   TotalMoney           float not null,
-   AmountPayable        float not null,
+   OrderTotalMoney      float not null,
+   OrderAmountPayable   float not null,
    OrderState           varchar(1024) not null,
-   MembersId            int,
-   Number               int,
-   ConsigneeAddressId   int,
+   OrderMembersId       int,
+   OrderConsigneeAddressId int,
    OrderDescribe        varchar(1024),
    primary key (Id)
 );
@@ -444,19 +451,18 @@ create table OrderState
 (
    Id                   int not null,
    Ord_Id               int,
-   TimeAdd              timestamp,
-   TimeUpdate           timestamp,
-   Attribute_130        char(10),
-   NotDeliverGoods      varchar(1024),
-   Delivery             varchar(1024),
-   HaveToSignFor        varchar(1024),
-   RefusalReceive       varchar(1024),
-   ReturnOfGoods        varchar(1024),
-   RefundSuccess        varchar(1024),
-   Unconfirmed          varchar(1024),
-   OrderFinished        varchar(1024),
-   Payed                varchar(1024),
-   NotPaying            varchar(1024),
+   TimeAdd               timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   TimeUpdate            timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   OS_NotDeliverGoods   varchar(1024),
+   OS_Delivery          varchar(1024),
+   OS_HaveToSignFor     varchar(1024),
+   OS_RefusalReceive    varchar(1024),
+   OS_ReturnOfGoods     varchar(1024),
+   OS_RefundSuccess     varchar(1024),
+   OS_Unconfirmed       varchar(1024),
+   OS_OrderFinished     varchar(1024),
+   OS_Payed             varchar(1024),
+   OS_NotPaying         varchar(1024),
    primary key (Id)
 );
 
@@ -466,29 +472,14 @@ create table OrderState
 create table OrderStatistics
 (
    Id                   int not null,
-   TimeAdd              timestamp,
-   TimeUpdate           timestamp,
-   Attribute_130        char(10),
-   OrderGeneralSituation varchar(1024) not null,
-   DistributionMethod   varchar(1024),
-   PaymentMethod        varchar(1024),
-   EffectiveOrderAmount double,
-   ClickOrdersPerThousand double,
-   ClickMoneyPerThousand double,
-   primary key (Id)
-);
-
-/*==============================================================*/
-/* Table: OrderTableContents                                    */
-/*==============================================================*/
-create table OrderTableContents
-(
-   Id                   int not null,
-   TimeAdd              timestamp,
-   TimeUpdate           timestamp,
-   Attribute_130        char(10),
-   OrderId              int not null,
-   GoodsId              int not null,
+   TimeAdd               timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   TimeUpdate            timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   OS_GeneralSituation  varchar(1024) not null,
+   OS_DistributionMethod varchar(1024),
+   OS_PaymentMethod     varchar(1024),
+   OS_EffectiveOrderAmount double,
+   OS_ClickOrdersPerThousand double,
+   OS_ClickMoneyPerThousand double,
    primary key (Id)
 );
 
@@ -499,12 +490,11 @@ create table PreferentialType
 (
    Id                   int not null,
    Pro_Id               int,
-   TimeAdd              timestamp,
-   TimeUpdate           timestamp,
-   Attribute_130        char(10),
-   Percentage           float(8),
-   ReducePrice          int,
-   ArrivalIntegral      int,
+   TimeAdd               timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   TimeUpdate            timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   PreferentialPercentage float(8),
+   PreferentialReducePrice int,
+   PreferentialArrivalIntegral int,
    primary key (Id)
 );
 
@@ -514,12 +504,11 @@ create table PreferentialType
 create table PromotionalOffersTable
 (
    Id                   int not null,
-   TimeAdd              timestamp,
-   TimeUpdate           timestamp,
-   Attribute_130        char(10),
+   TimeAdd               timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   TimeUpdate            timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
    GoodsId              int,
    PreferentialTypeId   int,
-   Discount             float,
+   PreferentialDiscount float,
    primary key (Id)
 );
 
@@ -530,13 +519,12 @@ create table RegionLevelTable
 (
    Id                   int not null,
    Reg_Id               int,
-   TimeAdd              timestamp,
-   TimeUpdate           timestamp,
-   Attribute_130        char(10),
-   Province             varchar(1024),
-   City                 varchar(1024),
-   County               varchar(1024),
-   Town                 varchar(1024),
+   TimeAdd               timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   TimeUpdate            timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   RegionLevel_Province varchar(1024),
+   RegionLevel_City     varchar(1024),
+   RegionLevel_County   varchar(1024),
+   RegionLevel_Town     varchar(1024),
    primary key (Id)
 );
 
@@ -546,9 +534,8 @@ create table RegionLevelTable
 create table RegionList
 (
    Id                   int not null,
-   TimeAdd              timestamp,
-   TimeUpdate           timestamp,
-   Attribute_130        char(10),
+   TimeAdd               timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   TimeUpdate            timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
    RegionName           varchar(1024),
    RegionLevelId        int,
    primary key (Id)
@@ -560,28 +547,10 @@ create table RegionList
 create table RoleManagement
 (
    Id                   int not null,
-   TimeAdd              timestamp,
-   TimeUpdate           timestamp,
-   Attribute_130        char(10),
+   TimeAdd               timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   TimeUpdate            timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
    RoleName             varchar(1024) not null,
    RoleDescription      varchar(1024),
-   primary key (Id)
-);
-
-/*==============================================================*/
-/* Table: ShippingAddressTable                                  */
-/*==============================================================*/
-create table ShippingAddressTable
-(
-   Id                   int not null,
-   Ord_Id               int,
-   TimeAdd              timestamp,
-   TimeUpdate           timestamp,
-   Attribute_130        char(10),
-   TheFirstAddress      varchar(1024),
-   TheSecondAddress     varchar(1024),
-   TheThirdAddress      varchar(1024),
-   TheFourthAddress     varchar(1024),
    primary key (Id)
 );
 
@@ -592,14 +561,13 @@ create table ShopInformation
 (
    Id                   int not null,
    Sto_Id               int,
-   TimeAdd              timestamp,
-   TimeUpdate           timestamp,
-   Attribute_130        char(10),
-   ShopName             varchar(1024) not null,
-   ShopLogo             varchar(1024),
-   StoreSlogan          varchar(1024),
-   StoreCopyright       varchar(1024),
-   StoreAuthoritativeAttestation varchar(1024),
+   TimeAdd               timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   TimeUpdate            timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   ShopInfo_ShopName    varchar(1024) not null,
+   ShopInfo_ShopLogo    varchar(1024),
+   ShopInfo_StoreSlogan varchar(1024),
+   ShopInfo_StoreCopyright varchar(1024),
+   ShopInfo_StoreAuthoritativeAttestation varchar(1024),
    primary key (Id)
 );
 
@@ -609,13 +577,12 @@ create table ShopInformation
 create table StoreSettings
 (
    Id                   int not null,
-   TimeAdd              timestamp,
-   TimeUpdate           timestamp,
-   Attribute_130        char(10),
-   StoreSsttings        varchar(1024) not null,
-   BasicSetting         varchar(1024),
-   ShoppingProcess      varchar(1024),
-   CommodityDisplaySetting varchar(1024),
+   TimeAdd               timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   TimeUpdate            timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   StoreSsttingsId      varchar(1024) not null,
+   StoreBasicSetting    varchar(1024),
+   StoreShoppingProcess varchar(1024),
+   StoreCommodityDisplaySetting varchar(1024),
    primary key (Id)
 );
 
@@ -626,13 +593,12 @@ create table TypeTable
 (
    Id                   int not null,
    Gif_Id               int,
-   TimeAdd              timestamp,
-   TimeUpdate           timestamp,
-   Attribute_130        char(10),
-   Recovery             varchar(1024),
-   ImproveResistance    varchar(1024),
-   RorBrain             varchar(1024),
-   Beauty               varchar(1024),
+   TimeAdd               timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   TimeUpdate            timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   Type_Recovery        varchar(1024),
+   Type_ImproveResistance varchar(1024),
+   Type_RorBrain        varchar(1024),
+   Type_Beauty          varchar(1024),
    primary key (Id)
 );
 
@@ -642,9 +608,8 @@ create table TypeTable
 create table parents
 (
    Id                   int not null,
-   TimeAdd              timestamp,
-   TimeUpdate           timestamp,
-   Attribute_130        char(10),
+   TimeAdd               timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   TimeUpdate            timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
    primary key (Id)
 );
 
@@ -663,28 +628,34 @@ alter table ArticleClassification add constraint FK_Inheritance_28 foreign key (
 alter table CartTable add constraint FK_Inheritance_41 foreign key (Id)
       references parents (Id) on delete restrict on update restrict;
 
-alter table CommentsGoodsList add constraint FK_Inheritance_31 foreign key (Id)
+alter table CommodityClassification add constraint FK_Inheritance_45 foreign key (Id)
       references parents (Id) on delete restrict on update restrict;
 
-alter table CommentsGoodsList add constraint FK_Relationship_3 foreign key (Com_Id)
-      references CommodityManagement (Id) on delete restrict on update restrict;
+alter table CommodityClassification add constraint FK_Relationship_1 foreign key (Com_Id)
+      references CommodityList (Id) on delete restrict on update restrict;
 
-alter table CommodityManagement add constraint FK_Inheritance_1 foreign key (Id)
+alter table CommodityCommentsList add constraint FK_Inheritance_31 foreign key (Id)
       references parents (Id) on delete restrict on update restrict;
 
-alter table CommodityManagement add constraint FK_Relationship_13 foreign key (Gif_Id)
+alter table CommodityCommentsList add constraint FK_Relationship_3 foreign key (Com_Id)
+      references CommodityList (Id) on delete restrict on update restrict;
+
+alter table CommodityList add constraint FK_Inheritance_1 foreign key (Id)
+      references parents (Id) on delete restrict on update restrict;
+
+alter table CommodityList add constraint FK_Relationship_13 foreign key (Gif_Id)
       references GiftTableContents (Id) on delete restrict on update restrict;
 
-alter table CommodityManagement add constraint FK_Relationship_17 foreign key (Ord_Id)
-      references OrderTableContents (Id) on delete restrict on update restrict;
+alter table CommodityList add constraint FK_Relationship_17 foreign key (Ord_Id)
+      references OrderContentList (Id) on delete restrict on update restrict;
 
-alter table CommodityManagement add constraint FK_Relationship_19 foreign key (Car_Id)
+alter table CommodityList add constraint FK_Relationship_19 foreign key (Car_Id)
       references CartTable (Id) on delete restrict on update restrict;
 
-alter table CommodityManagement add constraint FK_Relationship_21 foreign key (Mem_Id)
+alter table CommodityList add constraint FK_Relationship_21 foreign key (Mem_Id)
       references MemberCollectionTable (Id) on delete restrict on update restrict;
 
-alter table CommodityManagement add constraint FK_Relationship_8 foreign key (Acc_Id)
+alter table CommodityList add constraint FK_Relationship_8 foreign key (Acc_Id)
       references AccessPurchaseRate (Id) on delete restrict on update restrict;
 
 alter table CustomerStatistics add constraint FK_Inheritance_6 foreign key (Id)
@@ -699,8 +670,8 @@ alter table DailySpecials add constraint FK_Inheritance_34 foreign key (Pro_Id)
 alter table DisplayType add constraint FK_Inheritance_38 foreign key (Id)
       references parents (Id) on delete restrict on update restrict;
 
-alter table DisplayType add constraint FK_Relationship_15 foreign key (Lii_Id)
-      references Liink (Id) on delete restrict on update restrict;
+alter table DisplayType add constraint FK_Relationship_15 foreign key (Lin_Id)
+      references Link (Id) on delete restrict on update restrict;
 
 alter table EmailServer add constraint FK_Inheritance_20 foreign key (Id)
       references parents (Id) on delete restrict on update restrict;
@@ -714,11 +685,11 @@ alter table GiftTable add constraint FK_Relationship_12 foreign key (Gif_Id)
 alter table GiftTableContents add constraint FK_Inheritance_42 foreign key (Id)
       references parents (Id) on delete restrict on update restrict;
 
-alter table GoodsClassification add constraint FK_Inheritance_45 foreign key (Id)
+alter table HarvestAddressTable add constraint FK_Inheritance_30 foreign key (Id)
       references parents (Id) on delete restrict on update restrict;
 
-alter table GoodsClassification add constraint FK_Relationship_1 foreign key (Com_Id)
-      references CommodityManagement (Id) on delete restrict on update restrict;
+alter table HarvestAddressTable add constraint FK_Relationship_5 foreign key (Ord_Id)
+      references OrderList (Id) on delete restrict on update restrict;
 
 alter table HolidaySpecialArea add constraint FK_Inheritance_21 foreign key (Id)
       references parents (Id) on delete restrict on update restrict;
@@ -726,7 +697,7 @@ alter table HolidaySpecialArea add constraint FK_Inheritance_21 foreign key (Id)
 alter table HolidaySpecialArea add constraint FK_Inheritance_35 foreign key (Pro_Id)
       references PromotionalOffersTable (Id) on delete restrict on update restrict;
 
-alter table Liink add constraint FK_Inheritance_25 foreign key (Id)
+alter table Link add constraint FK_Inheritance_25 foreign key (Id)
       references parents (Id) on delete restrict on update restrict;
 
 alter table MemberCollectionTable add constraint FK_Inheritance_32 foreign key (Id)
@@ -753,11 +724,14 @@ alter table OccasionTable add constraint FK_Inheritance_43 foreign key (Id)
 alter table OccasionTable add constraint FK_Relationship_11 foreign key (Gif_Id)
       references GiftTable (Id) on delete restrict on update restrict;
 
+alter table OrderContentList add constraint FK_Inheritance_40 foreign key (Id)
+      references parents (Id) on delete restrict on update restrict;
+
 alter table OrderList add constraint FK_Inheritance_2 foreign key (Id)
       references parents (Id) on delete restrict on update restrict;
 
 alter table OrderList add constraint FK_Relationship_16 foreign key (Ord_Id)
-      references OrderTableContents (Id) on delete restrict on update restrict;
+      references OrderContentList (Id) on delete restrict on update restrict;
 
 alter table OrderState add constraint FK_Inheritance_29 foreign key (Id)
       references parents (Id) on delete restrict on update restrict;
@@ -766,9 +740,6 @@ alter table OrderState add constraint FK_Relationship_4 foreign key (Ord_Id)
       references OrderList (Id) on delete restrict on update restrict;
 
 alter table OrderStatistics add constraint FK_Inheritance_7 foreign key (Id)
-      references parents (Id) on delete restrict on update restrict;
-
-alter table OrderTableContents add constraint FK_Inheritance_40 foreign key (Id)
       references parents (Id) on delete restrict on update restrict;
 
 alter table PreferentialType add constraint FK_Inheritance_37 foreign key (Id)
@@ -791,12 +762,6 @@ alter table RegionList add constraint FK_Inheritance_22 foreign key (Id)
 
 alter table RoleManagement add constraint FK_Inheritance_23 foreign key (Id)
       references parents (Id) on delete restrict on update restrict;
-
-alter table ShippingAddressTable add constraint FK_Inheritance_30 foreign key (Id)
-      references parents (Id) on delete restrict on update restrict;
-
-alter table ShippingAddressTable add constraint FK_Relationship_5 foreign key (Ord_Id)
-      references OrderList (Id) on delete restrict on update restrict;
 
 alter table ShopInformation add constraint FK_Inheritance_46 foreign key (Id)
       references parents (Id) on delete restrict on update restrict;
