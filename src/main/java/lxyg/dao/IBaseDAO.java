@@ -9,9 +9,9 @@ public interface IBaseDAO<T> {
 	  
     public void update(T entity);  
   
-    public void delete(Serializable id);  
+    public void delete(Class<T> clazz,Serializable id);  
   
-    public T findById(Serializable id);  
+    public T findById(Class<T> clazz,Serializable id);  
   
     public List<T> findByHQL(String hql, Object... params);  
 

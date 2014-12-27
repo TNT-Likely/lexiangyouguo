@@ -3,6 +3,9 @@ package lxyg.dao.imp;
 import java.io.Serializable;  
 import java.util.List;  
  
+
+
+
 import lxyg.dao.IBaseDAO;
 
 import org.hibernate.Query;  
@@ -41,13 +44,8 @@ public class BaseDAO<T> implements IBaseDAO<T> {
         this.getSession().update(entity);  
     }  
   
-    public void delete(Serializable id) {  
-        this.getSession().delete(this.findById(id));  
-    }  
-  
-    @SuppressWarnings("unchecked")
-	public T findById(Serializable id) {  
-        return (T) this.getSession().get(this.clazz, id);  
+    public void delete(Class<T> clazz,Serializable id) {  
+        this.getSession().delete(this.findById(clazz,id));  
     }  
   
     @SuppressWarnings("unchecked")
@@ -57,5 +55,10 @@ public class BaseDAO<T> implements IBaseDAO<T> {
             query.setParameter(i, params);  
         }  
         return query.list();  
-    }  
+    }
+
+	@SuppressWarnings("unchecked")
+	public T findById(Class<T> clazz, Serializable id) {
+		return (T) this.getSession().get(clazz, id);  
+	}  
 }  

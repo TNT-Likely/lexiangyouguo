@@ -8,9 +8,9 @@ public interface IBaseService<T> {
 	  
     public void update(T entity);  
   
-    public void delete(Serializable id);  
+    public void delete(Class<T> clazz,Serializable id);  
   
-    public T getById(Serializable id);  
+    public T getById(Class<T> clazz,Serializable id);  
   
     public List<T> getByHQL(String hql, Object... params);  
 }

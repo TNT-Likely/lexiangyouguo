@@ -27,7 +27,7 @@ public class indexController {
 		a.setSize((float) 1.56);
 		a.setWeight((float) 2.15);
 		//baseService.save(a);
-		//a=baseService.getById("aaa");
+		a=baseService.getById(Apple.class,"aaa");
 		Date date = new Date();
 		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
 		
