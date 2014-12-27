@@ -434,7 +434,7 @@ create table OrderList
    TimeAdd               timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
    TimeUpdate            timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
    OrderNumber          int not null,
-   OrderTime            timestamp not null,
+   OrderTime            timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
    OrderTotalMoney      float not null,
    OrderAmountPayable   float not null,
    OrderState           varchar(1024) not null,
