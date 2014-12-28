@@ -4,6 +4,8 @@ import java.sql.Timestamp;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import static javax.persistence.GenerationType.IDENTITY;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
@@ -32,19 +34,17 @@ public class Commodityclassification implements java.io.Serializable {
 	}
 
 	/** minimal constructor */
-	public Commodityclassification(Integer id, Timestamp timeAdd,
-			Timestamp timeUpdate, String classificationName) {
-		this.id = id;
+	public Commodityclassification(Timestamp timeAdd, Timestamp timeUpdate,
+			String classificationName) {
 		this.timeAdd = timeAdd;
 		this.timeUpdate = timeUpdate;
 		this.classificationName = classificationName;
 	}
 
 	/** full constructor */
-	public Commodityclassification(Integer id, Commoditylist commoditylist,
+	public Commodityclassification(Commoditylist commoditylist,
 			Timestamp timeAdd, Timestamp timeUpdate, String classificationName,
 			String classificationDiscript) {
-		this.id = id;
 		this.commoditylist = commoditylist;
 		this.timeAdd = timeAdd;
 		this.timeUpdate = timeUpdate;
@@ -54,6 +54,7 @@ public class Commodityclassification implements java.io.Serializable {
 
 	// Property accessors
 	@Id
+	@GeneratedValue(strategy = IDENTITY)
 	@Column(name = "Id", unique = true, nullable = false)
 	public Integer getId() {
 		return this.id;

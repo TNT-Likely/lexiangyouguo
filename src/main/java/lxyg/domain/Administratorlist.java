@@ -3,6 +3,8 @@ package lxyg.domain;
 import java.sql.Timestamp;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import static javax.persistence.GenerationType.IDENTITY;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -32,10 +34,9 @@ public class Administratorlist implements java.io.Serializable {
 	}
 
 	/** minimal constructor */
-	public Administratorlist(Integer id, Timestamp timeAdd,
-			Timestamp timeUpdate, String administratoName, String password,
-			Timestamp addTime, Timestamp administratoastLoginTime) {
-		this.id = id;
+	public Administratorlist(Timestamp timeAdd, Timestamp timeUpdate,
+			String administratoName, String password, Timestamp addTime,
+			Timestamp administratoastLoginTime) {
 		this.timeAdd = timeAdd;
 		this.timeUpdate = timeUpdate;
 		this.administratoName = administratoName;
@@ -45,11 +46,10 @@ public class Administratorlist implements java.io.Serializable {
 	}
 
 	/** full constructor */
-	public Administratorlist(Integer id, Timestamp timeAdd,
-			Timestamp timeUpdate, String administratoName, String password,
-			String administratoSex, String administratoAddress,
-			Timestamp addTime, Timestamp administratoastLoginTime) {
-		this.id = id;
+	public Administratorlist(Timestamp timeAdd, Timestamp timeUpdate,
+			String administratoName, String password, String administratoSex,
+			String administratoAddress, Timestamp addTime,
+			Timestamp administratoastLoginTime) {
 		this.timeAdd = timeAdd;
 		this.timeUpdate = timeUpdate;
 		this.administratoName = administratoName;
@@ -62,6 +62,7 @@ public class Administratorlist implements java.io.Serializable {
 
 	// Property accessors
 	@Id
+	@GeneratedValue(strategy = IDENTITY)
 	@Column(name = "Id", unique = true, nullable = false)
 	public Integer getId() {
 		return this.id;

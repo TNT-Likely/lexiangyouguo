@@ -4,6 +4,8 @@ import java.sql.Timestamp;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import static javax.persistence.GenerationType.IDENTITY;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
@@ -33,18 +35,16 @@ public class Preferentialtype implements java.io.Serializable {
 	}
 
 	/** minimal constructor */
-	public Preferentialtype(Integer id, Timestamp timeAdd, Timestamp timeUpdate) {
-		this.id = id;
+	public Preferentialtype(Timestamp timeAdd, Timestamp timeUpdate) {
 		this.timeAdd = timeAdd;
 		this.timeUpdate = timeUpdate;
 	}
 
 	/** full constructor */
-	public Preferentialtype(Integer id,
-			Promotionalofferstable promotionalofferstable, Timestamp timeAdd,
-			Timestamp timeUpdate, Float preferentialPercentage,
-			Integer preferentialReducePrice, Integer preferentialArrivalIntegral) {
-		this.id = id;
+	public Preferentialtype(Promotionalofferstable promotionalofferstable,
+			Timestamp timeAdd, Timestamp timeUpdate,
+			Float preferentialPercentage, Integer preferentialReducePrice,
+			Integer preferentialArrivalIntegral) {
 		this.promotionalofferstable = promotionalofferstable;
 		this.timeAdd = timeAdd;
 		this.timeUpdate = timeUpdate;
@@ -55,6 +55,7 @@ public class Preferentialtype implements java.io.Serializable {
 
 	// Property accessors
 	@Id
+	@GeneratedValue(strategy = IDENTITY)
 	@Column(name = "Id", unique = true, nullable = false)
 	public Integer getId() {
 		return this.id;

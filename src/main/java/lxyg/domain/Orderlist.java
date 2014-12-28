@@ -7,6 +7,8 @@ import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import static javax.persistence.GenerationType.IDENTITY;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
@@ -46,10 +48,9 @@ public class Orderlist implements java.io.Serializable {
 	}
 
 	/** minimal constructor */
-	public Orderlist(Integer id, Timestamp timeAdd, Timestamp timeUpdate,
+	public Orderlist(Timestamp timeAdd, Timestamp timeUpdate,
 			Integer orderNumber, Timestamp orderTime, Float orderTotalMoney,
 			Float orderAmountPayable, String orderState) {
-		this.id = id;
 		this.timeAdd = timeAdd;
 		this.timeUpdate = timeUpdate;
 		this.orderNumber = orderNumber;
@@ -60,15 +61,13 @@ public class Orderlist implements java.io.Serializable {
 	}
 
 	/** full constructor */
-	public Orderlist(Integer id, Ordercontentlist ordercontentlist,
-			Timestamp timeAdd, Timestamp timeUpdate, Integer orderNumber,
-			Timestamp orderTime, Float orderTotalMoney,
-			Float orderAmountPayable, String orderState,
+	public Orderlist(Ordercontentlist ordercontentlist, Timestamp timeAdd,
+			Timestamp timeUpdate, Integer orderNumber, Timestamp orderTime,
+			Float orderTotalMoney, Float orderAmountPayable, String orderState,
 			Integer orderMembersId, Integer orderConsigneeAddressId,
 			String orderDescribe, Set<Memberlist> memberlists,
 			Set<Harvestaddresstable> harvestaddresstables,
 			Set<Orderstate> orderstates) {
-		this.id = id;
 		this.ordercontentlist = ordercontentlist;
 		this.timeAdd = timeAdd;
 		this.timeUpdate = timeUpdate;
@@ -87,6 +86,7 @@ public class Orderlist implements java.io.Serializable {
 
 	// Property accessors
 	@Id
+	@GeneratedValue(strategy = IDENTITY)
 	@Column(name = "Id", unique = true, nullable = false)
 	public Integer getId() {
 		return this.id;

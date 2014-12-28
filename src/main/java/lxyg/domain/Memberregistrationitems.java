@@ -3,6 +3,8 @@ package lxyg.domain;
 import java.sql.Timestamp;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import static javax.persistence.GenerationType.IDENTITY;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -30,18 +32,15 @@ public class Memberregistrationitems implements java.io.Serializable {
 	}
 
 	/** minimal constructor */
-	public Memberregistrationitems(Integer id, Timestamp timeAdd,
-			Timestamp timeUpdate) {
-		this.id = id;
+	public Memberregistrationitems(Timestamp timeAdd, Timestamp timeUpdate) {
 		this.timeAdd = timeAdd;
 		this.timeUpdate = timeUpdate;
 	}
 
 	/** full constructor */
-	public Memberregistrationitems(Integer id, Timestamp timeAdd,
-			Timestamp timeUpdate, String mriName, String mriWeightsSorting,
-			Boolean whetherShown, Boolean mriWhetherRequired) {
-		this.id = id;
+	public Memberregistrationitems(Timestamp timeAdd, Timestamp timeUpdate,
+			String mriName, String mriWeightsSorting, Boolean whetherShown,
+			Boolean mriWhetherRequired) {
 		this.timeAdd = timeAdd;
 		this.timeUpdate = timeUpdate;
 		this.mriName = mriName;
@@ -52,6 +51,7 @@ public class Memberregistrationitems implements java.io.Serializable {
 
 	// Property accessors
 	@Id
+	@GeneratedValue(strategy = IDENTITY)
 	@Column(name = "Id", unique = true, nullable = false)
 	public Integer getId() {
 		return this.id;

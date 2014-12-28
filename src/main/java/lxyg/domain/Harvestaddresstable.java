@@ -4,6 +4,8 @@ import java.sql.Timestamp;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import static javax.persistence.GenerationType.IDENTITY;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
@@ -34,19 +36,16 @@ public class Harvestaddresstable implements java.io.Serializable {
 	}
 
 	/** minimal constructor */
-	public Harvestaddresstable(Integer id, Timestamp timeAdd,
-			Timestamp timeUpdate) {
-		this.id = id;
+	public Harvestaddresstable(Timestamp timeAdd, Timestamp timeUpdate) {
 		this.timeAdd = timeAdd;
 		this.timeUpdate = timeUpdate;
 	}
 
 	/** full constructor */
-	public Harvestaddresstable(Integer id, Orderlist orderlist,
-			Timestamp timeAdd, Timestamp timeUpdate, String haTheFirstAddress,
+	public Harvestaddresstable(Orderlist orderlist, Timestamp timeAdd,
+			Timestamp timeUpdate, String haTheFirstAddress,
 			String haTheSecondAddress, String haTheThirdAddress,
 			String haTheFourthAddress) {
-		this.id = id;
 		this.orderlist = orderlist;
 		this.timeAdd = timeAdd;
 		this.timeUpdate = timeUpdate;
@@ -58,6 +57,7 @@ public class Harvestaddresstable implements java.io.Serializable {
 
 	// Property accessors
 	@Id
+	@GeneratedValue(strategy = IDENTITY)
 	@Column(name = "Id", unique = true, nullable = false)
 	public Integer getId() {
 		return this.id;

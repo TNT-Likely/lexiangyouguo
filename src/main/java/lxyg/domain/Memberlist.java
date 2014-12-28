@@ -4,6 +4,8 @@ import java.sql.Timestamp;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import static javax.persistence.GenerationType.IDENTITY;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
@@ -44,10 +46,8 @@ public class Memberlist implements java.io.Serializable {
 	}
 
 	/** minimal constructor */
-	public Memberlist(Integer id, Timestamp timeAdd, Timestamp timeUpdate,
-			Integer number, Timestamp memberRegisteredTime,
-			Timestamp memberBirthday) {
-		this.id = id;
+	public Memberlist(Timestamp timeAdd, Timestamp timeUpdate, Integer number,
+			Timestamp memberRegisteredTime, Timestamp memberBirthday) {
 		this.timeAdd = timeAdd;
 		this.timeUpdate = timeUpdate;
 		this.number = number;
@@ -56,14 +56,13 @@ public class Memberlist implements java.io.Serializable {
 	}
 
 	/** full constructor */
-	public Memberlist(Integer id, Membercollectiontable membercollectiontable,
+	public Memberlist(Membercollectiontable membercollectiontable,
 			Orderlist orderlist, Carttable carttable, Timestamp timeAdd,
 			Timestamp timeUpdate, Integer number, String email,
 			Boolean memberWhetherAuthenticate, Timestamp memberRegisteredTime,
 			String memberCurrentPicture, String memberName, String password,
 			String memberRealName, Boolean memberSex, Timestamp memberBirthday,
 			String memberResidentialAddress, String memberHomeTown) {
-		this.id = id;
 		this.membercollectiontable = membercollectiontable;
 		this.orderlist = orderlist;
 		this.carttable = carttable;
@@ -85,6 +84,7 @@ public class Memberlist implements java.io.Serializable {
 
 	// Property accessors
 	@Id
+	@GeneratedValue(strategy = IDENTITY)
 	@Column(name = "Id", unique = true, nullable = false)
 	public Integer getId() {
 		return this.id;

@@ -7,6 +7,8 @@ import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import static javax.persistence.GenerationType.IDENTITY;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
@@ -35,17 +37,15 @@ public class Regionlist implements java.io.Serializable {
 	}
 
 	/** minimal constructor */
-	public Regionlist(Integer id, Timestamp timeAdd, Timestamp timeUpdate) {
-		this.id = id;
+	public Regionlist(Timestamp timeAdd, Timestamp timeUpdate) {
 		this.timeAdd = timeAdd;
 		this.timeUpdate = timeUpdate;
 	}
 
 	/** full constructor */
-	public Regionlist(Integer id, Timestamp timeAdd, Timestamp timeUpdate,
+	public Regionlist(Timestamp timeAdd, Timestamp timeUpdate,
 			String regionName, Integer regionLevelId,
 			Set<Regionleveltable> regionleveltables) {
-		this.id = id;
 		this.timeAdd = timeAdd;
 		this.timeUpdate = timeUpdate;
 		this.regionName = regionName;
@@ -55,6 +55,7 @@ public class Regionlist implements java.io.Serializable {
 
 	// Property accessors
 	@Id
+	@GeneratedValue(strategy = IDENTITY)
 	@Column(name = "Id", unique = true, nullable = false)
 	public Integer getId() {
 		return this.id;

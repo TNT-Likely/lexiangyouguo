@@ -27,32 +27,32 @@
 						<a href="index" title="蘑菇街首页" class="logo_img"></a>
 					</div>
 					<div class="reg_bd formbox">
-						<form class="formelem" data-action="/registermg/postform" method="post">
+						<form class="formelem" action="register" method="post">
 							<h3>新用户注册</h3>
 							<ul>
 								<li>
 									<label class="label_title">手机/邮箱：</label>
 									<div class="inputbox">
-										<input type="text" name="register_account" data-defultmsg="推荐使用手机注册，购物更安全" data-type="useraccount" data-errormsg="请填写正确的手机或邮箱" data-ajaxurl="/registermg/mobilemail" class="normalText display_u js_text_input">
+										<input type="text" name="Email" data-defultmsg="推荐使用手机注册，购物更安全" data-type="useraccount" data-errormsg="请填写正确的手机或邮箱" data-ajaxurl="/registermg/mobilemail" class="normalText display_u js_text_input">
 										<input type="hidden" name="register_type" />
 									</div>
 								</li>
 								<li>
 									<label class="label_title">创建昵称：</label>
 									<div class="inputbox">
-										<input type="text" name="register_ulike" def-v="5-20个字符，推荐使用中文名" data-type="username" data-errormsg="昵称不符合规范" data-defultmsg="支持中文，不能以数字开头，5-20个字符，中文算两个字符" data-ajaxurl="/registermg/ajaxcheck" class="normalText display_u js_text_input">
+										<input type="text" name="MemberName" def-v="5-20个字符，推荐使用中文名" data-type="username" data-errormsg="昵称不符合规范" data-defultmsg="支持中文，不能以数字开头，5-20个字符，中文算两个字符" data-ajaxurl="/registermg/ajaxcheck" class="normalText display_u js_text_input">
 									</div>
 								</li>
 								<li>
 									<label class="label_title">创建密码：</label>
 									<div class="inputbox">
-										<input type="password" name="register_password" def-v="6-20个字符，可以是数字、字母和符号" data-defultmsg="6-20个字母、数字或者符号" data-type="password" id="js_passbox" data-errormsg="密码需要是字母或数字，最小6位，最大20位" class="normalText display_u js_text_input">
+										<input type="password" name="Password" def-v="6-20个字符，可以是数字、字母和符号" data-defultmsg="6-20个字母、数字或者符号" data-type="password" id="js_passbox" data-errormsg="密码需要是字母或数字，最小6位，最大20位" class="normalText display_u js_text_input">
 									</div>
 								</li>
 								<li>
 									<label class="label_title" for="">确认密码：</label>
 									<div class="inputbox">
-										<input type="password" name="register_respassword" def-v="请再次确认密码" data-type="repass" data-rebox="js_passbox" data-errormsg="2次输入的密码不一致" class="normalText display_u js_text_input">
+										<input type="password" def-v="请再次确认密码" data-type="repass" data-rebox="js_passbox" data-errormsg="2次输入的密码不一致" class="normalText display_u js_text_input">
 									</div>
 								</li>
 								<li class="imgcheck_box hidden">
@@ -89,7 +89,7 @@
 								</li>
 							</ul>
 							<div class="subbox">
-							<span class="btn_register js_postcurrentform"></span>
+								<button><span class="btn_register js_postcurrentform"></span></button>
 							</div>
 						</form>
 					</div>

@@ -3,6 +3,8 @@ package lxyg.domain;
 import java.sql.Timestamp;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import static javax.persistence.GenerationType.IDENTITY;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -29,19 +31,17 @@ public class Customerstatistics implements java.io.Serializable {
 	}
 
 	/** minimal constructor */
-	public Customerstatistics(Integer id, Timestamp timeAdd,
-			Timestamp timeUpdate, Float csMembersPurchaseRate) {
-		this.id = id;
+	public Customerstatistics(Timestamp timeAdd, Timestamp timeUpdate,
+			Float csMembersPurchaseRate) {
 		this.timeAdd = timeAdd;
 		this.timeUpdate = timeUpdate;
 		this.csMembersPurchaseRate = csMembersPurchaseRate;
 	}
 
 	/** full constructor */
-	public Customerstatistics(Integer id, Timestamp timeAdd,
-			Timestamp timeUpdate, Float csMembersPurchaseRate,
-			Double csMembersAverageOrder, Double csMembersAveragePurchases) {
-		this.id = id;
+	public Customerstatistics(Timestamp timeAdd, Timestamp timeUpdate,
+			Float csMembersPurchaseRate, Double csMembersAverageOrder,
+			Double csMembersAveragePurchases) {
 		this.timeAdd = timeAdd;
 		this.timeUpdate = timeUpdate;
 		this.csMembersPurchaseRate = csMembersPurchaseRate;
@@ -51,6 +51,7 @@ public class Customerstatistics implements java.io.Serializable {
 
 	// Property accessors
 	@Id
+	@GeneratedValue(strategy = IDENTITY)
 	@Column(name = "Id", unique = true, nullable = false)
 	public Integer getId() {
 		return this.id;

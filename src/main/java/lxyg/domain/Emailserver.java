@@ -3,6 +3,8 @@ package lxyg.domain;
 import java.sql.Timestamp;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import static javax.persistence.GenerationType.IDENTITY;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -32,17 +34,15 @@ public class Emailserver implements java.io.Serializable {
 	}
 
 	/** minimal constructor */
-	public Emailserver(Integer id, Timestamp timeAdd, Timestamp timeUpdate) {
-		this.id = id;
+	public Emailserver(Timestamp timeAdd, Timestamp timeUpdate) {
 		this.timeAdd = timeAdd;
 		this.timeUpdate = timeUpdate;
 	}
 
 	/** full constructor */
-	public Emailserver(Integer id, Timestamp timeAdd, Timestamp timeUpdate,
+	public Emailserver(Timestamp timeAdd, Timestamp timeUpdate,
 			String esEmailServer, String esSendMailService, String esAccount,
 			String password, String esReplyEmaiAddressl, String esEmailAddress) {
-		this.id = id;
 		this.timeAdd = timeAdd;
 		this.timeUpdate = timeUpdate;
 		this.esEmailServer = esEmailServer;
@@ -55,6 +55,7 @@ public class Emailserver implements java.io.Serializable {
 
 	// Property accessors
 	@Id
+	@GeneratedValue(strategy = IDENTITY)
 	@Column(name = "Id", unique = true, nullable = false)
 	public Integer getId() {
 		return this.id;

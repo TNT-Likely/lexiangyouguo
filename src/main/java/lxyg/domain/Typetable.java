@@ -4,6 +4,8 @@ import java.sql.Timestamp;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import static javax.persistence.GenerationType.IDENTITY;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
@@ -34,17 +36,15 @@ public class Typetable implements java.io.Serializable {
 	}
 
 	/** minimal constructor */
-	public Typetable(Integer id, Timestamp timeAdd, Timestamp timeUpdate) {
-		this.id = id;
+	public Typetable(Timestamp timeAdd, Timestamp timeUpdate) {
 		this.timeAdd = timeAdd;
 		this.timeUpdate = timeUpdate;
 	}
 
 	/** full constructor */
-	public Typetable(Integer id, Gifttable gifttable, Timestamp timeAdd,
+	public Typetable(Gifttable gifttable, Timestamp timeAdd,
 			Timestamp timeUpdate, String typeRecovery,
 			String typeImproveResistance, String typeRorBrain, String typeBeauty) {
-		this.id = id;
 		this.gifttable = gifttable;
 		this.timeAdd = timeAdd;
 		this.timeUpdate = timeUpdate;
@@ -56,6 +56,7 @@ public class Typetable implements java.io.Serializable {
 
 	// Property accessors
 	@Id
+	@GeneratedValue(strategy = IDENTITY)
 	@Column(name = "Id", unique = true, nullable = false)
 	public Integer getId() {
 		return this.id;

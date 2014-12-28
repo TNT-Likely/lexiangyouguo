@@ -4,6 +4,8 @@ import java.sql.Timestamp;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import static javax.persistence.GenerationType.IDENTITY;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
@@ -35,21 +37,19 @@ public class Shopinformation implements java.io.Serializable {
 	}
 
 	/** minimal constructor */
-	public Shopinformation(Integer id, Timestamp timeAdd, Timestamp timeUpdate,
+	public Shopinformation(Timestamp timeAdd, Timestamp timeUpdate,
 			String shopInfoShopName) {
-		this.id = id;
 		this.timeAdd = timeAdd;
 		this.timeUpdate = timeUpdate;
 		this.shopInfoShopName = shopInfoShopName;
 	}
 
 	/** full constructor */
-	public Shopinformation(Integer id, Storesettings storesettings,
-			Timestamp timeAdd, Timestamp timeUpdate, String shopInfoShopName,
+	public Shopinformation(Storesettings storesettings, Timestamp timeAdd,
+			Timestamp timeUpdate, String shopInfoShopName,
 			String shopInfoShopLogo, String shopInfoStoreSlogan,
 			String shopInfoStoreCopyright,
 			String shopInfoStoreAuthoritativeAttestation) {
-		this.id = id;
 		this.storesettings = storesettings;
 		this.timeAdd = timeAdd;
 		this.timeUpdate = timeUpdate;
@@ -62,6 +62,7 @@ public class Shopinformation implements java.io.Serializable {
 
 	// Property accessors
 	@Id
+	@GeneratedValue(strategy = IDENTITY)
 	@Column(name = "Id", unique = true, nullable = false)
 	public Integer getId() {
 		return this.id;

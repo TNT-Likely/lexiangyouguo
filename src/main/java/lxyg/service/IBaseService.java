@@ -12,5 +12,7 @@ public interface IBaseService<T> {
   
     public T getById(Class<T> clazz,Serializable id);  
   
-    public List<T> getByHQL(String hql, Object... params);  
+    public List<T> getByHQL(String hql, Object... params); 
+    
+    public List<T> findBySQL(String sql, Object... params);
 }

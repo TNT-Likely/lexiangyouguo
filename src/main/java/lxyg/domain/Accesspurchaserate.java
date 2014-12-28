@@ -7,6 +7,8 @@ import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import static javax.persistence.GenerationType.IDENTITY;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
@@ -37,9 +39,8 @@ public class Accesspurchaserate implements java.io.Serializable {
 	}
 
 	/** minimal constructor */
-	public Accesspurchaserate(Integer id, Timestamp timeAdd,
-			Timestamp timeUpdate, Integer aprRanking, Integer goodsId) {
-		this.id = id;
+	public Accesspurchaserate(Timestamp timeAdd, Timestamp timeUpdate,
+			Integer aprRanking, Integer goodsId) {
 		this.timeAdd = timeAdd;
 		this.timeUpdate = timeUpdate;
 		this.aprRanking = aprRanking;
@@ -47,11 +48,10 @@ public class Accesspurchaserate implements java.io.Serializable {
 	}
 
 	/** full constructor */
-	public Accesspurchaserate(Integer id, Timestamp timeAdd,
-			Timestamp timeUpdate, Integer aprRanking, Integer goodsId,
-			Integer aprSentimentIndex, Integer aprVisitsNumber,
-			Float aprVisitsPurchaseRate, Set<Commoditylist> commoditylists) {
-		this.id = id;
+	public Accesspurchaserate(Timestamp timeAdd, Timestamp timeUpdate,
+			Integer aprRanking, Integer goodsId, Integer aprSentimentIndex,
+			Integer aprVisitsNumber, Float aprVisitsPurchaseRate,
+			Set<Commoditylist> commoditylists) {
 		this.timeAdd = timeAdd;
 		this.timeUpdate = timeUpdate;
 		this.aprRanking = aprRanking;
@@ -64,6 +64,7 @@ public class Accesspurchaserate implements java.io.Serializable {
 
 	// Property accessors
 	@Id
+	@GeneratedValue(strategy = IDENTITY)
 	@Column(name = "Id", unique = true, nullable = false)
 	public Integer getId() {
 		return this.id;

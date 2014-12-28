@@ -71,7 +71,7 @@ drop table if exists parents;
 /*==============================================================*/
 create table AccessPurchaseRate
 (
-   Id                   int not null,
+   Id                   int not null AUTO_INCREMENT,
    TimeAdd               timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
    TimeUpdate            timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
    APR_Ranking          int not null,
@@ -87,7 +87,7 @@ create table AccessPurchaseRate
 /*==============================================================*/
 create table AdministratorList
 (
-   Id                   int not null,
+   Id                   int not null AUTO_INCREMENT,
    TimeAdd               timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
    TimeUpdate            timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
    AdministratoName     varchar(1024) not null,
@@ -104,7 +104,7 @@ create table AdministratorList
 /*==============================================================*/
 create table ArticalList
 (
-   Id                   int not null,
+   Id                   int not null AUTO_INCREMENT,
    TimeAdd               timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
    TimeUpdate            timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
    Number               int,
@@ -121,7 +121,7 @@ create table ArticalList
 /*==============================================================*/
 create table ArticleClassification
 (
-   Id                   int not null,
+   Id                   int not null AUTO_INCREMENT,
    TimeAdd               timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
    TimeUpdate            timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
    ArticleClass_Name    varchar(1024) not null,
@@ -137,7 +137,7 @@ create table ArticleClassification
 /*==============================================================*/
 create table CartTable
 (
-   Id                   int not null,
+   Id                   int not null AUTO_INCREMENT,
    TimeAdd               timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
    TimeUpdate            timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
    MemberId             int,
@@ -150,7 +150,7 @@ create table CartTable
 /*==============================================================*/
 create table CommodityClassification
 (
-   Id                   int not null,
+   Id                   int not null AUTO_INCREMENT,
    Com_Id               int,
    TimeAdd               timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
    TimeUpdate            timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -164,7 +164,7 @@ create table CommodityClassification
 /*==============================================================*/
 create table CommodityCommentsList
 (
-   Id                   int not null,
+   Id                   int not null AUTO_INCREMENT,
    Com_Id               int,
    TimeAdd               timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
    TimeUpdate            timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -183,7 +183,7 @@ create table CommodityCommentsList
 /*==============================================================*/
 create table CommodityList
 (
-   Id                   int not null,
+   Id                   int not null AUTO_INCREMENT,
    Gif_Id               int,
    Car_Id               int,
    Ord_Id               int,
@@ -209,7 +209,7 @@ create table CommodityList
 /*==============================================================*/
 create table CustomerStatistics
 (
-   Id                   int not null,
+   Id                   int not null AUTO_INCREMENT,
    TimeAdd               timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
    TimeUpdate            timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
    CS_MembersPurchaseRate float not null,
@@ -223,7 +223,7 @@ create table CustomerStatistics
 /*==============================================================*/
 create table DailySpecials
 (
-   Id                   int not null,
+   Id                   int not null AUTO_INCREMENT,
    Pro_Id               int not null,
    GoodsId              int,
    PreferentialTypeId   int,
@@ -238,7 +238,7 @@ create table DailySpecials
 /*==============================================================*/
 create table DisplayType
 (
-   Id                   int not null,
+   Id                   int not null AUTO_INCREMENT,
    Lin_Id               int,
    TimeAdd               timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
    TimeUpdate            timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -252,7 +252,7 @@ create table DisplayType
 /*==============================================================*/
 create table EmailServer
 (
-   Id                   int not null,
+   Id                   int not null AUTO_INCREMENT,
    TimeAdd               timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
    TimeUpdate            timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
    ES_EmailServer       varchar(1024),
@@ -269,7 +269,7 @@ create table EmailServer
 /*==============================================================*/
 create table GiftTable
 (
-   Id                   int not null,
+   Id                   int not null AUTO_INCREMENT,
    Gif_Id               int,
    TimeAdd               timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
    TimeUpdate            timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -284,7 +284,7 @@ create table GiftTable
 /*==============================================================*/
 create table GiftTableContents
 (
-   Id                   int not null,
+   Id                   int not null AUTO_INCREMENT,
    TimeAdd               timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
    TimeUpdate            timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
    GoodsId              int,
@@ -297,7 +297,7 @@ create table GiftTableContents
 /*==============================================================*/
 create table HarvestAddressTable
 (
-   Id                   int not null,
+   Id                   int not null AUTO_INCREMENT,
    Ord_Id               int,
    TimeAdd               timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
    TimeUpdate            timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -313,7 +313,7 @@ create table HarvestAddressTable
 /*==============================================================*/
 create table HolidaySpecialArea
 (
-   Id                   int not null,
+   Id                   int not null AUTO_INCREMENT,
    Pro_Id               int not null,
    GoodsId              int,
    PreferentialTypeId   int,
@@ -329,7 +329,7 @@ create table HolidaySpecialArea
 /*==============================================================*/
 create table Link
 (
-   Id                   int not null,
+   Id                   int not null AUTO_INCREMENT,
    TimeAdd               timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
    TimeUpdate            timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
    LinkName             varchar(1024) not null,
@@ -344,7 +344,7 @@ create table Link
 /*==============================================================*/
 create table MemberCollectionTable
 (
-   Id                   int not null,
+   Id                   int not null AUTO_INCREMENT,
    TimeAdd               timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
    TimeUpdate            timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
    MemberId             int not null,
@@ -357,7 +357,7 @@ create table MemberCollectionTable
 /*==============================================================*/
 create table MemberList
 (
-   Id                   int not null,
+   Id                   int not null AUTO_INCREMENT,
    Car_Id               int,
    Mem_Id               int,
    Ord_Id               int,
@@ -383,7 +383,7 @@ create table MemberList
 /*==============================================================*/
 create table MemberRegistrationItems
 (
-   Id                   int not null,
+   Id                   int not null AUTO_INCREMENT,
    TimeAdd               timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
    TimeUpdate            timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
    MRI_Name             varchar(1024),
@@ -398,7 +398,7 @@ create table MemberRegistrationItems
 /*==============================================================*/
 create table OccasionTable
 (
-   Id                   int not null,
+   Id                   int not null AUTO_INCREMENT,
    Gif_Id               int,
    TimeAdd               timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
    TimeUpdate            timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -416,7 +416,7 @@ create table OccasionTable
 /*==============================================================*/
 create table OrderContentList
 (
-   Id                   int not null,
+   Id                   int not null AUTO_INCREMENT,
    TimeAdd               timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
    TimeUpdate            timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
    OrderId              int not null,
@@ -429,7 +429,7 @@ create table OrderContentList
 /*==============================================================*/
 create table OrderList
 (
-   Id                   int not null,
+   Id                   int not null AUTO_INCREMENT,
    Ord_Id               int,
    TimeAdd               timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
    TimeUpdate            timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -449,7 +449,7 @@ create table OrderList
 /*==============================================================*/
 create table OrderState
 (
-   Id                   int not null,
+   Id                   int not null AUTO_INCREMENT,
    Ord_Id               int,
    TimeAdd               timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
    TimeUpdate            timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -471,7 +471,7 @@ create table OrderState
 /*==============================================================*/
 create table OrderStatistics
 (
-   Id                   int not null,
+   Id                   int not null AUTO_INCREMENT,
    TimeAdd               timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
    TimeUpdate            timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
    OS_GeneralSituation  varchar(1024) not null,
@@ -488,7 +488,7 @@ create table OrderStatistics
 /*==============================================================*/
 create table PreferentialType
 (
-   Id                   int not null,
+   Id                   int not null AUTO_INCREMENT,
    Pro_Id               int,
    TimeAdd               timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
    TimeUpdate            timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -503,7 +503,7 @@ create table PreferentialType
 /*==============================================================*/
 create table PromotionalOffersTable
 (
-   Id                   int not null,
+   Id                   int not null AUTO_INCREMENT,
    TimeAdd               timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
    TimeUpdate            timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
    GoodsId              int,
@@ -517,7 +517,7 @@ create table PromotionalOffersTable
 /*==============================================================*/
 create table RegionLevelTable
 (
-   Id                   int not null,
+   Id                   int not null AUTO_INCREMENT,
    Reg_Id               int,
    TimeAdd               timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
    TimeUpdate            timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -533,7 +533,7 @@ create table RegionLevelTable
 /*==============================================================*/
 create table RegionList
 (
-   Id                   int not null,
+   Id                   int not null AUTO_INCREMENT,
    TimeAdd               timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
    TimeUpdate            timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
    RegionName           varchar(1024),
@@ -546,7 +546,7 @@ create table RegionList
 /*==============================================================*/
 create table RoleManagement
 (
-   Id                   int not null,
+   Id                   int not null AUTO_INCREMENT,
    TimeAdd               timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
    TimeUpdate            timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
    RoleName             varchar(1024) not null,
@@ -559,7 +559,7 @@ create table RoleManagement
 /*==============================================================*/
 create table ShopInformation
 (
-   Id                   int not null,
+   Id                   int not null AUTO_INCREMENT,
    Sto_Id               int,
    TimeAdd               timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
    TimeUpdate            timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -576,7 +576,7 @@ create table ShopInformation
 /*==============================================================*/
 create table StoreSettings
 (
-   Id                   int not null,
+   Id                   int not null AUTO_INCREMENT,
    TimeAdd               timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
    TimeUpdate            timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
    StoreSsttingsId      varchar(1024) not null,
@@ -591,7 +591,7 @@ create table StoreSettings
 /*==============================================================*/
 create table TypeTable
 (
-   Id                   int not null,
+   Id                   int not null AUTO_INCREMENT,
    Gif_Id               int,
    TimeAdd               timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
    TimeUpdate            timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,

@@ -7,6 +7,8 @@ import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import static javax.persistence.GenerationType.IDENTITY;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
@@ -52,9 +54,8 @@ public class Commoditylist implements java.io.Serializable {
 	}
 
 	/** minimal constructor */
-	public Commoditylist(Integer id, Timestamp timeAdd, Timestamp timeUpdate,
+	public Commoditylist(Timestamp timeAdd, Timestamp timeUpdate,
 			String commodityNumber, String commodityItemNamber) {
-		this.id = id;
 		this.timeAdd = timeAdd;
 		this.timeUpdate = timeUpdate;
 		this.commodityNumber = commodityNumber;
@@ -62,8 +63,7 @@ public class Commoditylist implements java.io.Serializable {
 	}
 
 	/** full constructor */
-	public Commoditylist(Integer id,
-			Membercollectiontable membercollectiontable,
+	public Commoditylist(Membercollectiontable membercollectiontable,
 			Ordercontentlist ordercontentlist,
 			Gifttablecontents gifttablecontents,
 			Accesspurchaserate accesspurchaserate, Carttable carttable,
@@ -75,7 +75,6 @@ public class Commoditylist implements java.io.Serializable {
 			String commodityName,
 			Set<Commoditycommentslist> commoditycommentslists,
 			Set<Commodityclassification> commodityclassifications) {
-		this.id = id;
 		this.membercollectiontable = membercollectiontable;
 		this.ordercontentlist = ordercontentlist;
 		this.gifttablecontents = gifttablecontents;
@@ -99,6 +98,7 @@ public class Commoditylist implements java.io.Serializable {
 
 	// Property accessors
 	@Id
+	@GeneratedValue(strategy = IDENTITY)
 	@Column(name = "Id", unique = true, nullable = false)
 	public Integer getId() {
 		return this.id;

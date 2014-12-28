@@ -7,6 +7,8 @@ import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import static javax.persistence.GenerationType.IDENTITY;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
@@ -39,20 +41,17 @@ public class Promotionalofferstable implements java.io.Serializable {
 	}
 
 	/** minimal constructor */
-	public Promotionalofferstable(Integer id, Timestamp timeAdd,
-			Timestamp timeUpdate) {
-		this.id = id;
+	public Promotionalofferstable(Timestamp timeAdd, Timestamp timeUpdate) {
 		this.timeAdd = timeAdd;
 		this.timeUpdate = timeUpdate;
 	}
 
 	/** full constructor */
-	public Promotionalofferstable(Integer id, Timestamp timeAdd,
-			Timestamp timeUpdate, Integer goodsId, Integer preferentialTypeId,
+	public Promotionalofferstable(Timestamp timeAdd, Timestamp timeUpdate,
+			Integer goodsId, Integer preferentialTypeId,
 			Float preferentialDiscount, Set<Dailyspecials> dailyspecialses,
 			Set<Holidayspecialarea> holidayspecialareas,
 			Set<Preferentialtype> preferentialtypes) {
-		this.id = id;
 		this.timeAdd = timeAdd;
 		this.timeUpdate = timeUpdate;
 		this.goodsId = goodsId;
@@ -65,6 +64,7 @@ public class Promotionalofferstable implements java.io.Serializable {
 
 	// Property accessors
 	@Id
+	@GeneratedValue(strategy = IDENTITY)
 	@Column(name = "Id", unique = true, nullable = false)
 	public Integer getId() {
 		return this.id;

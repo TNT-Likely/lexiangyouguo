@@ -7,6 +7,8 @@ import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import static javax.persistence.GenerationType.IDENTITY;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
@@ -39,20 +41,17 @@ public class Gifttable implements java.io.Serializable {
 	}
 
 	/** minimal constructor */
-	public Gifttable(Integer id, Timestamp timeAdd, Timestamp timeUpdate,
-			String giftName) {
-		this.id = id;
+	public Gifttable(Timestamp timeAdd, Timestamp timeUpdate, String giftName) {
 		this.timeAdd = timeAdd;
 		this.timeUpdate = timeUpdate;
 		this.giftName = giftName;
 	}
 
 	/** full constructor */
-	public Gifttable(Integer id, Gifttablecontents gifttablecontents,
-			Timestamp timeAdd, Timestamp timeUpdate, String giftName,
-			Integer occasionId, Integer typeId,
-			Set<Occasiontable> occasiontables, Set<Typetable> typetables) {
-		this.id = id;
+	public Gifttable(Gifttablecontents gifttablecontents, Timestamp timeAdd,
+			Timestamp timeUpdate, String giftName, Integer occasionId,
+			Integer typeId, Set<Occasiontable> occasiontables,
+			Set<Typetable> typetables) {
 		this.gifttablecontents = gifttablecontents;
 		this.timeAdd = timeAdd;
 		this.timeUpdate = timeUpdate;
@@ -65,6 +64,7 @@ public class Gifttable implements java.io.Serializable {
 
 	// Property accessors
 	@Id
+	@GeneratedValue(strategy = IDENTITY)
 	@Column(name = "Id", unique = true, nullable = false)
 	public Integer getId() {
 		return this.id;

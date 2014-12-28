@@ -4,6 +4,8 @@ import java.sql.Timestamp;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import static javax.persistence.GenerationType.IDENTITY;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
@@ -36,19 +38,17 @@ public class Occasiontable implements java.io.Serializable {
 	}
 
 	/** minimal constructor */
-	public Occasiontable(Integer id, Timestamp timeAdd, Timestamp timeUpdate) {
-		this.id = id;
+	public Occasiontable(Timestamp timeAdd, Timestamp timeUpdate) {
 		this.timeAdd = timeAdd;
 		this.timeUpdate = timeUpdate;
 	}
 
 	/** full constructor */
-	public Occasiontable(Integer id, Gifttable gifttable, Timestamp timeAdd,
+	public Occasiontable(Gifttable gifttable, Timestamp timeAdd,
 			Timestamp timeUpdate, String occasionVisitRelatives,
 			String occasionVisitFriends, String occasionGiftGiving,
 			String occasionVisitPatient,
 			String occasionCongratulationsToHospital, String occasionFamilyOrder) {
-		this.id = id;
 		this.gifttable = gifttable;
 		this.timeAdd = timeAdd;
 		this.timeUpdate = timeUpdate;
@@ -62,6 +62,7 @@ public class Occasiontable implements java.io.Serializable {
 
 	// Property accessors
 	@Id
+	@GeneratedValue(strategy = IDENTITY)
 	@Column(name = "Id", unique = true, nullable = false)
 	public Integer getId() {
 		return this.id;

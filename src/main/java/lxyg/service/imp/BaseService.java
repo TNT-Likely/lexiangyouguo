@@ -41,5 +41,11 @@ public class BaseService<T> implements IBaseService<T> {
 	public T getById(Class<T> clazz, Serializable id) {
 		// TODO Auto-generated method stub
 		return baseDAO.findById(clazz,id);
+	}
+
+	@Override
+	public List<T> findBySQL(String sql, Object... params) {
+		// TODO Auto-generated method stub
+		return baseDAO.findBySQL(sql, params);
 	}  
 }  

@@ -7,6 +7,8 @@ import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import static javax.persistence.GenerationType.IDENTITY;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
@@ -35,17 +37,15 @@ public class Carttable implements java.io.Serializable {
 	}
 
 	/** minimal constructor */
-	public Carttable(Integer id, Timestamp timeAdd, Timestamp timeUpdate) {
-		this.id = id;
+	public Carttable(Timestamp timeAdd, Timestamp timeUpdate) {
 		this.timeAdd = timeAdd;
 		this.timeUpdate = timeUpdate;
 	}
 
 	/** full constructor */
-	public Carttable(Integer id, Timestamp timeAdd, Timestamp timeUpdate,
-			Integer memberId, Integer goodsId, Set<Memberlist> memberlists,
+	public Carttable(Timestamp timeAdd, Timestamp timeUpdate, Integer memberId,
+			Integer goodsId, Set<Memberlist> memberlists,
 			Set<Commoditylist> commoditylists) {
-		this.id = id;
 		this.timeAdd = timeAdd;
 		this.timeUpdate = timeUpdate;
 		this.memberId = memberId;
@@ -56,6 +56,7 @@ public class Carttable implements java.io.Serializable {
 
 	// Property accessors
 	@Id
+	@GeneratedValue(strategy = IDENTITY)
 	@Column(name = "Id", unique = true, nullable = false)
 	public Integer getId() {
 		return this.id;

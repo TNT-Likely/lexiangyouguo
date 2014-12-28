@@ -3,6 +3,8 @@ package lxyg.domain;
 import java.sql.Timestamp;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import static javax.persistence.GenerationType.IDENTITY;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -31,21 +33,19 @@ public class Articleclassification implements java.io.Serializable {
 	}
 
 	/** minimal constructor */
-	public Articleclassification(Integer id, Timestamp timeAdd,
-			Timestamp timeUpdate, String articleClassName) {
-		this.id = id;
+	public Articleclassification(Timestamp timeAdd, Timestamp timeUpdate,
+			String articleClassName) {
 		this.timeAdd = timeAdd;
 		this.timeUpdate = timeUpdate;
 		this.articleClassName = articleClassName;
 	}
 
 	/** full constructor */
-	public Articleclassification(Integer id, Timestamp timeAdd,
-			Timestamp timeUpdate, String articleClassName,
-			String articleClassStyle, String articleClassDescripetion,
+	public Articleclassification(Timestamp timeAdd, Timestamp timeUpdate,
+			String articleClassName, String articleClassStyle,
+			String articleClassDescripetion,
 			String articleClassWhetherNavigationBarDisplay,
 			String articleClassSorting) {
-		this.id = id;
 		this.timeAdd = timeAdd;
 		this.timeUpdate = timeUpdate;
 		this.articleClassName = articleClassName;
@@ -57,6 +57,7 @@ public class Articleclassification implements java.io.Serializable {
 
 	// Property accessors
 	@Id
+	@GeneratedValue(strategy = IDENTITY)
 	@Column(name = "Id", unique = true, nullable = false)
 	public Integer getId() {
 		return this.id;

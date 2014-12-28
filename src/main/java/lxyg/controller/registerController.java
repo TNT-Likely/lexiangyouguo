@@ -4,18 +4,23 @@ import java.text.DateFormat;
 import java.util.Date;
 import java.util.Locale;
 
+import lxyg.domain.Memberlist;
+import lxyg.service.imp.BaseService;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class  registerController {
- 
+	@Autowired
+	private BaseService<Memberlist> baseService;
 	
-	/**
-	 * Simply selects the home view to render by returning its name.
-	 */
 	@RequestMapping(value = "/register", method = RequestMethod.GET)
 	public String index(Locale locale, Model model) {
 	 
@@ -30,8 +35,12 @@ public class  registerController {
 		return "register";
 	}
 	@RequestMapping(value = "/register", method = RequestMethod.POST)
-	public String login(Model model,user User) {
-		model.addAttribute("name", "sunxiaoIndex" );
+	public String login(Model model,Memberlist memberList) {
+		/*if(!baseService.findBySQL("select count(Id) from memberlist where MemberName=?", memberList.getMemberName()).isEmpty()){
+
+			return null;
+		}*/
+		baseService.save(memberList);
 		return "login";
 	}
 }

@@ -7,6 +7,8 @@ import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import static javax.persistence.GenerationType.IDENTITY;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
@@ -36,19 +38,16 @@ public class Link implements java.io.Serializable {
 	}
 
 	/** minimal constructor */
-	public Link(Integer id, Timestamp timeAdd, Timestamp timeUpdate,
-			String linkName) {
-		this.id = id;
+	public Link(Timestamp timeAdd, Timestamp timeUpdate, String linkName) {
 		this.timeAdd = timeAdd;
 		this.timeUpdate = timeUpdate;
 		this.linkName = linkName;
 	}
 
 	/** full constructor */
-	public Link(Integer id, Timestamp timeAdd, Timestamp timeUpdate,
-			String linkName, String linkAddress, Integer linkSorting,
-			Integer displayTypeId, Set<Displaytype> displaytypes) {
-		this.id = id;
+	public Link(Timestamp timeAdd, Timestamp timeUpdate, String linkName,
+			String linkAddress, Integer linkSorting, Integer displayTypeId,
+			Set<Displaytype> displaytypes) {
 		this.timeAdd = timeAdd;
 		this.timeUpdate = timeUpdate;
 		this.linkName = linkName;
@@ -60,6 +59,7 @@ public class Link implements java.io.Serializable {
 
 	// Property accessors
 	@Id
+	@GeneratedValue(strategy = IDENTITY)
 	@Column(name = "Id", unique = true, nullable = false)
 	public Integer getId() {
 		return this.id;

@@ -14,5 +14,6 @@ public interface IBaseDAO<T> {
     public T findById(Class<T> clazz,Serializable id);  
   
     public List<T> findByHQL(String hql, Object... params);  
-
+    
+    public List<T> findBySQL(String sql, Object... params);
 }

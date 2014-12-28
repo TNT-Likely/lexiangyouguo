@@ -4,6 +4,8 @@ import java.sql.Timestamp;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import static javax.persistence.GenerationType.IDENTITY;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
@@ -40,20 +42,18 @@ public class Orderstate implements java.io.Serializable {
 	}
 
 	/** minimal constructor */
-	public Orderstate(Integer id, Timestamp timeAdd, Timestamp timeUpdate) {
-		this.id = id;
+	public Orderstate(Timestamp timeAdd, Timestamp timeUpdate) {
 		this.timeAdd = timeAdd;
 		this.timeUpdate = timeUpdate;
 	}
 
 	/** full constructor */
-	public Orderstate(Integer id, Orderlist orderlist, Timestamp timeAdd,
+	public Orderstate(Orderlist orderlist, Timestamp timeAdd,
 			Timestamp timeUpdate, String osNotDeliverGoods, String osDelivery,
 			String osHaveToSignFor, String osRefusalReceive,
 			String osReturnOfGoods, String osRefundSuccess,
 			String osUnconfirmed, String osOrderFinished, String osPayed,
 			String osNotPaying) {
-		this.id = id;
 		this.orderlist = orderlist;
 		this.timeAdd = timeAdd;
 		this.timeUpdate = timeUpdate;
@@ -71,6 +71,7 @@ public class Orderstate implements java.io.Serializable {
 
 	// Property accessors
 	@Id
+	@GeneratedValue(strategy = IDENTITY)
 	@Column(name = "Id", unique = true, nullable = false)
 	public Integer getId() {
 		return this.id;

@@ -6,6 +6,8 @@ import java.util.List;
 
 
 
+
+
 import lxyg.dao.IBaseDAO;
 
 import org.hibernate.Query;  
@@ -23,12 +25,7 @@ import org.springframework.transaction.annotation.Transactional;
 @Repository 
 @Transactional
 public class BaseDAO<T> implements IBaseDAO<T> {  
-  
-    private Class<T> clazz;  
 
-    public BaseDAO(){	
-    
-    }
     @Autowired
     private SessionFactory sessionFactory;  
   
@@ -60,5 +57,15 @@ public class BaseDAO<T> implements IBaseDAO<T> {
 	@SuppressWarnings("unchecked")
 	public T findById(Class<T> clazz, Serializable id) {
 		return (T) this.getSession().get(clazz, id);  
+	}
+
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<T> findBySQL(String sql, Object... params) {
+		Query query = this.getSession().createSQLQuery(sql);  
+        for (int i = 0; params != null && i < params.length; i++) {  
+            query.setParameter(i, params);  
+        }  
+        return query.list();  
 	}  
 }  
