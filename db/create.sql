@@ -602,17 +602,6 @@ create table TypeTable
    primary key (Id)
 );
 
-/*==============================================================*/
-/* Table: parents                                               */
-/*==============================================================*/
-create table parents
-(
-   Id                   int not null,
-   TimeAdd               timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-   TimeUpdate            timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-   primary key (Id)
-);
-
 alter table CommodityClassification add constraint FK_Relationship_1 foreign key (Com_Id)
       references CommodityList (Id) on delete restrict on update restrict;
 
