@@ -613,35 +613,11 @@ create table parents
    primary key (Id)
 );
 
-alter table AccessPurchaseRate add constraint FK_Inheritance_26 foreign key (Id)
-      references parents (Id) on delete restrict on update restrict;
-
-alter table AdministratorList add constraint FK_Inheritance_24 foreign key (Id)
-      references parents (Id) on delete restrict on update restrict;
-
-alter table ArticalList add constraint FK_Inheritance_14 foreign key (Id)
-      references parents (Id) on delete restrict on update restrict;
-
-alter table ArticleClassification add constraint FK_Inheritance_28 foreign key (Id)
-      references parents (Id) on delete restrict on update restrict;
-
-alter table CartTable add constraint FK_Inheritance_41 foreign key (Id)
-      references parents (Id) on delete restrict on update restrict;
-
-alter table CommodityClassification add constraint FK_Inheritance_45 foreign key (Id)
-      references parents (Id) on delete restrict on update restrict;
-
 alter table CommodityClassification add constraint FK_Relationship_1 foreign key (Com_Id)
       references CommodityList (Id) on delete restrict on update restrict;
 
-alter table CommodityCommentsList add constraint FK_Inheritance_31 foreign key (Id)
-      references parents (Id) on delete restrict on update restrict;
-
 alter table CommodityCommentsList add constraint FK_Relationship_3 foreign key (Com_Id)
       references CommodityList (Id) on delete restrict on update restrict;
-
-alter table CommodityList add constraint FK_Inheritance_1 foreign key (Id)
-      references parents (Id) on delete restrict on update restrict;
 
 alter table CommodityList add constraint FK_Relationship_13 foreign key (Gif_Id)
       references GiftTableContents (Id) on delete restrict on update restrict;
@@ -657,54 +633,21 @@ alter table CommodityList add constraint FK_Relationship_21 foreign key (Mem_Id)
 
 alter table CommodityList add constraint FK_Relationship_8 foreign key (Acc_Id)
       references AccessPurchaseRate (Id) on delete restrict on update restrict;
-
-alter table CustomerStatistics add constraint FK_Inheritance_6 foreign key (Id)
-      references parents (Id) on delete restrict on update restrict;
-
-alter table DailySpecials add constraint FK_Inheritance_10 foreign key (Id)
-      references parents (Id) on delete restrict on update restrict;
-
+      
 alter table DailySpecials add constraint FK_Inheritance_34 foreign key (Pro_Id)
       references PromotionalOffersTable (Id) on delete restrict on update restrict;
-
-alter table DisplayType add constraint FK_Inheritance_38 foreign key (Id)
-      references parents (Id) on delete restrict on update restrict;
 
 alter table DisplayType add constraint FK_Relationship_15 foreign key (Lin_Id)
       references Link (Id) on delete restrict on update restrict;
 
-alter table EmailServer add constraint FK_Inheritance_20 foreign key (Id)
-      references parents (Id) on delete restrict on update restrict;
-
-alter table GiftTable add constraint FK_Inheritance_12 foreign key (Id)
-      references parents (Id) on delete restrict on update restrict;
-
 alter table GiftTable add constraint FK_Relationship_12 foreign key (Gif_Id)
       references GiftTableContents (Id) on delete restrict on update restrict;
-
-alter table GiftTableContents add constraint FK_Inheritance_42 foreign key (Id)
-      references parents (Id) on delete restrict on update restrict;
-
-alter table HarvestAddressTable add constraint FK_Inheritance_30 foreign key (Id)
-      references parents (Id) on delete restrict on update restrict;
 
 alter table HarvestAddressTable add constraint FK_Relationship_5 foreign key (Ord_Id)
       references OrderList (Id) on delete restrict on update restrict;
 
-alter table HolidaySpecialArea add constraint FK_Inheritance_21 foreign key (Id)
-      references parents (Id) on delete restrict on update restrict;
-
 alter table HolidaySpecialArea add constraint FK_Inheritance_35 foreign key (Pro_Id)
       references PromotionalOffersTable (Id) on delete restrict on update restrict;
-
-alter table Link add constraint FK_Inheritance_25 foreign key (Id)
-      references parents (Id) on delete restrict on update restrict;
-
-alter table MemberCollectionTable add constraint FK_Inheritance_32 foreign key (Id)
-      references parents (Id) on delete restrict on update restrict;
-
-alter table MemberList add constraint FK_Inheritance_18 foreign key (Id)
-      references parents (Id) on delete restrict on update restrict;
 
 alter table MemberList add constraint FK_Relationship_18 foreign key (Car_Id)
       references CartTable (Id) on delete restrict on update restrict;
@@ -715,65 +658,25 @@ alter table MemberList add constraint FK_Relationship_6 foreign key (Ord_Id)
 alter table MemberList add constraint FK_Relationship_7 foreign key (Mem_Id)
       references MemberCollectionTable (Id) on delete restrict on update restrict;
 
-alter table MemberRegistrationItems add constraint FK_Inheritance_13 foreign key (Id)
-      references parents (Id) on delete restrict on update restrict;
-
-alter table OccasionTable add constraint FK_Inheritance_43 foreign key (Id)
-      references parents (Id) on delete restrict on update restrict;
 
 alter table OccasionTable add constraint FK_Relationship_11 foreign key (Gif_Id)
       references GiftTable (Id) on delete restrict on update restrict;
 
-alter table OrderContentList add constraint FK_Inheritance_40 foreign key (Id)
-      references parents (Id) on delete restrict on update restrict;
-
-alter table OrderList add constraint FK_Inheritance_2 foreign key (Id)
-      references parents (Id) on delete restrict on update restrict;
-
 alter table OrderList add constraint FK_Relationship_16 foreign key (Ord_Id)
       references OrderContentList (Id) on delete restrict on update restrict;
 
-alter table OrderState add constraint FK_Inheritance_29 foreign key (Id)
-      references parents (Id) on delete restrict on update restrict;
 
 alter table OrderState add constraint FK_Relationship_4 foreign key (Ord_Id)
       references OrderList (Id) on delete restrict on update restrict;
 
-alter table OrderStatistics add constraint FK_Inheritance_7 foreign key (Id)
-      references parents (Id) on delete restrict on update restrict;
-
-alter table PreferentialType add constraint FK_Inheritance_37 foreign key (Id)
-      references parents (Id) on delete restrict on update restrict;
-
 alter table PreferentialType add constraint FK_Relationship_9 foreign key (Pro_Id)
       references PromotionalOffersTable (Id) on delete restrict on update restrict;
-
-alter table PromotionalOffersTable add constraint FK_Inheritance_36 foreign key (Id)
-      references parents (Id) on delete restrict on update restrict;
-
-alter table RegionLevelTable add constraint FK_Inheritance_39 foreign key (Id)
-      references parents (Id) on delete restrict on update restrict;
 
 alter table RegionLevelTable add constraint FK_Relationship_14 foreign key (Reg_Id)
       references RegionList (Id) on delete restrict on update restrict;
 
-alter table RegionList add constraint FK_Inheritance_22 foreign key (Id)
-      references parents (Id) on delete restrict on update restrict;
-
-alter table RoleManagement add constraint FK_Inheritance_23 foreign key (Id)
-      references parents (Id) on delete restrict on update restrict;
-
-alter table ShopInformation add constraint FK_Inheritance_46 foreign key (Id)
-      references parents (Id) on delete restrict on update restrict;
-
 alter table ShopInformation add constraint FK_Relationship_20 foreign key (Sto_Id)
       references StoreSettings (Id) on delete restrict on update restrict;
-
-alter table StoreSettings add constraint FK_Inheritance_27 foreign key (Id)
-      references parents (Id) on delete restrict on update restrict;
-
-alter table TypeTable add constraint FK_Inheritance_44 foreign key (Id)
-      references parents (Id) on delete restrict on update restrict;
 
 alter table TypeTable add constraint FK_Relationship_10 foreign key (Gif_Id)
       references GiftTable (Id) on delete restrict on update restrict;
