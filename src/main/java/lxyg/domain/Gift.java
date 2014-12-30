@@ -10,43 +10,46 @@ import javax.persistence.Table;
 
 
 /**
- * Carttable entity. @author MyEclipse Persistence Tools
+ * Gift entity. @author MyEclipse Persistence Tools
  */
 @Entity
-@Table(name="carttable"
+@Table(name="gift"
     ,catalog="lxyg"
 )
 
-public class Carttable  implements java.io.Serializable {
+public class Gift  implements java.io.Serializable {
 
 
     // Fields    
 
      private Integer id;
-     private Integer memId;
-     private Integer comId;
+     private Integer occId;
+     private Integer typId;
      private Timestamp timeAdd;
      private Timestamp timeUpdate;
+     private String giftName;
 
 
     // Constructors
 
     /** default constructor */
-    public Carttable() {
+    public Gift() {
     }
 
 	/** minimal constructor */
-    public Carttable(Timestamp timeAdd, Timestamp timeUpdate) {
+    public Gift(Timestamp timeAdd, Timestamp timeUpdate, String giftName) {
         this.timeAdd = timeAdd;
         this.timeUpdate = timeUpdate;
+        this.giftName = giftName;
     }
     
     /** full constructor */
-    public Carttable(Integer memId, Integer comId, Timestamp timeAdd, Timestamp timeUpdate) {
-        this.memId = memId;
-        this.comId = comId;
+    public Gift(Integer occId, Integer typId, Timestamp timeAdd, Timestamp timeUpdate, String giftName) {
+        this.occId = occId;
+        this.typId = typId;
         this.timeAdd = timeAdd;
         this.timeUpdate = timeUpdate;
+        this.giftName = giftName;
     }
 
    
@@ -63,24 +66,24 @@ public class Carttable  implements java.io.Serializable {
         this.id = id;
     }
     
-    @Column(name="Mem_Id")
+    @Column(name="Occ_Id")
 
-    public Integer getMemId() {
-        return this.memId;
+    public Integer getOccId() {
+        return this.occId;
     }
     
-    public void setMemId(Integer memId) {
-        this.memId = memId;
+    public void setOccId(Integer occId) {
+        this.occId = occId;
     }
     
-    @Column(name="Com_Id")
+    @Column(name="Typ_Id")
 
-    public Integer getComId() {
-        return this.comId;
+    public Integer getTypId() {
+        return this.typId;
     }
     
-    public void setComId(Integer comId) {
-        this.comId = comId;
+    public void setTypId(Integer typId) {
+        this.typId = typId;
     }
     
     @Column(name="TimeAdd", nullable=false, length=19)
@@ -101,6 +104,16 @@ public class Carttable  implements java.io.Serializable {
     
     public void setTimeUpdate(Timestamp timeUpdate) {
         this.timeUpdate = timeUpdate;
+    }
+    
+    @Column(name="GiftName", nullable=false, length=1024)
+
+    public String getGiftName() {
+        return this.giftName;
+    }
+    
+    public void setGiftName(String giftName) {
+        this.giftName = giftName;
     }
    
 

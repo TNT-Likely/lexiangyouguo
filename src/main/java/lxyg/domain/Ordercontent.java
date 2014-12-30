@@ -10,20 +10,20 @@ import javax.persistence.Table;
 
 
 /**
- * Carttable entity. @author MyEclipse Persistence Tools
+ * Ordercontent entity. @author MyEclipse Persistence Tools
  */
 @Entity
-@Table(name="carttable"
+@Table(name="ordercontent"
     ,catalog="lxyg"
 )
 
-public class Carttable  implements java.io.Serializable {
+public class Ordercontent  implements java.io.Serializable {
 
 
     // Fields    
 
      private Integer id;
-     private Integer memId;
+     private Integer ordId;
      private Integer comId;
      private Timestamp timeAdd;
      private Timestamp timeUpdate;
@@ -32,18 +32,18 @@ public class Carttable  implements java.io.Serializable {
     // Constructors
 
     /** default constructor */
-    public Carttable() {
+    public Ordercontent() {
     }
 
 	/** minimal constructor */
-    public Carttable(Timestamp timeAdd, Timestamp timeUpdate) {
+    public Ordercontent(Timestamp timeAdd, Timestamp timeUpdate) {
         this.timeAdd = timeAdd;
         this.timeUpdate = timeUpdate;
     }
     
     /** full constructor */
-    public Carttable(Integer memId, Integer comId, Timestamp timeAdd, Timestamp timeUpdate) {
-        this.memId = memId;
+    public Ordercontent(Integer ordId, Integer comId, Timestamp timeAdd, Timestamp timeUpdate) {
+        this.ordId = ordId;
         this.comId = comId;
         this.timeAdd = timeAdd;
         this.timeUpdate = timeUpdate;
@@ -63,14 +63,14 @@ public class Carttable  implements java.io.Serializable {
         this.id = id;
     }
     
-    @Column(name="Mem_Id")
+    @Column(name="Ord_Id")
 
-    public Integer getMemId() {
-        return this.memId;
+    public Integer getOrdId() {
+        return this.ordId;
     }
     
-    public void setMemId(Integer memId) {
-        this.memId = memId;
+    public void setOrdId(Integer ordId) {
+        this.ordId = ordId;
     }
     
     @Column(name="Com_Id")

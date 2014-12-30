@@ -10,14 +10,14 @@ import javax.persistence.Table;
 
 
 /**
- * Memberregistrationitems entity. @author MyEclipse Persistence Tools
+ * Artical entity. @author MyEclipse Persistence Tools
  */
 @Entity
-@Table(name="memberregistrationitems"
+@Table(name="artical"
     ,catalog="lxyg"
 )
 
-public class Memberregistrationitems  implements java.io.Serializable {
+public class Artical  implements java.io.Serializable {
 
 
     // Fields    
@@ -25,33 +25,36 @@ public class Memberregistrationitems  implements java.io.Serializable {
      private Integer id;
      private Timestamp timeAdd;
      private Timestamp timeUpdate;
-     private String mriName;
-     private String mriWeightsSorting;
+     private String articaTitle;
+     private String articaClassification;
+     private String articalImportant;
      private Boolean whetherShown;
-     private Boolean mriWhetherRequired;
+     private Timestamp addTime;
 
 
     // Constructors
 
     /** default constructor */
-    public Memberregistrationitems() {
+    public Artical() {
     }
 
 	/** minimal constructor */
-    public Memberregistrationitems(Timestamp timeAdd, Timestamp timeUpdate, String mriName) {
+    public Artical(Timestamp timeAdd, Timestamp timeUpdate, String articaTitle, Timestamp addTime) {
         this.timeAdd = timeAdd;
         this.timeUpdate = timeUpdate;
-        this.mriName = mriName;
+        this.articaTitle = articaTitle;
+        this.addTime = addTime;
     }
     
     /** full constructor */
-    public Memberregistrationitems(Timestamp timeAdd, Timestamp timeUpdate, String mriName, String mriWeightsSorting, Boolean whetherShown, Boolean mriWhetherRequired) {
+    public Artical(Timestamp timeAdd, Timestamp timeUpdate, String articaTitle, String articaClassification, String articalImportant, Boolean whetherShown, Timestamp addTime) {
         this.timeAdd = timeAdd;
         this.timeUpdate = timeUpdate;
-        this.mriName = mriName;
-        this.mriWeightsSorting = mriWeightsSorting;
+        this.articaTitle = articaTitle;
+        this.articaClassification = articaClassification;
+        this.articalImportant = articalImportant;
         this.whetherShown = whetherShown;
-        this.mriWhetherRequired = mriWhetherRequired;
+        this.addTime = addTime;
     }
 
    
@@ -88,24 +91,34 @@ public class Memberregistrationitems  implements java.io.Serializable {
         this.timeUpdate = timeUpdate;
     }
     
-    @Column(name="MRI_Name", nullable=false, length=1024)
+    @Column(name="ArticaTitle", nullable=false, length=1024)
 
-    public String getMriName() {
-        return this.mriName;
+    public String getArticaTitle() {
+        return this.articaTitle;
     }
     
-    public void setMriName(String mriName) {
-        this.mriName = mriName;
+    public void setArticaTitle(String articaTitle) {
+        this.articaTitle = articaTitle;
     }
     
-    @Column(name="MRI_WeightsSorting", length=1024)
+    @Column(name="ArticaClassification", length=1024)
 
-    public String getMriWeightsSorting() {
-        return this.mriWeightsSorting;
+    public String getArticaClassification() {
+        return this.articaClassification;
     }
     
-    public void setMriWeightsSorting(String mriWeightsSorting) {
-        this.mriWeightsSorting = mriWeightsSorting;
+    public void setArticaClassification(String articaClassification) {
+        this.articaClassification = articaClassification;
+    }
+    
+    @Column(name="ArticalImportant", length=1024)
+
+    public String getArticalImportant() {
+        return this.articalImportant;
+    }
+    
+    public void setArticalImportant(String articalImportant) {
+        this.articalImportant = articalImportant;
     }
     
     @Column(name="WhetherShown")
@@ -118,14 +131,14 @@ public class Memberregistrationitems  implements java.io.Serializable {
         this.whetherShown = whetherShown;
     }
     
-    @Column(name="MRI_WhetherRequired")
+    @Column(name="AddTime", nullable=false, length=19)
 
-    public Boolean getMriWhetherRequired() {
-        return this.mriWhetherRequired;
+    public Timestamp getAddTime() {
+        return this.addTime;
     }
     
-    public void setMriWhetherRequired(Boolean mriWhetherRequired) {
-        this.mriWhetherRequired = mriWhetherRequired;
+    public void setAddTime(Timestamp addTime) {
+        this.addTime = addTime;
     }
    
 

@@ -10,20 +10,20 @@ import javax.persistence.Table;
 
 
 /**
- * Carttable entity. @author MyEclipse Persistence Tools
+ * Giftcontents entity. @author MyEclipse Persistence Tools
  */
 @Entity
-@Table(name="carttable"
+@Table(name="giftcontents"
     ,catalog="lxyg"
 )
 
-public class Carttable  implements java.io.Serializable {
+public class Giftcontents  implements java.io.Serializable {
 
 
     // Fields    
 
      private Integer id;
-     private Integer memId;
+     private Integer gifId;
      private Integer comId;
      private Timestamp timeAdd;
      private Timestamp timeUpdate;
@@ -32,18 +32,18 @@ public class Carttable  implements java.io.Serializable {
     // Constructors
 
     /** default constructor */
-    public Carttable() {
+    public Giftcontents() {
     }
 
 	/** minimal constructor */
-    public Carttable(Timestamp timeAdd, Timestamp timeUpdate) {
+    public Giftcontents(Timestamp timeAdd, Timestamp timeUpdate) {
         this.timeAdd = timeAdd;
         this.timeUpdate = timeUpdate;
     }
     
     /** full constructor */
-    public Carttable(Integer memId, Integer comId, Timestamp timeAdd, Timestamp timeUpdate) {
-        this.memId = memId;
+    public Giftcontents(Integer gifId, Integer comId, Timestamp timeAdd, Timestamp timeUpdate) {
+        this.gifId = gifId;
         this.comId = comId;
         this.timeAdd = timeAdd;
         this.timeUpdate = timeUpdate;
@@ -63,14 +63,14 @@ public class Carttable  implements java.io.Serializable {
         this.id = id;
     }
     
-    @Column(name="Mem_Id")
+    @Column(name="Gif_Id")
 
-    public Integer getMemId() {
-        return this.memId;
+    public Integer getGifId() {
+        return this.gifId;
     }
     
-    public void setMemId(Integer memId) {
-        this.memId = memId;
+    public void setGifId(Integer gifId) {
+        this.gifId = gifId;
     }
     
     @Column(name="Com_Id")

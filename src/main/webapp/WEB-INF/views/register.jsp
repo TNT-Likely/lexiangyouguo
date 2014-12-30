@@ -17,6 +17,8 @@
 		<link rel="stylesheet" type="text/css" href="/shop/resources/css/module-captcha.css" media="all" />
 		<link rel="stylesheet" type="text/css" href="/shop/resources/css/page-register.css" media="all" />
 		<script type="text/javascript" src="/shop/resources/js/lib-txua.js"></script>
+	    <script type="text/javascript" src="/shop/resources/js/ga.js"></script>
+	      <script type="text/javascript" src="/shop/resources/js/h.js"></script>
 </head>
 <body>
 <div id="body_wrap">
@@ -27,7 +29,7 @@
 						<a href="index" title="蘑菇街首页" class="logo_img"></a>
 					</div>
 					<div class="reg_bd formbox">
-						<form class="formelem" action="register" method="post">
+						<form class="formelem" action="register" method="post" data-action="/registermg/postform">
 							<h3>新用户注册</h3>
 							<ul>
 								<li>
@@ -89,7 +91,7 @@
 								</li>
 							</ul>
 							<div class="subbox">
-								<button><span class="btn_register js_postcurrentform"></span></button>
+								<button class="btn_register js_postcurrentform"></button>
 							</div>
 						</form>
 					</div>

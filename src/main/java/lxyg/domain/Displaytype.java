@@ -3,108 +3,112 @@ package lxyg.domain;
 import java.sql.Timestamp;
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import static javax.persistence.GenerationType.IDENTITY;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
 import javax.persistence.Table;
+
 
 /**
  * Displaytype entity. @author MyEclipse Persistence Tools
  */
 @Entity
-@Table(name = "displaytype", catalog = "lxyg")
-public class Displaytype implements java.io.Serializable {
+@Table(name="displaytype"
+    ,catalog="lxyg"
+)
 
-	// Fields
+public class Displaytype  implements java.io.Serializable {
 
-	private Integer id;
-	private Link link;
-	private Timestamp timeAdd;
-	private Timestamp timeUpdate;
-	private String displayLogoType;
-	private String displayTextType;
 
-	// Constructors
+    // Fields    
 
-	/** default constructor */
-	public Displaytype() {
-	}
+     private Integer id;
+     private Timestamp timeAdd;
+     private Timestamp timeUpdate;
+     private String displayLogoType;
+     private String displayTextType;
+
+
+    // Constructors
+
+    /** default constructor */
+    public Displaytype() {
+    }
 
 	/** minimal constructor */
-	public Displaytype(Timestamp timeAdd, Timestamp timeUpdate) {
-		this.timeAdd = timeAdd;
-		this.timeUpdate = timeUpdate;
-	}
+    public Displaytype(Timestamp timeAdd, Timestamp timeUpdate) {
+        this.timeAdd = timeAdd;
+        this.timeUpdate = timeUpdate;
+    }
+    
+    /** full constructor */
+    public Displaytype(Timestamp timeAdd, Timestamp timeUpdate, String displayLogoType, String displayTextType) {
+        this.timeAdd = timeAdd;
+        this.timeUpdate = timeUpdate;
+        this.displayLogoType = displayLogoType;
+        this.displayTextType = displayTextType;
+    }
 
-	/** full constructor */
-	public Displaytype(Link link, Timestamp timeAdd, Timestamp timeUpdate,
-			String displayLogoType, String displayTextType) {
-		this.link = link;
-		this.timeAdd = timeAdd;
-		this.timeUpdate = timeUpdate;
-		this.displayLogoType = displayLogoType;
-		this.displayTextType = displayTextType;
-	}
+   
+    // Property accessors
+    @Id @GeneratedValue(strategy=IDENTITY)
+    
+    @Column(name="Id", unique=true, nullable=false)
 
-	// Property accessors
-	@Id
-	@GeneratedValue(strategy = IDENTITY)
-	@Column(name = "Id", unique = true, nullable = false)
-	public Integer getId() {
-		return this.id;
-	}
+    public Integer getId() {
+        return this.id;
+    }
+    
+    public void setId(Integer id) {
+        this.id = id;
+    }
+    
+    @Column(name="TimeAdd", nullable=false, length=19)
 
-	public void setId(Integer id) {
-		this.id = id;
-	}
+    public Timestamp getTimeAdd() {
+        return this.timeAdd;
+    }
+    
+    public void setTimeAdd(Timestamp timeAdd) {
+        this.timeAdd = timeAdd;
+    }
+    
+    @Column(name="TimeUpdate", nullable=false, length=19)
 
-	@ManyToOne(fetch = FetchType.LAZY)
-	@JoinColumn(name = "Lin_Id")
-	public Link getLink() {
-		return this.link;
-	}
+    public Timestamp getTimeUpdate() {
+        return this.timeUpdate;
+    }
+    
+    public void setTimeUpdate(Timestamp timeUpdate) {
+        this.timeUpdate = timeUpdate;
+    }
+    
+    @Column(name="Display_LogoType", length=1024)
 
-	public void setLink(Link link) {
-		this.link = link;
-	}
+    public String getDisplayLogoType() {
+        return this.displayLogoType;
+    }
+    
+    public void setDisplayLogoType(String displayLogoType) {
+        this.displayLogoType = displayLogoType;
+    }
+    
+    @Column(name="Display_TextType", length=1024)
 
-	@Column(name = "TimeAdd", nullable = false, length = 19)
-	public Timestamp getTimeAdd() {
-		return this.timeAdd;
-	}
+    public String getDisplayTextType() {
+        return this.displayTextType;
+    }
+    
+    public void setDisplayTextType(String displayTextType) {
+        this.displayTextType = displayTextType;
+    }
+   
 
-	public void setTimeAdd(Timestamp timeAdd) {
-		this.timeAdd = timeAdd;
-	}
 
-	@Column(name = "TimeUpdate", nullable = false, length = 19)
-	public Timestamp getTimeUpdate() {
-		return this.timeUpdate;
-	}
 
-	public void setTimeUpdate(Timestamp timeUpdate) {
-		this.timeUpdate = timeUpdate;
-	}
 
-	@Column(name = "Display_LogoType", length = 1024)
-	public String getDisplayLogoType() {
-		return this.displayLogoType;
-	}
 
-	public void setDisplayLogoType(String displayLogoType) {
-		this.displayLogoType = displayLogoType;
-	}
 
-	@Column(name = "Display_TextType", length = 1024)
-	public String getDisplayTextType() {
-		return this.displayTextType;
-	}
 
-	public void setDisplayTextType(String displayTextType) {
-		this.displayTextType = displayTextType;
-	}
 
 }

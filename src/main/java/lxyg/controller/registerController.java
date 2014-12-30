@@ -4,7 +4,7 @@ import java.text.DateFormat;
 import java.util.Date;
 import java.util.Locale;
 
-import lxyg.domain.Memberlist;
+import lxyg.domain.Member;
 import lxyg.service.imp.BaseService;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,7 +19,7 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class  registerController {
 	@Autowired
-	private BaseService<Memberlist> baseService;
+	private BaseService<Member> baseService;
 	
 	@RequestMapping(value = "/register", method = RequestMethod.GET)
 	public String index(Locale locale, Model model) {
@@ -35,12 +35,12 @@ public class  registerController {
 		return "register";
 	}
 	@RequestMapping(value = "/register", method = RequestMethod.POST)
-	public String login(Model model,Memberlist memberList) {
-		/*if(!baseService.findBySQL("select count(Id) from memberlist where MemberName=?", memberList.getMemberName()).isEmpty()){
-
+	public String login(Model model,Member member) {
+		if(!baseService.findBySQL("select * from member where MemberName = ?", member.getMemberName()).isEmpty()){
 			return null;
-		}*/
-		baseService.save(memberList);
+		}
+		//baseService.findBySQL("select * from member");
+		//baseService.save(member);
 		return "login";
 	}
 }

@@ -64,7 +64,7 @@ public class BaseDAO<T> implements IBaseDAO<T> {
 	public List<T> findBySQL(String sql, Object... params) {
 		Query query = this.getSession().createSQLQuery(sql);  
         for (int i = 0; params != null && i < params.length; i++) {  
-            query.setParameter(i, params);  
+            query.setParameter(i, params[i]);  
         }  
         return query.list();  
 	}  
