@@ -1,14 +1,17 @@
  package lxyg.controller;
 
+import java.io.IOException;
 import java.text.DateFormat;
 import java.util.Date;
 import java.util.Locale;
 
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import lxyg.domain.Member;
 import lxyg.service.imp.BaseService;
 
+import org.jasypt.util.password.BasicPasswordEncryptor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -35,15 +38,16 @@ public class memberloginController {
 		return "login";
 	}
 	@RequestMapping(value = "/login", method = RequestMethod.POST)
-	public String login(Model model,Member member,HttpSession session) {
-		member=(Member)baseService.getBySQL(Member.class,"select * from Member where MemberName=? and PassWord=?", member.getMemberName(),member.getPassword());
-		if(member== null){
-			
+	public void login(Model model,Member member,HttpSession session,HttpServletResponse response) throws IOException {
+		BasicPasswordEncryptor bpe=new BasicPasswordEncryptor();
+		Member cc=(Member)baseService.getBySQL(Member.class,"select * from Member where MemberName=?", member.getMemberName());
+		if(member== null || !bpe.checkPassword(member.getPassword(), cc.getPassword())){
+			return;
 		}
 		else{
-			session.setAttribute("memberInfo", member);
+			session.setAttribute("memberInfo", cc);
+			response.sendRedirect("index");
 		}
-		return "index";
 	}
 }
  

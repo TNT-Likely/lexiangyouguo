@@ -18,11 +18,10 @@
 		<link rel="stylesheet" type="text/css" href="/shop/resources/css/page-register.css" media="all" />
 		<script type="text/javascript" src="/shop/resources/js/lib-txua.js"></script>
 	    <script type="text/javascript" src="/shop/resources/js/ga.js"></script>
-	      <script type="text/javascript" src="/shop/resources/js/h.js"></script>
-	      <script type="text/javascript">
+	    <script type="text/javascript" src="/shop/resources/js/h.js"></script>
+	    <script type="text/javascript">
 			MOGUPROFILE = { cdnHost:"//s9.mogujie.com",appEnv:"production",is_subsite:"0",push_serviceHost:"221.228.199.45:117.121.133.44:80",push_ajaxServiceHost:"http://m1.mogujie.com:80",push_ajaxSericeBakHost:"http://221.228.199.50:80",push_token:"",isNewIMShow:"true",userid:"",avatar:"",isBuyer:"false"  };
 		</script>
-	 
 </head>
 <body>
 <div id="body_wrap">
@@ -33,7 +32,7 @@
 						<a href="index" title="蘑菇街首页" class="logo_img"></a>
 					</div>
 					<div class="reg_bd formbox">
-						<form class="formelem" action="register" method="post" data-action="/registermg/postform">
+						<form class="formelem" method="post" data-action="register">
 							<h3>新用户注册</h3>
 							<ul>
 								<li>
@@ -95,7 +94,7 @@
 								</li>
 							</ul>
 							<div class="subbox">
-								<button class="btn_register js_postcurrentform"></button>
+								<span class="btn_register js_postcurrentform"></span>
 							</div>
 						</form>
 					</div>
@@ -108,63 +107,5 @@
 		<script type="text/javascript" src="/shop/resources/js/module-addfav.js"></script>
 		<script type="text/javascript" src="/shop/resources/js/module-captcha.js"></script>
 		<script type="text/javascript" src="/shop/resources/js/page-register.js"></script>
-		<script type="text/javascript">
-			(function(){
-			        // 如果base.js 或者module.js 或者功能module 没加载的话       
-			        if(!MOGU){
-			
-			            var nowDate = new Date(),
-			                imgloader = new Image();
-			
-			            //启动一个加载图片的进程，来判断当前用户的网速
-			            // 图片大小 22KB
-			            imgloader.onload = function(){
-			
-			                var endTime = new Date(),
-			                    loadTime = endTime.getTime() - nowDate.getTime();
-			
-			                //拼装地址
-			                var post_url = ['http://www.mogujie.com/mbs.htm?sform=',window.location.href,'&amp;imgloadTime=',loadTime,'&amp;serivetime=',1420032361].join('');
-			                //发送请求
-			                new Image().src = post_url;
-			
-			            }
-			
-			            imgloader.src = 'http://s6.mogujie.cn/b7/pic/140106/153jss_kqze6r27krbdiwtwgfjeg5sckzsew_600x600.jpg_225x999.jpg';
-			
-			        }
-			
-			    })();
-		</script>
-
-
-
-	 
-
-
-
-		<script type="text/javascript">
-			// log 判断如果是在客户端里访问h5页面，则不打点。因为客户端本身就有打点。@beile 2014-09-12
-			    document.write('&lt;img id="mogustat_img" alt="mogustat" style="display:none" height="1" width="1" src="');
-			    document.write(log_stat_url);
-			    document.write('" /&gt;');
-			
-			  var _gaq = _gaq || [];
-			
-			    _gaq.push(['_setAccount', 'UA-25590490-1']);
-			    _gaq.push(['_setDomainName', 'mogujie.com']);
-			
-			    _gaq.push(['_setSampleRate', '20']);
-			    _gaq.push(['_trackPageview']);
-			
-			    (function () {
-			        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-			        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-			        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-			    })();
-		</script>
-		<img width="1" height="1" src="https://www.mogujie.com/mogu.js?sfrom=&amp;method=GET&amp;time=1420032361&amp;uuid=1615c621-f236-0d3a-50e7-4cfcdc025b3d&amp;areaid=5&amp;hahapoint=beb6022f59b37b252d77d9b8d649654c&amp;wwidth=5&amp;uclient=firefox*34||windows*6.1&amp;refer=%2Fregistermg&amp;rerefer=http%3A%2F%2Fwww.mogujie.com%2F&amp;anchor=&amp;cpsinfo="
-		style="display:none" alt="mogustat" id="mogustat_img">
-		
 </body>
 </html>

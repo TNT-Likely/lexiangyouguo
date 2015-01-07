@@ -1,9 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ page import="lxyg.domain.*" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-	<meta charset="UTF-8" />
+	    <meta charset="UTF-8" />
 		<meta name="renderer" content="webkit" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 		<title>乐享优果 - 每日新鲜购!</title>
@@ -25,12 +26,16 @@
 		<script type="text/javascript" src="/shop/resources/js/pkg-pc-base.js"></script>
 </head>
 <body>
- <div class="header_2014">
+<div class="header_2014">
 			<div class="wrap clearfix">
 				<ul class="header_top">
-					<li class="s1 has_icon user_meta">
+<%
+	Member info=(Member)request.getSession().getAttribute("memberInfo");
+	if(info !=null){
+%>
+		<li class="s1 has_icon user_meta">
 						<a href="personalhomepage">
-							紫色天堂1995</a>
+							<%=info.getMemberName() %></a>
 						<i class="icon_delta"></i>
 						<ol class="ext_mode">
 							<li class="s2"><a href="personalhomepage" class="site_publish_img">分享照片</a>
@@ -56,6 +61,9 @@
 						<a href="index">消息<span class="m_num"></span></a>
 						<i class="icon_delta"></i>
 					</li>
+<% }else{%>
+		4444
+<%}%>
 					<li class="s1 has_line has_icon top_app">
 						<a>手机乐享优果</a>
 						<ol class="ext_mode">
