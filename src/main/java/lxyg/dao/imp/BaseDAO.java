@@ -8,6 +8,10 @@ import java.util.List;
 
 
 
+
+
+
+
 import lxyg.dao.IBaseDAO;
 
 import org.hibernate.Query;  
@@ -17,11 +21,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
   
-/** 
- * BaseDaoImpl 定义DAO的通用操作的实现 
- *  
- * @author Monday 
- */  
 @Repository 
 @Transactional
 public class BaseDAO<T> implements IBaseDAO<T> {  
@@ -67,5 +66,25 @@ public class BaseDAO<T> implements IBaseDAO<T> {
             query.setParameter(i, params[i]);  
         }  
         return query.list();  
-	}  
+	}
+
+	@Override
+	public void querySql(String sql, Object... params) {
+		Query query = this.getSession().createSQLQuery(sql);  
+        for (int i = 0; params != null && i < params.length; i++) {  
+            query.setParameter(i, params[i]);  
+        }  
+        query.executeUpdate();
+	}
+
+	@SuppressWarnings("unchecked")
+	@Override
+	public T getBySQL(String sql, Object... params) {
+		Query query = this.getSession().createSQLQuery(sql);  
+        for (int i = 0; params != null && i < params.length; i++) {  
+            query.setParameter(i, params[i]);  
+        } 
+        return (T)query.uniqueResult();
+	}
+
 }  

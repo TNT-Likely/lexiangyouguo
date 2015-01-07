@@ -4,10 +4,14 @@ import java.text.DateFormat;
 import java.util.Date;
 import java.util.Locale;
 
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpSession;
+
 import lxyg.domain.Member;
 import lxyg.service.imp.BaseService;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.Errors;
@@ -39,8 +43,7 @@ public class  registerController {
 		if(!baseService.findBySQL("select * from member where MemberName = ?", member.getMemberName()).isEmpty()){
 			return null;
 		}
-		//baseService.findBySQL("select * from member");
-		//baseService.save(member);
+		baseService.save(member);
 		return "login";
 	}
 }

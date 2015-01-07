@@ -47,5 +47,16 @@ public class BaseService<T> implements IBaseService<T> {
 	public List<T> findBySQL(String sql, Object... params) {
 		// TODO Auto-generated method stub
 		return baseDAO.findBySQL(sql, params);
+	}
+
+	@Override
+	public void querySql(String sql, Object... params) {
+		baseDAO.querySql(sql, params);	
+	}
+
+	@Override
+	public T getBySQL(String sql, Object... params) {
+		// TODO Auto-generated method stub
+		return baseDAO.getBySQL(sql, params);
 	}  
 }  

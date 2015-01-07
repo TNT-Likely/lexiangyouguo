@@ -4,20 +4,26 @@ import java.text.DateFormat;
 import java.util.Date;
 import java.util.Locale;
 
+import javax.servlet.http.HttpSession;
+
+import lxyg.domain.Member;
+import lxyg.service.imp.BaseService;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.support.SessionStatus;
 
 @Controller
 public class memberloginController {
- 
 	
-	/**
-	 * Simply selects the home view to render by returning its name.
-	 */
+	@Autowired
+	private BaseService<Member> baseService;
+	
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
 	public String index(Locale locale, Model model) {
 		Date date = new Date();
@@ -29,8 +35,14 @@ public class memberloginController {
 		return "login";
 	}
 	@RequestMapping(value = "/login", method = RequestMethod.POST)
-	public String login(Model model,user User) {
-		model.addAttribute("name", "sunxiaoIndex" );
+	public String login(Model model,Member member,HttpSession session) {
+		member=baseService.findBySQL("select * from Member where MemberName=? and PassWord=?", member.getMemberName(),member.getPassword()).get(0);
+		if(member== null){
+			
+		}
+		else{
+			session.setAttribute("memberInfo", member);
+		}
 		return "index";
 	}
 }

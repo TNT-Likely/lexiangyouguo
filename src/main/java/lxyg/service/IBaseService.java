@@ -15,4 +15,8 @@ public interface IBaseService<T> {
     public List<T> getByHQL(String hql, Object... params); 
     
     public List<T> findBySQL(String sql, Object... params);
+    
+    public void querySql(String sql, Object... params);
+    
+    public T getBySQL(String sql, Object... params);
 }
