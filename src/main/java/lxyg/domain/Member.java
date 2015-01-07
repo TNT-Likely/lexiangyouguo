@@ -125,7 +125,7 @@ public class Member  implements java.io.Serializable {
         this.memberWhetherAuthenticate = memberWhetherAuthenticate;
     }
     
-    @Column(name="MemberRegisteredTime", nullable=false, length=19)
+    @Column(name="MemberRegisteredTime", length=19)
 
     public Timestamp getMemberRegisteredTime() {
         return this.memberRegisteredTime;
@@ -185,7 +185,7 @@ public class Member  implements java.io.Serializable {
         this.memberSex = memberSex;
     }
     
-    @Column(name="MemberBirthday", nullable=false, length=19)
+    @Column(name="MemberBirthday",length=19)
 
     public Timestamp getMemberBirthday() {
         return this.memberBirthday;

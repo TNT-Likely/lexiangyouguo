@@ -32,10 +32,6 @@ public class BaseService<T> implements IBaseService<T> {
     public void delete(Class<T> clazz,Serializable id) {  
     	baseDAO.delete(clazz,id);  
     }  
-  
-    public List<T> getByHQL(String hql, Object... params) {  
-        return baseDAO.findByHQL(hql, params);  
-    }
 
 	@Override
 	public T getById(Class<T> clazz, Serializable id) {
@@ -44,9 +40,9 @@ public class BaseService<T> implements IBaseService<T> {
 	}
 
 	@Override
-	public List<T> findBySQL(String sql, Object... params) {
+	public List<T> findBySQL(Class<T> clazz,String sql, Object... params) {
 		// TODO Auto-generated method stub
-		return baseDAO.findBySQL(sql, params);
+		return baseDAO.findBySQL(clazz,sql, params);
 	}
 
 	@Override
@@ -55,8 +51,8 @@ public class BaseService<T> implements IBaseService<T> {
 	}
 
 	@Override
-	public T getBySQL(String sql, Object... params) {
+	public T getBySQL(Class<T> clazz,String sql, Object... params) {
 		// TODO Auto-generated method stub
-		return baseDAO.getBySQL(sql, params);
+		return baseDAO.getBySQL(clazz,sql, params);
 	}  
 }  

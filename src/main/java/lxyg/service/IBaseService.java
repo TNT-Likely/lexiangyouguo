@@ -12,11 +12,9 @@ public interface IBaseService<T> {
   
     public T getById(Class<T> clazz,Serializable id);  
   
-    public List<T> getByHQL(String hql, Object... params); 
-    
-    public List<T> findBySQL(String sql, Object... params);
+    public List<T> findBySQL(Class<T> clazz,String sql, Object... params);
     
     public void querySql(String sql, Object... params);
     
-    public T getBySQL(String sql, Object... params);
+    public T getBySQL(Class<T> clazz,String sql, Object... params);
 }

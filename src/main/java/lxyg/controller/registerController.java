@@ -1,10 +1,12 @@
 package lxyg.controller;
 
+import java.io.IOException;
 import java.text.DateFormat;
 import java.util.Date;
 import java.util.Locale;
 
 import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import lxyg.domain.Member;
@@ -19,6 +21,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
+
+import com.mysql.fabric.Response;
 
 @Controller
 public class  registerController {
@@ -39,11 +43,11 @@ public class  registerController {
 		return "register";
 	}
 	@RequestMapping(value = "/register", method = RequestMethod.POST)
-	public String login(Model model,Member member) {
-		if(!baseService.findBySQL("select * from member where MemberName = ?", member.getMemberName()).isEmpty()){
-			return null;
+	public void register(Member member,HttpServletResponse response) throws IOException {
+		if(baseService.getBySQL(Member.class,"select * from member where MemberName = ?", member.getMemberName())!=null){
+			return;
 		}
 		baseService.save(member);
-		return "login";
+		response.sendRedirect("login");
 	}
 }

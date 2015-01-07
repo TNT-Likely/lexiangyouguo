@@ -12,11 +12,16 @@ import java.util.List;
 
 
 
+
+
+
+
 import lxyg.dao.IBaseDAO;
 
 import org.hibernate.Query;  
 import org.hibernate.Session;  
 import org.hibernate.SessionFactory;  
+import org.hibernate.transform.ResultTransformer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
@@ -43,15 +48,6 @@ public class BaseDAO<T> implements IBaseDAO<T> {
     public void delete(Class<T> clazz,Serializable id) {  
         this.getSession().delete(this.findById(clazz,id));  
     }  
-  
-    @SuppressWarnings("unchecked")
-	public List<T> findByHQL(String hql, Object... params) {  
-        Query query = this.getSession().createQuery(hql);  
-        for (int i = 0; params != null && i < params.length; i++) {  
-            query.setParameter(i, params);  
-        }  
-        return query.list();  
-    }
 
 	@SuppressWarnings("unchecked")
 	public T findById(Class<T> clazz, Serializable id) {
@@ -60,8 +56,8 @@ public class BaseDAO<T> implements IBaseDAO<T> {
 
 	@SuppressWarnings("unchecked")
 	@Override
-	public List<T> findBySQL(String sql, Object... params) {
-		Query query = this.getSession().createSQLQuery(sql);  
+	public List<T> findBySQL(Class<T> clazz,String sql, Object... params) {
+		Query query = this.getSession().createSQLQuery(sql).addEntity(clazz);  
         for (int i = 0; params != null && i < params.length; i++) {  
             query.setParameter(i, params[i]);  
         }  
@@ -79,8 +75,8 @@ public class BaseDAO<T> implements IBaseDAO<T> {
 
 	@SuppressWarnings("unchecked")
 	@Override
-	public T getBySQL(String sql, Object... params) {
-		Query query = this.getSession().createSQLQuery(sql);  
+	public T getBySQL(Class<T> clazz,String sql, Object... params) {
+		Query query = this.getSession().createSQLQuery(sql).addEntity(clazz);  
         for (int i = 0; params != null && i < params.length; i++) {  
             query.setParameter(i, params[i]);  
         } 

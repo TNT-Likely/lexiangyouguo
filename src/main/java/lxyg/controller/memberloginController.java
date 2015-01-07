@@ -36,7 +36,7 @@ public class memberloginController {
 	}
 	@RequestMapping(value = "/login", method = RequestMethod.POST)
 	public String login(Model model,Member member,HttpSession session) {
-		member=baseService.findBySQL("select * from Member where MemberName=? and PassWord=?", member.getMemberName(),member.getPassword()).get(0);
+		member=(Member)baseService.getBySQL(Member.class,"select * from Member where MemberName=? and PassWord=?", member.getMemberName(),member.getPassword());
 		if(member== null){
 			
 		}

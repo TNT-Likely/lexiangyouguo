@@ -37,15 +37,15 @@
 						</div>
 						<p class="error_tip">登录名或密码错误</p>
 						<div class="lg_form">
-							<form method="post">
+							<form method="post" action="login">
 								<div class="mod_box lo_mod_box" data-isshow="0">
 									<div class="lg_item lg_name">
 										<b class="lg_icon"></b>
-										<input type="text" maxlength="32" class="text r3" name="uname" def-v="手机/邮箱/昵称" value="" style="border-color:#CFCFCF; color:#999;">
+										<input type="text" maxlength="32" class="text r3" name="MemberName" def-v="手机/邮箱/昵称" value="" style="border-color:#CFCFCF; color:#999;">
 									</div>
 									<div class="lg_item lg_pass">
 										<b class="lg_icon"></b>
-										<input type="password" maxlength="32" class="text r3" name="pass" value="" style="border-color:#CFCFCF; color:#999;">
+										<input type="password" maxlength="32" class="text r3" name="Password" value="" style="border-color:#CFCFCF; color:#999;">
 									</div>
 								</div>
 								<div class="mod_box eb_mod_box" data-isshow="0">
