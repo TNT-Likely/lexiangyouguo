@@ -23,7 +23,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.mysql.fabric.Response;
-
+import org.jasypt.*;
 @Controller
 public class  registerController {
 	@Autowired
@@ -47,6 +47,7 @@ public class  registerController {
 		if(baseService.getBySQL(Member.class,"select * from member where MemberName = ?", member.getMemberName())!=null){
 			return;
 		}
+		//member.setPassword(enc);
 		baseService.save(member);
 		response.sendRedirect("login");
 	}
