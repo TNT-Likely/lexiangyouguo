@@ -2,26 +2,12 @@ package lxyg.dao.imp;
 
 import java.io.Serializable;  
 import java.util.List;  
- 
-
-
-
-
-
-
-
-
-
-
-
-
 
 import lxyg.dao.IBaseDAO;
 
 import org.hibernate.Query;  
 import org.hibernate.Session;  
 import org.hibernate.SessionFactory;  
-import org.hibernate.transform.ResultTransformer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
