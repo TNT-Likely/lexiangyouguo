@@ -34,15 +34,13 @@
 	if(info !=null){
 %>
 		<li class="s1 has_icon user_meta">
-						<a href="personalhomepage">
+						<a href="personalhomepage?mid=<%=info.getId() %>">
 							<%=info.getMemberName() %></a>
 						<i class="icon_delta"></i>
 						<ol class="ext_mode">
-							<li class="s2"><a href="personalhomepage" class="site_publish_img">分享照片</a>
+							<li class="s2"><a href="personalhomepage?mid=<%=info.getId() %>">个人设置</a>
 							</li>
-							<li class="s2"><a href="personalhomepage">个人设置</a>
-							</li>
-							<li class="s2"><a href="binding">账号绑定</a>
+							<li class="s2"><a href="binding?mid=<%=info.getId() %>">账号绑定</a>
 							</li>
 							<li class="s2"><a href="login">退出</a>
 							</li>
@@ -62,7 +60,11 @@
 						<i class="icon_delta"></i>
 					</li>
 <% }else{%>
-		4444
+<li class="s1"><a href="register">注册</a></li>
+<li class="s1"><a href="login">登录</a></li>
+<li class="s1 has_line"><a href="login">QQ登录</a></li>
+<li class="s1"><a href="login">微信登录</a></li>
+<li class="s1"><a href="login">微博登录</a></li>
 <%}%>
 					<li class="s1 has_line has_icon top_app">
 						<a>手机乐享优果</a>
