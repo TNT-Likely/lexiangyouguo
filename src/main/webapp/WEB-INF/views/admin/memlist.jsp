@@ -579,7 +579,15 @@
 
 									</thead>
 									<tbody>
-
+										<c:forEach items="${list}" var="m">
+											<tr class="">
+												<td>${m.email }</td>
+												<td>${m.memberName }</td>
+												<td>${m.password }</td>
+												<td><a class="edit" href="javascript:;">Edit</a></td>
+												<td><a class="delete" href="javascript:;">Delete</a></td>
+											</tr>
+										</c:forEach>
 									</tbody>
 
 								</table>

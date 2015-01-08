@@ -350,26 +350,16 @@
 						class="selected"></span>
 
 				</a></li>
-				<li class=""><a href="javascript:;"> <i class="icon-group"></i>
-
-						<span class="title">用户模块</span> <span class="arrow "></span>
-
-				</a>
-
-					<ul class="sub-menu">
-
-						<li><a href="layout_horizontal_sidebar_menu.html"> 用户管理 </a>
-
-						</li>
-
-						<li><a href="layout_horizontal_menu1.html"> 角色管理 </a></li>
-
-						<li><a href="layout_horizontal_menu2.html"> 个人信息 </a></li>
-
-					</ul></li>
-
+				<li class="">
+						<a href="javascript:;"> <i class="icon-group"></i>
+							<span class="title">会员管理</span> <span class="arrow "></span>
+						</a>
+						<ul class="sub-menu">
+							<li><a href="memlist">会员管理 </a>
+							</li>
+						</ul>
+				</li>
 				<li class=""><a href="javascript:;"> <i class="icon-plane"></i>
-
 						<span class="title">商品管理</span> <span class="arrow "></span>
 
 				</a>
