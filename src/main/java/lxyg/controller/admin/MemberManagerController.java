@@ -3,6 +3,7 @@ package lxyg.controller.admin;
 import lxyg.domain.Member;
 import lxyg.service.imp.BaseService;
 
+import org.jasypt.util.password.BasicPasswordEncryptor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -20,13 +21,22 @@ public class MemberManagerController {
 	}
 	
 	@RequestMapping(value =  "admin/memadd", method = RequestMethod.GET)
-	public String pcadd(Model model) {
-
+	public String memadd(Model model) {
 		return "admin/memadd";
 	}
 	
+	@RequestMapping(value ="admin/memadd", method = RequestMethod.POST)
+	public String memadd(Model model,Member member) {
+		if(baseService.getBySQL(Member.class,"select * from member where MemberName = ?", member.getMemberName())!=null){
+			return "";
+		}
+		BasicPasswordEncryptor bpe=new BasicPasswordEncryptor();
+		member.setPassword(bpe.encryptPassword(member.getPassword()));
+		baseService.save(member);
+		return "admin/memadd";
+	}
 	@RequestMapping(value =  "admin/memupdate", method = RequestMethod.GET)
-	public String pcupdate(Model model) {
+	public String memupdate(Model model) {
 
 		return "admin/memupdate";
 	}

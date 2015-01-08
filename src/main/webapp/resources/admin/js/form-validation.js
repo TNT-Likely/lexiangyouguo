@@ -3,7 +3,7 @@ var FormValidation = function () {
 
     return {
         //main function to initiate the module
-        init: function () {
+        init: function (successmsg) {
 
             // for more info visit the official plugin documentation: 
             // http://docs.jquery.com/Plugins/Validation
@@ -89,7 +89,7 @@ var FormValidation = function () {
             var form2 = $('#form_sample_2');
             var error2 = $('.alert-error', form2);
             var success2 = $('.alert-success', form2);
-
+            var action=$('#form_sample_2').attr('action');
             form2.validate({
                 errorElement: 'span', //default input error message container
                 errorClass: 'help-inline', // default input error message class
@@ -103,6 +103,10 @@ var FormValidation = function () {
                     email: {
                         required: true,
                         email: true
+                    },
+                    memberName:{
+                    	required:true,
+                    	rangelength: [5,20]
                     },
                     category: {
                         required: true
@@ -180,6 +184,13 @@ var FormValidation = function () {
                 submitHandler: function (form) {
                     success2.show();
                     error2.hide();
+                    $(form).ajaxSubmit({
+                        type:"post",
+                        url:action,
+                        success: function(){
+                        	
+                        }
+                      });
                 }
 
             });
