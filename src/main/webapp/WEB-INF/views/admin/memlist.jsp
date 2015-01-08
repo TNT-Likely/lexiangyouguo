@@ -565,14 +565,12 @@
 								<table class="table table-striped table-hover table-bordered" id="sample_editable_1">
 									<thead>
 										<tr>
-											<th>Username</th>
-
-											<th>Full Name</th>
-
-											<th>Points</th>
-
+											<th>用户名</th>
+											<th>邮箱</th>
+											<th>真实姓名</th>
+											<th>性别</th>
+											<th>注册时间</th>
 											<th>Edit</th>
-
 											<th>Delete</th>
 
 										</tr>
@@ -581,9 +579,21 @@
 									<tbody>
 										<c:forEach items="${list}" var="m">
 											<tr class="">
-												<td>${m.email }</td>
 												<td>${m.memberName }</td>
-												<td>${m.password }</td>
+												<td>${m.email }</td>
+												<td>${m.memberRealName }</td>
+												<td>
+													<%-- <c:if test="${m.memberSex = =true }">
+														男
+													</c:if>
+													<c:if test="${m.memberSex = = false }">
+														女
+													</c:if>
+													<c:if test="${m.memberSex = = null }">
+														待定
+													</c:if> --%>
+												</td>
+												<td>${m.memberRegisteredTime }</td>
 												<td><a class="edit" href="javascript:;">Edit</a></td>
 												<td><a class="delete" href="javascript:;">Delete</a></td>
 											</tr>
