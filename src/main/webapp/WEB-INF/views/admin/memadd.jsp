@@ -141,7 +141,7 @@
 												<div class="control-group">
 													<label class="control-label">邮箱:<span class="required">*</span></label>
 													<div class="controls">
-														<input name="" type="text" placeholder="medium" class="m-wrap medium" name="email">
+														<input type="text" placeholder="medium" class="m-wrap medium" name="email">
 													</div>
 												</div>
 												<div class="control-group">
@@ -158,14 +158,14 @@
 													</div>
 												</div>
 												<div class="control-group">
-													<label class="control-label">密码:</label>
+													<label class="control-label">密码:<span class="required">*</span></label>
 													<div class="controls">
 														<input type="password" placeholder="medium" class="m-wrap medium" name="password">
 														<span class="help-inline">....</span>
 													</div>
 												</div>
 												<div class="control-group">
-													<label class="control-label">生日:</label>
+													<label class="control-label">生日:<span class="required">*</span></label>
 													<div class="controls">
 														<div class="input-append date form_datetime">
 															<input size="16" type="text" value="" readonly="" class="m-wrap" name="memberRegisteredTime">
@@ -304,12 +304,11 @@
 	<script type="text/javascript" src="/shop/resources/admin/js/jquery.validate.min.js"></script>
 	<script type="text/javascript" src="/shop/resources/admin/js/select2.min.js"></script>
 	<script type="text/javascript" src="/shop/resources/admin/js/chosen.jquery.min.js"></script>
+	<script type="text/javascript" src="/shop/resources/admin/js/jquery.form.js"></script>
 	<script type="text/javascript" src="/shop/resources/admin/js/form-validation.js"></script>
 	<script>
-
     jQuery(document).ready(function () {
-    	
-    	$(".form_datetime").datetimepicker({
+       	$(".form_datetime").datetimepicker({
             format: "yyyy-mm-dd hh:mm:ss",
             pickerPosition: (App.isRTL() ? "bottom-right" : "bottom-left")
         });

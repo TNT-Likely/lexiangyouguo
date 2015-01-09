@@ -1,55 +1,52 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <div class="page-sidebar nav-collapse collapse">
-			<ul class="page-sidebar-menu">
+	<ul class="page-sidebar-menu">
 
-				<li>
-					<!-- BEGIN SIDEBAR TOGGLER BUTTON -->
+		<li>
+			<!-- BEGIN SIDEBAR TOGGLER BUTTON -->
 
-					<div class="sidebar-toggler hidden-phone"></div> <!-- BEGIN SIDEBAR TOGGLER BUTTON -->
+			<div class="sidebar-toggler hidden-phone"></div> <!-- BEGIN SIDEBAR TOGGLER BUTTON -->
 
-				</li>
+		</li>
 
-				<li>
-					<!-- BEGIN RESPONSIVE QUICK SEARCH FORM -->
+		<li>
+			<!-- BEGIN RESPONSIVE QUICK SEARCH FORM -->
 
-					<form class="sidebar-search">
+			<form class="sidebar-search">
 
-						<div class="input-box">
+				<div class="input-box">
 
-							<a href="javascript:;" class="remove"></a> <input type="text"
-								placeholder="搜索..." /> <input type="button" class="submit"
-								value=" " />
+					<a href="javascript:;" class="remove"></a> <input type="text"
+						placeholder="搜索..." /> <input type="button" class="submit"
+						value=" " />
 
-						</div>
+				</div>
 
-					</form> <!-- END RESPONSIVE QUICK SEARCH FORM -->
+			</form> <!-- END RESPONSIVE QUICK SEARCH FORM -->
 
-				</li>
+		</li>
 
-				<li class="start active "><a href="/Admin/Base/Index"> <i
-						class="icon-home"></i> <span class="title">控制面板</span> <span
-						class="selected"></span>
+		<li class="start active "><a href="/Admin/Base/Index"> <i
+				class="icon-home"></i> <span class="title">控制面板</span> <span
+				class="selected"></span>
 
-				</a></li>
-				<li class="">
-						<a href="javascript:;"> <i class="icon-group"></i>
-							<span class="title">会员管理</span> <span class="arrow "></span>
-						</a>
-						<ul class="sub-menu">
-							<li><a href="memlist">会员管理 </a>
-							</li>
-						</ul>
-				</li>
-				<li class=""><a href="javascript:;"> <i class="icon-plane"></i>
-						<span class="title">商品管理</span> <span class="arrow "></span>
+		</a></li>
+		<li class=""><a href="javascript:;"> <i class="icon-group"></i>
+				<span class="title">会员管理</span> <span class="arrow "></span>
+		</a>
+			<ul class="sub-menu">
+				<li><a href="memlist">会员列表 </a></li>
+			</ul></li>
+		<li class=""><a href="javascript:;"> <i class="icon-plane"></i>
+				<span class="title">商品管理</span> <span class="arrow "></span>
 
-				</a>
+		</a>
 
-					<ul class="sub-menu">
-						<li><a href="pclist">商品分类</a></li>
-						<li><a href="/Admin/MSiteNav/Category"> 栏目管理 </a></li>
-					</ul></li>
-			</ul>
-			<!-- END SIDEBAR MENU -->
-		</div>
+			<ul class="sub-menu">
+				<li><a href="pclist">商品分类</a></li>
+				<li><a href="/Admin/MSiteNav/Category"> 栏目管理 </a></li>
+			</ul></li>
+	</ul>
+	<!-- END SIDEBAR MENU -->
+</div>

@@ -184,15 +184,18 @@ var FormValidation = function () {
                 submitHandler: function (form) {
                     success2.show();
                     error2.hide();
-                    $(form).ajaxSubmit({
-                        type:"post",
-                        url:action,
-                        success: function(){
-                        	
-                        }
-                      });
+                    $(form).submit(function() {
+                    	$(this).ajaxSubmit({
+                    		type:"post",
+                            url:action,
+                            success: function(){
+                            	alert(successmsg);
+                            	$(this).reset();
+                            }
+                    	});
+                    	return false;
+                    });
                 }
-
             });
 
             //apply validation on chosen dropdown value change, this only needed for chosen dropdown integration.
