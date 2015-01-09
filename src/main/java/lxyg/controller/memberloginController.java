@@ -41,7 +41,7 @@ public class memberloginController {
 	public void login(Model model,Member member,HttpSession session,HttpServletResponse response) throws IOException {
 		BasicPasswordEncryptor bpe=new BasicPasswordEncryptor();
 		Member cc=(Member)baseService.getBySQL(Member.class,"select * from Member where MemberName=?", member.getMemberName());
-		if(member== null || !bpe.checkPassword(member.getPassword(), cc.getPassword())){
+		if(member== null || !bpe.checkPassword(member.getMemberPassword(), cc.getMemberPassword())){
 			return;
 		}
 		else{

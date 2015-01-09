@@ -40,7 +40,7 @@ public class  registerController {
 			return;
 		}
 		BasicPasswordEncryptor bpe=new BasicPasswordEncryptor();
-		member.setPassword(bpe.encryptPassword(member.getPassword()));
+		member.setMemberPassword(bpe.encryptPassword(member.getMemberPassword()));
 		baseService.save(member);
 		response.sendRedirect("login");
 	}

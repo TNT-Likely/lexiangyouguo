@@ -8,219 +8,191 @@ import static javax.persistence.GenerationType.IDENTITY;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-
 /**
  * Member entity. @author MyEclipse Persistence Tools
  */
 @Entity
-@Table(name="member"
-    ,catalog="lxyg"
-)
+@Table(name = "member", catalog = "lxyg")
+public class Member implements java.io.Serializable {
 
-public class Member  implements java.io.Serializable {
+	// Fields
 
+	private Integer id;
+	private String memberEmail;
+	private Timestamp memberBirthday;
+	private String memberCurrentPicture;
+	private String memberHomeTown;
+	private String memberName;
+	private String memberRealName;
+	private Timestamp memberRegisteredTime;
+	private String memberResidentialAddress;
+	private Boolean memberSex;
+	private Boolean memberWhetherAuthenticate;
+	private String memberPassword;
+	private Timestamp timeAdd;
+	private Timestamp timeUpdate;
 
-    // Fields    
+	// Constructors
 
-     private Integer id;
-     private Timestamp timeAdd;
-     private Timestamp timeUpdate;
-     private String email;
-     private Boolean memberWhetherAuthenticate;
-     private Timestamp memberRegisteredTime;
-     private String memberCurrentPicture;
-     private String memberName;
-     private String password;
-     private String memberRealName;
-     private Boolean memberSex;
-     private Timestamp memberBirthday;
-     private String memberResidentialAddress;
-     private String memberHomeTown;
-
-
-    // Constructors
-
-    /** default constructor */
-    public Member() {
-    }
+	/** default constructor */
+	public Member() {
+	}
 
 	/** minimal constructor */
-    public Member(Timestamp timeAdd, Timestamp timeUpdate, Timestamp memberRegisteredTime, String memberName, String password, Timestamp memberBirthday) {
-        this.timeAdd = timeAdd;
-        this.timeUpdate = timeUpdate;
-        this.memberRegisteredTime = memberRegisteredTime;
-        this.memberName = memberName;
-        this.password = password;
-        this.memberBirthday = memberBirthday;
-    }
-    
-    /** full constructor */
-    public Member(Timestamp timeAdd, Timestamp timeUpdate, String email, Boolean memberWhetherAuthenticate, Timestamp memberRegisteredTime, String memberCurrentPicture, String memberName, String password, String memberRealName, Boolean memberSex, Timestamp memberBirthday, String memberResidentialAddress, String memberHomeTown) {
-        this.timeAdd = timeAdd;
-        this.timeUpdate = timeUpdate;
-        this.email = email;
-        this.memberWhetherAuthenticate = memberWhetherAuthenticate;
-        this.memberRegisteredTime = memberRegisteredTime;
-        this.memberCurrentPicture = memberCurrentPicture;
-        this.memberName = memberName;
-        this.password = password;
-        this.memberRealName = memberRealName;
-        this.memberSex = memberSex;
-        this.memberBirthday = memberBirthday;
-        this.memberResidentialAddress = memberResidentialAddress;
-        this.memberHomeTown = memberHomeTown;
-    }
+	public Member(String memberName, String memberPassword) {
+		this.memberName = memberName;
+		this.memberPassword = memberPassword;
+	}
 
-   
-    // Property accessors
-    @Id @GeneratedValue(strategy=IDENTITY)
-    
-    @Column(name="Id", unique=true, nullable=false)
+	/** full constructor */
+	public Member(String memberEmail, Timestamp memberBirthday,
+			String memberCurrentPicture, String memberHomeTown,
+			String memberName, String memberRealName,
+			Timestamp memberRegisteredTime, String memberResidentialAddress,
+			Boolean memberSex, Boolean memberWhetherAuthenticate,
+			String memberPassword, Timestamp timeAdd, Timestamp timeUpdate) {
+		this.memberEmail = memberEmail;
+		this.memberBirthday = memberBirthday;
+		this.memberCurrentPicture = memberCurrentPicture;
+		this.memberHomeTown = memberHomeTown;
+		this.memberName = memberName;
+		this.memberRealName = memberRealName;
+		this.memberRegisteredTime = memberRegisteredTime;
+		this.memberResidentialAddress = memberResidentialAddress;
+		this.memberSex = memberSex;
+		this.memberWhetherAuthenticate = memberWhetherAuthenticate;
+		this.memberPassword = memberPassword;
+		this.timeAdd = timeAdd;
+		this.timeUpdate = timeUpdate;
+	}
 
-    public Integer getId() {
-        return this.id;
-    }
-    
-    public void setId(Integer id) {
-        this.id = id;
-    }
-    
-    @Column(name="TimeAdd", nullable=false, length=19)
+	// Property accessors
+	@Id
+	@GeneratedValue(strategy = IDENTITY)
+	@Column(name = "Id", unique = true, nullable = false)
+	public Integer getId() {
+		return this.id;
+	}
 
-    public Timestamp getTimeAdd() {
-        return this.timeAdd;
-    }
-    
-    public void setTimeAdd(Timestamp timeAdd) {
-        this.timeAdd = timeAdd;
-    }
-    
-    @Column(name="TimeUpdate", nullable=false, length=19)
+	public void setId(Integer id) {
+		this.id = id;
+	}
 
-    public Timestamp getTimeUpdate() {
-        return this.timeUpdate;
-    }
-    
-    public void setTimeUpdate(Timestamp timeUpdate) {
-        this.timeUpdate = timeUpdate;
-    }
-    
-    @Column(name="Email", length=1024)
+	@Column(name = "MemberEmail")
+	public String getMemberEmail() {
+		return this.memberEmail;
+	}
 
-    public String getEmail() {
-        return this.email;
-    }
-    
-    public void setEmail(String email) {
-        this.email = email;
-    }
-    
-    @Column(name="MemberWhetherAuthenticate")
+	public void setMemberEmail(String memberEmail) {
+		this.memberEmail = memberEmail;
+	}
 
-    public Boolean getMemberWhetherAuthenticate() {
-        return this.memberWhetherAuthenticate;
-    }
-    
-    public void setMemberWhetherAuthenticate(Boolean memberWhetherAuthenticate) {
-        this.memberWhetherAuthenticate = memberWhetherAuthenticate;
-    }
-    
-    @Column(name="MemberRegisteredTime", length=19)
+	@Column(name = "MemberBirthday", length = 19)
+	public Timestamp getMemberBirthday() {
+		return this.memberBirthday;
+	}
 
-    public Timestamp getMemberRegisteredTime() {
-        return this.memberRegisteredTime;
-    }
-    
-    public void setMemberRegisteredTime(Timestamp memberRegisteredTime) {
-        this.memberRegisteredTime = memberRegisteredTime;
-    }
-    
-    @Column(name="MemberCurrentPicture", length=1024)
+	public void setMemberBirthday(Timestamp memberBirthday) {
+		this.memberBirthday = memberBirthday;
+	}
 
-    public String getMemberCurrentPicture() {
-        return this.memberCurrentPicture;
-    }
-    
-    public void setMemberCurrentPicture(String memberCurrentPicture) {
-        this.memberCurrentPicture = memberCurrentPicture;
-    }
-    
-    @Column(name="MemberName", nullable=false, length=1024)
+	@Column(name = "MemberCurrentPicture")
+	public String getMemberCurrentPicture() {
+		return this.memberCurrentPicture;
+	}
 
-    public String getMemberName() {
-        return this.memberName;
-    }
-    
-    public void setMemberName(String memberName) {
-        this.memberName = memberName;
-    }
-    
-    @Column(name="Password", nullable=false, length=1024)
+	public void setMemberCurrentPicture(String memberCurrentPicture) {
+		this.memberCurrentPicture = memberCurrentPicture;
+	}
 
-    public String getPassword() {
-        return this.password;
-    }
-    
-    public void setPassword(String password) {
-        this.password = password;
-    }
-    
-    @Column(name="MemberRealName", length=1024)
+	@Column(name = "MemberHomeTown")
+	public String getMemberHomeTown() {
+		return this.memberHomeTown;
+	}
 
-    public String getMemberRealName() {
-        return this.memberRealName;
-    }
-    
-    public void setMemberRealName(String memberRealName) {
-        this.memberRealName = memberRealName;
-    }
-    
-    @Column(name="MemberSex")
+	public void setMemberHomeTown(String memberHomeTown) {
+		this.memberHomeTown = memberHomeTown;
+	}
 
-    public Boolean getMemberSex() {
-        return this.memberSex;
-    }
-    
-    public void setMemberSex(Boolean memberSex) {
-        this.memberSex = memberSex;
-    }
-    
-    @Column(name="MemberBirthday",length=19)
+	@Column(name = "MemberName", nullable = false)
+	public String getMemberName() {
+		return this.memberName;
+	}
 
-    public Timestamp getMemberBirthday() {
-        return this.memberBirthday;
-    }
-    
-    public void setMemberBirthday(Timestamp memberBirthday) {
-        this.memberBirthday = memberBirthday;
-    }
-    
-    @Column(name="MemberResidentialAddress", length=1024)
+	public void setMemberName(String memberName) {
+		this.memberName = memberName;
+	}
 
-    public String getMemberResidentialAddress() {
-        return this.memberResidentialAddress;
-    }
-    
-    public void setMemberResidentialAddress(String memberResidentialAddress) {
-        this.memberResidentialAddress = memberResidentialAddress;
-    }
-    
-    @Column(name="MemberHomeTown", length=1024)
+	@Column(name = "MemberRealName")
+	public String getMemberRealName() {
+		return this.memberRealName;
+	}
 
-    public String getMemberHomeTown() {
-        return this.memberHomeTown;
-    }
-    
-    public void setMemberHomeTown(String memberHomeTown) {
-        this.memberHomeTown = memberHomeTown;
-    }
-   
+	public void setMemberRealName(String memberRealName) {
+		this.memberRealName = memberRealName;
+	}
 
+	@Column(name = "MemberRegisteredTime", length = 19)
+	public Timestamp getMemberRegisteredTime() {
+		return this.memberRegisteredTime;
+	}
 
+	public void setMemberRegisteredTime(Timestamp memberRegisteredTime) {
+		this.memberRegisteredTime = memberRegisteredTime;
+	}
 
+	@Column(name = "MemberResidentialAddress")
+	public String getMemberResidentialAddress() {
+		return this.memberResidentialAddress;
+	}
 
+	public void setMemberResidentialAddress(String memberResidentialAddress) {
+		this.memberResidentialAddress = memberResidentialAddress;
+	}
 
+	@Column(name = "MemberSex")
+	public Boolean getMemberSex() {
+		return this.memberSex;
+	}
 
+	public void setMemberSex(Boolean memberSex) {
+		this.memberSex = memberSex;
+	}
 
+	@Column(name = "MemberWhetherAuthenticate")
+	public Boolean getMemberWhetherAuthenticate() {
+		return this.memberWhetherAuthenticate;
+	}
+
+	public void setMemberWhetherAuthenticate(Boolean memberWhetherAuthenticate) {
+		this.memberWhetherAuthenticate = memberWhetherAuthenticate;
+	}
+
+	@Column(name = "MemberPassword", nullable = false)
+	public String getMemberPassword() {
+		return this.memberPassword;
+	}
+
+	public void setMemberPassword(String memberPassword) {
+		this.memberPassword = memberPassword;
+	}
+
+	@Column(name = "TimeAdd", length = 19)
+	public Timestamp getTimeAdd() {
+		return this.timeAdd;
+	}
+
+	public void setTimeAdd(Timestamp timeAdd) {
+		this.timeAdd = timeAdd;
+	}
+
+	@Column(name = "TimeUpdate", length = 19)
+	public Timestamp getTimeUpdate() {
+		return this.timeUpdate;
+	}
+
+	public void setTimeUpdate(Timestamp timeUpdate) {
+		this.timeUpdate = timeUpdate;
+	}
 
 }

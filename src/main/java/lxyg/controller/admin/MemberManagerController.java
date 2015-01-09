@@ -31,7 +31,7 @@ public class MemberManagerController {
 			return "";
 		}
 		BasicPasswordEncryptor bpe=new BasicPasswordEncryptor();
-		member.setPassword(bpe.encryptPassword(member.getPassword()));
+		member.setMemberPassword (bpe.encryptPassword(member.getMemberPassword()));
 		baseService.save(member);
 		return "admin/memadd";
 	}
