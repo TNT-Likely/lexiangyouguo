@@ -15,6 +15,7 @@
 		<mapping class="lxyg.domain.Commoditycomments" />
 		<mapping class="lxyg.domain.Type" />
 		<mapping class="lxyg.domain.Memberregistrationitems" />
+		<mapping class="lxyg.domain.Parents" />
 		<mapping class="lxyg.domain.Shopinformation" />
 		<mapping class="lxyg.domain.Harvestaddresstable" />
 		<mapping class="lxyg.domain.Orderstate" />
@@ -37,5 +38,19 @@
 		<mapping class="lxyg.domain.Storesettings" />
 		<mapping class="lxyg.domain.Giftcontents" />
 		<mapping class="lxyg.domain.Occasion" />
+		<mapping class="lxyg.domain.Proshoorder" />
+		<mapping class="lxyg.domain.Typetable" />
+		<mapping class="lxyg.domain.Occasiontable" />
+		<mapping class="lxyg.domain.Cart" />
+		<mapping class="lxyg.domain.Articallist" />
+		<mapping class="lxyg.domain.Procomment" />
+		<mapping class="lxyg.domain.Gifttablecontents" />
+		<mapping class="lxyg.domain.Gifttable" />
+		<mapping class="lxyg.domain.Order" />
+		<mapping class="lxyg.domain.Product" />
+		<mapping class="lxyg.domain.Procover" />
+		<mapping class="lxyg.domain.Procategory" />
+		<mapping class="lxyg.domain.Ordercomments" />
+		<mapping class="lxyg.domain.Regionleveltable" />
 	</session-factory>
 </hibernate-configuration>
