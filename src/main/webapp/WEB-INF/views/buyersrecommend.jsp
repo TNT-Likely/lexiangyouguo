@@ -22,82 +22,33 @@
 		<script type="text/javascript" src="/shop/resources/js/pkg-pc-base.js"></script>
 </head>
 <body>
-		<div class="header_2014">
-			<div class="wrap clearfix">
-				<ul class="header_top">
-					<li class="s1 has_icon user_meta">
-						<a href="personalhomepage">
-							紫色天堂1995</a>
-						<i class="icon_delta"></i>
-						<ol class="ext_mode">
-							<li class="s2"><a href="personalhomepage" class="site_publish_img">分享照片</a>
-							</li>
-							<li class="s2"><a href="personalhomepage">个人设置</a>
-							</li>
-							<li class="s2"><a href="binding">账号绑定</a>
-							</li>
-							<li class="s2"><a href="login">退出</a>
-							</li>
-						</ol>
-					</li>
-					<li class="s1 has_icon has_line user_fav">
-						<a href="index">喜欢</a>
-						<ul class="ext_mode">
-							<li class="s2"><a href="index">关注的店铺</a>
-							</li>
-							<li class="s2"><a href="index">浏览记录</a>
-							</li>
-						</ul>
-					</li>
-					<li class="s1 has_icon message_center has_line">
-						<a href="index">消息<span class="m_num"></span></a>
-						<i class="icon_delta"></i>
-					</li>
-					<li class="s1 has_line has_icon top_app">
-						<a>手机乐享优果</a>
-						<ol class="ext_mode">
-							<li class="s2">
-								<img src=" " alt="扫描下载客户端">
-							</li>
-						</ol>
-					</li>
-					<li class="s1 has_line custom_item">
-						<a href="customerservice" target="_blank">帮助中心</a>
-					</li>
-				</ul>
-				<div class="header_mid clearfix">
-					<a href="index" class="logo" title="乐享优果首页">乐享优果|www.lexiangyouguo.com</a>
-					<div class="top_nav_search" id="nav_search_form">
-						<div class="selectbox" data-v="1">
-							<span class="selected">搜商品</span>
-							<ol>
-								<li class="current" data-index="bao"><a href="index">商品</a>
-								</li>
-								<li data-index="shop"><a href="index">店铺</a>
-								</li>
-							</ol>
-						</div>
-						<form target="_blank" action="/search/" method="get" id="top_nav_form">
-							<input type="text" data-tel="search_book" name="q" class="ts_txt fl" data-def="兔毛" value="软妹最爱温暖“兔毛”毛衫" autocomplete="off" def-v="软妹最爱温暖“兔毛”毛衫" />
-							<input type="submit" value="搜  索" class="ts_btn" />
-							<input type="hidden" name="t" value="bao" id="select_type" />
-						</form>
-						<div class="top_search_hint"></div>
-					</div>
-					<div class="mid_fr">
-						<a class="nav_my_order" href="order" target="_blank">我的订单</a>
-						<div class="shopping_cart_v2">
-							<a class="cart_info_wrap" target="_blank" href="shopping">
-								<span class="cart_info">购物车<b>0</b>件</span>
-								<b class="icon_delta"></b>
-							</a>
-							<span class="shopping_cart_loading"></span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="header_nav">
+		  <jsp:include page="layout/Motherboard.jsp"></jsp:include>
+		     <div class="header_nav">
+<div class="wrap">
+<div class="nav_list_wrap clearfix">
+<ul class="nav_list">
+<li><a  href="index">首页</a>
+</li>
+<li><a href="buyersrecommend">产地直销</a>
+</li>
+<li><a href="buyersrecommend">每日鲜果</a>
+</li>
+<li class="daren">
+<a href="buyersrecommend">果V一刻</a>
+</li>
+<li class="buyer"><a class="on" href="buyersrecommend">每日特价</a>
+</li>
+<li><a href="buyersrecommend">礼品特区</a>
+</li>
+<li><a href="buyersrecommend">团购</a>
+</li>
+<li><a class="no_bold " href="buyersrecommend">社区</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+		  	<div class="header_nav">
 			<div class="wrap">
 				<div class="nav_list_wrap clearfix">
 					<ul class="nav_list">

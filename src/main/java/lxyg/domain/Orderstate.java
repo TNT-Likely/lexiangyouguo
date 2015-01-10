@@ -8,203 +8,191 @@ import static javax.persistence.GenerationType.IDENTITY;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-
 /**
  * Orderstate entity. @author MyEclipse Persistence Tools
  */
 @Entity
-@Table(name="orderstate"
-    ,catalog="lxyg"
-)
+@Table(name = "orderstate", catalog = "lxyg")
+public class Orderstate implements java.io.Serializable {
 
-public class Orderstate  implements java.io.Serializable {
+	// Fields
 
+	private Integer id;
+	private Integer orderId;
+	private String osNotDeliverGoods;
+	private String osDelivery;
+	private String osHaveToSignFor;
+	private String osRefusalReceive;
+	private String osReturnOfGoods;
+	private String osRefundSuccess;
+	private String osUnconfirmed;
+	private String osOrderFinished;
+	private String osPayed;
+	private String osNotPaying;
+	private Timestamp timeAdd;
+	private Timestamp timeUpdate;
 
-    // Fields    
+	// Constructors
 
-     private Integer id;
-     private Timestamp timeAdd;
-     private Timestamp timeUpdate;
-     private String osNotDeliverGoods;
-     private String osDelivery;
-     private String osHaveToSignFor;
-     private String osRefusalReceive;
-     private String osReturnOfGoods;
-     private String osRefundSuccess;
-     private String osUnconfirmed;
-     private String osOrderFinished;
-     private String osPayed;
-     private String osNotPaying;
-
-
-    // Constructors
-
-    /** default constructor */
-    public Orderstate() {
-    }
+	/** default constructor */
+	public Orderstate() {
+	}
 
 	/** minimal constructor */
-    public Orderstate(Timestamp timeAdd, Timestamp timeUpdate) {
-        this.timeAdd = timeAdd;
-        this.timeUpdate = timeUpdate;
-    }
-    
-    /** full constructor */
-    public Orderstate(Timestamp timeAdd, Timestamp timeUpdate, String osNotDeliverGoods, String osDelivery, String osHaveToSignFor, String osRefusalReceive, String osReturnOfGoods, String osRefundSuccess, String osUnconfirmed, String osOrderFinished, String osPayed, String osNotPaying) {
-        this.timeAdd = timeAdd;
-        this.timeUpdate = timeUpdate;
-        this.osNotDeliverGoods = osNotDeliverGoods;
-        this.osDelivery = osDelivery;
-        this.osHaveToSignFor = osHaveToSignFor;
-        this.osRefusalReceive = osRefusalReceive;
-        this.osReturnOfGoods = osReturnOfGoods;
-        this.osRefundSuccess = osRefundSuccess;
-        this.osUnconfirmed = osUnconfirmed;
-        this.osOrderFinished = osOrderFinished;
-        this.osPayed = osPayed;
-        this.osNotPaying = osNotPaying;
-    }
+	public Orderstate(Integer orderId, Timestamp timeAdd, Timestamp timeUpdate) {
+		this.orderId = orderId;
+		this.timeAdd = timeAdd;
+		this.timeUpdate = timeUpdate;
+	}
 
-   
-    // Property accessors
-    @Id @GeneratedValue(strategy=IDENTITY)
-    
-    @Column(name="Id", unique=true, nullable=false)
+	/** full constructor */
+	public Orderstate(Integer orderId, String osNotDeliverGoods,
+			String osDelivery, String osHaveToSignFor, String osRefusalReceive,
+			String osReturnOfGoods, String osRefundSuccess,
+			String osUnconfirmed, String osOrderFinished, String osPayed,
+			String osNotPaying, Timestamp timeAdd, Timestamp timeUpdate) {
+		this.orderId = orderId;
+		this.osNotDeliverGoods = osNotDeliverGoods;
+		this.osDelivery = osDelivery;
+		this.osHaveToSignFor = osHaveToSignFor;
+		this.osRefusalReceive = osRefusalReceive;
+		this.osReturnOfGoods = osReturnOfGoods;
+		this.osRefundSuccess = osRefundSuccess;
+		this.osUnconfirmed = osUnconfirmed;
+		this.osOrderFinished = osOrderFinished;
+		this.osPayed = osPayed;
+		this.osNotPaying = osNotPaying;
+		this.timeAdd = timeAdd;
+		this.timeUpdate = timeUpdate;
+	}
 
-    public Integer getId() {
-        return this.id;
-    }
-    
-    public void setId(Integer id) {
-        this.id = id;
-    }
-    
-    @Column(name="TimeAdd", nullable=false, length=19)
+	// Property accessors
+	@Id
+	@GeneratedValue(strategy = IDENTITY)
+	@Column(name = "Id", unique = true, nullable = false)
+	public Integer getId() {
+		return this.id;
+	}
 
-    public Timestamp getTimeAdd() {
-        return this.timeAdd;
-    }
-    
-    public void setTimeAdd(Timestamp timeAdd) {
-        this.timeAdd = timeAdd;
-    }
-    
-    @Column(name="TimeUpdate", nullable=false, length=19)
+	public void setId(Integer id) {
+		this.id = id;
+	}
 
-    public Timestamp getTimeUpdate() {
-        return this.timeUpdate;
-    }
-    
-    public void setTimeUpdate(Timestamp timeUpdate) {
-        this.timeUpdate = timeUpdate;
-    }
-    
-    @Column(name="OS_NotDeliverGoods", length=1024)
+	@Column(name = "OrderId", nullable = false)
+	public Integer getOrderId() {
+		return this.orderId;
+	}
 
-    public String getOsNotDeliverGoods() {
-        return this.osNotDeliverGoods;
-    }
-    
-    public void setOsNotDeliverGoods(String osNotDeliverGoods) {
-        this.osNotDeliverGoods = osNotDeliverGoods;
-    }
-    
-    @Column(name="OS_Delivery", length=1024)
+	public void setOrderId(Integer orderId) {
+		this.orderId = orderId;
+	}
 
-    public String getOsDelivery() {
-        return this.osDelivery;
-    }
-    
-    public void setOsDelivery(String osDelivery) {
-        this.osDelivery = osDelivery;
-    }
-    
-    @Column(name="OS_HaveToSignFor", length=1024)
+	@Column(name = "OS_NotDeliverGoods", length = 1024)
+	public String getOsNotDeliverGoods() {
+		return this.osNotDeliverGoods;
+	}
 
-    public String getOsHaveToSignFor() {
-        return this.osHaveToSignFor;
-    }
-    
-    public void setOsHaveToSignFor(String osHaveToSignFor) {
-        this.osHaveToSignFor = osHaveToSignFor;
-    }
-    
-    @Column(name="OS_RefusalReceive", length=1024)
+	public void setOsNotDeliverGoods(String osNotDeliverGoods) {
+		this.osNotDeliverGoods = osNotDeliverGoods;
+	}
 
-    public String getOsRefusalReceive() {
-        return this.osRefusalReceive;
-    }
-    
-    public void setOsRefusalReceive(String osRefusalReceive) {
-        this.osRefusalReceive = osRefusalReceive;
-    }
-    
-    @Column(name="OS_ReturnOfGoods", length=1024)
+	@Column(name = "OS_Delivery", length = 1024)
+	public String getOsDelivery() {
+		return this.osDelivery;
+	}
 
-    public String getOsReturnOfGoods() {
-        return this.osReturnOfGoods;
-    }
-    
-    public void setOsReturnOfGoods(String osReturnOfGoods) {
-        this.osReturnOfGoods = osReturnOfGoods;
-    }
-    
-    @Column(name="OS_RefundSuccess", length=1024)
+	public void setOsDelivery(String osDelivery) {
+		this.osDelivery = osDelivery;
+	}
 
-    public String getOsRefundSuccess() {
-        return this.osRefundSuccess;
-    }
-    
-    public void setOsRefundSuccess(String osRefundSuccess) {
-        this.osRefundSuccess = osRefundSuccess;
-    }
-    
-    @Column(name="OS_Unconfirmed", length=1024)
+	@Column(name = "OS_HaveToSignFor", length = 1024)
+	public String getOsHaveToSignFor() {
+		return this.osHaveToSignFor;
+	}
 
-    public String getOsUnconfirmed() {
-        return this.osUnconfirmed;
-    }
-    
-    public void setOsUnconfirmed(String osUnconfirmed) {
-        this.osUnconfirmed = osUnconfirmed;
-    }
-    
-    @Column(name="OS_OrderFinished", length=1024)
+	public void setOsHaveToSignFor(String osHaveToSignFor) {
+		this.osHaveToSignFor = osHaveToSignFor;
+	}
 
-    public String getOsOrderFinished() {
-        return this.osOrderFinished;
-    }
-    
-    public void setOsOrderFinished(String osOrderFinished) {
-        this.osOrderFinished = osOrderFinished;
-    }
-    
-    @Column(name="OS_Payed", length=1024)
+	@Column(name = "OS_RefusalReceive", length = 1024)
+	public String getOsRefusalReceive() {
+		return this.osRefusalReceive;
+	}
 
-    public String getOsPayed() {
-        return this.osPayed;
-    }
-    
-    public void setOsPayed(String osPayed) {
-        this.osPayed = osPayed;
-    }
-    
-    @Column(name="OS_NotPaying", length=1024)
+	public void setOsRefusalReceive(String osRefusalReceive) {
+		this.osRefusalReceive = osRefusalReceive;
+	}
 
-    public String getOsNotPaying() {
-        return this.osNotPaying;
-    }
-    
-    public void setOsNotPaying(String osNotPaying) {
-        this.osNotPaying = osNotPaying;
-    }
-   
+	@Column(name = "OS_ReturnOfGoods", length = 1024)
+	public String getOsReturnOfGoods() {
+		return this.osReturnOfGoods;
+	}
 
+	public void setOsReturnOfGoods(String osReturnOfGoods) {
+		this.osReturnOfGoods = osReturnOfGoods;
+	}
 
+	@Column(name = "OS_RefundSuccess", length = 1024)
+	public String getOsRefundSuccess() {
+		return this.osRefundSuccess;
+	}
 
+	public void setOsRefundSuccess(String osRefundSuccess) {
+		this.osRefundSuccess = osRefundSuccess;
+	}
 
+	@Column(name = "OS_Unconfirmed", length = 1024)
+	public String getOsUnconfirmed() {
+		return this.osUnconfirmed;
+	}
 
+	public void setOsUnconfirmed(String osUnconfirmed) {
+		this.osUnconfirmed = osUnconfirmed;
+	}
 
+	@Column(name = "OS_OrderFinished", length = 1024)
+	public String getOsOrderFinished() {
+		return this.osOrderFinished;
+	}
 
+	public void setOsOrderFinished(String osOrderFinished) {
+		this.osOrderFinished = osOrderFinished;
+	}
+
+	@Column(name = "OS_Payed", length = 1024)
+	public String getOsPayed() {
+		return this.osPayed;
+	}
+
+	public void setOsPayed(String osPayed) {
+		this.osPayed = osPayed;
+	}
+
+	@Column(name = "OS_NotPaying", length = 1024)
+	public String getOsNotPaying() {
+		return this.osNotPaying;
+	}
+
+	public void setOsNotPaying(String osNotPaying) {
+		this.osNotPaying = osNotPaying;
+	}
+
+	@Column(name = "TimeAdd", nullable = false, length = 19)
+	public Timestamp getTimeAdd() {
+		return this.timeAdd;
+	}
+
+	public void setTimeAdd(Timestamp timeAdd) {
+		this.timeAdd = timeAdd;
+	}
+
+	@Column(name = "TimeUpdate", nullable = false, length = 19)
+	public Timestamp getTimeUpdate() {
+		return this.timeUpdate;
+	}
+
+	public void setTimeUpdate(Timestamp timeUpdate) {
+		this.timeUpdate = timeUpdate;
+	}
 
 }

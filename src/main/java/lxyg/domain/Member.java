@@ -31,6 +31,7 @@ public class Member implements java.io.Serializable {
 	private String memberPassword;
 	private Timestamp timeAdd;
 	private Timestamp timeUpdate;
+	private Integer memberHarAddressId;
 
 	// Constructors
 
@@ -39,9 +40,11 @@ public class Member implements java.io.Serializable {
 	}
 
 	/** minimal constructor */
-	public Member(String memberName, String memberPassword) {
+	public Member(String memberName, String memberPassword,
+			Integer memberHarAddressId) {
 		this.memberName = memberName;
 		this.memberPassword = memberPassword;
+		this.memberHarAddressId = memberHarAddressId;
 	}
 
 	/** full constructor */
@@ -50,7 +53,8 @@ public class Member implements java.io.Serializable {
 			String memberName, String memberRealName,
 			Timestamp memberRegisteredTime, String memberResidentialAddress,
 			Boolean memberSex, Boolean memberWhetherAuthenticate,
-			String memberPassword, Timestamp timeAdd, Timestamp timeUpdate) {
+			String memberPassword, Timestamp timeAdd, Timestamp timeUpdate,
+			Integer memberHarAddressId) {
 		this.memberEmail = memberEmail;
 		this.memberBirthday = memberBirthday;
 		this.memberCurrentPicture = memberCurrentPicture;
@@ -64,6 +68,7 @@ public class Member implements java.io.Serializable {
 		this.memberPassword = memberPassword;
 		this.timeAdd = timeAdd;
 		this.timeUpdate = timeUpdate;
+		this.memberHarAddressId = memberHarAddressId;
 	}
 
 	// Property accessors
@@ -193,6 +198,15 @@ public class Member implements java.io.Serializable {
 
 	public void setTimeUpdate(Timestamp timeUpdate) {
 		this.timeUpdate = timeUpdate;
+	}
+
+	@Column(name = "MemberHarAddressId", nullable = false)
+	public Integer getMemberHarAddressId() {
+		return this.memberHarAddressId;
+	}
+
+	public void setMemberHarAddressId(Integer memberHarAddressId) {
+		this.memberHarAddressId = memberHarAddressId;
 	}
 
 }

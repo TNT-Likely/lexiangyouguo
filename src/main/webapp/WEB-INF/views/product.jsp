@@ -17,7 +17,43 @@
 	<link rel="stylesheet" type="text/css" href="/shop/resources/css/module-shop-header.css" media="all">
 	<link rel="stylesheet" type="text/css" href="/shop/resources/css/page-shop-detail-v2.css" media="all">
 	<script type="text/javascript" async="" src="/shop/resources/js/ga.js"></script>
-	<script type="text/javascript" src="/shop/resources/js/lib-txua.js"></script>	 
+	<script type="text/javascript" src="/shop/resources/js/lib-txua.js"></script>	
+	 <script type="text/javascript">
+                MOGUPROFILE = { cdnHost:"//s6.mogucdn.com",appEnv:"production",is_subsite:"0",push_serviceHost:"221.228.199.45:117.121.133.44:80",push_ajaxServiceHost:"http://m1.mogujie.com:80",push_ajaxSericeBakHost:"http://221.228.199.50:80",push_token:"",isNewIMShow:"true",logString:"eyJTRVJWRVIiOnsiUVVFUllfU1RSSU5HIjoia29oYW5hX3VyaT1kZXRhaWxcLzE2b2R3MGcmdHJhY2VpZD1ib29rXzF2a2Rkb2xhejdyNCZjcGFyYW09IiwiUkVRVUVTVF9NRVRIT0QiOiJHRVQiLCJDT05URU5UX1RZUEUiOiIiLCJDT05URU5UX0xFTkdUSCI6IiIsIlJFUVVFU1RfVVJJIjoiXC9kZXRhaWxcLzE2b2R3MGc/dHJhY2VpZD1ib29rXzF2a2Rkb2xhejdyNCZjcGFyYW09IiwiU0VSVkVSX1BST1RPQ09MIjoiSFRUUFwvMS4xIiwiUkVNT1RFX0FERFIiOiIxMC4xMS41LjE2MiIsIlJFTU9URV9QT1JUIjoiMzE3MzEiLCJTRVJWRVJfQUREUiI6IjEwLjExLjMuNjAiLCJTRVJWRVJfUE9SVCI6IjgwIiwiU0VSVkVSX05BTUUiOiJzaG9wLm1vZ3VqaWUuY29tIiwiUkVESVJFQ1RfU1RBVFVTIjoiMjAwIiwiQVBQTElDQVRJT05fRU5WIjoicHJvZHVjdGlvbiIsIk1PR1VfRURHRSI6IiIsIkhUVFBfSE9TVCI6InNob3AubW9ndWppZS5jb20iLCJIVFRQX1hfUkVBTF9JUCI6IjIyMC4xNzkuMTI0LjE4MiIsIkhUVFBfWF9GT1JXQVJERURfRk9SIjoiMjIwLjE3OS4xMjQuMTgyIiwiSFRUUF9VU0VSX0FHRU5UIjoiTW96aWxsYVwvNS4wIChXaW5kb3dzIE5UIDYuMTsgcnY6MzQuMCkgR2Vja29cLzIwMTAwMTAxIEZpcmVmb3hcLzM0LjAiLCJIVFRQX0FDQ0VQVCI6InRleHRcL2h0bWwsYXBwbGljYXRpb25cL3hodG1sK3htbCxhcHBsaWNhdGlvblwveG1sO3E9MC45LCpcLyo7cT0wLjgiLCJIVFRQX0FDQ0VQVF9MQU5HVUFHRSI6InpoLWNuLHpoO3E9MC44LGVuLXVzO3E9MC41LGVuO3E9MC4zIiwiSFRUUF9BQ0NFUFRfRU5DT0RJTkciOiJnemlwLCBkZWZsYXRlIiwiSFRUUF9SRUZFUkVSIjoiaHR0cDpcL1wvd3d3Lm1vZ3VqaWUuY29tXC9ib29rXC9zaG9lc1wvMTYzNDg/ZklkPTE2b2R3MGcmZj16bngyMDE1MDExMHRyZW5kMnllbHUiLCJIVFRQX0NPT0tJRSI6Il9fbWdqdXVpZD0xNjE1YzYyMS1mMjM2LTBkM2EtNTBlNy00Y2ZjZGMwMjViM2Q7IF9fdXRtYT0yNDI1NDIxMTAuMTMwMjcyMTU3Ny4xNDE5OTMwNTMwLjE0MjA4NTU1MzcuMTQyMDg1OTg3MS44OyBfX3V0bXo9MjQyNTQyMTEwLjE0MjA4NTU1MzcuNy40LnV0bWNzcj1iYWlkdXx1dG1jY249KG9yZ2FuaWMpfHV0bWNtZD1vcmdhbmljfHV0bWN0cj0lRTglOTglOTElRTglOEYlODclRTglQTElOTc7IEhtX2x2dF8wYjA3YmQ0M2UzMjJkMzVlZTUwZmMzYjY4YjdhNzBiYT0xNDE5OTMwNTM2LDE0MjAwMzIzNjI7IGZyb21fc2l0ZT13d3cuYmFpZHUuY29tJTVFOyBfX2Nwcz0zLTEybTd1dnctd2ViLTE0MjA4MTM0NTQtMS0tLTAtMDsgX19jcHN1aWQ9MTJtN3V2dzsgX19jcHNfdW5pb249NzkxMjUyMzQtMTAxNzQ5OyBfX21vZ3VqaWU9dkptSkFWb2ElMkJVR1pqbkZvZE1XJTJCbWtkJTJGWFhIOUpqVyUyRmlJJTJCOVF1QjZ5a2ZVd0NKQyUyRkd6VjglMkZrbnViSVFrMGZFNDlaRFRNbzFvanAlMkJoMFE0c0NrQ3dnJTNEJTNEOyBfX3V0bWM9MjQyNTQyMTEwOyBsb2NhbD02OyBfX21namNwY3BhZ2U9MTsgX191dG1iPTI0MjU0MjExMC4xLjEwLjE0MjA4NTk4NzEiLCJSRVFVRVNUX1RJTUVfRkxPQVQiOjE0MjA4NTk4NzkuNjE3MSwiUkVRVUVTVF9USU1FIjoxNDIwODU5ODc5fSwidHJhY2UiOnsicHJlSWQiOiJib29rXzF2a2Rkb2xhejdyNCIsImN1cnJlbnRJZCI6ImRldGFpbF8xdmtkZTJiYzYwaHMifX0=",cartStyle:"1",widescreen:"1",userid:"",avatar:"",isBuyer:"false"  };
+    </script>
+
+     <script type="text/javascript">
+if(is_load_log == undefined || null == is_load_log ) {
+     var is_load_log = true;
+     var log_stat_url_tmp =  "http://log.juangua.com/mogu.js?sfrom=www.baidu.com%255E&method=GET&time=1420859879&uuid=1615c621-f236-0d3a-50e7-4cfcdc025b3d&areaid=5&hahapoint=4b1e543a8c799f68a200f3525078c689" ;
+
+     if (window.innerWidth){
+        var winwidth = window.innerWidth;
+     } else if ((document.body) && (document.body.clientWidth)){
+        var winwidth = document.body.clientWidth;
+     }
+
+     if (document.documentElement  && document.documentElement.clientWidth){
+        var winwidth = document.documentElement.clientWidth;
+     }
+     if(winwidth < 1280 ){ winwidth = 4 }else if(winwidth < 1600 ){ winwidth = 5 }else{ winwidth = 6 }
+     log_stat_url_tmp += '&wwidth='+winwidth;
+
+    if (typeof MOGU !== 'undefined' && typeof MOGU.UCLIENT_INFO !== 'undefined') {
+        log_stat_url_tmp += '&uclient=' + MOGU.UCLIENT_INFO;
+    }
+
+
+
+     var log_stat_refer  =  "%2Fdetail%2F16odw0g%3Ftraceid%3Dbook_1vkddolaz7r4%26cparam%3D" ;
+     var log_stat_rerefer =  "http%3A%2F%2Fwww.mogujie.com%2Fbook%2Fshoes%2F16348%3FfId%3D16odw0g%26f%3Dznx20150110trend2yelu" ;
+     var log_stat_cpsinfo =  "12m7uvw,19";
+     var log_stat_anchor =  encodeURIComponent(location.hash);
+     var log_stat_url = log_stat_url_tmp +"&refer="+log_stat_refer+ "&rerefer="+log_stat_rerefer+"&anchor="+log_stat_anchor + "&cpsinfo=" + log_stat_cpsinfo;
+}
+</script>
+
+    <script>window.__trace__headendt = +new Date;</script> 
 </head>
 <body>
 	<div id="header">
@@ -52,6 +88,17 @@
 					</li>
 				</ul>
 			</div>
+			<script type="text/javascript">
+    /* 适配浏览器窗口大小 */
+    ;(function(){
+        var viewWidth = $(window).width(); 
+        if(viewWidth < 1212){ 
+            $('body').addClass('media_screen_960');
+        } else {
+            $('body').removeClass('media_screen_960').addClass('media_screen_1200');
+        } 
+    })(jQuery);
+</script>
 			<ul id="setting_menu" class="s_m">
 				<li class="hs_posr"><a href="personalhomepage">个人动态</a>
 				</li>

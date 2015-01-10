@@ -8,120 +8,100 @@ import static javax.persistence.GenerationType.IDENTITY;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-
 /**
  * Gift entity. @author MyEclipse Persistence Tools
  */
 @Entity
-@Table(name="gift"
-    ,catalog="lxyg"
-)
+@Table(name = "gift", catalog = "lxyg")
+public class Gift implements java.io.Serializable {
 
-public class Gift  implements java.io.Serializable {
+	// Fields
 
+	private Integer id;
+	private String giftName;
+	private Integer occId;
+	private Timestamp timeAdd;
+	private Timestamp timeUpdate;
+	private Integer typId;
 
-    // Fields    
+	// Constructors
 
-     private Integer id;
-     private Integer occId;
-     private Integer typId;
-     private Timestamp timeAdd;
-     private Timestamp timeUpdate;
-     private String giftName;
-
-
-    // Constructors
-
-    /** default constructor */
-    public Gift() {
-    }
+	/** default constructor */
+	public Gift() {
+	}
 
 	/** minimal constructor */
-    public Gift(Timestamp timeAdd, Timestamp timeUpdate, String giftName) {
-        this.timeAdd = timeAdd;
-        this.timeUpdate = timeUpdate;
-        this.giftName = giftName;
-    }
-    
-    /** full constructor */
-    public Gift(Integer occId, Integer typId, Timestamp timeAdd, Timestamp timeUpdate, String giftName) {
-        this.occId = occId;
-        this.typId = typId;
-        this.timeAdd = timeAdd;
-        this.timeUpdate = timeUpdate;
-        this.giftName = giftName;
-    }
+	public Gift(String giftName, Timestamp timeAdd, Timestamp timeUpdate) {
+		this.giftName = giftName;
+		this.timeAdd = timeAdd;
+		this.timeUpdate = timeUpdate;
+	}
 
-   
-    // Property accessors
-    @Id @GeneratedValue(strategy=IDENTITY)
-    
-    @Column(name="Id", unique=true, nullable=false)
+	/** full constructor */
+	public Gift(String giftName, Integer occId, Timestamp timeAdd,
+			Timestamp timeUpdate, Integer typId) {
+		this.giftName = giftName;
+		this.occId = occId;
+		this.timeAdd = timeAdd;
+		this.timeUpdate = timeUpdate;
+		this.typId = typId;
+	}
 
-    public Integer getId() {
-        return this.id;
-    }
-    
-    public void setId(Integer id) {
-        this.id = id;
-    }
-    
-    @Column(name="Occ_Id")
+	// Property accessors
+	@Id
+	@GeneratedValue(strategy = IDENTITY)
+	@Column(name = "Id", unique = true, nullable = false)
+	public Integer getId() {
+		return this.id;
+	}
 
-    public Integer getOccId() {
-        return this.occId;
-    }
-    
-    public void setOccId(Integer occId) {
-        this.occId = occId;
-    }
-    
-    @Column(name="Typ_Id")
+	public void setId(Integer id) {
+		this.id = id;
+	}
 
-    public Integer getTypId() {
-        return this.typId;
-    }
-    
-    public void setTypId(Integer typId) {
-        this.typId = typId;
-    }
-    
-    @Column(name="TimeAdd", nullable=false, length=19)
+	@Column(name = "GiftName", nullable = false)
+	public String getGiftName() {
+		return this.giftName;
+	}
 
-    public Timestamp getTimeAdd() {
-        return this.timeAdd;
-    }
-    
-    public void setTimeAdd(Timestamp timeAdd) {
-        this.timeAdd = timeAdd;
-    }
-    
-    @Column(name="TimeUpdate", nullable=false, length=19)
+	public void setGiftName(String giftName) {
+		this.giftName = giftName;
+	}
 
-    public Timestamp getTimeUpdate() {
-        return this.timeUpdate;
-    }
-    
-    public void setTimeUpdate(Timestamp timeUpdate) {
-        this.timeUpdate = timeUpdate;
-    }
-    
-    @Column(name="GiftName", nullable=false, length=1024)
+	@Column(name = "Occ_Id")
+	public Integer getOccId() {
+		return this.occId;
+	}
 
-    public String getGiftName() {
-        return this.giftName;
-    }
-    
-    public void setGiftName(String giftName) {
-        this.giftName = giftName;
-    }
-   
+	public void setOccId(Integer occId) {
+		this.occId = occId;
+	}
 
+	@Column(name = "TimeAdd", nullable = false, length = 19)
+	public Timestamp getTimeAdd() {
+		return this.timeAdd;
+	}
 
+	public void setTimeAdd(Timestamp timeAdd) {
+		this.timeAdd = timeAdd;
+	}
 
+	@Column(name = "TimeUpdate", nullable = false, length = 19)
+	public Timestamp getTimeUpdate() {
+		return this.timeUpdate;
+	}
 
+	public void setTimeUpdate(Timestamp timeUpdate) {
+		this.timeUpdate = timeUpdate;
+	}
 
+	@Column(name = "Typ_Id")
+	public Integer getTypId() {
+		return this.typId;
+	}
 
-
+	public void setTypId(Integer typId) {
+		this.typId = typId;
+	}
 
 }

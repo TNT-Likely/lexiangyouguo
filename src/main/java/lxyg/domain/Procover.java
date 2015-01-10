@@ -9,41 +9,39 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 /**
- * Rolemanagement entity. @author MyEclipse Persistence Tools
+ * Procover entity. @author MyEclipse Persistence Tools
  */
 @Entity
-@Table(name = "rolemanagement", catalog = "lxyg")
-public class Rolemanagement implements java.io.Serializable {
+@Table(name = "procover", catalog = "lxyg")
+public class Procover implements java.io.Serializable {
 
 	// Fields
 
 	private Integer id;
+	private Integer proId;
+	private String proCovUrl;
 	private Timestamp timeAdd;
 	private Timestamp timeUpdate;
-	private String roleName;
-	private String roleDescription;
 
 	// Constructors
 
 	/** default constructor */
-	public Rolemanagement() {
+	public Procover() {
 	}
 
 	/** minimal constructor */
-	public Rolemanagement(Timestamp timeAdd, Timestamp timeUpdate,
-			String roleName) {
+	public Procover(Timestamp timeAdd, Timestamp timeUpdate) {
 		this.timeAdd = timeAdd;
 		this.timeUpdate = timeUpdate;
-		this.roleName = roleName;
 	}
 
 	/** full constructor */
-	public Rolemanagement(Timestamp timeAdd, Timestamp timeUpdate,
-			String roleName, String roleDescription) {
+	public Procover(Integer proId, String proCovUrl, Timestamp timeAdd,
+			Timestamp timeUpdate) {
+		this.proId = proId;
+		this.proCovUrl = proCovUrl;
 		this.timeAdd = timeAdd;
 		this.timeUpdate = timeUpdate;
-		this.roleName = roleName;
-		this.roleDescription = roleDescription;
 	}
 
 	// Property accessors
@@ -56,6 +54,24 @@ public class Rolemanagement implements java.io.Serializable {
 
 	public void setId(Integer id) {
 		this.id = id;
+	}
+
+	@Column(name = "ProId")
+	public Integer getProId() {
+		return this.proId;
+	}
+
+	public void setProId(Integer proId) {
+		this.proId = proId;
+	}
+
+	@Column(name = "ProCovUrl")
+	public String getProCovUrl() {
+		return this.proCovUrl;
+	}
+
+	public void setProCovUrl(String proCovUrl) {
+		this.proCovUrl = proCovUrl;
 	}
 
 	@Column(name = "TimeAdd", nullable = false, length = 19)
@@ -74,24 +90,6 @@ public class Rolemanagement implements java.io.Serializable {
 
 	public void setTimeUpdate(Timestamp timeUpdate) {
 		this.timeUpdate = timeUpdate;
-	}
-
-	@Column(name = "RoleName", nullable = false, length = 1024)
-	public String getRoleName() {
-		return this.roleName;
-	}
-
-	public void setRoleName(String roleName) {
-		this.roleName = roleName;
-	}
-
-	@Column(name = "RoleDescription", length = 1024)
-	public String getRoleDescription() {
-		return this.roleDescription;
-	}
-
-	public void setRoleDescription(String roleDescription) {
-		this.roleDescription = roleDescription;
 	}
 
 }

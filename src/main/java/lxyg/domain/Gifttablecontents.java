@@ -1,52 +1,54 @@
 package lxyg.domain;
 
 import java.sql.Timestamp;
+import java.util.HashSet;
+import java.util.Set;
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import static javax.persistence.GenerationType.IDENTITY;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 /**
- * Displaytype entity. @author MyEclipse Persistence Tools
+ * Gifttablecontents entity. @author MyEclipse Persistence Tools
  */
 @Entity
-@Table(name = "displaytype", catalog = "lxyg")
-public class Displaytype implements java.io.Serializable {
+@Table(name = "gifttablecontents", catalog = "lxyg")
+public class Gifttablecontents implements java.io.Serializable {
 
 	// Fields
 
 	private Integer id;
-	private Link link;
 	private Timestamp timeAdd;
 	private Timestamp timeUpdate;
-	private String displayLogoType;
-	private String displayTextType;
+	private Integer goodsId;
+	private String giftId;
+	private Set<Gifttable> gifttables = new HashSet<Gifttable>(0);
 
 	// Constructors
 
 	/** default constructor */
-	public Displaytype() {
+	public Gifttablecontents() {
 	}
 
 	/** minimal constructor */
-	public Displaytype(Timestamp timeAdd, Timestamp timeUpdate) {
+	public Gifttablecontents(Timestamp timeAdd, Timestamp timeUpdate) {
 		this.timeAdd = timeAdd;
 		this.timeUpdate = timeUpdate;
 	}
 
 	/** full constructor */
-	public Displaytype(Link link, Timestamp timeAdd, Timestamp timeUpdate,
-			String displayLogoType, String displayTextType) {
-		this.link = link;
+	public Gifttablecontents(Timestamp timeAdd, Timestamp timeUpdate,
+			Integer goodsId, String giftId, Set<Gifttable> gifttables) {
 		this.timeAdd = timeAdd;
 		this.timeUpdate = timeUpdate;
-		this.displayLogoType = displayLogoType;
-		this.displayTextType = displayTextType;
+		this.goodsId = goodsId;
+		this.giftId = giftId;
+		this.gifttables = gifttables;
 	}
 
 	// Property accessors
@@ -59,16 +61,6 @@ public class Displaytype implements java.io.Serializable {
 
 	public void setId(Integer id) {
 		this.id = id;
-	}
-
-	@ManyToOne(fetch = FetchType.LAZY)
-	@JoinColumn(name = "Lin_Id")
-	public Link getLink() {
-		return this.link;
-	}
-
-	public void setLink(Link link) {
-		this.link = link;
 	}
 
 	@Column(name = "TimeAdd", nullable = false, length = 19)
@@ -89,22 +81,31 @@ public class Displaytype implements java.io.Serializable {
 		this.timeUpdate = timeUpdate;
 	}
 
-	@Column(name = "Display_LogoType", length = 1024)
-	public String getDisplayLogoType() {
-		return this.displayLogoType;
+	@Column(name = "GoodsId")
+	public Integer getGoodsId() {
+		return this.goodsId;
 	}
 
-	public void setDisplayLogoType(String displayLogoType) {
-		this.displayLogoType = displayLogoType;
+	public void setGoodsId(Integer goodsId) {
+		this.goodsId = goodsId;
 	}
 
-	@Column(name = "Display_TextType", length = 1024)
-	public String getDisplayTextType() {
-		return this.displayTextType;
+	@Column(name = "GiftId", length = 10)
+	public String getGiftId() {
+		return this.giftId;
 	}
 
-	public void setDisplayTextType(String displayTextType) {
-		this.displayTextType = displayTextType;
+	public void setGiftId(String giftId) {
+		this.giftId = giftId;
+	}
+
+	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "gifttablecontents")
+	public Set<Gifttable> getGifttables() {
+		return this.gifttables;
+	}
+
+	public void setGifttables(Set<Gifttable> gifttables) {
+		this.gifttables = gifttables;
 	}
 
 }

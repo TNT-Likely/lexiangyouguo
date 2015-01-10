@@ -38,7 +38,7 @@
 								<li>
 									<label class="label_title">手机/邮箱：</label>
 									<div class="inputbox">
-										<input type="text" name="Email" data-defultmsg="推荐使用手机注册，购物更安全" data-type="useraccount" data-errormsg="请填写正确的手机或邮箱" data-ajaxurl="/registermg/mobilemail" class="normalText display_u js_text_input">
+										<input type="text" name="MemberEmail" data-defultmsg="推荐使用手机注册，购物更安全" data-type="useraccount" data-errormsg="请填写正确的手机或邮箱" data-ajaxurl="/registermg/mobilemail" class="normalText display_u js_text_input">
 										<input type="hidden" name="register_type" />
 									</div>
 								</li>
@@ -51,7 +51,7 @@
 								<li>
 									<label class="label_title">创建密码：</label>
 									<div class="inputbox">
-										<input type="password" name="Password" def-v="6-20个字符，可以是数字、字母和符号" data-defultmsg="6-20个字母、数字或者符号" data-type="password" id="js_passbox" data-errormsg="密码需要是字母或数字，最小6位，最大20位" class="normalText display_u js_text_input">
+										<input type="password" name="MemberPassword" def-v="6-20个字符，可以是数字、字母和符号" data-defultmsg="6-20个字母、数字或者符号" data-type="password" id="js_passbox" data-errormsg="密码需要是字母或数字，最小6位，最大20位" class="normalText display_u js_text_input">
 									</div>
 								</li>
 								<li>

@@ -45,7 +45,7 @@
 									</div>
 									<div class="lg_item lg_pass">
 										<b class="lg_icon"></b>
-										<input type="password" maxlength="32" class="text r3" name="Password" value="" style="border-color:#CFCFCF; color:#999;">
+										<input type="password" maxlength="32" class="text r3" name="MemberPassword" value="" style="border-color:#CFCFCF; color:#999;">
 									</div>
 								</div>
 								<div class="mod_box eb_mod_box" data-isshow="0">

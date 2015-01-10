@@ -1,7 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ page import="lxyg.domain.*" %>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+ <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 	    <meta charset="UTF-8" />
@@ -24,117 +23,37 @@
 		<script src="/shop/resources/js/ga.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript" src="/shop/resources/js/jquery-migrate-1.2.1.js"></script>
 		<script type="text/javascript" src="/shop/resources/js/pkg-pc-base.js"></script>
+ 
 </head>
+ 
 <body>
-<div class="header_2014">
-			<div class="wrap clearfix">
-				<ul class="header_top">
-<%
-	Member info=(Member)request.getSession().getAttribute("memberInfo");
-	if(info !=null){
-%>
-		<li class="s1 has_icon user_meta">
-						<a href="personalhomepage?mid=<%=info.getId() %>">
-							<%=info.getMemberName() %></a>
-						<i class="icon_delta"></i>
-						<ol class="ext_mode">
-							<li class="s2"><a href="personalhomepage?mid=<%=info.getId() %>">个人设置</a>
-							</li>
-							<li class="s2"><a href="binding?mid=<%=info.getId() %>">账号绑定</a>
-							</li>
-							<li class="s2"><a href="login">退出</a>
-							</li>
-						</ol>
-					</li>
-					<li class="s1 has_icon has_line user_fav">
-						<a href="index">喜欢</a>
-						<ul class="ext_mode">
-							<li class="s2"><a href="index">关注的店铺</a>
-							</li>
-							<li class="s2"><a href="index">浏览记录</a>
-							</li>
-						</ul>
-					</li>
-					<li class="s1 has_icon message_center has_line">
-						<a href="index">消息<span class="m_num"></span></a>
-						<i class="icon_delta"></i>
-					</li>
-<% }else{%>
-<li class="s1"><a href="register">注册</a></li>
-<li class="s1"><a href="login">登录</a></li>
-<li class="s1 has_line"><a href="login">QQ登录</a></li>
-<li class="s1"><a href="login">微信登录</a></li>
-<li class="s1"><a href="login">微博登录</a></li>
-<%}%>
-					<li class="s1 has_line has_icon top_app">
-						<a>手机乐享优果</a>
-						<ol class="ext_mode">
-							<li class="s2">
-								<img src=" " alt="扫描下载客户端">
-							</li>
-						</ol>
-					</li>
-					<li class="s1 has_line custom_item">
-						<a href="customerservice" target="_blank">帮助中心</a>
-					</li>
-				</ul>
-				<div class="header_mid clearfix">
-					<a href="index" class="logo" title="乐享优果首页">乐享优果|www.lexiangyouguo.com</a>
-					<div class="top_nav_search" id="nav_search_form">
-						<div class="selectbox" data-v="1">
-							<span class="selected">搜商品</span>
-							<ol>
-								<li class="current" data-index="bao"><a href="index">商品</a>
-								</li>
-								<li data-index="shop"><a href="index">店铺</a>
-								</li>
-							</ol>
-						</div>
-						<form target="_blank" action="/search/" method="get" id="top_nav_form">
-							<input type="text" data-tel="search_book" name="q" class="ts_txt fl" data-def="兔毛" value="软妹最爱温暖“兔毛”毛衫" autocomplete="off" def-v="软妹最爱温暖“兔毛”毛衫" />
-							<input type="submit" value="搜  索" class="ts_btn" />
-							<input type="hidden" name="t" value="bao" id="select_type" />
-						</form>
-						<div class="top_search_hint"></div>
-					</div>
-					<div class="mid_fr">
-						<a class="nav_my_order" href="order" target="_blank">我的订单</a>
-						<div class="shopping_cart_v2">
-							<a class="cart_info_wrap" target="_blank" href="shopping">
-								<span class="cart_info">购物车<b>0</b>件</span>
-								<b class="icon_delta"></b>
-							</a>
-							<span class="shopping_cart_loading"></span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="header_nav">
-			<div class="wrap">
-				<div class="nav_list_wrap clearfix">
-					<ul class="nav_list">
-						<li><a href="index">首页</a>
-						</li>
-						<li><a href="buyersrecommend">产地直销</a>
-						</li>
-						<li><a href="buyersrecommend">每日鲜果</a>
-						</li>
-						<li class="daren">
-							<a href="buyersrecommend">果V一刻</a>
-						</li>
-						<li class="buyer"><a class="on" href="buyersrecommend">每日特价</a>
-						</li>
-						<li><a href="buyersrecommend">礼品特区</a>
-						</li>
-						<li><a href="buyersrecommend">团购</a>
-						</li>
-						<li><a class="no_bold " href="buyersrecommend">社区</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
+  
+ <jsp:include page="layout/Motherboard.jsp"></jsp:include>
+  <div class="header_nav">
+<div class="wrap">
+<div class="nav_list_wrap clearfix">
+<ul class="nav_list">
+<li><a class="on" href="index">首页</a>
+</li>
+<li><a href="buyersrecommend">产地直销</a>
+</li>
+<li><a href="buyersrecommend">每日鲜果</a>
+</li>
+<li class="daren">
+<a href="buyersrecommend">果V一刻</a>
+</li>
+<li class="buyer"><a href="buyersrecommend">每日特价</a>
+</li>
+<li><a href="buyersrecommend">礼品特区</a>
+</li>
+<li><a href="buyersrecommend">团购</a>
+</li>
+<li><a class="no_bold " href="buyersrecommend">社区</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
 		<div id="body_wrap">
 			<div class="mgj_primary" id="j_mgj_primary">
 				<div class="primary_shadow"></div>
@@ -2140,12 +2059,13 @@
 			<a target="_blank" href="customerservice" class="ext_module fb_entry">反馈入口</a>
 			<a class="ext_module go_top" href=" ">回到顶部</a>
 		</div>
+		<script type="text/javascript" src="/shop/resources/js/page-xchf-tip.js"></script>
 		<script type="text/javascript" src="/shop/resources/js/mga.js"></script>
 		<script type="text/javascript" src="/shop/resources/js/pkg-navigation.js"></script>
 		<script type="text/javascript" src="/shop/resources/js/md5.js"></script>
 		<script type="text/javascript" src="/shop/resources/js/module-login-dialog.js"></script>
 		<script type="text/javascript" src="/shop/resources/js/pkg-mgj-index.js"></script>
 		<script type="text/javascript" src="/shop/resources/js/page-active-915-entry.js"></script>
-
+		 
 </body>
 </html>
