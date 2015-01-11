@@ -1,11 +1,16 @@
 package lxyg.domain;
 
 import java.sql.Timestamp;
+import java.util.HashSet;
+import java.util.Set;
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import static javax.persistence.GenerationType.IDENTITY;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 /**
@@ -31,7 +36,11 @@ public class Member implements java.io.Serializable {
 	private String memberPassword;
 	private Timestamp timeAdd;
 	private Timestamp timeUpdate;
-	private Integer memberHarAddressId;
+	private Set<Order> orders = new HashSet<Order>(0);
+	private Set<Procomment> procomments = new HashSet<Procomment>(0);
+	private Set<Cart> carts = new HashSet<Cart>(0);
+	private Set<Membercollectiontable> membercollectiontables = new HashSet<Membercollectiontable>(
+			0);
 
 	// Constructors
 
@@ -40,11 +49,9 @@ public class Member implements java.io.Serializable {
 	}
 
 	/** minimal constructor */
-	public Member(String memberName, String memberPassword,
-			Integer memberHarAddressId) {
+	public Member(String memberName, String memberPassword) {
 		this.memberName = memberName;
 		this.memberPassword = memberPassword;
-		this.memberHarAddressId = memberHarAddressId;
 	}
 
 	/** full constructor */
@@ -54,7 +61,8 @@ public class Member implements java.io.Serializable {
 			Timestamp memberRegisteredTime, String memberResidentialAddress,
 			Boolean memberSex, Boolean memberWhetherAuthenticate,
 			String memberPassword, Timestamp timeAdd, Timestamp timeUpdate,
-			Integer memberHarAddressId) {
+			Set<Order> orders, Set<Procomment> procomments, Set<Cart> carts,
+			Set<Membercollectiontable> membercollectiontables) {
 		this.memberEmail = memberEmail;
 		this.memberBirthday = memberBirthday;
 		this.memberCurrentPicture = memberCurrentPicture;
@@ -68,7 +76,10 @@ public class Member implements java.io.Serializable {
 		this.memberPassword = memberPassword;
 		this.timeAdd = timeAdd;
 		this.timeUpdate = timeUpdate;
-		this.memberHarAddressId = memberHarAddressId;
+		this.orders = orders;
+		this.procomments = procomments;
+		this.carts = carts;
+		this.membercollectiontables = membercollectiontables;
 	}
 
 	// Property accessors
@@ -200,13 +211,41 @@ public class Member implements java.io.Serializable {
 		this.timeUpdate = timeUpdate;
 	}
 
-	@Column(name = "MemberHarAddressId", nullable = false)
-	public Integer getMemberHarAddressId() {
-		return this.memberHarAddressId;
+	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "member")
+	public Set<Order> getOrders() {
+		return this.orders;
 	}
 
-	public void setMemberHarAddressId(Integer memberHarAddressId) {
-		this.memberHarAddressId = memberHarAddressId;
+	public void setOrders(Set<Order> orders) {
+		this.orders = orders;
+	}
+
+	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "member")
+	public Set<Procomment> getProcomments() {
+		return this.procomments;
+	}
+
+	public void setProcomments(Set<Procomment> procomments) {
+		this.procomments = procomments;
+	}
+
+	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "member")
+	public Set<Cart> getCarts() {
+		return this.carts;
+	}
+
+	public void setCarts(Set<Cart> carts) {
+		this.carts = carts;
+	}
+
+	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "member")
+	public Set<Membercollectiontable> getMembercollectiontables() {
+		return this.membercollectiontables;
+	}
+
+	public void setMembercollectiontables(
+			Set<Membercollectiontable> membercollectiontables) {
+		this.membercollectiontables = membercollectiontables;
 	}
 
 }

@@ -25,7 +25,7 @@ public class Gifttablecontents implements java.io.Serializable {
 	private Integer id;
 	private Timestamp timeAdd;
 	private Timestamp timeUpdate;
-	private Integer goodsId;
+	private Integer proId;
 	private String giftId;
 	private Set<Gifttable> gifttables = new HashSet<Gifttable>(0);
 
@@ -43,10 +43,10 @@ public class Gifttablecontents implements java.io.Serializable {
 
 	/** full constructor */
 	public Gifttablecontents(Timestamp timeAdd, Timestamp timeUpdate,
-			Integer goodsId, String giftId, Set<Gifttable> gifttables) {
+			Integer proId, String giftId, Set<Gifttable> gifttables) {
 		this.timeAdd = timeAdd;
 		this.timeUpdate = timeUpdate;
-		this.goodsId = goodsId;
+		this.proId = proId;
 		this.giftId = giftId;
 		this.gifttables = gifttables;
 	}
@@ -81,13 +81,13 @@ public class Gifttablecontents implements java.io.Serializable {
 		this.timeUpdate = timeUpdate;
 	}
 
-	@Column(name = "GoodsId")
-	public Integer getGoodsId() {
-		return this.goodsId;
+	@Column(name = "ProId")
+	public Integer getProId() {
+		return this.proId;
 	}
 
-	public void setGoodsId(Integer goodsId) {
-		this.goodsId = goodsId;
+	public void setProId(Integer proId) {
+		this.proId = proId;
 	}
 
 	@Column(name = "GiftId", length = 10)

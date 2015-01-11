@@ -1,6 +1,9 @@
 package lxyg.domain;
 
 import java.sql.Timestamp;
+import java.util.HashSet;
+import java.util.Set;
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -9,6 +12,7 @@ import static javax.persistence.GenerationType.IDENTITY;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 /**
@@ -30,6 +34,7 @@ public class Occasiontable implements java.io.Serializable {
 	private String occasionVisitPatient;
 	private String occasionCongratulationsToHospital;
 	private String occasionFamilyOrder;
+	private Set<Gifttable> gifttables = new HashSet<Gifttable>(0);
 
 	// Constructors
 
@@ -48,7 +53,8 @@ public class Occasiontable implements java.io.Serializable {
 			Timestamp timeUpdate, String occasionVisitRelatives,
 			String occasionVisitFriends, String occasionGiftGiving,
 			String occasionVisitPatient,
-			String occasionCongratulationsToHospital, String occasionFamilyOrder) {
+			String occasionCongratulationsToHospital,
+			String occasionFamilyOrder, Set<Gifttable> gifttables) {
 		this.gifttable = gifttable;
 		this.timeAdd = timeAdd;
 		this.timeUpdate = timeUpdate;
@@ -58,6 +64,7 @@ public class Occasiontable implements java.io.Serializable {
 		this.occasionVisitPatient = occasionVisitPatient;
 		this.occasionCongratulationsToHospital = occasionCongratulationsToHospital;
 		this.occasionFamilyOrder = occasionFamilyOrder;
+		this.gifttables = gifttables;
 	}
 
 	// Property accessors
@@ -153,6 +160,15 @@ public class Occasiontable implements java.io.Serializable {
 
 	public void setOccasionFamilyOrder(String occasionFamilyOrder) {
 		this.occasionFamilyOrder = occasionFamilyOrder;
+	}
+
+	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "occasiontable")
+	public Set<Gifttable> getGifttables() {
+		return this.gifttables;
+	}
+
+	public void setGifttables(Set<Gifttable> gifttables) {
+		this.gifttables = gifttables;
 	}
 
 }

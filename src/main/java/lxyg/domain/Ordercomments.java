@@ -3,9 +3,12 @@ package lxyg.domain;
 import java.sql.Timestamp;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import static javax.persistence.GenerationType.IDENTITY;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 /**
@@ -18,9 +21,9 @@ public class Ordercomments implements java.io.Serializable {
 	// Fields
 
 	private Integer id;
+	private Order order;
 	private Timestamp timeAdd;
 	private Timestamp timeUpdate;
-	private Integer orderId;
 	private String orderComType;
 	private String orderComContent;
 	private Integer orderComDescriptionConsistent;
@@ -35,22 +38,21 @@ public class Ordercomments implements java.io.Serializable {
 	}
 
 	/** minimal constructor */
-	public Ordercomments(Timestamp timeAdd, Timestamp timeUpdate,
-			Integer orderId) {
+	public Ordercomments(Order order, Timestamp timeAdd, Timestamp timeUpdate) {
+		this.order = order;
 		this.timeAdd = timeAdd;
 		this.timeUpdate = timeUpdate;
-		this.orderId = orderId;
 	}
 
 	/** full constructor */
-	public Ordercomments(Timestamp timeAdd, Timestamp timeUpdate,
-			Integer orderId, String orderComType, String orderComContent,
+	public Ordercomments(Order order, Timestamp timeAdd, Timestamp timeUpdate,
+			String orderComType, String orderComContent,
 			Integer orderComDescriptionConsistent,
 			Integer orderComDeliverySpeed, Integer orderComLogisticsSpeed,
 			Integer orderComCourierServiceAttitude) {
+		this.order = order;
 		this.timeAdd = timeAdd;
 		this.timeUpdate = timeUpdate;
-		this.orderId = orderId;
 		this.orderComType = orderComType;
 		this.orderComContent = orderComContent;
 		this.orderComDescriptionConsistent = orderComDescriptionConsistent;
@@ -71,6 +73,16 @@ public class Ordercomments implements java.io.Serializable {
 		this.id = id;
 	}
 
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "OrderId", nullable = false)
+	public Order getOrder() {
+		return this.order;
+	}
+
+	public void setOrder(Order order) {
+		this.order = order;
+	}
+
 	@Column(name = "TimeAdd", nullable = false, length = 19)
 	public Timestamp getTimeAdd() {
 		return this.timeAdd;
@@ -87,15 +99,6 @@ public class Ordercomments implements java.io.Serializable {
 
 	public void setTimeUpdate(Timestamp timeUpdate) {
 		this.timeUpdate = timeUpdate;
-	}
-
-	@Column(name = "OrderId", nullable = false)
-	public Integer getOrderId() {
-		return this.orderId;
-	}
-
-	public void setOrderId(Integer orderId) {
-		this.orderId = orderId;
 	}
 
 	@Column(name = "OrderCom_Type", length = 1024)

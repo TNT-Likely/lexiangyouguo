@@ -23,7 +23,7 @@ public class Emailserver implements java.io.Serializable {
 	private String esEmailServer;
 	private String esSendMailService;
 	private String esAccount;
-	private String password;
+	private String esPassword;
 	private String esReplyEmaiAddressl;
 	private String esEmailAddress;
 
@@ -42,13 +42,13 @@ public class Emailserver implements java.io.Serializable {
 	/** full constructor */
 	public Emailserver(Timestamp timeAdd, Timestamp timeUpdate,
 			String esEmailServer, String esSendMailService, String esAccount,
-			String password, String esReplyEmaiAddressl, String esEmailAddress) {
+			String esPassword, String esReplyEmaiAddressl, String esEmailAddress) {
 		this.timeAdd = timeAdd;
 		this.timeUpdate = timeUpdate;
 		this.esEmailServer = esEmailServer;
 		this.esSendMailService = esSendMailService;
 		this.esAccount = esAccount;
-		this.password = password;
+		this.esPassword = esPassword;
 		this.esReplyEmaiAddressl = esReplyEmaiAddressl;
 		this.esEmailAddress = esEmailAddress;
 	}
@@ -110,13 +110,13 @@ public class Emailserver implements java.io.Serializable {
 		this.esAccount = esAccount;
 	}
 
-	@Column(name = "Password", length = 1024)
-	public String getPassword() {
-		return this.password;
+	@Column(name = "ES_Password", length = 1024)
+	public String getEsPassword() {
+		return this.esPassword;
 	}
 
-	public void setPassword(String password) {
-		this.password = password;
+	public void setEsPassword(String esPassword) {
+		this.esPassword = esPassword;
 	}
 
 	@Column(name = "ES_ReplyEmaiAddressl", length = 1024)

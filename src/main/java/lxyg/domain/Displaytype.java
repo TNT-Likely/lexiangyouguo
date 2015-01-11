@@ -1,6 +1,9 @@
 package lxyg.domain;
 
 import java.sql.Timestamp;
+import java.util.HashSet;
+import java.util.Set;
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -9,6 +12,7 @@ import static javax.persistence.GenerationType.IDENTITY;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 /**
@@ -26,6 +30,7 @@ public class Displaytype implements java.io.Serializable {
 	private Timestamp timeUpdate;
 	private String displayLogoType;
 	private String displayTextType;
+	private Set<Link> links = new HashSet<Link>(0);
 
 	// Constructors
 
@@ -41,12 +46,13 @@ public class Displaytype implements java.io.Serializable {
 
 	/** full constructor */
 	public Displaytype(Link link, Timestamp timeAdd, Timestamp timeUpdate,
-			String displayLogoType, String displayTextType) {
+			String displayLogoType, String displayTextType, Set<Link> links) {
 		this.link = link;
 		this.timeAdd = timeAdd;
 		this.timeUpdate = timeUpdate;
 		this.displayLogoType = displayLogoType;
 		this.displayTextType = displayTextType;
+		this.links = links;
 	}
 
 	// Property accessors
@@ -105,6 +111,15 @@ public class Displaytype implements java.io.Serializable {
 
 	public void setDisplayTextType(String displayTextType) {
 		this.displayTextType = displayTextType;
+	}
+
+	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "displaytype")
+	public Set<Link> getLinks() {
+		return this.links;
+	}
+
+	public void setLinks(Set<Link> links) {
+		this.links = links;
 	}
 
 }

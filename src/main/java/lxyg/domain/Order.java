@@ -1,11 +1,18 @@
 package lxyg.domain;
 
 import java.sql.Timestamp;
+import java.util.HashSet;
+import java.util.Set;
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import static javax.persistence.GenerationType.IDENTITY;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 /**
@@ -18,15 +25,19 @@ public class Order implements java.io.Serializable {
 	// Fields
 
 	private Integer id;
-	private Integer proId;
+	private Member member;
+	private Product product;
 	private Integer orderNumber;
 	private Timestamp orderTime;
 	private Float orderTotalMoney;
 	private Float orderPayMoney;
-	private Integer memberId;
 	private String orderDescribe;
 	private Timestamp timeAdd;
 	private Timestamp timeUpdate;
+	private Set<Harvestaddresstable> harvestaddresstables = new HashSet<Harvestaddresstable>(
+			0);
+	private Set<Orderstate> orderstates = new HashSet<Orderstate>(0);
+	private Set<Ordercomments> ordercommentses = new HashSet<Ordercomments>(0);
 
 	// Constructors
 
@@ -35,31 +46,36 @@ public class Order implements java.io.Serializable {
 	}
 
 	/** minimal constructor */
-	public Order(Integer proId, Integer orderNumber, Timestamp orderTime,
-			Float orderTotalMoney, Float orderPayMoney, Integer memberId,
+	public Order(Member member, Product product, Integer orderNumber,
+			Timestamp orderTime, Float orderTotalMoney, Float orderPayMoney,
 			Timestamp timeAdd) {
-		this.proId = proId;
+		this.member = member;
+		this.product = product;
 		this.orderNumber = orderNumber;
 		this.orderTime = orderTime;
 		this.orderTotalMoney = orderTotalMoney;
 		this.orderPayMoney = orderPayMoney;
-		this.memberId = memberId;
 		this.timeAdd = timeAdd;
 	}
 
 	/** full constructor */
-	public Order(Integer proId, Integer orderNumber, Timestamp orderTime,
-			Float orderTotalMoney, Float orderPayMoney, Integer memberId,
-			String orderDescribe, Timestamp timeAdd, Timestamp timeUpdate) {
-		this.proId = proId;
+	public Order(Member member, Product product, Integer orderNumber,
+			Timestamp orderTime, Float orderTotalMoney, Float orderPayMoney,
+			String orderDescribe, Timestamp timeAdd, Timestamp timeUpdate,
+			Set<Harvestaddresstable> harvestaddresstables,
+			Set<Orderstate> orderstates, Set<Ordercomments> ordercommentses) {
+		this.member = member;
+		this.product = product;
 		this.orderNumber = orderNumber;
 		this.orderTime = orderTime;
 		this.orderTotalMoney = orderTotalMoney;
 		this.orderPayMoney = orderPayMoney;
-		this.memberId = memberId;
 		this.orderDescribe = orderDescribe;
 		this.timeAdd = timeAdd;
 		this.timeUpdate = timeUpdate;
+		this.harvestaddresstables = harvestaddresstables;
+		this.orderstates = orderstates;
+		this.ordercommentses = ordercommentses;
 	}
 
 	// Property accessors
@@ -74,13 +90,24 @@ public class Order implements java.io.Serializable {
 		this.id = id;
 	}
 
-	@Column(name = "proId", nullable = false)
-	public Integer getProId() {
-		return this.proId;
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "MemberId", nullable = false)
+	public Member getMember() {
+		return this.member;
 	}
 
-	public void setProId(Integer proId) {
-		this.proId = proId;
+	public void setMember(Member member) {
+		this.member = member;
+	}
+
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "proId", nullable = false)
+	public Product getProduct() {
+		return this.product;
+	}
+
+	public void setProduct(Product product) {
+		this.product = product;
 	}
 
 	@Column(name = "OrderNumber", nullable = false)
@@ -119,15 +146,6 @@ public class Order implements java.io.Serializable {
 		this.orderPayMoney = orderPayMoney;
 	}
 
-	@Column(name = "MemberId", nullable = false)
-	public Integer getMemberId() {
-		return this.memberId;
-	}
-
-	public void setMemberId(Integer memberId) {
-		this.memberId = memberId;
-	}
-
 	@Column(name = "OrderDescribe", length = 1024)
 	public String getOrderDescribe() {
 		return this.orderDescribe;
@@ -153,6 +171,34 @@ public class Order implements java.io.Serializable {
 
 	public void setTimeUpdate(Timestamp timeUpdate) {
 		this.timeUpdate = timeUpdate;
+	}
+
+	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "order")
+	public Set<Harvestaddresstable> getHarvestaddresstables() {
+		return this.harvestaddresstables;
+	}
+
+	public void setHarvestaddresstables(
+			Set<Harvestaddresstable> harvestaddresstables) {
+		this.harvestaddresstables = harvestaddresstables;
+	}
+
+	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "order")
+	public Set<Orderstate> getOrderstates() {
+		return this.orderstates;
+	}
+
+	public void setOrderstates(Set<Orderstate> orderstates) {
+		this.orderstates = orderstates;
+	}
+
+	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "order")
+	public Set<Ordercomments> getOrdercommentses() {
+		return this.ordercommentses;
+	}
+
+	public void setOrdercommentses(Set<Ordercomments> ordercommentses) {
+		this.ordercommentses = ordercommentses;
 	}
 
 }

@@ -3,12 +3,9 @@ package lxyg.domain;
 import java.sql.Timestamp;
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import static javax.persistence.GenerationType.IDENTITY;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 /**
@@ -21,7 +18,6 @@ public class Shopinformation implements java.io.Serializable {
 	// Fields
 
 	private Integer id;
-	private Storesettings storesettings;
 	private Timestamp timeAdd;
 	private Timestamp timeUpdate;
 	private String shopInfoShopName;
@@ -45,12 +41,10 @@ public class Shopinformation implements java.io.Serializable {
 	}
 
 	/** full constructor */
-	public Shopinformation(Storesettings storesettings, Timestamp timeAdd,
-			Timestamp timeUpdate, String shopInfoShopName,
-			String shopInfoShopLogo, String shopInfoStoreSlogan,
-			String shopInfoStoreCopyright,
+	public Shopinformation(Timestamp timeAdd, Timestamp timeUpdate,
+			String shopInfoShopName, String shopInfoShopLogo,
+			String shopInfoStoreSlogan, String shopInfoStoreCopyright,
 			String shopInfoStoreAuthoritativeAttestation) {
-		this.storesettings = storesettings;
 		this.timeAdd = timeAdd;
 		this.timeUpdate = timeUpdate;
 		this.shopInfoShopName = shopInfoShopName;
@@ -70,16 +64,6 @@ public class Shopinformation implements java.io.Serializable {
 
 	public void setId(Integer id) {
 		this.id = id;
-	}
-
-	@ManyToOne(fetch = FetchType.LAZY)
-	@JoinColumn(name = "Sto_Id")
-	public Storesettings getStoresettings() {
-		return this.storesettings;
-	}
-
-	public void setStoresettings(Storesettings storesettings) {
-		this.storesettings = storesettings;
 	}
 
 	@Column(name = "TimeAdd", nullable = false, length = 19)

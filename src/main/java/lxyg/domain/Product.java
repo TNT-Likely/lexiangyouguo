@@ -1,11 +1,18 @@
 package lxyg.domain;
 
 import java.sql.Timestamp;
+import java.util.HashSet;
+import java.util.Set;
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import static javax.persistence.GenerationType.IDENTITY;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 /**
@@ -18,7 +25,7 @@ public class Product implements java.io.Serializable {
 	// Fields
 
 	private Integer id;
-	private Integer proCatId;
+	private Cart cart;
 	private String proName;
 	private String proDescribe;
 	private Boolean proIsReduce;
@@ -35,6 +42,19 @@ public class Product implements java.io.Serializable {
 	private String proTips;
 	private Timestamp timeAdd;
 	private Timestamp timeUpdate;
+	private Set<Order> orders = new HashSet<Order>(0);
+	private Set<Procover> procovers = new HashSet<Procover>(0);
+	private Set<Procomment> procomments = new HashSet<Procomment>(0);
+	private Set<Holidayspecialarea> holidayspecialareas = new HashSet<Holidayspecialarea>(
+			0);
+	private Set<Membercollectiontable> membercollectiontables = new HashSet<Membercollectiontable>(
+			0);
+	private Set<Accesspurchaserate> accesspurchaserates = new HashSet<Accesspurchaserate>(
+			0);
+	private Set<Promotionalofferstable> promotionalofferstables = new HashSet<Promotionalofferstable>(
+			0);
+	private Set<Cart> carts = new HashSet<Cart>(0);
+	private Set<Dailyspecials> dailyspecialses = new HashSet<Dailyspecials>(0);
 
 	// Constructors
 
@@ -43,9 +63,9 @@ public class Product implements java.io.Serializable {
 	}
 
 	/** minimal constructor */
-	public Product(Integer proCatId, String proDescribe, Long proRedPrice,
+	public Product(Cart cart, String proDescribe, Long proRedPrice,
 			String proShow, Timestamp timeAdd, Timestamp timeUpdate) {
-		this.proCatId = proCatId;
+		this.cart = cart;
 		this.proDescribe = proDescribe;
 		this.proRedPrice = proRedPrice;
 		this.proShow = proShow;
@@ -54,13 +74,19 @@ public class Product implements java.io.Serializable {
 	}
 
 	/** full constructor */
-	public Product(Integer proCatId, String proName, String proDescribe,
+	public Product(Cart cart, String proName, String proDescribe,
 			Boolean proIsReduce, Long proPrice, Long proRedPrice,
 			Short proStock, String proShow, String proStoConditions,
 			Long proWeight, String proSaleUnit, String proOrigin,
 			String proSpecifications, String proModel, String proTips,
-			Timestamp timeAdd, Timestamp timeUpdate) {
-		this.proCatId = proCatId;
+			Timestamp timeAdd, Timestamp timeUpdate, Set<Order> orders,
+			Set<Procover> procovers, Set<Procomment> procomments,
+			Set<Holidayspecialarea> holidayspecialareas,
+			Set<Membercollectiontable> membercollectiontables,
+			Set<Accesspurchaserate> accesspurchaserates,
+			Set<Promotionalofferstable> promotionalofferstables,
+			Set<Cart> carts, Set<Dailyspecials> dailyspecialses) {
+		this.cart = cart;
 		this.proName = proName;
 		this.proDescribe = proDescribe;
 		this.proIsReduce = proIsReduce;
@@ -77,6 +103,15 @@ public class Product implements java.io.Serializable {
 		this.proTips = proTips;
 		this.timeAdd = timeAdd;
 		this.timeUpdate = timeUpdate;
+		this.orders = orders;
+		this.procovers = procovers;
+		this.procomments = procomments;
+		this.holidayspecialareas = holidayspecialareas;
+		this.membercollectiontables = membercollectiontables;
+		this.accesspurchaserates = accesspurchaserates;
+		this.promotionalofferstables = promotionalofferstables;
+		this.carts = carts;
+		this.dailyspecialses = dailyspecialses;
 	}
 
 	// Property accessors
@@ -91,13 +126,14 @@ public class Product implements java.io.Serializable {
 		this.id = id;
 	}
 
-	@Column(name = "ProCatId", nullable = false)
-	public Integer getProCatId() {
-		return this.proCatId;
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "ProCatId", nullable = false)
+	public Cart getCart() {
+		return this.cart;
 	}
 
-	public void setProCatId(Integer proCatId) {
-		this.proCatId = proCatId;
+	public void setCart(Cart cart) {
+		this.cart = cart;
 	}
 
 	@Column(name = "ProName")
@@ -242,6 +278,91 @@ public class Product implements java.io.Serializable {
 
 	public void setTimeUpdate(Timestamp timeUpdate) {
 		this.timeUpdate = timeUpdate;
+	}
+
+	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "product")
+	public Set<Order> getOrders() {
+		return this.orders;
+	}
+
+	public void setOrders(Set<Order> orders) {
+		this.orders = orders;
+	}
+
+	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "product")
+	public Set<Procover> getProcovers() {
+		return this.procovers;
+	}
+
+	public void setProcovers(Set<Procover> procovers) {
+		this.procovers = procovers;
+	}
+
+	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "product")
+	public Set<Procomment> getProcomments() {
+		return this.procomments;
+	}
+
+	public void setProcomments(Set<Procomment> procomments) {
+		this.procomments = procomments;
+	}
+
+	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "product")
+	public Set<Holidayspecialarea> getHolidayspecialareas() {
+		return this.holidayspecialareas;
+	}
+
+	public void setHolidayspecialareas(
+			Set<Holidayspecialarea> holidayspecialareas) {
+		this.holidayspecialareas = holidayspecialareas;
+	}
+
+	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "product")
+	public Set<Membercollectiontable> getMembercollectiontables() {
+		return this.membercollectiontables;
+	}
+
+	public void setMembercollectiontables(
+			Set<Membercollectiontable> membercollectiontables) {
+		this.membercollectiontables = membercollectiontables;
+	}
+
+	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "product")
+	public Set<Accesspurchaserate> getAccesspurchaserates() {
+		return this.accesspurchaserates;
+	}
+
+	public void setAccesspurchaserates(
+			Set<Accesspurchaserate> accesspurchaserates) {
+		this.accesspurchaserates = accesspurchaserates;
+	}
+
+	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "product")
+	public Set<Promotionalofferstable> getPromotionalofferstables() {
+		return this.promotionalofferstables;
+	}
+
+	public void setPromotionalofferstables(
+			Set<Promotionalofferstable> promotionalofferstables) {
+		this.promotionalofferstables = promotionalofferstables;
+	}
+
+	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "product")
+	public Set<Cart> getCarts() {
+		return this.carts;
+	}
+
+	public void setCarts(Set<Cart> carts) {
+		this.carts = carts;
+	}
+
+	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "product")
+	public Set<Dailyspecials> getDailyspecialses() {
+		return this.dailyspecialses;
+	}
+
+	public void setDailyspecialses(Set<Dailyspecials> dailyspecialses) {
+		this.dailyspecialses = dailyspecialses;
 	}
 
 }

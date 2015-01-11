@@ -1,11 +1,16 @@
 package lxyg.domain;
 
 import java.sql.Timestamp;
+import java.util.HashSet;
+import java.util.Set;
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import static javax.persistence.GenerationType.IDENTITY;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 /**
@@ -18,14 +23,15 @@ public class Procomment implements java.io.Serializable {
 	// Fields
 
 	private Integer id;
-	private Integer proId;
-	private Integer memId;
+	private Member member;
+	private Product product;
 	private Boolean proComIsShoOrder;
 	private Integer proComLevel;
 	private Integer proComStaLevel;
 	private String proComContent;
 	private Timestamp timeAdd;
 	private Timestamp timeUpdate;
+	private Set<Proshoorder> proshoorders = new HashSet<Proshoorder>(0);
 
 	// Constructors
 
@@ -34,11 +40,12 @@ public class Procomment implements java.io.Serializable {
 	}
 
 	/** minimal constructor */
-	public Procomment(Integer proId, Integer memId, Integer proComLevel,
-			Integer proComStaLevel, String proComContent, Timestamp timeAdd,
-			Timestamp timeUpdate) {
-		this.proId = proId;
-		this.memId = memId;
+	public Procomment(Integer id, Member member, Product product,
+			Integer proComLevel, Integer proComStaLevel, String proComContent,
+			Timestamp timeAdd, Timestamp timeUpdate) {
+		this.id = id;
+		this.member = member;
+		this.product = product;
 		this.proComLevel = proComLevel;
 		this.proComStaLevel = proComStaLevel;
 		this.proComContent = proComContent;
@@ -47,22 +54,24 @@ public class Procomment implements java.io.Serializable {
 	}
 
 	/** full constructor */
-	public Procomment(Integer proId, Integer memId, Boolean proComIsShoOrder,
-			Integer proComLevel, Integer proComStaLevel, String proComContent,
-			Timestamp timeAdd, Timestamp timeUpdate) {
-		this.proId = proId;
-		this.memId = memId;
+	public Procomment(Integer id, Member member, Product product,
+			Boolean proComIsShoOrder, Integer proComLevel,
+			Integer proComStaLevel, String proComContent, Timestamp timeAdd,
+			Timestamp timeUpdate, Set<Proshoorder> proshoorders) {
+		this.id = id;
+		this.member = member;
+		this.product = product;
 		this.proComIsShoOrder = proComIsShoOrder;
 		this.proComLevel = proComLevel;
 		this.proComStaLevel = proComStaLevel;
 		this.proComContent = proComContent;
 		this.timeAdd = timeAdd;
 		this.timeUpdate = timeUpdate;
+		this.proshoorders = proshoorders;
 	}
 
 	// Property accessors
 	@Id
-	@GeneratedValue(strategy = IDENTITY)
 	@Column(name = "Id", unique = true, nullable = false)
 	public Integer getId() {
 		return this.id;
@@ -72,22 +81,24 @@ public class Procomment implements java.io.Serializable {
 		this.id = id;
 	}
 
-	@Column(name = "ProId", nullable = false)
-	public Integer getProId() {
-		return this.proId;
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "MemId", nullable = false)
+	public Member getMember() {
+		return this.member;
 	}
 
-	public void setProId(Integer proId) {
-		this.proId = proId;
+	public void setMember(Member member) {
+		this.member = member;
 	}
 
-	@Column(name = "MemId", nullable = false)
-	public Integer getMemId() {
-		return this.memId;
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "ProId", nullable = false)
+	public Product getProduct() {
+		return this.product;
 	}
 
-	public void setMemId(Integer memId) {
-		this.memId = memId;
+	public void setProduct(Product product) {
+		this.product = product;
 	}
 
 	@Column(name = "ProComIsShoOrder")
@@ -142,6 +153,15 @@ public class Procomment implements java.io.Serializable {
 
 	public void setTimeUpdate(Timestamp timeUpdate) {
 		this.timeUpdate = timeUpdate;
+	}
+
+	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "procomment")
+	public Set<Proshoorder> getProshoorders() {
+		return this.proshoorders;
+	}
+
+	public void setProshoorders(Set<Proshoorder> proshoorders) {
+		this.proshoorders = proshoorders;
 	}
 
 }

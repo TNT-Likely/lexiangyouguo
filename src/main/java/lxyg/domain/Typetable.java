@@ -1,6 +1,9 @@
 package lxyg.domain;
 
 import java.sql.Timestamp;
+import java.util.HashSet;
+import java.util.Set;
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -9,6 +12,7 @@ import static javax.persistence.GenerationType.IDENTITY;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 /**
@@ -28,6 +32,7 @@ public class Typetable implements java.io.Serializable {
 	private String typeImproveResistance;
 	private String typeRorBrain;
 	private String typeBeauty;
+	private Set<Gifttable> gifttables = new HashSet<Gifttable>(0);
 
 	// Constructors
 
@@ -44,7 +49,8 @@ public class Typetable implements java.io.Serializable {
 	/** full constructor */
 	public Typetable(Gifttable gifttable, Timestamp timeAdd,
 			Timestamp timeUpdate, String typeRecovery,
-			String typeImproveResistance, String typeRorBrain, String typeBeauty) {
+			String typeImproveResistance, String typeRorBrain,
+			String typeBeauty, Set<Gifttable> gifttables) {
 		this.gifttable = gifttable;
 		this.timeAdd = timeAdd;
 		this.timeUpdate = timeUpdate;
@@ -52,6 +58,7 @@ public class Typetable implements java.io.Serializable {
 		this.typeImproveResistance = typeImproveResistance;
 		this.typeRorBrain = typeRorBrain;
 		this.typeBeauty = typeBeauty;
+		this.gifttables = gifttables;
 	}
 
 	// Property accessors
@@ -128,6 +135,15 @@ public class Typetable implements java.io.Serializable {
 
 	public void setTypeBeauty(String typeBeauty) {
 		this.typeBeauty = typeBeauty;
+	}
+
+	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "typetable")
+	public Set<Gifttable> getGifttables() {
+		return this.gifttables;
+	}
+
+	public void setGifttables(Set<Gifttable> gifttables) {
+		this.gifttables = gifttables;
 	}
 
 }

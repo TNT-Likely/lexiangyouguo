@@ -1,6 +1,9 @@
 package lxyg.domain;
 
 import java.sql.Timestamp;
+import java.util.HashSet;
+import java.util.Set;
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -9,6 +12,7 @@ import static javax.persistence.GenerationType.IDENTITY;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 /**
@@ -28,6 +32,7 @@ public class Regionleveltable implements java.io.Serializable {
 	private String regionLevelCity;
 	private String regionLevelCounty;
 	private String regionLevelTown;
+	private Set<Regionlist> regionlists = new HashSet<Regionlist>(0);
 
 	// Constructors
 
@@ -45,7 +50,7 @@ public class Regionleveltable implements java.io.Serializable {
 	public Regionleveltable(Regionlist regionlist, Timestamp timeAdd,
 			Timestamp timeUpdate, String regionLevelProvince,
 			String regionLevelCity, String regionLevelCounty,
-			String regionLevelTown) {
+			String regionLevelTown, Set<Regionlist> regionlists) {
 		this.regionlist = regionlist;
 		this.timeAdd = timeAdd;
 		this.timeUpdate = timeUpdate;
@@ -53,6 +58,7 @@ public class Regionleveltable implements java.io.Serializable {
 		this.regionLevelCity = regionLevelCity;
 		this.regionLevelCounty = regionLevelCounty;
 		this.regionLevelTown = regionLevelTown;
+		this.regionlists = regionlists;
 	}
 
 	// Property accessors
@@ -129,6 +135,15 @@ public class Regionleveltable implements java.io.Serializable {
 
 	public void setRegionLevelTown(String regionLevelTown) {
 		this.regionLevelTown = regionLevelTown;
+	}
+
+	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "regionleveltable")
+	public Set<Regionlist> getRegionlists() {
+		return this.regionlists;
+	}
+
+	public void setRegionlists(Set<Regionlist> regionlists) {
+		this.regionlists = regionlists;
 	}
 
 }

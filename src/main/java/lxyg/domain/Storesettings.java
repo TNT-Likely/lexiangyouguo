@@ -1,16 +1,11 @@
 package lxyg.domain;
 
 import java.sql.Timestamp;
-import java.util.HashSet;
-import java.util.Set;
-import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import static javax.persistence.GenerationType.IDENTITY;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 /**
@@ -30,8 +25,6 @@ public class Storesettings implements java.io.Serializable {
 	private String storeShoppingProcess;
 	private String storeCommodityDisplaySetting;
 	private Integer shoId;
-	private Set<Shopinformation> shopinformations = new HashSet<Shopinformation>(
-			0);
 
 	// Constructors
 
@@ -51,7 +44,7 @@ public class Storesettings implements java.io.Serializable {
 	public Storesettings(Timestamp timeAdd, Timestamp timeUpdate,
 			String storeSsttingsId, String storeBasicSetting,
 			String storeShoppingProcess, String storeCommodityDisplaySetting,
-			Integer shoId, Set<Shopinformation> shopinformations) {
+			Integer shoId) {
 		this.timeAdd = timeAdd;
 		this.timeUpdate = timeUpdate;
 		this.storeSsttingsId = storeSsttingsId;
@@ -59,7 +52,6 @@ public class Storesettings implements java.io.Serializable {
 		this.storeShoppingProcess = storeShoppingProcess;
 		this.storeCommodityDisplaySetting = storeCommodityDisplaySetting;
 		this.shoId = shoId;
-		this.shopinformations = shopinformations;
 	}
 
 	// Property accessors
@@ -136,15 +128,6 @@ public class Storesettings implements java.io.Serializable {
 
 	public void setShoId(Integer shoId) {
 		this.shoId = shoId;
-	}
-
-	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "storesettings")
-	public Set<Shopinformation> getShopinformations() {
-		return this.shopinformations;
-	}
-
-	public void setShopinformations(Set<Shopinformation> shopinformations) {
-		this.shopinformations = shopinformations;
 	}
 
 }

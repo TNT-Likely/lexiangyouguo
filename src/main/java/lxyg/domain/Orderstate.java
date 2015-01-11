@@ -3,9 +3,12 @@ package lxyg.domain;
 import java.sql.Timestamp;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import static javax.persistence.GenerationType.IDENTITY;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 /**
@@ -18,7 +21,7 @@ public class Orderstate implements java.io.Serializable {
 	// Fields
 
 	private Integer id;
-	private Integer orderId;
+	private Order order;
 	private String osNotDeliverGoods;
 	private String osDelivery;
 	private String osHaveToSignFor;
@@ -39,19 +42,19 @@ public class Orderstate implements java.io.Serializable {
 	}
 
 	/** minimal constructor */
-	public Orderstate(Integer orderId, Timestamp timeAdd, Timestamp timeUpdate) {
-		this.orderId = orderId;
+	public Orderstate(Order order, Timestamp timeAdd, Timestamp timeUpdate) {
+		this.order = order;
 		this.timeAdd = timeAdd;
 		this.timeUpdate = timeUpdate;
 	}
 
 	/** full constructor */
-	public Orderstate(Integer orderId, String osNotDeliverGoods,
-			String osDelivery, String osHaveToSignFor, String osRefusalReceive,
+	public Orderstate(Order order, String osNotDeliverGoods, String osDelivery,
+			String osHaveToSignFor, String osRefusalReceive,
 			String osReturnOfGoods, String osRefundSuccess,
 			String osUnconfirmed, String osOrderFinished, String osPayed,
 			String osNotPaying, Timestamp timeAdd, Timestamp timeUpdate) {
-		this.orderId = orderId;
+		this.order = order;
 		this.osNotDeliverGoods = osNotDeliverGoods;
 		this.osDelivery = osDelivery;
 		this.osHaveToSignFor = osHaveToSignFor;
@@ -78,13 +81,14 @@ public class Orderstate implements java.io.Serializable {
 		this.id = id;
 	}
 
-	@Column(name = "OrderId", nullable = false)
-	public Integer getOrderId() {
-		return this.orderId;
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "OrderId", nullable = false)
+	public Order getOrder() {
+		return this.order;
 	}
 
-	public void setOrderId(Integer orderId) {
-		this.orderId = orderId;
+	public void setOrder(Order order) {
+		this.order = order;
 	}
 
 	@Column(name = "OS_NotDeliverGoods", length = 1024)

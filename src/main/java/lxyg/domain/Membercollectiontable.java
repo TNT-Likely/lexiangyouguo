@@ -3,9 +3,12 @@ package lxyg.domain;
 import java.sql.Timestamp;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import static javax.persistence.GenerationType.IDENTITY;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 /**
@@ -18,12 +21,10 @@ public class Membercollectiontable implements java.io.Serializable {
 	// Fields
 
 	private Integer id;
+	private Member member;
+	private Product product;
 	private Timestamp timeAdd;
 	private Timestamp timeUpdate;
-	private Integer memberId;
-	private Integer goodsId;
-	private Integer comId;
-	private Integer memId;
 
 	// Constructors
 
@@ -31,24 +32,13 @@ public class Membercollectiontable implements java.io.Serializable {
 	public Membercollectiontable() {
 	}
 
-	/** minimal constructor */
-	public Membercollectiontable(Timestamp timeAdd, Timestamp timeUpdate,
-			Integer memberId, Integer goodsId) {
-		this.timeAdd = timeAdd;
-		this.timeUpdate = timeUpdate;
-		this.memberId = memberId;
-		this.goodsId = goodsId;
-	}
-
 	/** full constructor */
-	public Membercollectiontable(Timestamp timeAdd, Timestamp timeUpdate,
-			Integer memberId, Integer goodsId, Integer comId, Integer memId) {
+	public Membercollectiontable(Member member, Product product,
+			Timestamp timeAdd, Timestamp timeUpdate) {
+		this.member = member;
+		this.product = product;
 		this.timeAdd = timeAdd;
 		this.timeUpdate = timeUpdate;
-		this.memberId = memberId;
-		this.goodsId = goodsId;
-		this.comId = comId;
-		this.memId = memId;
 	}
 
 	// Property accessors
@@ -61,6 +51,26 @@ public class Membercollectiontable implements java.io.Serializable {
 
 	public void setId(Integer id) {
 		this.id = id;
+	}
+
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "MemberId", nullable = false)
+	public Member getMember() {
+		return this.member;
+	}
+
+	public void setMember(Member member) {
+		this.member = member;
+	}
+
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "ProId", nullable = false)
+	public Product getProduct() {
+		return this.product;
+	}
+
+	public void setProduct(Product product) {
+		this.product = product;
 	}
 
 	@Column(name = "TimeAdd", nullable = false, length = 19)
@@ -79,42 +89,6 @@ public class Membercollectiontable implements java.io.Serializable {
 
 	public void setTimeUpdate(Timestamp timeUpdate) {
 		this.timeUpdate = timeUpdate;
-	}
-
-	@Column(name = "MemberId", nullable = false)
-	public Integer getMemberId() {
-		return this.memberId;
-	}
-
-	public void setMemberId(Integer memberId) {
-		this.memberId = memberId;
-	}
-
-	@Column(name = "GoodsId", nullable = false)
-	public Integer getGoodsId() {
-		return this.goodsId;
-	}
-
-	public void setGoodsId(Integer goodsId) {
-		this.goodsId = goodsId;
-	}
-
-	@Column(name = "Com_Id")
-	public Integer getComId() {
-		return this.comId;
-	}
-
-	public void setComId(Integer comId) {
-		this.comId = comId;
-	}
-
-	@Column(name = "Mem_Id")
-	public Integer getMemId() {
-		return this.memId;
-	}
-
-	public void setMemId(Integer memId) {
-		this.memId = memId;
 	}
 
 }

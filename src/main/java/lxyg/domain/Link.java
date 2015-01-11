@@ -10,6 +10,8 @@ import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import static javax.persistence.GenerationType.IDENTITY;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
@@ -23,13 +25,12 @@ public class Link implements java.io.Serializable {
 	// Fields
 
 	private Integer id;
+	private Displaytype displaytype;
 	private Timestamp timeAdd;
 	private Timestamp timeUpdate;
 	private String linkName;
 	private String linkAddress;
 	private Integer linkSorting;
-	private Integer displayTypeId;
-	private Integer disId;
 	private Set<Displaytype> displaytypes = new HashSet<Displaytype>(0);
 
 	// Constructors
@@ -46,16 +47,15 @@ public class Link implements java.io.Serializable {
 	}
 
 	/** full constructor */
-	public Link(Timestamp timeAdd, Timestamp timeUpdate, String linkName,
-			String linkAddress, Integer linkSorting, Integer displayTypeId,
-			Integer disId, Set<Displaytype> displaytypes) {
+	public Link(Displaytype displaytype, Timestamp timeAdd,
+			Timestamp timeUpdate, String linkName, String linkAddress,
+			Integer linkSorting, Set<Displaytype> displaytypes) {
+		this.displaytype = displaytype;
 		this.timeAdd = timeAdd;
 		this.timeUpdate = timeUpdate;
 		this.linkName = linkName;
 		this.linkAddress = linkAddress;
 		this.linkSorting = linkSorting;
-		this.displayTypeId = displayTypeId;
-		this.disId = disId;
 		this.displaytypes = displaytypes;
 	}
 
@@ -69,6 +69,16 @@ public class Link implements java.io.Serializable {
 
 	public void setId(Integer id) {
 		this.id = id;
+	}
+
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "DisplayTypeId")
+	public Displaytype getDisplaytype() {
+		return this.displaytype;
+	}
+
+	public void setDisplaytype(Displaytype displaytype) {
+		this.displaytype = displaytype;
 	}
 
 	@Column(name = "TimeAdd", nullable = false, length = 19)
@@ -114,24 +124,6 @@ public class Link implements java.io.Serializable {
 
 	public void setLinkSorting(Integer linkSorting) {
 		this.linkSorting = linkSorting;
-	}
-
-	@Column(name = "DisplayTypeId")
-	public Integer getDisplayTypeId() {
-		return this.displayTypeId;
-	}
-
-	public void setDisplayTypeId(Integer displayTypeId) {
-		this.displayTypeId = displayTypeId;
-	}
-
-	@Column(name = "Dis_Id")
-	public Integer getDisId() {
-		return this.disId;
-	}
-
-	public void setDisId(Integer disId) {
-		this.disId = disId;
 	}
 
 	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "link")

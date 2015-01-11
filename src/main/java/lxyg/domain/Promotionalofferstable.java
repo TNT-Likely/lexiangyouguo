@@ -10,6 +10,8 @@ import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import static javax.persistence.GenerationType.IDENTITY;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
@@ -23,16 +25,16 @@ public class Promotionalofferstable implements java.io.Serializable {
 	// Fields
 
 	private Integer id;
+	private Preferentialtype preferentialtype;
+	private Product product;
 	private Timestamp timeAdd;
 	private Timestamp timeUpdate;
 	private Integer goodsId;
 	private Integer preferentialTypeId;
 	private Float preferentialDiscount;
-	private Integer comId;
-	private Integer preId;
-	private Set<Dailyspecials> dailyspecialses = new HashSet<Dailyspecials>(0);
 	private Set<Holidayspecialarea> holidayspecialareas = new HashSet<Holidayspecialarea>(
 			0);
+	private Set<Dailyspecials> dailyspecialses = new HashSet<Dailyspecials>(0);
 	private Set<Preferentialtype> preferentialtypes = new HashSet<Preferentialtype>(
 			0);
 
@@ -49,21 +51,22 @@ public class Promotionalofferstable implements java.io.Serializable {
 	}
 
 	/** full constructor */
-	public Promotionalofferstable(Timestamp timeAdd, Timestamp timeUpdate,
+	public Promotionalofferstable(Preferentialtype preferentialtype,
+			Product product, Timestamp timeAdd, Timestamp timeUpdate,
 			Integer goodsId, Integer preferentialTypeId,
-			Float preferentialDiscount, Integer comId, Integer preId,
-			Set<Dailyspecials> dailyspecialses,
+			Float preferentialDiscount,
 			Set<Holidayspecialarea> holidayspecialareas,
+			Set<Dailyspecials> dailyspecialses,
 			Set<Preferentialtype> preferentialtypes) {
+		this.preferentialtype = preferentialtype;
+		this.product = product;
 		this.timeAdd = timeAdd;
 		this.timeUpdate = timeUpdate;
 		this.goodsId = goodsId;
 		this.preferentialTypeId = preferentialTypeId;
 		this.preferentialDiscount = preferentialDiscount;
-		this.comId = comId;
-		this.preId = preId;
-		this.dailyspecialses = dailyspecialses;
 		this.holidayspecialareas = holidayspecialareas;
+		this.dailyspecialses = dailyspecialses;
 		this.preferentialtypes = preferentialtypes;
 	}
 
@@ -77,6 +80,26 @@ public class Promotionalofferstable implements java.io.Serializable {
 
 	public void setId(Integer id) {
 		this.id = id;
+	}
+
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "Pre_Id")
+	public Preferentialtype getPreferentialtype() {
+		return this.preferentialtype;
+	}
+
+	public void setPreferentialtype(Preferentialtype preferentialtype) {
+		this.preferentialtype = preferentialtype;
+	}
+
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "ProId")
+	public Product getProduct() {
+		return this.product;
+	}
+
+	public void setProduct(Product product) {
+		this.product = product;
 	}
 
 	@Column(name = "TimeAdd", nullable = false, length = 19)
@@ -124,22 +147,14 @@ public class Promotionalofferstable implements java.io.Serializable {
 		this.preferentialDiscount = preferentialDiscount;
 	}
 
-	@Column(name = "Com_Id")
-	public Integer getComId() {
-		return this.comId;
+	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "promotionalofferstable")
+	public Set<Holidayspecialarea> getHolidayspecialareas() {
+		return this.holidayspecialareas;
 	}
 
-	public void setComId(Integer comId) {
-		this.comId = comId;
-	}
-
-	@Column(name = "Pre_Id")
-	public Integer getPreId() {
-		return this.preId;
-	}
-
-	public void setPreId(Integer preId) {
-		this.preId = preId;
+	public void setHolidayspecialareas(
+			Set<Holidayspecialarea> holidayspecialareas) {
+		this.holidayspecialareas = holidayspecialareas;
 	}
 
 	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "promotionalofferstable")
@@ -149,16 +164,6 @@ public class Promotionalofferstable implements java.io.Serializable {
 
 	public void setDailyspecialses(Set<Dailyspecials> dailyspecialses) {
 		this.dailyspecialses = dailyspecialses;
-	}
-
-	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "promotionalofferstable")
-	public Set<Holidayspecialarea> getHolidayspecialareas() {
-		return this.holidayspecialareas;
-	}
-
-	public void setHolidayspecialareas(
-			Set<Holidayspecialarea> holidayspecialareas) {
-		this.holidayspecialareas = holidayspecialareas;
 	}
 
 	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "promotionalofferstable")

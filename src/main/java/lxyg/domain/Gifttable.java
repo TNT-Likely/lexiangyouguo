@@ -25,12 +25,12 @@ public class Gifttable implements java.io.Serializable {
 	// Fields
 
 	private Integer id;
+	private Occasiontable occasiontable;
+	private Typetable typetable;
 	private Gifttablecontents gifttablecontents;
 	private Timestamp timeAdd;
 	private Timestamp timeUpdate;
 	private String giftName;
-	private Integer occasionId;
-	private Integer typeId;
 	private Set<Occasiontable> occasiontables = new HashSet<Occasiontable>(0);
 	private Set<Typetable> typetables = new HashSet<Typetable>(0);
 
@@ -48,16 +48,16 @@ public class Gifttable implements java.io.Serializable {
 	}
 
 	/** full constructor */
-	public Gifttable(Gifttablecontents gifttablecontents, Timestamp timeAdd,
-			Timestamp timeUpdate, String giftName, Integer occasionId,
-			Integer typeId, Set<Occasiontable> occasiontables,
-			Set<Typetable> typetables) {
+	public Gifttable(Occasiontable occasiontable, Typetable typetable,
+			Gifttablecontents gifttablecontents, Timestamp timeAdd,
+			Timestamp timeUpdate, String giftName,
+			Set<Occasiontable> occasiontables, Set<Typetable> typetables) {
+		this.occasiontable = occasiontable;
+		this.typetable = typetable;
 		this.gifttablecontents = gifttablecontents;
 		this.timeAdd = timeAdd;
 		this.timeUpdate = timeUpdate;
 		this.giftName = giftName;
-		this.occasionId = occasionId;
-		this.typeId = typeId;
 		this.occasiontables = occasiontables;
 		this.typetables = typetables;
 	}
@@ -72,6 +72,26 @@ public class Gifttable implements java.io.Serializable {
 
 	public void setId(Integer id) {
 		this.id = id;
+	}
+
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "OccasionId")
+	public Occasiontable getOccasiontable() {
+		return this.occasiontable;
+	}
+
+	public void setOccasiontable(Occasiontable occasiontable) {
+		this.occasiontable = occasiontable;
+	}
+
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "TypeId")
+	public Typetable getTypetable() {
+		return this.typetable;
+	}
+
+	public void setTypetable(Typetable typetable) {
+		this.typetable = typetable;
 	}
 
 	@ManyToOne(fetch = FetchType.LAZY)
@@ -109,24 +129,6 @@ public class Gifttable implements java.io.Serializable {
 
 	public void setGiftName(String giftName) {
 		this.giftName = giftName;
-	}
-
-	@Column(name = "OccasionId")
-	public Integer getOccasionId() {
-		return this.occasionId;
-	}
-
-	public void setOccasionId(Integer occasionId) {
-		this.occasionId = occasionId;
-	}
-
-	@Column(name = "TypeId")
-	public Integer getTypeId() {
-		return this.typeId;
-	}
-
-	public void setTypeId(Integer typeId) {
-		this.typeId = typeId;
 	}
 
 	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "gifttable")

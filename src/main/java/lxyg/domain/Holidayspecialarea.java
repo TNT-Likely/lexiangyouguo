@@ -21,15 +21,15 @@ public class Holidayspecialarea implements java.io.Serializable {
 	// Fields
 
 	private HolidayspecialareaId id;
+	private Preferentialtype preferentialtype;
 	private Promotionalofferstable promotionalofferstable;
+	private Product product;
 	private Integer goodsId;
 	private Integer preferentialTypeId;
 	private Float preferentialDiscount;
 	private Timestamp timeAdd;
 	private Timestamp timeUpdate;
 	private String holidaySpeciaMeaning;
-	private Integer comId;
-	private Integer preId;
 
 	// Constructors
 
@@ -49,20 +49,21 @@ public class Holidayspecialarea implements java.io.Serializable {
 
 	/** full constructor */
 	public Holidayspecialarea(HolidayspecialareaId id,
-			Promotionalofferstable promotionalofferstable, Integer goodsId,
-			Integer preferentialTypeId, Float preferentialDiscount,
-			Timestamp timeAdd, Timestamp timeUpdate,
-			String holidaySpeciaMeaning, Integer comId, Integer preId) {
+			Preferentialtype preferentialtype,
+			Promotionalofferstable promotionalofferstable, Product product,
+			Integer goodsId, Integer preferentialTypeId,
+			Float preferentialDiscount, Timestamp timeAdd,
+			Timestamp timeUpdate, String holidaySpeciaMeaning) {
 		this.id = id;
+		this.preferentialtype = preferentialtype;
 		this.promotionalofferstable = promotionalofferstable;
+		this.product = product;
 		this.goodsId = goodsId;
 		this.preferentialTypeId = preferentialTypeId;
 		this.preferentialDiscount = preferentialDiscount;
 		this.timeAdd = timeAdd;
 		this.timeUpdate = timeUpdate;
 		this.holidaySpeciaMeaning = holidaySpeciaMeaning;
-		this.comId = comId;
-		this.preId = preId;
 	}
 
 	// Property accessors
@@ -79,6 +80,16 @@ public class Holidayspecialarea implements java.io.Serializable {
 	}
 
 	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "Pre_Id")
+	public Preferentialtype getPreferentialtype() {
+		return this.preferentialtype;
+	}
+
+	public void setPreferentialtype(Preferentialtype preferentialtype) {
+		this.preferentialtype = preferentialtype;
+	}
+
+	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "Pro_Id", nullable = false, insertable = false, updatable = false)
 	public Promotionalofferstable getPromotionalofferstable() {
 		return this.promotionalofferstable;
@@ -87,6 +98,16 @@ public class Holidayspecialarea implements java.io.Serializable {
 	public void setPromotionalofferstable(
 			Promotionalofferstable promotionalofferstable) {
 		this.promotionalofferstable = promotionalofferstable;
+	}
+
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "proId")
+	public Product getProduct() {
+		return this.product;
+	}
+
+	public void setProduct(Product product) {
+		this.product = product;
 	}
 
 	@Column(name = "GoodsId")
@@ -141,24 +162,6 @@ public class Holidayspecialarea implements java.io.Serializable {
 
 	public void setHolidaySpeciaMeaning(String holidaySpeciaMeaning) {
 		this.holidaySpeciaMeaning = holidaySpeciaMeaning;
-	}
-
-	@Column(name = "Com_Id")
-	public Integer getComId() {
-		return this.comId;
-	}
-
-	public void setComId(Integer comId) {
-		this.comId = comId;
-	}
-
-	@Column(name = "Pre_Id")
-	public Integer getPreId() {
-		return this.preId;
-	}
-
-	public void setPreId(Integer preId) {
-		this.preId = preId;
 	}
 
 }

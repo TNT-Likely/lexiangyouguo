@@ -3,9 +3,12 @@ package lxyg.domain;
 import java.sql.Timestamp;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import static javax.persistence.GenerationType.IDENTITY;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 /**
@@ -18,7 +21,7 @@ public class Harvestaddresstable implements java.io.Serializable {
 	// Fields
 
 	private Integer id;
-	private Integer ordId;
+	private Order order;
 	private Timestamp timeAdd;
 	private Timestamp timeUpdate;
 	private String haTheFirstAddress;
@@ -39,11 +42,11 @@ public class Harvestaddresstable implements java.io.Serializable {
 	}
 
 	/** full constructor */
-	public Harvestaddresstable(Integer ordId, Timestamp timeAdd,
+	public Harvestaddresstable(Order order, Timestamp timeAdd,
 			Timestamp timeUpdate, String haTheFirstAddress,
 			String haTheSecondAddress, String haTheThirdAddress,
 			String haTheFourthAddress) {
-		this.ordId = ordId;
+		this.order = order;
 		this.timeAdd = timeAdd;
 		this.timeUpdate = timeUpdate;
 		this.haTheFirstAddress = haTheFirstAddress;
@@ -64,13 +67,14 @@ public class Harvestaddresstable implements java.io.Serializable {
 		this.id = id;
 	}
 
-	@Column(name = "Ord_Id")
-	public Integer getOrdId() {
-		return this.ordId;
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "OrderId")
+	public Order getOrder() {
+		return this.order;
 	}
 
-	public void setOrdId(Integer ordId) {
-		this.ordId = ordId;
+	public void setOrder(Order order) {
+		this.order = order;
 	}
 
 	@Column(name = "TimeAdd", nullable = false, length = 19)

@@ -10,6 +10,8 @@ import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import static javax.persistence.GenerationType.IDENTITY;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
@@ -23,11 +25,10 @@ public class Regionlist implements java.io.Serializable {
 	// Fields
 
 	private Integer id;
+	private Regionleveltable regionleveltable;
 	private Timestamp timeAdd;
 	private Timestamp timeUpdate;
 	private String regionName;
-	private Integer regionLevelId;
-	private Integer regId;
 	private Set<Regionleveltable> regionleveltables = new HashSet<Regionleveltable>(
 			0);
 
@@ -44,14 +45,13 @@ public class Regionlist implements java.io.Serializable {
 	}
 
 	/** full constructor */
-	public Regionlist(Timestamp timeAdd, Timestamp timeUpdate,
-			String regionName, Integer regionLevelId, Integer regId,
+	public Regionlist(Regionleveltable regionleveltable, Timestamp timeAdd,
+			Timestamp timeUpdate, String regionName,
 			Set<Regionleveltable> regionleveltables) {
+		this.regionleveltable = regionleveltable;
 		this.timeAdd = timeAdd;
 		this.timeUpdate = timeUpdate;
 		this.regionName = regionName;
-		this.regionLevelId = regionLevelId;
-		this.regId = regId;
 		this.regionleveltables = regionleveltables;
 	}
 
@@ -65,6 +65,16 @@ public class Regionlist implements java.io.Serializable {
 
 	public void setId(Integer id) {
 		this.id = id;
+	}
+
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "RegionLevelId")
+	public Regionleveltable getRegionleveltable() {
+		return this.regionleveltable;
+	}
+
+	public void setRegionleveltable(Regionleveltable regionleveltable) {
+		this.regionleveltable = regionleveltable;
 	}
 
 	@Column(name = "TimeAdd", nullable = false, length = 19)
@@ -92,24 +102,6 @@ public class Regionlist implements java.io.Serializable {
 
 	public void setRegionName(String regionName) {
 		this.regionName = regionName;
-	}
-
-	@Column(name = "RegionLevelId")
-	public Integer getRegionLevelId() {
-		return this.regionLevelId;
-	}
-
-	public void setRegionLevelId(Integer regionLevelId) {
-		this.regionLevelId = regionLevelId;
-	}
-
-	@Column(name = "Reg_Id")
-	public Integer getRegId() {
-		return this.regId;
-	}
-
-	public void setRegId(Integer regId) {
-		this.regId = regId;
 	}
 
 	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "regionlist")

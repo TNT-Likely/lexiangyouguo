@@ -3,9 +3,12 @@ package lxyg.domain;
 import java.sql.Timestamp;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import static javax.persistence.GenerationType.IDENTITY;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 /**
@@ -18,14 +21,13 @@ public class Accesspurchaserate implements java.io.Serializable {
 	// Fields
 
 	private Integer id;
+	private Product product;
 	private Timestamp timeAdd;
 	private Timestamp timeUpdate;
 	private Integer aprRanking;
-	private Integer goodsId;
 	private Integer aprSentimentIndex;
 	private Integer aprVisitsNumber;
 	private Float aprVisitsPurchaseRate;
-	private Integer comId;
 
 	// Constructors
 
@@ -34,26 +36,26 @@ public class Accesspurchaserate implements java.io.Serializable {
 	}
 
 	/** minimal constructor */
-	public Accesspurchaserate(Timestamp timeAdd, Timestamp timeUpdate,
-			Integer aprRanking, Integer goodsId) {
+	public Accesspurchaserate(Product product, Timestamp timeAdd,
+			Timestamp timeUpdate, Integer aprRanking) {
+		this.product = product;
 		this.timeAdd = timeAdd;
 		this.timeUpdate = timeUpdate;
 		this.aprRanking = aprRanking;
-		this.goodsId = goodsId;
 	}
 
 	/** full constructor */
-	public Accesspurchaserate(Timestamp timeAdd, Timestamp timeUpdate,
-			Integer aprRanking, Integer goodsId, Integer aprSentimentIndex,
-			Integer aprVisitsNumber, Float aprVisitsPurchaseRate, Integer comId) {
+	public Accesspurchaserate(Product product, Timestamp timeAdd,
+			Timestamp timeUpdate, Integer aprRanking,
+			Integer aprSentimentIndex, Integer aprVisitsNumber,
+			Float aprVisitsPurchaseRate) {
+		this.product = product;
 		this.timeAdd = timeAdd;
 		this.timeUpdate = timeUpdate;
 		this.aprRanking = aprRanking;
-		this.goodsId = goodsId;
 		this.aprSentimentIndex = aprSentimentIndex;
 		this.aprVisitsNumber = aprVisitsNumber;
 		this.aprVisitsPurchaseRate = aprVisitsPurchaseRate;
-		this.comId = comId;
 	}
 
 	// Property accessors
@@ -66,6 +68,16 @@ public class Accesspurchaserate implements java.io.Serializable {
 
 	public void setId(Integer id) {
 		this.id = id;
+	}
+
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "ProId", nullable = false)
+	public Product getProduct() {
+		return this.product;
+	}
+
+	public void setProduct(Product product) {
+		this.product = product;
 	}
 
 	@Column(name = "TimeAdd", nullable = false, length = 19)
@@ -95,15 +107,6 @@ public class Accesspurchaserate implements java.io.Serializable {
 		this.aprRanking = aprRanking;
 	}
 
-	@Column(name = "GoodsId", nullable = false)
-	public Integer getGoodsId() {
-		return this.goodsId;
-	}
-
-	public void setGoodsId(Integer goodsId) {
-		this.goodsId = goodsId;
-	}
-
 	@Column(name = "APR_SentimentIndex")
 	public Integer getAprSentimentIndex() {
 		return this.aprSentimentIndex;
@@ -129,15 +132,6 @@ public class Accesspurchaserate implements java.io.Serializable {
 
 	public void setAprVisitsPurchaseRate(Float aprVisitsPurchaseRate) {
 		this.aprVisitsPurchaseRate = aprVisitsPurchaseRate;
-	}
-
-	@Column(name = "Com_Id")
-	public Integer getComId() {
-		return this.comId;
-	}
-
-	public void setComId(Integer comId) {
-		this.comId = comId;
 	}
 
 }

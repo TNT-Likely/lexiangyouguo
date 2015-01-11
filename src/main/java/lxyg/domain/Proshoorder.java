@@ -3,9 +3,12 @@ package lxyg.domain;
 import java.sql.Timestamp;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import static javax.persistence.GenerationType.IDENTITY;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 /**
@@ -18,7 +21,7 @@ public class Proshoorder implements java.io.Serializable {
 	// Fields
 
 	private Integer id;
-	private Integer proComId;
+	private Procomment procomment;
 	private String proShoOrdUrl;
 	private Timestamp timeAdd;
 	private Timestamp timeUpdate;
@@ -30,9 +33,9 @@ public class Proshoorder implements java.io.Serializable {
 	}
 
 	/** full constructor */
-	public Proshoorder(Integer proComId, String proShoOrdUrl,
+	public Proshoorder(Procomment procomment, String proShoOrdUrl,
 			Timestamp timeAdd, Timestamp timeUpdate) {
-		this.proComId = proComId;
+		this.procomment = procomment;
 		this.proShoOrdUrl = proShoOrdUrl;
 		this.timeAdd = timeAdd;
 		this.timeUpdate = timeUpdate;
@@ -50,13 +53,14 @@ public class Proshoorder implements java.io.Serializable {
 		this.id = id;
 	}
 
-	@Column(name = "ProComId", nullable = false)
-	public Integer getProComId() {
-		return this.proComId;
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "ProComId", nullable = false)
+	public Procomment getProcomment() {
+		return this.procomment;
 	}
 
-	public void setProComId(Integer proComId) {
-		this.proComId = proComId;
+	public void setProcomment(Procomment procomment) {
+		this.procomment = procomment;
 	}
 
 	@Column(name = "ProShoOrdUrl", nullable = false)

@@ -1,11 +1,18 @@
 package lxyg.domain;
 
 import java.sql.Timestamp;
+import java.util.HashSet;
+import java.util.Set;
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import static javax.persistence.GenerationType.IDENTITY;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 /**
@@ -18,11 +25,13 @@ public class Cart implements java.io.Serializable {
 	// Fields
 
 	private Integer id;
-	private Integer proId;
+	private Member member;
+	private Product product;
 	private Integer proNumber;
 	private Float proTotalMoney;
 	private Timestamp timeAdd;
 	private Timestamp timeUpdate;
+	private Set<Product> products = new HashSet<Product>(0);
 
 	// Constructors
 
@@ -30,14 +39,28 @@ public class Cart implements java.io.Serializable {
 	public Cart() {
 	}
 
-	/** full constructor */
-	public Cart(Integer proId, Integer proNumber, Float proTotalMoney,
-			Timestamp timeAdd, Timestamp timeUpdate) {
-		this.proId = proId;
+	/** minimal constructor */
+	public Cart(Member member, Product product, Integer proNumber,
+			Float proTotalMoney, Timestamp timeAdd, Timestamp timeUpdate) {
+		this.member = member;
+		this.product = product;
 		this.proNumber = proNumber;
 		this.proTotalMoney = proTotalMoney;
 		this.timeAdd = timeAdd;
 		this.timeUpdate = timeUpdate;
+	}
+
+	/** full constructor */
+	public Cart(Member member, Product product, Integer proNumber,
+			Float proTotalMoney, Timestamp timeAdd, Timestamp timeUpdate,
+			Set<Product> products) {
+		this.member = member;
+		this.product = product;
+		this.proNumber = proNumber;
+		this.proTotalMoney = proTotalMoney;
+		this.timeAdd = timeAdd;
+		this.timeUpdate = timeUpdate;
+		this.products = products;
 	}
 
 	// Property accessors
@@ -52,13 +75,24 @@ public class Cart implements java.io.Serializable {
 		this.id = id;
 	}
 
-	@Column(name = "ProId", nullable = false)
-	public Integer getProId() {
-		return this.proId;
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "MemberId", nullable = false)
+	public Member getMember() {
+		return this.member;
 	}
 
-	public void setProId(Integer proId) {
-		this.proId = proId;
+	public void setMember(Member member) {
+		this.member = member;
+	}
+
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "ProId", nullable = false)
+	public Product getProduct() {
+		return this.product;
+	}
+
+	public void setProduct(Product product) {
+		this.product = product;
 	}
 
 	@Column(name = "ProNumber", nullable = false)
@@ -95,6 +129,15 @@ public class Cart implements java.io.Serializable {
 
 	public void setTimeUpdate(Timestamp timeUpdate) {
 		this.timeUpdate = timeUpdate;
+	}
+
+	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "cart")
+	public Set<Product> getProducts() {
+		return this.products;
+	}
+
+	public void setProducts(Set<Product> products) {
+		this.products = products;
 	}
 
 }

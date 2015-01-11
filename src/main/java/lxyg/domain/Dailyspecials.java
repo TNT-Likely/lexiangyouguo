@@ -21,14 +21,13 @@ public class Dailyspecials implements java.io.Serializable {
 	// Fields
 
 	private DailyspecialsId id;
+	private Preferentialtype preferentialtype;
 	private Promotionalofferstable promotionalofferstable;
-	private Integer goodsId;
+	private Product product;
 	private Integer preferentialTypeId;
 	private Float preferentialDiscount;
 	private Timestamp timeAdd;
 	private Timestamp timeUpdate;
-	private Integer comId;
-	private Integer preId;
 
 	// Constructors
 
@@ -37,30 +36,30 @@ public class Dailyspecials implements java.io.Serializable {
 	}
 
 	/** minimal constructor */
-	public Dailyspecials(DailyspecialsId id,
-			Promotionalofferstable promotionalofferstable, Timestamp timeAdd,
-			Timestamp timeUpdate) {
+	public Dailyspecials(DailyspecialsId id, Preferentialtype preferentialtype,
+			Promotionalofferstable promotionalofferstable, Product product,
+			Timestamp timeAdd, Timestamp timeUpdate) {
 		this.id = id;
+		this.preferentialtype = preferentialtype;
 		this.promotionalofferstable = promotionalofferstable;
+		this.product = product;
 		this.timeAdd = timeAdd;
 		this.timeUpdate = timeUpdate;
 	}
 
 	/** full constructor */
-	public Dailyspecials(DailyspecialsId id,
-			Promotionalofferstable promotionalofferstable, Integer goodsId,
+	public Dailyspecials(DailyspecialsId id, Preferentialtype preferentialtype,
+			Promotionalofferstable promotionalofferstable, Product product,
 			Integer preferentialTypeId, Float preferentialDiscount,
-			Timestamp timeAdd, Timestamp timeUpdate, Integer comId,
-			Integer preId) {
+			Timestamp timeAdd, Timestamp timeUpdate) {
 		this.id = id;
+		this.preferentialtype = preferentialtype;
 		this.promotionalofferstable = promotionalofferstable;
-		this.goodsId = goodsId;
+		this.product = product;
 		this.preferentialTypeId = preferentialTypeId;
 		this.preferentialDiscount = preferentialDiscount;
 		this.timeAdd = timeAdd;
 		this.timeUpdate = timeUpdate;
-		this.comId = comId;
-		this.preId = preId;
 	}
 
 	// Property accessors
@@ -77,6 +76,16 @@ public class Dailyspecials implements java.io.Serializable {
 	}
 
 	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "Pre_Id", nullable = false)
+	public Preferentialtype getPreferentialtype() {
+		return this.preferentialtype;
+	}
+
+	public void setPreferentialtype(Preferentialtype preferentialtype) {
+		this.preferentialtype = preferentialtype;
+	}
+
+	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "Pro_Id", nullable = false, insertable = false, updatable = false)
 	public Promotionalofferstable getPromotionalofferstable() {
 		return this.promotionalofferstable;
@@ -87,13 +96,14 @@ public class Dailyspecials implements java.io.Serializable {
 		this.promotionalofferstable = promotionalofferstable;
 	}
 
-	@Column(name = "GoodsId")
-	public Integer getGoodsId() {
-		return this.goodsId;
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "ProId", nullable = false)
+	public Product getProduct() {
+		return this.product;
 	}
 
-	public void setGoodsId(Integer goodsId) {
-		this.goodsId = goodsId;
+	public void setProduct(Product product) {
+		this.product = product;
 	}
 
 	@Column(name = "PreferentialTypeId")
@@ -130,24 +140,6 @@ public class Dailyspecials implements java.io.Serializable {
 
 	public void setTimeUpdate(Timestamp timeUpdate) {
 		this.timeUpdate = timeUpdate;
-	}
-
-	@Column(name = "Com_Id")
-	public Integer getComId() {
-		return this.comId;
-	}
-
-	public void setComId(Integer comId) {
-		this.comId = comId;
-	}
-
-	@Column(name = "Pre_Id")
-	public Integer getPreId() {
-		return this.preId;
-	}
-
-	public void setPreId(Integer preId) {
-		this.preId = preId;
 	}
 
 }

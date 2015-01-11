@@ -3,9 +3,12 @@ package lxyg.domain;
 import java.sql.Timestamp;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import static javax.persistence.GenerationType.IDENTITY;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 /**
@@ -18,7 +21,7 @@ public class Procover implements java.io.Serializable {
 	// Fields
 
 	private Integer id;
-	private Integer proId;
+	private Product product;
 	private String proCovUrl;
 	private Timestamp timeAdd;
 	private Timestamp timeUpdate;
@@ -36,9 +39,9 @@ public class Procover implements java.io.Serializable {
 	}
 
 	/** full constructor */
-	public Procover(Integer proId, String proCovUrl, Timestamp timeAdd,
+	public Procover(Product product, String proCovUrl, Timestamp timeAdd,
 			Timestamp timeUpdate) {
-		this.proId = proId;
+		this.product = product;
 		this.proCovUrl = proCovUrl;
 		this.timeAdd = timeAdd;
 		this.timeUpdate = timeUpdate;
@@ -56,13 +59,14 @@ public class Procover implements java.io.Serializable {
 		this.id = id;
 	}
 
-	@Column(name = "ProId")
-	public Integer getProId() {
-		return this.proId;
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "ProId")
+	public Product getProduct() {
+		return this.product;
 	}
 
-	public void setProId(Integer proId) {
-		this.proId = proId;
+	public void setProduct(Product product) {
+		this.product = product;
 	}
 
 	@Column(name = "ProCovUrl")
