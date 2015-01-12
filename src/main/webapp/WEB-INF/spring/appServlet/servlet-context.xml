@@ -12,7 +12,17 @@
 	<!-- DispatcherServlet Context: defines this servlet's request-processing 
 		infrastructure -->
 	<!-- Enables the Spring MVC @Controller programming model -->
-	<annotation-driven />
+	<annotation-driven>
+		<message-converters>    
+           <beans:bean class="org.springframework.http.converter.StringHttpMessageConverter" >    
+	            <beans:property name = "supportedMediaTypes">  
+	                <beans:list>  
+	                     <beans:value>text/plain;charset=UTF-8</beans:value>  
+	                </beans:list>  
+	            </beans:property>  
+           </beans:bean>    
+       </message-converters>    
+	</annotation-driven>
 
 	<!-- Handles HTTP GET requests for /resources/** by efficiently serving 
 		up static resources in the ${webappRoot}/resources directory -->
@@ -79,10 +89,10 @@
 			</beans:props>
 		</beans:property>
 	</beans:bean>
-	
-	<!-- 基于注释的事务，当注释中发现@Transactional时，使用id为“transactionManager”的事务管理器  -->
-    <!-- 如果没有设置transaction-manager的值，则spring以缺省默认的事务管理器来处理事务，默认事务管理器为第一个加载的事务管理器 -->
-    <tx:annotation-driven transaction-manager="transactionManager"/>
-	
-	<aop:aspectj-autoproxy proxy-target-class="true"/>
+
+	<!-- 基于注释的事务，当注释中发现@Transactional时，使用id为“transactionManager”的事务管理器 -->
+	<!-- 如果没有设置transaction-manager的值，则spring以缺省默认的事务管理器来处理事务，默认事务管理器为第一个加载的事务管理器 -->
+	<tx:annotation-driven transaction-manager="transactionManager" />
+
+	<aop:aspectj-autoproxy proxy-target-class="true" />
 </beans:beans>
